@@ -17,7 +17,7 @@ fun main() {
             title = "Revision Tracker",
             state = rememberWindowState(size = DpSize(1000.dp, 800.dp)),
         ) {
-            App(db)
+            App(db, DesktopFileAccess())
         }
     }
 }

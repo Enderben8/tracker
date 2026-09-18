@@ -6,6 +6,7 @@ import revision.core.db.Session
 import revision.core.data.SessionRepository
 import revision.core.data.SettingsRepository
 import revision.core.data.TopicRepository
+import revision.core.scheduling.SchedulerConfigStore
 import revision.core.scheduling.SrsService
 
 data class ActiveTopic(
@@ -57,7 +58,7 @@ class SessionService(
     private val sessions = SessionRepository(db, now)
     private val topics = TopicRepository(db, now)
     private val settings = SettingsRepository(db, now)
-    private val srs = SrsService(db, now)
+    private val srs = SrsService(db, now, SchedulerConfigStore(SettingsRepository(db, now))::load)
 
     // ---------- reading state ----------
 

@@ -42,3 +42,15 @@ UPDATE topic SET deleted = 1, updated_at = ? WHERE id = ?;
 
 restore:
 UPDATE topic SET deleted = 0, updated_at = ? WHERE id = ?;
+
+selectArchived:
+SELECT * FROM topic WHERE deleted = 1 ORDER BY subject_id, sort_order;
+
+exportAll:
+SELECT * FROM topic;
+
+setSortOrder:
+UPDATE topic SET sort_order = ?, updated_at = ? WHERE id = ?;
+
+wipe:
+DELETE FROM topic;

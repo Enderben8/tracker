@@ -31,7 +31,7 @@ import revision.core.formatClock
 import revision.core.formatTimeOfDay
 
 @Composable
-fun App(db: RevisionDatabase, state: AppState = androidx.compose.runtime.remember { AppState(db) }) {
+fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, state: AppState = androidx.compose.runtime.remember { AppState(db) }) {
 
     // Redraw once a second. Elapsed time is recomputed from stored timestamps each time,
     // so a missed tick (sleep, lag) cannot make the clock wrong.
@@ -54,6 +54,9 @@ fun App(db: RevisionDatabase, state: AppState = androidx.compose.runtime.remembe
                         Screen.Timer -> TimerScreen(state)
                         Screen.History -> HistoryScreen(state)
                         Screen.LogPast -> LogPastScreen(state)
+                        Screen.Topics -> ManageScreen(state)
+                        Screen.Stats -> StatsScreen(state)
+                        Screen.Settings -> SettingsScreen(state, files)
                     }
                 }
                 NavigationBar {
@@ -71,6 +74,21 @@ fun App(db: RevisionDatabase, state: AppState = androidx.compose.runtime.remembe
                         selected = state.screen == Screen.History || state.screen == Screen.LogPast,
                         onClick = { state.screen = Screen.History },
                         icon = { Text("☰") }, label = { Text("History") },
+                    )
+                    NavigationBarItem(
+                        selected = state.screen == Screen.Topics,
+                        onClick = { state.screen = Screen.Topics },
+                        icon = { Text("✎") }, label = { Text("Topics") },
+                    )
+                    NavigationBarItem(
+                        selected = state.screen == Screen.Stats,
+                        onClick = { state.screen = Screen.Stats },
+                        icon = { Text("▮") }, label = { Text("Stats") },
+                    )
+                    NavigationBarItem(
+                        selected = state.screen == Screen.Settings,
+                        onClick = { state.screen = Screen.Settings },
+                        icon = { Text("⚙") }, label = { Text("Settings") },
                     )
                 }
             }

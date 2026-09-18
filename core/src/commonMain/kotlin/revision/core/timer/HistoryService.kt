@@ -2,8 +2,10 @@ package revision.core.timer
 
 import revision.core.Now
 import revision.core.data.SessionRepository
+import revision.core.data.SettingsRepository
 import revision.core.data.SubjectRepository
 import revision.core.data.TopicRepository
+import revision.core.scheduling.SchedulerConfigStore
 import revision.core.scheduling.SrsService
 import revision.core.db.RevisionDatabase
 
@@ -35,7 +37,7 @@ class HistoryService(private val db: RevisionDatabase, private val now: Now) {
     private val sessions = SessionRepository(db, now)
     private val subjects = SubjectRepository(db, now)
     private val topics = TopicRepository(db, now)
-    private val srs = SrsService(db, now)
+    private val srs = SrsService(db, now, SchedulerConfigStore(SettingsRepository(db, now))::load)
 
     /** Finished sessions, newest first. The running session is excluded. */
     fun load(): List<HistoryEntry> {

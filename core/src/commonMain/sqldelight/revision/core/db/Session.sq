@@ -132,3 +132,23 @@ FROM segment
 JOIN session_topic ON session_topic.id = segment.session_topic_id
 JOIN session ON session.id = session_topic.session_id
 WHERE segment.deleted = 0 AND session_topic.deleted = 0 AND session.deleted = 0;
+
+-- ---------- backup / reset ----------
+
+exportSessions:
+SELECT * FROM session;
+
+exportSessionTopics:
+SELECT * FROM session_topic;
+
+exportSegments:
+SELECT * FROM segment;
+
+wipeSegments:
+DELETE FROM segment;
+
+wipeSessionTopics:
+DELETE FROM session_topic;
+
+wipeSessions:
+DELETE FROM session;

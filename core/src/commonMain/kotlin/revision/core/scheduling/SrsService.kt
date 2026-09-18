@@ -10,7 +10,7 @@ import revision.core.db.Topic_state
 class SrsService(
     db: RevisionDatabase,
     private val now: Now,
-    private val config: SchedulerConfig = SchedulerConfig(),
+    private val configProvider: () -> SchedulerConfig = { SchedulerConfig() },
 ) {
     private val sessions = SessionRepository(db, now)
     private val states = TopicStateRepository(db)
@@ -20,6 +20,7 @@ class SrsService(
      * "last revised" date moved. Topics that were added but never actually timed are ignored.
      */
     fun applySession(sessionId: String, at: Long) {
+        val config = configProvider()
         val segments = sessions.getSegments(sessionId)
         for (st in sessions.getSessionTopics(sessionId)) {
             val timed = segments.filter { it.session_topic_id == st.id }

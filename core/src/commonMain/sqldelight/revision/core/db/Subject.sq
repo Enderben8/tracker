@@ -36,3 +36,12 @@ UPDATE subject SET deleted = 1, updated_at = ? WHERE id = ?;
 
 restore:
 UPDATE subject SET deleted = 0, updated_at = ? WHERE id = ?;
+
+selectArchived:
+SELECT * FROM subject WHERE deleted = 1 ORDER BY sort_order;
+
+exportAll:
+SELECT * FROM subject;
+
+wipe:
+DELETE FROM subject;

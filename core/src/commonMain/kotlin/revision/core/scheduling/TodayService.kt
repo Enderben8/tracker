@@ -22,7 +22,7 @@ data class TimeSummary(val todayMs: Long, val days: List<DayTotal>) {
 class TodayService(
     private val db: RevisionDatabase,
     private val now: Now,
-    private val config: SchedulerConfig = SchedulerConfig(),
+    private val configProvider: () -> SchedulerConfig = { SchedulerConfig() },
 ) {
     private val subjects = SubjectRepository(db, now)
     private val topics = TopicRepository(db, now)
@@ -41,7 +41,7 @@ class TodayService(
                 val subject = subjectById.getValue(it.subject_id)
                 Candidate(it.id, subject.id, subject.name, it.title, subject.exam_date, stateById[it.id])
             }
-        return Scheduler.rank(candidates, nowMs, config)
+        return Scheduler.rank(candidates, nowMs, configProvider())
     }
 
     fun timeSummary(nowMs: Long = now(), zone: TimeZone = TimeZone.currentSystemDefault()): TimeSummary {

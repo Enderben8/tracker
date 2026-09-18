@@ -8,7 +8,28 @@ status note; delete it once stale.
 - **Phase 0 (toolchain): done, committed.**
 - **Phase 1 (data layer): done, committed.**
 - **Phase 2 (timer + history): done, committed.**
-- **Phase 3 (scheduler + Today screen): done. Awaiting user check-in** before Phase 4.
+- **Phase 3 (scheduler + Today screen): done, committed.**
+- **Phase 4 (management, stats, settings, backup): done. Awaiting user check-in** before Phase 5 (Android).
+
+### Phase 4 summary
+
+- Core: `backup/BackupService` (whole-DB JSON export; import is an LWW MERGE by `updated_at`, ties keep
+  local, deleted rows travel, running sessions are not exported, parents-before-children ordering, bad
+  files give a readable error — this is also the merge logic Phase 6 needs), `manage/Editors.kt`
+  (`TopicEditor`: rename, move up/down, bulk add, bulk archive cascade, restore incl. ancestors;
+  `SubjectEditor`: edit incl. exam date/board, reorder), `stats/StatsService` + `TopicRollup`
+  (per-subject time, coverage = leaf topics never revised, days active/current run/longest run —
+  reported plainly, no targets), `scheduling/SchedulerConfigStore` (advanced weights persisted in
+  `setting`; Today + SM-2 read them), `Seeder.restoreMissing` / `Seeder.resetAll` (destructive, confirmed).
+- UI: Topics (`ManageScreen`), Stats, Settings screens + `Dialogs.kt`; nav bar now Today / Timer /
+  History / Topics / Stats / Settings. `FileAccess` interface (commonMain) with `DesktopFileAccess`
+  (java.awt FileDialog) — Phase 5 needs an Android implementation (system document picker).
+- Tests: ~90 total, all pass (ManagementTest covers backup round-trip/merge/newer-wins/archive-travels,
+  editing, reset, coverage, activity; RollupTest is pure commonTest).
+- NOT verified: the real file dialogs (export/import buttons) — they need a real window; the logic
+  behind them is tested via strings. Off-screen renders checked Topics/Stats/Settings visually.
+- Known limits: importing never *removes* anything (merge only); topics can only be nested by adding
+  under a parent (no drag-to-reparent); light theme still unchecked.
 
 ### Phase 3 summary
 

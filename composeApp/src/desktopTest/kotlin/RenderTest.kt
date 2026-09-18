@@ -23,7 +23,7 @@ class RenderTest {
         val state = AppState(db)
         prepare(state)
         @OptIn(ExperimentalComposeUiApi::class)
-        val scene = ImageComposeScene(width = 1000, height = 800, density = Density(1f)) { App(db, state) }
+        val scene = ImageComposeScene(width = 1000, height = 800, density = Density(1f)) { App(db, NoFileAccess, state) }
         try {
             scene.render(0)
             val image = scene.render(1_000_000_000L)
@@ -57,6 +57,17 @@ class RenderTest {
 
     @Test
     fun historyScreen() = render("history", sampleDb()) { it.screen = Screen.History }
+
+    @Test
+    fun statsScreen() = render("stats", sampleDb()) { it.screen = Screen.Stats }
+
+    @Test
+    fun settingsScreen() = render("settings", sampleDb().also {
+        revision.core.data.SubjectRepository(it, systemNow).setExamDate("seed:physics", systemNow() + 12 * day)
+    }) { it.screen = Screen.Settings }
+
+    @Test
+    fun topicsScreen() = render("topics", sampleDb()) { it.screen = Screen.Topics; it.manageSubjectId = "seed:biology" }
 
     @Test
     fun timerSetupScreen() = render("timer-setup", sampleDb()) { it.screen = Screen.Timer }

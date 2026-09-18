@@ -9,3 +9,6 @@ SELECT value FROM setting WHERE key = ?;
 
 put:
 INSERT OR REPLACE INTO setting(key, value, updated_at) VALUES (?, ?, ?);
+
+exportAll:
+SELECT * FROM setting;

@@ -79,6 +79,62 @@ object Seeder {
         }
     }
 
+    /**
+     * Puts back any starting subject or topic that is missing or archived. Anything you renamed,
+     * added or reordered is left alone. Returns how many rows were re-added or un-archived.
+     */
+    fun restoreMissing(db: RevisionDatabase, now: Now): Int {
+        var changed = 0
+        val timestamp = now()
+        db.transaction {
+            allSeedSubjects.forEachIndexed { index, subject ->
+                val sid = subjectId(subject.key)
+                val existing = db.subjectQueries.selectById(sid).executeAsOneOrNull()
+                if (existing == null) {
+                    db.subjectQueries.insert(sid, subject.name, subject.colour, subject.examBoard, null, index.toLong(), timestamp, 0L)
+                    changed++
+                } else if (existing.deleted == 1L) {
+                    db.subjectQueries.restore(timestamp, sid); changed++
+                }
+                changed += restoreTopics(db, sid, subject.key, null, "", subject.topics, timestamp)
+            }
+        }
+        return changed
+    }
+
+    private fun restoreTopics(
+        db: RevisionDatabase, subjectId: String, subjectKey: String, parentId: String?,
+        parentPath: String, topics: List<SeedTopic>, timestamp: Long,
+    ): Int {
+        var changed = 0
+        topics.forEachIndexed { index, topic ->
+            val path = if (parentPath.isEmpty()) slug(topic.title) else "$parentPath/${slug(topic.title)}"
+            val id = "seed:$subjectKey:$path"
+            val existing = db.topicQueries.selectById(id).executeAsOneOrNull()
+            if (existing == null) {
+                db.topicQueries.insert(id, subjectId, parentId, topic.code, topic.title, topic.page?.toLong(), index.toLong(), null, timestamp, 0L)
+                changed++
+            } else if (existing.deleted == 1L) {
+                db.topicQueries.restore(timestamp, id); changed++
+            }
+            changed += restoreTopics(db, subjectId, subjectKey, id, path, topic.children, timestamp)
+        }
+        return changed
+    }
+
+    /** DESTRUCTIVE: deletes every session, rating and topic (including your own), then seeds afresh. */
+    fun resetAll(db: RevisionDatabase, now: Now) {
+        db.transaction {
+            db.sessionQueries.wipeSegments()
+            db.sessionQueries.wipeSessionTopics()
+            db.sessionQueries.wipeSessions()
+            db.topicStateQueries.wipe()
+            db.topicQueries.wipe()
+            db.subjectQueries.wipe()
+            seed(db, now())
+        }
+    }
+
     fun subjectId(key: String) = "seed:$key"
 
     internal fun slug(title: String): String =

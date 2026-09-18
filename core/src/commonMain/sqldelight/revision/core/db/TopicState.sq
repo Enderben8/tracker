@@ -21,3 +21,9 @@ SELECT * FROM topic_state WHERE topic_id = ?;
 upsert:
 INSERT OR REPLACE INTO topic_state(topic_id, last_revised_at, due_at, interval_days, ease_factor, repetitions, confidence, updated_at, deleted)
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+exportAll:
+SELECT * FROM topic_state;
+
+wipe:
+DELETE FROM topic_state;

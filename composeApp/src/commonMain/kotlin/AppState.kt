@@ -5,14 +5,20 @@ import androidx.compose.ui.graphics.Color
 import revision.core.data.SubjectRepository
 import revision.core.data.TopicRepository
 import revision.core.db.RevisionDatabase
+import revision.core.backup.BackupService
+import revision.core.data.SettingsRepository
+import revision.core.manage.SubjectEditor
+import revision.core.manage.TopicEditor
+import revision.core.scheduling.SchedulerConfigStore
 import revision.core.scheduling.TodayService
+import revision.core.stats.StatsService
 import revision.core.systemNow
 import revision.core.timer.ActiveSession
 import revision.core.timer.DanglingSession
 import revision.core.timer.HistoryService
 import revision.core.timer.SessionService
 
-enum class Screen { Today, Timer, History, LogPast }
+enum class Screen { Today, Timer, History, LogPast, Topics, Stats, Settings }
 
 /**
  * Holds everything the screens share. Compose re-draws whenever a `by mutableStateOf`
@@ -25,9 +31,17 @@ class AppState(val db: RevisionDatabase) {
     val history = HistoryService(db, now)
     val subjects = SubjectRepository(db, now)
     val topics = TopicRepository(db, now)
-    val today = TodayService(db, now)
+    private val settingsRepo = SettingsRepository(db, now)
+    val schedulerConfig = SchedulerConfigStore(settingsRepo)
+    val today = TodayService(db, now, schedulerConfig::load)
+    val topicEditor = TopicEditor(db, now)
+    val subjectEditor = SubjectEditor(db, now)
+    val stats = StatsService(db, now)
+    val backup = BackupService(db, now)
 
     var screen by mutableStateOf(Screen.Today)
+    /** The subject chosen on the Topics screen; kept here so it survives switching tabs. */
+    var manageSubjectId by mutableStateOf<String?>(null)
     var active by mutableStateOf<ActiveSession?>(null)
         private set
     var dangling by mutableStateOf<DanglingSession?>(null)
@@ -100,6 +114,9 @@ class AppState(val db: RevisionDatabase) {
 
     fun deleteHistory(sessionId: String) { history.delete(sessionId); changed() }
     fun historyChanged() { changed() }
+
+    /** Call after anything that edits subjects, topics, settings or imports data. */
+    fun dataChanged() { changed() }
 }
 
 enum class DanglingAction { Resume, Save, Discard }
