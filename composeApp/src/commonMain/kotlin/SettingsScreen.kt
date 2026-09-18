@@ -102,8 +102,8 @@ fun SettingsScreen(state: AppState, files: FileAccess, sync: SyncManager) {
         item { Text("Sync between devices", style = MaterialTheme.typography.titleMedium) }
         item {
             Text(
-                "Keeps this device and your other one in step through a shared OneDrive folder. Only small change logs are shared - " +
-                    "the database itself stays on each device and is never put in OneDrive. If OneDrive is unreachable, everything carries on locally.",
+                "Keeps this device and your other one in step through a shared Google Drive folder. Only small change logs are shared - " +
+                    "the database itself stays on each device and is never put in Drive. If Drive is unreachable, everything carries on locally.",
                 style = MaterialTheme.typography.bodySmall,
             )
         }
@@ -120,7 +120,7 @@ fun SettingsScreen(state: AppState, files: FileAccess, sync: SyncManager) {
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     val suggested = sync.suggested()
                     if (suggested != null && sync.location == null) {
-                        Button(onClick = { message = sync.use(suggested) ?: "Using $suggested" }) { Text("Use my OneDrive folder") }
+                        Button(onClick = { message = sync.use(suggested) ?: "Using $suggested" }) { Text("Use my Google Drive folder") }
                     }
                     OutlinedButton(onClick = { scope.launch { sync.chooseAndUse()?.let { message = it } } }) { Text("Choose folder…") }
                     if (sync.location != null) {

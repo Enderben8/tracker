@@ -666,6 +666,11 @@ drifts, and silently breaks if the app is backgrounded or the machine sleeps.
 
 ## 9. Sync via OneDrive (Phase 6 — design now, build later)
 
+> **Change (2026-09-18): the user chose Google Drive instead of OneDrive.** Nothing in this design is
+> OneDrive-specific — it only needs a folder both devices can read and write — so everything below
+> applies to Google Drive unchanged (Google Drive for desktop on Windows; the Drive app's document
+> provider on Android). Read "OneDrive" below as "the shared cloud folder".
+
 **The user already pays for Microsoft OneDrive and wants to use it as the sync
 transport** (confirmed 2026-09-17). This is a good call: it removes the need for
 a server, a host, a domain and an auth system entirely. But it must be done in a

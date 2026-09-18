@@ -20,7 +20,7 @@ import revision.core.systemNow
 
 /** What the platform supplies for sync: where the shared folder is, and how to read/write it. */
 interface SyncPlatform {
-    /** A sensible default folder (desktop: inside OneDrive), or null. */
+    /** A sensible default folder (desktop: inside Google Drive), or null. */
     fun suggestedLocation(): String?
 
     /** Lets the user pick a folder. Returns a value to store (a path or a content URI), or null if cancelled. */

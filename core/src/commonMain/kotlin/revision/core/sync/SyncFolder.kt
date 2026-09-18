@@ -5,7 +5,7 @@ import revision.core.data.SettingsRepository
 import revision.core.newId
 
 /**
- * A folder shared between devices (a OneDrive folder). Two sub-folders are used: "devices" for the
+ * A folder shared between devices (a Google Drive or OneDrive folder). Two sub-folders are used: "devices" for the
  * per-device change logs and "snapshots" for full backups. Implementations must create a
  * sub-folder on first write. Nothing here may block the UI: sync always runs in the background.
  */
@@ -55,7 +55,7 @@ data class CheckStep(val name: String, val ok: Boolean, val detail: String, val 
 
 /**
  * Exercises a folder the way sync will: list, create, read back, overwrite, delete. Used to find
- * out whether a storage provider (especially OneDrive on Android) is dependable enough for sync.
+ * out whether a storage provider (especially Drive on Android) is dependable enough for sync.
  */
 object SyncFolderCheck {
     suspend fun run(folder: SyncFolder, now: Now): List<CheckStep> {

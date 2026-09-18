@@ -90,7 +90,8 @@ class SyncEngine(
 
         for (name in folder.list(SyncFolder.DEVICES)) {
             val device = name.substringBefore('.')
-            if (device == deviceId || !name.contains(".jsonl")) continue
+            // Hidden and temporary files (a provider may show a half-written ".x.tmp") are not logs.
+            if (device == deviceId || name.startsWith(".") || name.endsWith(".tmp") || !name.contains(".jsonl")) continue
             val text = folder.read(SyncFolder.DEVICES, name) ?: continue
             devices++
             val (header, records) = parse(text)
@@ -234,7 +235,7 @@ class SyncEngine(
             json.encodeToString(SyncRecord.serializer(), SyncRecord(seq, o.table, o.id, o.updatedAt, o.deleted, o.data))
         }
 
-        val ownName = folder.list(SyncFolder.DEVICES).firstOrNull { it.substringBefore('.') == deviceId && it.contains(".jsonl") }
+        val ownName = folder.list(SyncFolder.DEVICES).firstOrNull { !it.startsWith(".") && !it.endsWith(".tmp") && it.substringBefore('.') == deviceId && it.contains(".jsonl") }
             ?: "$deviceId.jsonl"
         val existing = folder.read(SyncFolder.DEVICES, ownName)
         val generation = existing?.let { parse(it).first?.generation } ?: (settings.get(DeviceSettings.GENERATION)?.toLongOrNull() ?: 0L)

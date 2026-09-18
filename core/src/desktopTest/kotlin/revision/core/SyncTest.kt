@@ -207,6 +207,15 @@ class SyncTest {
     }
 
     @Test
+    fun hiddenAndTemporaryFilesAreNotTreatedAsDeviceLogs() {
+        val b = device()
+        shared.files["devices/.abc.jsonl.tmp"] = "half written {{{"
+        shared.files["devices/.hidden.jsonl"] = "nonsense"
+        shared.files["devices/zzz.jsonl.tmp"] = "nonsense"
+        assertEquals(0, b.sync().otherDevices)
+    }
+
+    @Test
     fun deviceLocalSettingsNeverTravel() {
         val a = device(); val b = device()
         SettingsRepository(a.db, a.now).put("sched.queueSize", "6")

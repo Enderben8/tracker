@@ -16,6 +16,14 @@ status note; delete it once stale.
 
 ### Phase 6 summary
 
+**Transport changed 2026-09-18: the user chose Google Drive, not OneDrive.** The design needed no change (any
+shared folder works). Checked read-only: the phone has the Drive app (`com.google.android.apps.docs` v2.26) which
+registers a DOCUMENTS_PROVIDER; the PC had no Drive client, so Google Drive for desktop was installed with winget
+(Google.GoogleDrive 130.0.2.0) with the user's OK - THE USER STILL HAS TO SIGN IN. Desktop detects `<drive>:\My Drive`
+and suggests `My Drive\RevisionTracker`. A hidden/temporary provider file (e.g. `.x.jsonl.tmp`) is never read as a
+device log (found while thinking through Drive's behaviour; tested). Where this note says OneDrive below, read
+Google Drive.
+
 - `core/sync/SyncEngine.kt` implements spec 9 exactly: per-device append-only log
   `devices/<device-id>.jsonl` (each device writes ONLY its own file), header line with `generation`,
   per-device cursors in the new `sync_cursor` table (schema v2 via `1.sqm`; migration tested), last-write-wins

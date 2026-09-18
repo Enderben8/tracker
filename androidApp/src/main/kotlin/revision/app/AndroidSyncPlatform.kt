@@ -13,7 +13,7 @@ import revision.core.sync.SyncFolder
 
 /**
  * The shared folder reached through Android's Storage Access Framework: the user picks a folder once
- * (for example inside OneDrive) and Android remembers the permission. No sign-in code, no server.
+ * (for example inside Google Drive) and Android remembers the permission. No sign-in code, no server.
  * Whether a given provider is dependable is exactly what "Test folder" in Settings finds out.
  */
 class SafSyncFolder(private val context: Context, private val tree: Uri) : SyncFolder {

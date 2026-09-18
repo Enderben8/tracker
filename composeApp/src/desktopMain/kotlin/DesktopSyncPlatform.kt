@@ -9,11 +9,11 @@ import java.nio.file.Files
 import java.nio.file.StandardCopyOption
 import javax.swing.JFileChooser
 
-/** A folder on disk - normally inside the OneDrive folder, which Windows keeps in sync. */
+/** A folder on disk - normally inside Google Drive for desktop, which keeps it in sync. */
 class FileSyncFolder(private val root: File) : SyncFolder {
     private fun dir(name: String) = File(root, name)
 
-    // File work runs off the UI thread: with OneDrive Files On-Demand a first read can block for seconds.
+    // File work runs off the UI thread: with a cloud drive that streams files, a first read can block for seconds.
     override suspend fun list(dir: String): List<String> = withContext(Dispatchers.IO) {
         dir(dir).listFiles { f -> f.isFile && !f.name.startsWith(".") }?.map { it.name }.orEmpty()
     }
@@ -24,7 +24,7 @@ class FileSyncFolder(private val root: File) : SyncFolder {
 
     override suspend fun write(dir: String, name: String, text: String): Unit = withContext(Dispatchers.IO) {
         val folder = dir(dir).also { it.mkdirs() }
-        // Write beside it and move into place, so OneDrive never uploads a half-written file.
+        // Write beside it and move into place, so the cloud drive never uploads a half-written file.
         val temp = File(folder, ".$name.tmp")
         temp.writeText(text, Charsets.UTF_8)
         try {
@@ -40,13 +40,20 @@ class FileSyncFolder(private val root: File) : SyncFolder {
 }
 
 class DesktopSyncPlatform : SyncPlatform {
-    override fun suggestedLocation(): String? =
-        System.getenv("OneDrive")?.takeIf { File(it).isDirectory }?.let { File(it, "Apps/RevisionTracker").path }
+    /** Google Drive for desktop shows up as a "My Drive" folder, usually on its own drive letter (G:). */
+    private fun googleDrive(): File? {
+        val home = File(System.getProperty("user.home"))
+        val candidates = File.listRoots().map { File(it, "My Drive") } +
+            listOf(File(home, "My Drive"), File(home, "Google Drive/My Drive"), File(home, "Google Drive"))
+        return candidates.firstOrNull { it.isDirectory }
+    }
+
+    override fun suggestedLocation(): String? = googleDrive()?.let { File(it, "RevisionTracker").path }
 
     override suspend fun chooseFolder(): String? = withContext(Dispatchers.IO) {
-        val chooser = JFileChooser(System.getenv("OneDrive") ?: System.getProperty("user.home")).apply {
+        val chooser = JFileChooser(googleDrive()?.path ?: System.getProperty("user.home")).apply {
             fileSelectionMode = JFileChooser.DIRECTORIES_ONLY
-            dialogTitle = "Choose the shared sync folder (inside OneDrive)"
+            dialogTitle = "Choose the shared sync folder (inside Google Drive)"
         }
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) chooser.selectedFile.path else null
     }
