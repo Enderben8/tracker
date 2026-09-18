@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stopwatch with a tick. Drawn inside the 66dp adaptive-icon safe zone (centre 54,54). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:pathData="M33,58 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M49,28 a2,2 0 0 1 2,-2 h6 a2,2 0 0 1 2,2 v1 a2,2 0 0 1 -2,2 h-6 a2,2 0 0 1 -2,-2 z" />
+    <path
+        android:pathData="M54,31 L54,37"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4" />
+    <path
+        android:pathData="M69,40 L73,36"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M44,58 L51,65 L65,51"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

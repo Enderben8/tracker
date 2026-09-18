@@ -1,5 +1,6 @@
 package revision.app
 
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.ImageComposeScene
 import androidx.compose.ui.unit.Density
@@ -52,6 +53,19 @@ class RenderTest {
         history.logManual("seed:physics", now - 1 * day, listOf(ManualTopic(phys[1].id, 30, 1)), null)
         history.logManual("seed:biology", now - 60_000L, listOf(ManualTopic(bio[2].id, 45, 5)), null)
         return db
+    }
+
+    @Test
+    fun logo() {
+        @OptIn(ExperimentalComposeUiApi::class)
+        val scene = ImageComposeScene(width = 432, height = 432, density = Density(1f)) {
+            androidx.compose.foundation.Image(LogoPainter(), contentDescription = null, modifier = androidx.compose.ui.Modifier.fillMaxSize())
+        }
+        try {
+            scene.render(0)
+            val bytes = scene.render(1_000_000_000L).encodeToData(EncodedImageFormat.PNG)!!.bytes
+            File("build/screenshots/logo.png").also { it.parentFile.mkdirs() }.writeBytes(bytes)
+        } finally { scene.close() }
     }
 
     @Test

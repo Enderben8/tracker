@@ -17,6 +17,7 @@ fun main() {
         Window(
             onCloseRequest = ::exitApplication,
             title = "Revision Tracker",
+            icon = LogoPainter(),
             state = rememberWindowState(size = DpSize(1000.dp, 800.dp)),
         ) {
             App(db, DesktopFileAccess())
