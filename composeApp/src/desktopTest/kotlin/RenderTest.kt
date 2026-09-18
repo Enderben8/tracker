@@ -1,6 +1,7 @@
 package revision.app
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.ImageComposeScene
 import androidx.compose.ui.unit.Density
@@ -98,5 +99,27 @@ class RenderTest {
         val bio = it.topics.getBySubject("seed:biology")
         it.start("seed:biology", listOf(bio[0].id, bio[4].id))
         it.screen = Screen.Timer
+    }
+
+    @Test fun phoneLogPastWithTopicTicked() {
+        val db = sampleDb()
+        val bio = revision.core.data.TopicRepository(db, systemNow).getBySubject("seed:biology")
+        val state = AppState(db)
+        state.screen = Screen.LogPast
+        @OptIn(ExperimentalComposeUiApi::class)
+        val scene = ImageComposeScene(width = 900, height = 1950, density = Density(2.5f)) {
+            androidx.compose.material3.MaterialTheme {
+                androidx.compose.material3.Surface(androidx.compose.ui.Modifier.fillMaxSize()) {
+                    CompositionLocalProvider(LocalCompact provides true) {
+                        LogPastScreen(state, initialSubjectId = "seed:biology", initialSelected = listOf(bio[0].id, bio[1].id))
+                    }
+                }
+            }
+        }
+        try {
+            scene.render(0)
+            val bytes = scene.render(1_000_000_000L).encodeToData(EncodedImageFormat.PNG)!!.bytes
+            File("build/screenshots/phone-logpast.png").also { it.parentFile.mkdirs() }.writeBytes(bytes)
+        } finally { scene.close() }
     }
 }

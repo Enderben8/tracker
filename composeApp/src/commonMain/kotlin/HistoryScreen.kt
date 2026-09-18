@@ -15,6 +15,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -151,49 +153,56 @@ private fun SessionCard(e: HistoryEntry, onEditTopic: (HistoryTopic) -> Unit, on
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun LogPastScreen(state: AppState) {
+fun LogPastScreen(state: AppState, initialSubjectId: String? = null, initialSelected: List<String> = emptyList()) {
     val subjects = remember { state.subjects.getAll() }
-    var subjectId by remember { mutableStateOf<String?>(null) }
-    var selected by remember { mutableStateOf(listOf<String>()) }
+    var subjectId by remember { mutableStateOf(initialSubjectId) }
+    var selected by remember { mutableStateOf(initialSelected) }
     val minutes = remember { mutableStateMapOf<String, String>() }
     val ratings = remember { mutableStateMapOf<String, Int>() }
     var dateText by remember { mutableStateOf(localDate(state.tick).toString()) }
     var note by remember { mutableStateOf("") }
     var error by remember { mutableStateOf<String?>(null) }
+    val id = subjectId
 
-    Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Text("Log a past session", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
-            TextButton(onClick = { state.screen = Screen.History }) { Text("Cancel") }
-        }
-        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            subjects.forEach { s ->
-                FilterChip(
-                    selected = subjectId == s.id,
-                    onClick = { subjectId = s.id; selected = emptyList() },
-                    label = { Text(s.name) },
-                    leadingIcon = { Box(Modifier.size(10.dp).background(parseColour(s.colour), CircleShape)) },
-                )
+    // The form scrolls; the error and the Save button stay pinned at the bottom so they are never
+    // pushed off a small screen (which made it look as if saving did nothing).
+    Column(Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 12.dp)) {
+        Column(
+            Modifier.weight(1f).verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text("Log a past session", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
+                TextButton(onClick = { state.screen = Screen.History }) { Text("Cancel") }
             }
-        }
-        OutlinedTextField(
-            value = dateText, onValueChange = { dateText = it },
-            label = { Text("Date (YYYY-MM-DD)") }, singleLine = true,
-        )
-
-        val id = subjectId
-        if (id != null) {
-            val topics = remember(id) { state.topics.getBySubject(id) }
-            TopicPicker(
-                topics = topics,
-                selected = selected.toSet(),
-                onToggle = { t -> selected = if (t in selected) selected - t else selected + t },
-                modifier = Modifier.weight(1f),
+            Text("1. Subject", style = MaterialTheme.typography.titleSmall)
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                subjects.forEach { s ->
+                    FilterChip(
+                        selected = subjectId == s.id,
+                        onClick = { subjectId = s.id; selected = emptyList(); error = null },
+                        label = { Text(s.name) },
+                        leadingIcon = { Box(Modifier.size(10.dp).background(parseColour(s.colour), CircleShape)) },
+                    )
+                }
+            }
+            OutlinedTextField(
+                value = dateText, onValueChange = { dateText = it; error = null },
+                label = { Text("Date (YYYY-MM-DD)") }, singleLine = true,
             )
-            if (selected.isNotEmpty()) {
-                Text("Minutes and rating per topic:", style = MaterialTheme.typography.titleSmall)
-                LazyColumn(Modifier.height(190.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                    items(selected, key = { it }) { tid ->
+
+            if (id != null) {
+                val topics = remember(id) { state.topics.getBySubject(id) }
+                Text("2. Topics (tick one or more)", style = MaterialTheme.typography.titleSmall)
+                TopicPicker(
+                    topics = topics,
+                    selected = selected.toSet(),
+                    onToggle = { t -> selected = if (t in selected) selected - t else selected + t; error = null },
+                    modifier = Modifier.height(260.dp).fillMaxWidth(),
+                )
+                if (selected.isNotEmpty()) {
+                    Text("3. Minutes for each topic (required), and a rating if you like", style = MaterialTheme.typography.titleSmall)
+                    selected.forEach { tid ->
                         val title = topics.firstOrNull { it.id == tid }?.title ?: ""
                         Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
                             Text(title, style = MaterialTheme.typography.bodySmall)
@@ -203,7 +212,7 @@ fun LogPastScreen(state: AppState) {
                             ) {
                                 OutlinedTextField(
                                     value = minutes[tid] ?: "",
-                                    onValueChange = { minutes[tid] = it.filter(Char::isDigit) },
+                                    onValueChange = { minutes[tid] = it.filter(Char::isDigit); error = null },
                                     label = { Text("min") }, singleLine = true,
                                     modifier = Modifier.width(88.dp),
                                 )
@@ -218,28 +227,34 @@ fun LogPastScreen(state: AppState) {
                         }
                     }
                 }
+                OutlinedTextField(value = note, onValueChange = { note = it }, label = { Text("Note (optional)") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+            } else {
+                Text("Choose a subject to see its topics.", style = MaterialTheme.typography.bodyMedium)
             }
-            OutlinedTextField(value = note, onValueChange = { note = it }, label = { Text("Note (optional)") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-            error?.let { Text(it, color = MaterialTheme.colorScheme.error) }
+        }
+
+        Column(Modifier.padding(top = 8.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) }
             Button(
-                enabled = selected.isNotEmpty(),
+                enabled = id != null && selected.isNotEmpty(),
                 onClick = {
+                    val subject = id ?: return@Button
                     val date = runCatching { LocalDate.parse(dateText.trim()) }.getOrNull()
                     val entries = selected.map { ManualTopic(it, minutes[it]?.toIntOrNull() ?: 0, ratings[it]) }
                     when {
                         date == null -> error = "Date must look like 2026-09-18."
-                        entries.any { it.minutes <= 0 } -> error = "Enter minutes for every topic."
+                        entries.any { it.minutes <= 0 } -> error = "Enter the minutes for every ticked topic."
                         else -> {
                             // Noon local time, so a logged session can't be pushed across midnight by its length.
                             val start = startOfDayMillis(date, TimeZone.currentSystemDefault()) + 12 * 3_600_000L
-                            state.history.logManual(id, start, entries, note.ifBlank { null })
+                            state.history.logManual(subject, start, entries, note.ifBlank { null })
                             state.historyChanged()
                             state.screen = Screen.History
                         }
                     }
                 },
                 modifier = Modifier.fillMaxWidth(),
-            ) { Text("Save session") }
+            ) { Text(if (selected.isEmpty()) "Save session (tick a topic first)" else "Save session") }
         }
     }
 }
