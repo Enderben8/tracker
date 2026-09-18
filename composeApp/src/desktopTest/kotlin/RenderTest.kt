@@ -1,3 +1,5 @@
+package revision.app
+
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.ImageComposeScene
 import androidx.compose.ui.unit.Density
@@ -19,11 +21,11 @@ import kotlin.test.assertTrue
 class RenderTest {
     private val day = 86_400_000L
 
-    private fun render(name: String, db: revision.core.db.RevisionDatabase, prepare: (AppState) -> Unit = {}) {
+    private fun render(name: String, db: revision.core.db.RevisionDatabase, phone: Boolean = false, prepare: (AppState) -> Unit = {}) {
         val state = AppState(db)
         prepare(state)
         @OptIn(ExperimentalComposeUiApi::class)
-        val scene = ImageComposeScene(width = 1000, height = 800, density = Density(1f)) { App(db, NoFileAccess, state) }
+        val scene = ImageComposeScene(width = if (phone) 900 else 1000, height = if (phone) 1950 else 800, density = Density(if (phone) 2.5f else 1f)) { App(db, NoFileAccess, state) }
         try {
             scene.render(0)
             val image = scene.render(1_000_000_000L)
@@ -71,4 +73,16 @@ class RenderTest {
 
     @Test
     fun timerSetupScreen() = render("timer-setup", sampleDb()) { it.screen = Screen.Timer }
+
+    // ---- phone-sized (360 x 780 dp) ----
+    @Test fun phoneToday() = render("phone-today", sampleDb(), phone = true)
+    @Test fun phoneHistory() = render("phone-history", sampleDb(), phone = true) { it.screen = Screen.History }
+    @Test fun phoneTopics() = render("phone-topics", sampleDb(), phone = true) { it.screen = Screen.Topics; it.manageSubjectId = "seed:biology" }
+    @Test fun phoneStats() = render("phone-stats", sampleDb(), phone = true) { it.screen = Screen.Stats }
+    @Test fun phoneSettings() = render("phone-settings", sampleDb(), phone = true) { it.screen = Screen.Settings }
+    @Test fun phoneTimer() = render("phone-timer", sampleDb(), phone = true) {
+        val bio = it.topics.getBySubject("seed:biology")
+        it.start("seed:biology", listOf(bio[0].id, bio[4].id))
+        it.screen = Screen.Timer
+    }
 }

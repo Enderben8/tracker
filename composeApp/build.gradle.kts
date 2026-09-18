@@ -2,10 +2,17 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.androidMultiplatformLibrary)
 }
 
 kotlin {
     jvm("desktop")
+
+    androidLibrary {
+        namespace = "revision.composeapp"
+        compileSdk = libs.versions.androidCompileSdk.get().toInt()
+        minSdk = libs.versions.androidMinSdk.get().toInt()
+    }
 
     sourceSets {
         val desktopMain by getting
@@ -31,7 +38,7 @@ kotlin {
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "revision.app.MainKt"
 
         nativeDistributions {
             targetFormats(org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi)

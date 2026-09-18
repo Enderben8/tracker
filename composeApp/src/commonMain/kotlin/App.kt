@@ -1,8 +1,19 @@
+package revision.app
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.only
+import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -30,6 +41,9 @@ import revision.core.db.RevisionDatabase
 import revision.core.formatClock
 import revision.core.formatTimeOfDay
 
+/** True on phone-width screens; screens use it to stack controls instead of laying them in a row. */
+val LocalCompact = compositionLocalOf { false }
+
 @Composable
 fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, state: AppState = androidx.compose.runtime.remember { AppState(db) }) {
 
@@ -46,7 +60,15 @@ fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, state: AppState 
 
     MaterialTheme(colorScheme = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme()) {
         Surface(Modifier.fillMaxSize()) {
-            Column(Modifier.fillMaxSize()) {
+          BoxWithConstraints(Modifier.fillMaxSize()) {
+           CompositionLocalProvider(LocalCompact provides (maxWidth < 600.dp)) {
+            Column(
+                Modifier
+                    .fillMaxSize()
+                    // Keep clear of the status bar / camera cut-out; the nav bar handles the bottom edge.
+                    .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Top + WindowInsetsSides.Horizontal))
+                    .imePadding(),
+            ) {
                 ActiveBanner(state)
                 Box(Modifier.weight(1f)) {
                     when (state.screen) {
@@ -93,6 +115,8 @@ fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, state: AppState 
                 }
             }
             state.dangling?.let { RecoveryDialog(state, it) }
+           }
+          }
         }
     }
 }

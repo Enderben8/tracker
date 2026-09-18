@@ -1,3 +1,5 @@
+package revision.app
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -104,7 +106,7 @@ private fun RunningView(state: AppState, active: ActiveSession) {
 
         Text(
             formatClock(active.totalMs),
-            fontSize = 88.sp,
+            fontSize = if (LocalCompact.current) 64.sp else 88.sp,
             fontWeight = FontWeight.Light,
             color = if (active.isPaused) MaterialTheme.colorScheme.outline else MaterialTheme.colorScheme.onSurface,
         )

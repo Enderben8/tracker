@@ -1,3 +1,5 @@
+package revision.app
+
 import java.awt.FileDialog
 import java.awt.Frame
 import java.io.File
@@ -5,7 +7,7 @@ import java.io.File
 class DesktopFileAccess : FileAccess {
     private val startDir = File(System.getProperty("user.home"), "Documents").takeIf { it.isDirectory }?.absolutePath
 
-    override fun saveText(suggestedName: String, text: String): String? {
+    override suspend fun saveText(suggestedName: String, text: String): String? {
         val dialog = FileDialog(null as Frame?, "Save backup", FileDialog.SAVE).apply {
             file = suggestedName
             directory = startDir
@@ -17,7 +19,7 @@ class DesktopFileAccess : FileAccess {
         return target.absolutePath
     }
 
-    override fun openText(): String? {
+    override suspend fun openText(): String? {
         val dialog = FileDialog(null as Frame?, "Choose a backup file", FileDialog.LOAD).apply {
             file = "*.json"
             directory = startDir

@@ -1,3 +1,5 @@
+package revision.app
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -103,13 +105,12 @@ private fun WeekChart(days: List<DayTotal>) {
     Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Row(
             Modifier.fillMaxWidth().height(barArea + 20.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.Bottom,
         ) {
             days.forEachIndexed { i, d ->
                 val isToday = i == days.lastIndex
                 val h = if (d.ms == 0L) 0.dp else (barArea * (d.ms.toFloat() / max)).coerceAtLeast(3.dp)
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
                     if (isToday && d.ms > 0) Text(formatDuration(d.ms), style = MaterialTheme.typography.labelSmall)
                     Box(
                         Modifier
@@ -122,11 +123,12 @@ private fun WeekChart(days: List<DayTotal>) {
             }
         }
         HorizontalDivider()
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+        Row(Modifier.fillMaxWidth()) {
             days.forEach { d ->
                 Text(
                     d.date.dayOfWeek.name.take(3).lowercase().replaceFirstChar { it.uppercase() },
-                    Modifier.width(36.dp),
+                    Modifier.weight(1f),
+                    textAlign = androidx.compose.ui.text.style.TextAlign.Center,
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )

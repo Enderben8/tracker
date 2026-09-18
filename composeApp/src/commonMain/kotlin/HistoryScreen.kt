@@ -1,3 +1,5 @@
+package revision.app
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -12,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -53,7 +56,7 @@ fun HistoryScreen(state: AppState) {
     Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
             Text("History", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
-            OutlinedButton(onClick = { state.screen = Screen.LogPast }) { Text("Log a past session") }
+            OutlinedButton(onClick = { state.screen = Screen.LogPast }) { Text(if (LocalCompact.current) "Log past" else "Log a past session") }
         }
         if (entries.isEmpty()) {
             Text("No sessions yet. Finish a timer session, or log one you did away from the PC.")
@@ -189,23 +192,28 @@ fun LogPastScreen(state: AppState) {
             )
             if (selected.isNotEmpty()) {
                 Text("Minutes and rating per topic:", style = MaterialTheme.typography.titleSmall)
-                LazyColumn(Modifier.height(150.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                LazyColumn(Modifier.height(190.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     items(selected, key = { it }) { tid ->
                         val title = topics.firstOrNull { it.id == tid }?.title ?: ""
-                        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                            Text(title, Modifier.weight(1f), style = MaterialTheme.typography.bodySmall)
-                            OutlinedTextField(
-                                value = minutes[tid] ?: "",
-                                onValueChange = { minutes[tid] = it.filter(Char::isDigit) },
-                                label = { Text("min") }, singleLine = true,
-                                modifier = Modifier.height(64.dp).padding(0.dp).weight(0.4f),
-                            )
-                            (1..5).forEach { r ->
-                                FilterChip(
-                                    selected = ratings[tid] == r,
-                                    onClick = { if (ratings[tid] == r) ratings.remove(tid) else ratings[tid] = r },
-                                    label = { Text("$r") },
+                        Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                            Text(title, style = MaterialTheme.typography.bodySmall)
+                            FlowRow(
+                                verticalArrangement = Arrangement.spacedBy(2.dp),
+                                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                            ) {
+                                OutlinedTextField(
+                                    value = minutes[tid] ?: "",
+                                    onValueChange = { minutes[tid] = it.filter(Char::isDigit) },
+                                    label = { Text("min") }, singleLine = true,
+                                    modifier = Modifier.width(88.dp),
                                 )
+                                (1..5).forEach { r ->
+                                    FilterChip(
+                                        selected = ratings[tid] == r,
+                                        onClick = { if (ratings[tid] == r) ratings.remove(tid) else ratings[tid] = r },
+                                        label = { Text("$r") },
+                                    )
+                                }
                             }
                         }
                     }

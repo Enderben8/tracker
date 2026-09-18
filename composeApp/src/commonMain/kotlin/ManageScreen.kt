@@ -1,3 +1,5 @@
+package revision.app
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -15,6 +17,8 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -72,7 +76,7 @@ fun ManageScreen(state: AppState) {
         }
 
         if (selectedSubject != null) {
-            Row(horizontalArrangement = Arrangement.spacedBy(4.dp), verticalAlignment = Alignment.CenterVertically) {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                 TextButton(onClick = { editSubject = true }) { Text("Edit subject / exam date") }
                 TextButton(onClick = { state.subjectEditor.moveUp(selectedSubject.id); state.dataChanged() }) { Text("Move earlier") }
                 TextButton(onClick = { state.subjectEditor.moveDown(selectedSubject.id); state.dataChanged() }) { Text("Move later") }
@@ -184,11 +188,13 @@ private fun TopicTree(state: AppState, subjectId: String, showArchived: Boolean,
                             )
                         }
                     }
-                    TextButton(onClick = { state.topicEditor.moveUp(t.id); state.dataChanged() }) { Text("↑") }
-                    TextButton(onClick = { state.topicEditor.moveDown(t.id); state.dataChanged() }) { Text("↓") }
-                    TextButton(onClick = { renaming = t }) { Text("Rename") }
-                    TextButton(onClick = { adding = t }) { Text("+ Sub") }
-                    TextButton(onClick = { state.topicEditor.archiveMany(listOf(t.id)); state.dataChanged() }) { Text("Archive") }
+                    TopicActions(
+                        onUp = { state.topicEditor.moveUp(t.id); state.dataChanged() },
+                        onDown = { state.topicEditor.moveDown(t.id); state.dataChanged() },
+                        onRename = { renaming = t },
+                        onAddSub = { adding = t },
+                        onArchive = { state.topicEditor.archiveMany(listOf(t.id)); state.dataChanged() },
+                    )
                 }
             }
         }
@@ -227,4 +233,28 @@ private fun TopicTree(state: AppState, subjectId: String, showArchived: Boolean,
         onConfirm = { state.topicEditor.archiveMany(chosen); selected.clear(); state.dataChanged() },
         onDismiss = { confirmBulk = false },
     )
+}
+
+/** On a wide screen: buttons in the row. On a phone: a single "..." menu, so the title keeps its space. */
+@Composable
+private fun TopicActions(onUp: () -> Unit, onDown: () -> Unit, onRename: () -> Unit, onAddSub: () -> Unit, onArchive: () -> Unit) {
+    if (LocalCompact.current) {
+        var open by remember { mutableStateOf(false) }
+        Box {
+            TextButton(onClick = { open = true }) { Text("\u22EF") }
+            DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
+                DropdownMenuItem(text = { Text("Move up") }, onClick = { open = false; onUp() })
+                DropdownMenuItem(text = { Text("Move down") }, onClick = { open = false; onDown() })
+                DropdownMenuItem(text = { Text("Rename") }, onClick = { open = false; onRename() })
+                DropdownMenuItem(text = { Text("Add sub-topics") }, onClick = { open = false; onAddSub() })
+                DropdownMenuItem(text = { Text("Archive") }, onClick = { open = false; onArchive() })
+            }
+        }
+    } else {
+        TextButton(onClick = onUp) { Text("\u2191") }
+        TextButton(onClick = onDown) { Text("\u2193") }
+        TextButton(onClick = onRename) { Text("Rename") }
+        TextButton(onClick = onAddSub) { Text("+ Sub") }
+        TextButton(onClick = onArchive) { Text("Archive") }
+    }
 }

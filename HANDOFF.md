@@ -9,7 +9,29 @@ status note; delete it once stale.
 - **Phase 1 (data layer): done, committed.**
 - **Phase 2 (timer + history): done, committed.**
 - **Phase 3 (scheduler + Today screen): done, committed.**
-- **Phase 4 (management, stats, settings, backup): done. Awaiting user check-in** before Phase 5 (Android).
+- **Phase 4 (management, stats, settings, backup): done, committed.**
+- **Phase 5 (Android): APK builds; not yet installed on a phone. Awaiting user check-in** before Phase 6 (sync).
+
+### Phase 5 summary
+
+- AGP 9.3.1 (Compose 1.12 needs AGP >= 9.1; Kotlin 2.4.20 supports <= 9.3.1). AGP 9 forced a layout
+  change: `core` + `composeApp` are shared libraries (`androidLibrary {}` from the
+  `com.android.kotlin.multiplatform.library` plugin), and the new `androidApp` module is the app
+  (MainActivity, manifest, `AndroidFileAccess`). Shared UI moved from the unnamed package to
+  `revision.app` (Kotlin can't see the default package from another module); desktop main class is
+  now `revision.app.MainKt`. See the note added to PROJECT_SPEC.md section 4.
+- `core/src/androidMain/.../DatabaseFactory.kt`: AndroidSqliteDriver, foreign keys on, DB in the
+  app's private storage. `FileAccess` became `suspend`; Android uses the system document picker
+  (works with OneDrive as a location). Back button returns to Today first.
+- SDK: platform folder here is `android-37.0`; `compileSdk = 37` resolves under AGP 9. `local.properties`
+  (gitignored) holds `sdk.dir` with forward slashes (backslashes get eaten as escapes).
+- Phone layouts: `LocalCompact` (width < 600dp) -> smaller clock, per-topic "..." menu instead of five
+  buttons, wrapping button rows, safe-area/IME insets. Checked via off-screen renders at 360x780dp
+  (`phone-*.png` in `composeApp/build/screenshots`); NOT run on a real device/emulator.
+- Install: `adb install -r androidAppuild\outputspk\debugndroidApp-debug.apk`
+  (adb: `%LOCALAPPDATA%\Android\Sdk\platform-toolsdb.exe`). No device was connected during the build.
+- Untested on a device: the document picker export/import, keyboard/inset behaviour, process death
+  while the timer runs (design handles it via the heartbeat dialog). Launcher icon is the default.
 
 ### Phase 4 summary
 

@@ -1,5 +1,9 @@
+package revision.app
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -17,6 +21,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import kotlinx.coroutines.launch
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -28,10 +34,12 @@ import revision.core.scheduling.SchedulerConfig
 import revision.core.seed.Seeder
 import revision.core.systemNow
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun SettingsScreen(state: AppState, files: FileAccess) {
     val version = state.historyVersion
     val subjects = remember(version) { state.subjects.getAll() }
+    val scope = rememberCoroutineScope()
     var message by remember { mutableStateOf<String?>(null) }
     var editing by remember { mutableStateOf<Subject?>(null) }
     var confirmRestore by remember { mutableStateOf(false) }
@@ -67,20 +75,24 @@ fun SettingsScreen(state: AppState, files: FileAccess) {
             )
         }
         item {
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Button(onClick = {
-                    runCatching {
-                        val name = "revision-backup-${localDate(systemNow())}.json"
-                        val path = files.saveText(name, state.backup.export())
-                        message = if (path == null) "Export cancelled." else "Saved to $path"
-                    }.onFailure { message = "Export failed: ${it.message}" }
+                    scope.launch {
+                        runCatching {
+                            val name = "revision-backup-${localDate(systemNow())}.json"
+                            val path = files.saveText(name, state.backup.export())
+                            message = if (path == null) "Export cancelled." else "Saved to $path"
+                        }.onFailure { message = "Export failed: ${it.message}" }
+                    }
                 }) { Text("Export to file…") }
                 OutlinedButton(onClick = {
-                    runCatching {
-                        val text = files.openText()
-                        if (text == null) message = "Import cancelled."
-                        else { message = "Imported: " + state.backup.import(text); state.dataChanged() }
-                    }.onFailure { message = it.message ?: "Import failed." }
+                    scope.launch {
+                        runCatching {
+                            val text = files.openText()
+                            if (text == null) message = "Import cancelled."
+                            else { message = "Imported: " + state.backup.import(text); state.dataChanged() }
+                        }.onFailure { message = it.message ?: "Import failed." }
+                    }
                 }) { Text("Import from file…") }
             }
         }
@@ -97,7 +109,7 @@ fun SettingsScreen(state: AppState, files: FileAccess) {
         item { HorizontalDivider(Modifier.padding(vertical = 8.dp)) }
         item { Text("Reset", style = MaterialTheme.typography.titleMedium) }
         item {
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 OutlinedButton(onClick = { confirmRestore = true }) { Text("Restore starting topics") }
                 OutlinedButton(onClick = { confirmReset = true }) { Text("Erase everything…", color = MaterialTheme.colorScheme.error) }
             }

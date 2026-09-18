@@ -17,3 +17,4 @@ rootProject.name = "revision"
 
 include(":core")
 include(":composeApp")
+include(":androidApp")

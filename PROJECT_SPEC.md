@@ -127,6 +127,13 @@ revision/
   PROJECT_SPEC.md                    <- this file
 ```
 
+> **Implementation note (Phase 5):** Compose 1.12 requires AGP 9.1+, and AGP 9 no longer lets one
+> module be both the Android app and the shared Kotlin Multiplatform module. So the layout is:
+> `core` and `composeApp` are shared libraries (`com.android.kotlin.multiplatform.library` +
+> `jvm("desktop")`), and a thin `androidApp` module holds only `MainActivity`, the manifest and
+> `AndroidFileAccess`. Shared UI lives in package `revision.app` (Kotlin can't share the unnamed
+> default package across modules). Versions: AGP 9.3.1, Kotlin 2.4.20.
+
 **Rule: all UI goes in `composeApp/src/commonMain`.** Platform-specific source
 sets should contain only the entry point and the database driver. If a screen is
 being written twice, something has gone wrong.
@@ -802,8 +809,8 @@ Build one or the other — not both.
 ./gradlew :composeApp:packageDistributionForCurrentOS
 
 # Android
-./gradlew :composeApp:assembleDebug
-adb install -r composeApp/build/outputs/apk/debug/composeApp-debug.apk
+./gradlew :androidApp:assembleDebug
+adb install -r androidApp/build/outputs/apk/debug/androidApp-debug.apk
 
 # Tests — the ones that matter
 ./gradlew :core:allTests
