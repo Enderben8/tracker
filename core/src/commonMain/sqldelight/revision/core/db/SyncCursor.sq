@@ -1,0 +1,12 @@
+-- How far this device has read into each OTHER device's change log (spec 9.3).
+CREATE TABLE sync_cursor (
+    device_id  TEXT NOT NULL PRIMARY KEY,
+    last_seq   INTEGER NOT NULL,
+    generation INTEGER NOT NULL DEFAULT 0
+);
+
+selectAll:
+SELECT * FROM sync_cursor;
+
+upsert:
+INSERT OR REPLACE INTO sync_cursor(device_id, last_seq, generation) VALUES (?, ?, ?);

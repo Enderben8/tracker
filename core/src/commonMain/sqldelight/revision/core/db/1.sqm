@@ -1,0 +1,6 @@
+-- Migration from schema version 1 to 2: adds the sync cursor table.
+CREATE TABLE sync_cursor (
+    device_id  TEXT NOT NULL PRIMARY KEY,
+    last_seq   INTEGER NOT NULL,
+    generation INTEGER NOT NULL DEFAULT 0
+);

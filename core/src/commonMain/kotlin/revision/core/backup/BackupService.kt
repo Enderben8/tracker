@@ -87,7 +87,7 @@ class BackupService(private val db: RevisionDatabase, private val now: Now) {
             segments = db.sessionQueries.exportSegments().executeAsList().filter { it.session_topic_id in stIds }
                 .map { SegmentRow(it.id, it.session_topic_id, it.started_at, it.ended_at, it.updated_at, it.deleted) },
             settings = db.settingQueries.exportAll().executeAsList()
-                .filter { it.key != "heartbeat" }
+                .filter { !revision.core.sync.DeviceSettings.isLocal(it.key) }
                 .map { SettingRow(it.key, it.value_, it.updated_at) },
         )
         return json.encodeToString(BackupFile.serializer(), file)

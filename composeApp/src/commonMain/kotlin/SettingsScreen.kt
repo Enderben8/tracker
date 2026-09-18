@@ -36,7 +36,7 @@ import revision.core.systemNow
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun SettingsScreen(state: AppState, files: FileAccess) {
+fun SettingsScreen(state: AppState, files: FileAccess, sync: SyncManager) {
     val version = state.historyVersion
     val subjects = remember(version) { state.subjects.getAll() }
     val scope = rememberCoroutineScope()
@@ -99,6 +99,45 @@ fun SettingsScreen(state: AppState, files: FileAccess) {
         message?.let { m -> item { Text(m, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.primary) } }
 
         item { HorizontalDivider(Modifier.padding(vertical = 8.dp)) }
+        item { Text("Sync between devices", style = MaterialTheme.typography.titleMedium) }
+        item {
+            Text(
+                "Keeps this device and your other one in step through a shared OneDrive folder. Only small change logs are shared - " +
+                    "the database itself stays on each device and is never put in OneDrive. If OneDrive is unreachable, everything carries on locally.",
+                style = MaterialTheme.typography.bodySmall,
+            )
+        }
+        if (!sync.available) {
+            item { Text("Sync isn't available in this build.", style = MaterialTheme.typography.bodyMedium) }
+        } else {
+            item {
+                Text(
+                    sync.location?.let { "Folder: " + sync.describe(it) } ?: "No folder chosen yet.",
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+            }
+            item {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    val suggested = sync.suggested()
+                    if (suggested != null && sync.location == null) {
+                        Button(onClick = { message = sync.use(suggested) ?: "Using $suggested" }) { Text("Use my OneDrive folder") }
+                    }
+                    OutlinedButton(onClick = { scope.launch { sync.chooseAndUse()?.let { message = it } } }) { Text("Choose folder…") }
+                    if (sync.location != null) {
+                        OutlinedButton(enabled = !sync.busy, onClick = { sync.checkFolder() }) { Text("Test folder") }
+                        if (sync.enabled) {
+                            Button(enabled = !sync.busy, onClick = { sync.syncNow() }) { Text("Sync now") }
+                            OutlinedButton(onClick = { sync.turnOff() }) { Text("Turn off") }
+                        } else {
+                            Button(onClick = { sync.turnOn() }) { Text("Turn on sync") }
+                        }
+                    }
+                }
+            }
+            item { Text(sync.status, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.primary) }
+        }
+
+        item { HorizontalDivider(Modifier.padding(vertical = 8.dp)) }
         item {
             TextButton(onClick = { showAdvanced = !showAdvanced }) {
                 Text(if (showAdvanced) "▾ Advanced: \"revise next\" weighting" else "▸ Advanced: \"revise next\" weighting")
@@ -116,6 +155,7 @@ fun SettingsScreen(state: AppState, files: FileAccess) {
         }
     }
 
+    sync.lastCheck?.let { steps -> FolderCheckDialog(steps, onDismiss = { sync.dismissCheck() }) }
     editing?.let { SubjectEditDialog(state, it) { editing = null } }
     if (confirmRestore) ConfirmDialog(
         title = "Restore starting topics?",
@@ -199,4 +239,26 @@ private fun AdvancedWeights(state: AppState) {
         }
         note?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
     }
+}
+
+@Composable
+private fun FolderCheckDialog(steps: List<revision.core.sync.CheckStep>, onDismiss: () -> Unit) {
+    val allOk = steps.isNotEmpty() && steps.all { it.ok }
+    androidx.compose.material3.AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(if (allOk) "This folder works for sync" else "This folder is not reliable for sync") },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                steps.forEach { s ->
+                    Text(
+                        (if (s.ok) "✓ " else "✗ ") + s.name + (if (s.detail.isNotBlank()) " - ${s.detail}" else "") + "  (${s.ms} ms)",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = if (s.ok) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.error,
+                    )
+                }
+                if (!allOk) Text("Don't turn sync on with this folder. Try another location, and send me this list.", style = MaterialTheme.typography.bodySmall)
+            }
+        },
+        confirmButton = { Button(onClick = onDismiss) { Text("OK") } },
+    )
 }

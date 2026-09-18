@@ -25,6 +25,7 @@ dependencies {
     implementation(project(":composeApp"))
     implementation(project(":core"))
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.documentfile)
     implementation(libs.compose.runtime)
     implementation(libs.compose.foundation)
     implementation(libs.compose.material3)

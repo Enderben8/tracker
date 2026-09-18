@@ -34,6 +34,7 @@ object Seeder {
 
     private fun seed(db: RevisionDatabase, timestamp: Long) {
         db.transaction {
+            db.settingQueries.put("seeded_at", timestamp.toString(), timestamp)
             allSeedSubjects.forEachIndexed { index, subject ->
                 val subjectId = subjectId(subject.key)
                 db.subjectQueries.insert(

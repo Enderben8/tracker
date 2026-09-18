@@ -10,7 +10,38 @@ status note; delete it once stale.
 - **Phase 2 (timer + history): done, committed.**
 - **Phase 3 (scheduler + Today screen): done, committed.**
 - **Phase 4 (management, stats, settings, backup): done, committed.**
-- **Phase 5 (Android): APK builds; not yet installed on a phone. Awaiting user check-in** before Phase 6 (sync).
+- **Phase 5 (Android): done, committed, installed on the user's phone (Samsung S921B, Android 16).**
+- **Phase 6 (sync): engine + UI built and tested; the Android/OneDrive spike (spec 9.4a) still needs the user to
+  run "Test folder" on the phone. Awaiting the spike result** before recommending the user turn sync on.
+
+### Phase 6 summary
+
+- `core/sync/SyncEngine.kt` implements spec 9 exactly: per-device append-only log
+  `devices/<device-id>.jsonl` (each device writes ONLY its own file), header line with `generation`,
+  per-device cursors in the new `sync_cursor` table (schema v2 via `1.sqm`; migration tested), last-write-wins
+  on `updated_at` with ties to the higher device id, soft deletes travel, compaction >5MB (own file only,
+  generation bump makes readers restart), daily snapshots to `snapshots/` (own only, keeps 5).
+  Pull applies records in dependency order across all files; a record whose parent hasn't arrived stops that
+  device's cursor (retried next time) and is reported as "waiting". Running sessions are never pushed; when a
+  session finishes its older topic/segment rows go with it. Rows just pulled are not echoed back. First push skips
+  rows still exactly as seeded (`seeded_at`). Device-local settings (`device_id`, `seeded_at`, `heartbeat`,
+  `sync.*`) never sync or export (`DeviceSettings.isLocal`). A garbled log line is skipped, not fatal.
+- `SyncFolder` interface (list/read/write/delete). Desktop: `FileSyncFolder` (atomic temp-file+move, IO
+  dispatcher, refuses a folder containing the DB). Android: `SafSyncFolder` (androidx.documentfile, "wt"
+  truncating writes) via `ActivityResultContracts.OpenDocumentTree` + persisted permission.
+- `SyncFolderCheck` is the spike: list/create/find/read-back/overwrite-longer/overwrite-SHORTER/delete with timings;
+  surfaced as Settings -> Sync -> "Test folder" on both platforms. The shorter-overwrite step detects providers
+  that append or leave stale bytes.
+- `SyncManager` (composeApp): background only, never blocks the timer; push 30s after the last change; pull on
+  start + every 2 min; failures show a calm message and retry. NOT done: push on app close (changes in the last
+  30s wait for next launch), sync on Android resume.
+- Facts checked on the phone (read-only adb): OneDrive 7.50 is installed and registers
+  `com.microsoft.skydrive/.content.StorageAccessProvider` as a DOCUMENTS_PROVIDER, so route (a) is plausible.
+  Whether tree access + writes are reliable is unproven until "Test folder" is run on the phone.
+- Fallback if the SAF route fails the check (spec 9.4b): Microsoft Graph + MSAL (needs the user to register a free
+  Entra app). Build one route only. Another fallback: use export/import as the transport.
+- Tests: 104 total, all pass (SyncTest: 2 devices + fake shared folder incl. no-two-writers, tie-break,
+  compaction, waiting parents, garbage lines, snapshots, migration; FileSyncFolderTest on a real temp dir).
 
 ### Phase 5 summary
 

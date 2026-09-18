@@ -18,12 +18,13 @@ class MainActivity : ComponentActivity() {
         val db = DatabaseFactory.open(this)
         Seeder.seedIfEmpty(db, systemNow)
         val files = AndroidFileAccess(this)
+        val syncPlatform = AndroidSyncPlatform(this)
 
         setContent {
             val state = remember { AppState(db) }
             // Back returns to Today first; back on Today leaves the app as usual.
             BackHandler(enabled = state.screen != Screen.Today) { state.screen = Screen.Today }
-            App(db, files, state)
+            App(db, files, syncPlatform, state)
         }
     }
 }

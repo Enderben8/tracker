@@ -20,7 +20,7 @@ fun main() {
             icon = LogoPainter(),
             state = rememberWindowState(size = DpSize(1000.dp, 800.dp)),
         ) {
-            App(db, DesktopFileAccess())
+            App(db, DesktopFileAccess(), DesktopSyncPlatform())
         }
     }
 }

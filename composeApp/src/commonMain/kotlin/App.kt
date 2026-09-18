@@ -45,7 +45,16 @@ import revision.core.formatTimeOfDay
 val LocalCompact = compositionLocalOf { false }
 
 @Composable
-fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, state: AppState = androidx.compose.runtime.remember { AppState(db) }) {
+fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, syncPlatform: SyncPlatform = NoSyncPlatform, state: AppState = androidx.compose.runtime.remember { AppState(db) }) {
+
+    val scope = androidx.compose.runtime.rememberCoroutineScope()
+    val sync = androidx.compose.runtime.remember { SyncManager(db, syncPlatform, scope) }
+    LaunchedEffect(Unit) {
+        if (sync.enabled) sync.syncNow()
+        sync.pollLoop()
+    }
+    LaunchedEffect(state.historyVersion) { sync.changed() }
+    LaunchedEffect(sync.pulledVersion) { if (sync.pulledVersion > 0) state.dataChanged() }
 
     // Redraw once a second. Elapsed time is recomputed from stored timestamps each time,
     // so a missed tick (sleep, lag) cannot make the clock wrong.
@@ -78,7 +87,7 @@ fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, state: AppState 
                         Screen.LogPast -> LogPastScreen(state)
                         Screen.Topics -> ManageScreen(state)
                         Screen.Stats -> StatsScreen(state)
-                        Screen.Settings -> SettingsScreen(state, files)
+                        Screen.Settings -> SettingsScreen(state, files, sync)
                     }
                 }
                 NavigationBar {
