@@ -6,8 +6,30 @@ status note; delete it once stale.
 ## Status
 
 - **Phase 0 (toolchain): done, committed.**
-- **Phase 1 (data layer): done, committed. Awaiting user check-in** (spec §13)
-  before starting Phase 2 (timer + history list).
+- **Phase 1 (data layer): done, committed.**
+- **Phase 2 (timer + history): done, committed. Awaiting user check-in** (spec §13)
+  before Phase 3 (scheduler + Today screen).
+
+### Phase 2 summary
+
+- Core logic (tested, 12 tests in `SessionServiceTest`): `timer/SessionService.kt`
+  (start, switchTo, pause/resume, addTopic, stop w/ ratings, heartbeat, crash
+  recovery) and `timer/HistoryService.kt` (list, delete, fix duration, manual log).
+  Elapsed time is always derived from stored segment timestamps.
+- Crash recovery: a heartbeat is stored every 15s while running. On launch, an open
+  segment => dialog (Resume / Save as-is / Discard); time is dated to the last
+  heartbeat, never counting the dead period. >4h gap defaults the dialog to Discard.
+  A session that was merely paused is restored silently.
+- UI (all `composeApp/src/commonMain`): `AppState.kt`, `App.kt` (nav + banner +
+  recovery dialog), `TimerScreen.kt`, `TopicPicker.kt` (searchable tree, leaves only),
+  `HistoryScreen.kt` (+ Log past session). Verified by driving the real app with
+  mouse clicks + screenshots: start, switch topic, banner on History, kill -> relaunch
+  -> recovery dialog -> resume -> stop -> rate -> History.
+- NOT yet done in Phase 2: SM-2 update on stop (that is Phase 3 §7.1 — ratings are
+  stored but `topic_state` is not touched yet); light-theme visual check; the
+  manual-log form is cramped once topics are ticked (picker shrinks) — polish later.
+- Known small gaps: session-level notes can't be edited after saving (only topic
+  durations can); History has no "edit rating" UI (service method `setRating` exists).
 
 `./gradlew :core:allTests` → 10 tests pass. `./gradlew :composeApp:run` opens a
 window reporting "9 subjects and 415 topics"; the database is created at

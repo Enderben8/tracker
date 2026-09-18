@@ -71,7 +71,7 @@ INSERT OR REPLACE INTO session_topic(id, session_id, topic_id, rating, notes, up
 VALUES (?, ?, ?, ?, ?, ?, ?);
 
 selectSessionTopics:
-SELECT * FROM session_topic WHERE session_id = ? AND deleted = 0;
+SELECT * FROM session_topic WHERE session_id = ? AND deleted = 0 ORDER BY rowid;
 
 selectAllSessionTopics:
 SELECT * FROM session_topic WHERE deleted = 0;

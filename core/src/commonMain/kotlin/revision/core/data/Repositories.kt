@@ -139,6 +139,10 @@ class SessionRepository(private val db: RevisionDatabase, private val now: Now) 
     /** Sessions that never got an end time: running now, or left dangling by a crash. */
     fun unfinishedSessions(): List<Session> = q.selectUnfinishedSessions().executeAsList()
 
+    fun finishedSessions(): List<Session> = q.selectAllSessions().executeAsList().filter { it.ended_at != null }
+
+    fun softDeleteSegments(sessionTopicId: String) = q.softDeleteSegmentsForSessionTopic(now(), sessionTopicId)
+
     fun openSegments(): List<Segment> = q.selectOpenSegments().executeAsList()
 
     fun createSession(subjectId: String, startedAt: Long, isManual: Boolean = false): String {
