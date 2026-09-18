@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "revision"
 
+include(":core")
 include(":composeApp")

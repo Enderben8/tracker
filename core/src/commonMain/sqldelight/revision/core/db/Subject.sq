@@ -1,0 +1,38 @@
+-- A subject: Biology, Maths, French...
+CREATE TABLE subject (
+    id          TEXT NOT NULL PRIMARY KEY,   -- UUID
+    name        TEXT NOT NULL,
+    colour      TEXT NOT NULL,               -- hex, for charts & chips
+    exam_board  TEXT,                        -- 'AQA', 'OCR', nullable
+    exam_date   INTEGER,                     -- epoch millis, nullable
+    sort_order  INTEGER NOT NULL,
+    updated_at  INTEGER NOT NULL,
+    deleted     INTEGER NOT NULL DEFAULT 0
+);
+
+selectAll:
+SELECT * FROM subject WHERE deleted = 0 ORDER BY sort_order, name;
+
+selectById:
+SELECT * FROM subject WHERE id = ?;
+
+countAll:
+SELECT COUNT(*) FROM subject;
+
+insert:
+INSERT OR REPLACE INTO subject(id, name, colour, exam_board, exam_date, sort_order, updated_at, deleted)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+update:
+UPDATE subject
+SET name = ?, colour = ?, exam_board = ?, exam_date = ?, sort_order = ?, updated_at = ?
+WHERE id = ?;
+
+setExamDate:
+UPDATE subject SET exam_date = ?, updated_at = ? WHERE id = ?;
+
+softDelete:
+UPDATE subject SET deleted = 1, updated_at = ? WHERE id = ?;
+
+restore:
+UPDATE subject SET deleted = 0, updated_at = ? WHERE id = ?;

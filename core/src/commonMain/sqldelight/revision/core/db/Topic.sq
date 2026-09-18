@@ -1,0 +1,44 @@
+-- A topic. Self-referencing so guides with sections/sub-topics nest.
+CREATE TABLE topic (
+    id          TEXT NOT NULL PRIMARY KEY,   -- UUID
+    subject_id  TEXT NOT NULL,
+    parent_id   TEXT,                        -- NULL = top level
+    code        TEXT,                        -- 'B1', '2.3', nullable
+    title       TEXT NOT NULL,
+    page_start  INTEGER,                     -- nullable
+    sort_order  INTEGER NOT NULL,
+    notes       TEXT,
+    updated_at  INTEGER NOT NULL,
+    deleted     INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (subject_id) REFERENCES subject(id),
+    FOREIGN KEY (parent_id)  REFERENCES topic(id)
+);
+
+CREATE INDEX topic_subject ON topic(subject_id);
+
+selectAll:
+SELECT * FROM topic WHERE deleted = 0 ORDER BY subject_id, sort_order;
+
+selectBySubject:
+SELECT * FROM topic WHERE subject_id = ? AND deleted = 0 ORDER BY sort_order;
+
+selectById:
+SELECT * FROM topic WHERE id = ?;
+
+countAll:
+SELECT COUNT(*) FROM topic;
+
+insert:
+INSERT OR REPLACE INTO topic(id, subject_id, parent_id, code, title, page_start, sort_order, notes, updated_at, deleted)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+update:
+UPDATE topic
+SET parent_id = ?, code = ?, title = ?, page_start = ?, sort_order = ?, notes = ?, updated_at = ?
+WHERE id = ?;
+
+softDelete:
+UPDATE topic SET deleted = 1, updated_at = ? WHERE id = ?;
+
+restore:
+UPDATE topic SET deleted = 0, updated_at = ? WHERE id = ?;

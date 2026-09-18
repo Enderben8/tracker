@@ -1,0 +1,23 @@
+-- Spaced-repetition state. One row per topic, created lazily on first revision.
+CREATE TABLE topic_state (
+    topic_id        TEXT NOT NULL PRIMARY KEY,
+    last_revised_at INTEGER,                 -- epoch millis, NULL = never
+    due_at          INTEGER,                 -- epoch millis, NULL = never
+    interval_days   REAL NOT NULL DEFAULT 0,
+    ease_factor     REAL NOT NULL DEFAULT 2.5,
+    repetitions     INTEGER NOT NULL DEFAULT 0,
+    confidence      INTEGER,                 -- 1-5, reserved, deliberately unused (spec 7.5)
+    updated_at      INTEGER NOT NULL,
+    deleted         INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (topic_id) REFERENCES topic(id)
+);
+
+selectAll:
+SELECT * FROM topic_state WHERE deleted = 0;
+
+selectByTopic:
+SELECT * FROM topic_state WHERE topic_id = ?;
+
+upsert:
+INSERT OR REPLACE INTO topic_state(topic_id, last_revised_at, due_at, interval_days, ease_factor, repetitions, confidence, updated_at, deleted)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);

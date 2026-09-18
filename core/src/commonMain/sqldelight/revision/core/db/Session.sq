@@ -1,0 +1,134 @@
+-- One sitting. Belongs to exactly one subject.
+CREATE TABLE session (
+    id          TEXT NOT NULL PRIMARY KEY,
+    subject_id  TEXT NOT NULL,
+    started_at  INTEGER NOT NULL,
+    ended_at    INTEGER,                     -- NULL = still running
+    notes       TEXT,
+    is_manual   INTEGER NOT NULL DEFAULT 0,  -- 1 = typed in after the fact
+    updated_at  INTEGER NOT NULL,
+    deleted     INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (subject_id) REFERENCES subject(id)
+);
+
+-- Join row: one per topic covered in a session. Enables multi-topic sessions.
+CREATE TABLE session_topic (
+    id          TEXT NOT NULL PRIMARY KEY,
+    session_id  TEXT NOT NULL,
+    topic_id    TEXT NOT NULL,
+    rating      INTEGER,                     -- 1-5, set on stop
+    notes       TEXT,
+    updated_at  INTEGER NOT NULL,
+    deleted     INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (session_id) REFERENCES session(id),
+    FOREIGN KEY (topic_id)   REFERENCES topic(id)
+);
+
+-- A contiguous run of the clock against ONE topic.
+CREATE TABLE segment (
+    id               TEXT NOT NULL PRIMARY KEY,
+    session_topic_id TEXT NOT NULL,
+    started_at       INTEGER NOT NULL,
+    ended_at         INTEGER,                -- NULL = currently running
+    updated_at       INTEGER NOT NULL,
+    deleted          INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (session_topic_id) REFERENCES session_topic(id)
+);
+
+CREATE INDEX session_topic_session ON session_topic(session_id);
+CREATE INDEX session_topic_topic ON session_topic(topic_id);
+CREATE INDEX segment_session_topic ON segment(session_topic_id);
+
+-- ---------- sessions ----------
+
+insertSession:
+INSERT OR REPLACE INTO session(id, subject_id, started_at, ended_at, notes, is_manual, updated_at, deleted)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+selectSessionById:
+SELECT * FROM session WHERE id = ?;
+
+selectAllSessions:
+SELECT * FROM session WHERE deleted = 0 ORDER BY started_at DESC;
+
+-- Sessions with no ended_at: a running session, or one left dangling by a crash.
+selectUnfinishedSessions:
+SELECT * FROM session WHERE ended_at IS NULL AND deleted = 0 ORDER BY started_at;
+
+finishSession:
+UPDATE session SET ended_at = ?, notes = ?, updated_at = ? WHERE id = ?;
+
+updateSessionTimes:
+UPDATE session SET started_at = ?, ended_at = ?, notes = ?, updated_at = ? WHERE id = ?;
+
+softDeleteSession:
+UPDATE session SET deleted = 1, updated_at = ? WHERE id = ?;
+
+-- ---------- session topics ----------
+
+insertSessionTopic:
+INSERT OR REPLACE INTO session_topic(id, session_id, topic_id, rating, notes, updated_at, deleted)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+selectSessionTopics:
+SELECT * FROM session_topic WHERE session_id = ? AND deleted = 0;
+
+selectAllSessionTopics:
+SELECT * FROM session_topic WHERE deleted = 0;
+
+setSessionTopicRating:
+UPDATE session_topic SET rating = ?, notes = ?, updated_at = ? WHERE id = ?;
+
+softDeleteSessionTopic:
+UPDATE session_topic SET deleted = 1, updated_at = ? WHERE id = ?;
+
+-- ---------- segments ----------
+
+insertSegment:
+INSERT OR REPLACE INTO segment(id, session_topic_id, started_at, ended_at, updated_at, deleted)
+VALUES (?, ?, ?, ?, ?, ?);
+
+selectSegmentsForSession:
+SELECT segment.* FROM segment
+JOIN session_topic ON session_topic.id = segment.session_topic_id
+WHERE session_topic.session_id = ? AND segment.deleted = 0 AND session_topic.deleted = 0
+ORDER BY segment.started_at;
+
+selectOpenSegments:
+SELECT * FROM segment WHERE ended_at IS NULL AND deleted = 0;
+
+closeSegment:
+UPDATE segment SET ended_at = ?, updated_at = ? WHERE id = ?;
+
+softDeleteSegmentsForSessionTopic:
+UPDATE segment SET deleted = 1, updated_at = ? WHERE session_topic_id = ?;
+
+-- ---------- derived totals (never cached; spec 5.3) ----------
+
+-- Milliseconds per topic. An open segment counts up to :now.
+totalsByTopic:
+SELECT session_topic.topic_id AS topic_id,
+       SUM(COALESCE(segment.ended_at, :now) - segment.started_at) AS total_ms
+FROM segment
+JOIN session_topic ON session_topic.id = segment.session_topic_id
+JOIN session ON session.id = session_topic.session_id
+WHERE segment.deleted = 0 AND session_topic.deleted = 0 AND session.deleted = 0
+GROUP BY session_topic.topic_id;
+
+-- Last time each topic appeared in a session (for "last revised").
+lastRevisedByTopic:
+SELECT session_topic.topic_id AS topic_id, MAX(session.started_at) AS last_at
+FROM session_topic
+JOIN session ON session.id = session_topic.session_id
+WHERE session_topic.deleted = 0 AND session.deleted = 0
+GROUP BY session_topic.topic_id;
+
+-- Every segment with its subject, for per-day / per-subject totals.
+segmentsWithSubject:
+SELECT session.subject_id AS subject_id,
+       segment.started_at AS started_at,
+       COALESCE(segment.ended_at, :now) AS ended_at
+FROM segment
+JOIN session_topic ON session_topic.id = segment.session_topic_id
+JOIN session ON session.id = session_topic.session_id
+WHERE segment.deleted = 0 AND session_topic.deleted = 0 AND session.deleted = 0;
