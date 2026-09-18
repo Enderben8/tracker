@@ -93,6 +93,8 @@ data class Candidate(
     /** Start of the exam day, epoch millis; null if not set yet. */
     val examDate: Long?,
     val state: SrsState?,
+    /** Where it sits in the subject, e.g. "Unit 1 › Section A › Tectonic hazards"; empty at top level. */
+    val context: String = "",
 )
 
 data class Suggestion(
@@ -104,14 +106,24 @@ data class Suggestion(
     /** One line saying why it is here, from whichever signal contributed most. */
     val reason: String,
     val lastRevisedAt: Long?,
+    val context: String = "",
 )
 
 /** Pure ranking: snapshot in, sorted list out. No database, no clock. */
 object Scheduler {
 
-    fun rank(candidates: List<Candidate>, now: Long, config: SchedulerConfig = SchedulerConfig()): List<Suggestion> {
+    /**
+     * [includePassedExams] is for browsing ONE subject: the overall queue hides a subject whose exam is
+     * over, but someone looking inside that subject may still want its topics ranked.
+     */
+    fun rank(
+        candidates: List<Candidate>,
+        now: Long,
+        config: SchedulerConfig = SchedulerConfig(),
+        includePassedExams: Boolean = false,
+    ): List<Suggestion> {
         val scored = candidates
-            .filterNot { examHasPassed(it.examDate, now) } // a finished subject has nothing left to revise
+            .filterNot { !includePassedExams && examHasPassed(it.examDate, now) } // a finished subject has nothing left to revise
             .map { score(it, now, config) }
             .sortedWith(compareByDescending<Suggestion> { it.score }.thenBy { it.topicId }) // ties are deterministic
 
@@ -167,7 +179,7 @@ object Scheduler {
             else -> "due for a refresh"
         }
 
-        return Suggestion(c.topicId, c.subjectId, c.subjectName, c.title, total, reason, st?.lastRevisedAt)
+        return Suggestion(c.topicId, c.subjectId, c.subjectName, c.title, total, reason, st?.lastRevisedAt, c.context)
     }
 
     private fun overdueText(days: Double): String {

@@ -29,19 +29,40 @@ class TodayService(
     private val states = TopicStateRepository(db)
     private val sessions = SessionRepository(db, now)
 
-    fun suggestions(nowMs: Long = now()): List<Suggestion> {
+    /** Every revisable (leaf) topic of every live subject, with its schedule state and place in the tree. */
+    private fun candidates(): List<Candidate> {
         val subjectById = subjects.getAll().associateBy { it.id }   // archived subjects are already excluded
         val allTopics = topics.getAll().filter { it.subject_id in subjectById }
+        val byId = allTopics.associateBy { it.id }
         val parents = allTopics.mapNotNull { it.parent_id }.toSet()
         val stateById = states.getAll().associate { it.topic_id to it.toSrs() }
 
-        val candidates = allTopics
+        fun contextOf(topicId: String): String {
+            val names = mutableListOf<String>()
+            var cursor = byId[topicId]?.parent_id?.let { byId[it] }
+            while (cursor != null) { names += cursor.title; cursor = cursor.parent_id?.let { byId[it] } }
+            return names.asReversed().joinToString(" › ")
+        }
+
+        return allTopics
             .filter { it.id !in parents } // only leaves: a grouping is not something you revise
             .map {
                 val subject = subjectById.getValue(it.subject_id)
-                Candidate(it.id, subject.id, subject.name, it.title, subject.exam_date, stateById[it.id])
+                Candidate(it.id, subject.id, subject.name, it.title, subject.exam_date, stateById[it.id], contextOf(it.id))
             }
-        return Scheduler.rank(candidates, nowMs, configProvider())
+    }
+
+    /** The overall "revise next" queue: a few from each subject, so no one subject takes over. */
+    fun suggestions(nowMs: Long = now()): List<Suggestion> =
+        Scheduler.rank(candidates(), nowMs, configProvider())
+
+    /**
+     * "Revise next" inside one subject: the same ranking, but without the per-subject cap (it is
+     * all one subject) and still shown if that subject's exam has passed.
+     */
+    fun suggestionsForSubject(subjectId: String, limit: Int = 12, nowMs: Long = now()): List<Suggestion> {
+        val config = configProvider().copy(queueSize = limit, maxPerSubject = limit)
+        return Scheduler.rank(candidates().filter { it.subjectId == subjectId }, nowMs, config, includePassedExams = true)
     }
 
     fun timeSummary(nowMs: Long = now(), zone: TimeZone = TimeZone.currentSystemDefault()): TimeSummary {

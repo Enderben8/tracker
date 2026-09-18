@@ -44,6 +44,8 @@ class AppState(val db: RevisionDatabase) {
     var screen by mutableStateOf(Screen.Today)
     /** The subject chosen on the Topics screen; kept here so it survives switching tabs. */
     var manageSubjectId by mutableStateOf<String?>(null)
+    /** The subject chosen on the Timer screen; kept so it survives switching tabs. */
+    var timerSubjectId by mutableStateOf<String?>(null)
     var active by mutableStateOf<ActiveSession?>(null)
         private set
     var dangling by mutableStateOf<DanglingSession?>(null)

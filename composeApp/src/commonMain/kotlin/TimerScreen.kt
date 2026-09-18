@@ -47,12 +47,12 @@ fun TimerScreen(state: AppState) {
 @Composable
 private fun SetupView(state: AppState) {
     val subjects = remember { state.subjects.getAll() }
-    var subjectId by remember { mutableStateOf<String?>(null) }
+    var subjectId by state::timerSubjectId
     var selected by remember { mutableStateOf(setOf<String>()) }
 
     Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Text("Start a session", style = MaterialTheme.typography.headlineSmall)
-        Text("Pick a subject, then one or more topics from it.", style = MaterialTheme.typography.bodyMedium)
+        Text("Pick a subject - you will see what to revise next in it - then tick one or more topics.", style = MaterialTheme.typography.bodyMedium)
 
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             subjects.forEach { s ->
@@ -68,11 +68,13 @@ private fun SetupView(state: AppState) {
         val id = subjectId
         if (id != null) {
             val topics = remember(id) { state.topics.getBySubject(id) }
+            val suggestions = remember(id, state.historyVersion) { state.today.suggestionsForSubject(id) }
             TopicPicker(
                 topics = topics,
                 selected = selected,
                 onToggle = { t -> selected = if (t in selected) selected - t else selected + t },
                 modifier = Modifier.weight(1f),
+                suggestions = suggestions,
             )
             Button(
                 onClick = {
@@ -139,6 +141,7 @@ private fun RunningView(state: AppState, active: ActiveSession) {
 private fun AddTopicDialog(state: AppState, active: ActiveSession, onDismiss: () -> Unit) {
     val topics = remember(active.subjectId) { state.topics.getBySubject(active.subjectId) }
     val already = active.topics.map { it.topicId }.toSet()
+    val suggestions = remember(active.subjectId, state.historyVersion) { state.today.suggestionsForSubject(active.subjectId) }
     var selected by remember { mutableStateOf(setOf<String>()) }
 
     AlertDialog(
@@ -151,6 +154,7 @@ private fun AddTopicDialog(state: AppState, active: ActiveSession, onDismiss: ()
                 onToggle = { t -> selected = if (t in selected) selected - t else selected + t },
                 excludeIds = already,
                 modifier = Modifier.height(420.dp).fillMaxWidth(),
+                suggestions = suggestions,
             )
         },
         confirmButton = {

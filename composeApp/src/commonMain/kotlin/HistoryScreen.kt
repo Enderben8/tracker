@@ -193,12 +193,14 @@ fun LogPastScreen(state: AppState, initialSubjectId: String? = null, initialSele
 
             if (id != null) {
                 val topics = remember(id) { state.topics.getBySubject(id) }
+                val suggestions = remember(id, state.historyVersion) { state.today.suggestionsForSubject(id) }
                 Text("2. Topics (tick one or more)", style = MaterialTheme.typography.titleSmall)
                 TopicPicker(
                     topics = topics,
                     selected = selected.toSet(),
                     onToggle = { t -> selected = if (t in selected) selected - t else selected + t; error = null },
                     modifier = Modifier.height(260.dp).fillMaxWidth(),
+                    suggestions = suggestions,
                 )
                 if (selected.isNotEmpty()) {
                     Text("3. Minutes for each topic (required), and a rating if you like", style = MaterialTheme.typography.titleSmall)

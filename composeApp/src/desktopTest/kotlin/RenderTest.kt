@@ -122,4 +122,10 @@ class RenderTest {
             File("build/screenshots/phone-logpast.png").also { it.parentFile.mkdirs() }.writeBytes(bytes)
         } finally { scene.close() }
     }
+
+    @Test fun phoneTimerSubjectShowsReviseNextByDefault() =
+        render("phone-timer-subject", sampleDb(), phone = true) { it.screen = Screen.Timer; it.timerSubjectId = "seed:biology" }
+
+    @Test fun phoneTimerGeographyShowsContext() =
+        render("phone-timer-geography", sampleDb(), phone = true) { it.screen = Screen.Timer; it.timerSubjectId = "seed:geography" }
 }

@@ -111,4 +111,49 @@ class SchedulingIntegrationTest {
         assertEquals(7, summary.days.size)
         assertEquals(25 * minute, summary.last7Ms)
     }
+
+    @Test
+    fun revisingWithinASubjectIsRankedOnlyFromThatSubject_andIsNotCappedAtThree() {
+        val list = today.suggestionsForSubject("seed:biology", limit = 12)
+        assertEquals(12, list.size)
+        assertTrue(list.all { it.subjectId == "seed:biology" })
+        assertEquals(list.sortedByDescending { it.score }.map { it.topicId }.toSet(), list.map { it.topicId }.toSet())
+        // the overall queue still limits each subject to three
+        assertTrue(today.suggestions().groupBy { it.subjectId }.values.all { it.size <= 3 })
+    }
+
+    @Test
+    fun aTopicYouJustRevisedDropsOutOfTheSubjectsList() {
+        val first = today.suggestionsForSubject("seed:biology", limit = 12).first().topicId
+        val id = sessions.start("seed:biology", listOf(first), clock)
+        clock += 10 * minute
+        sessions.stop(id, mapOf(sessions.active(clock)!!.topics[0].sessionTopicId to TopicRating(5)), at = clock)
+        assertTrue(today.suggestionsForSubject("seed:biology", limit = 12).none { it.topicId == first })
+    }
+
+    @Test
+    fun anOverdueTopicComesFirstWithinItsSubject() {
+        val overdue = bio[3].id
+        val id = sessions.start("seed:biology", listOf(overdue), clock)
+        clock += 10 * minute
+        sessions.stop(id, mapOf(sessions.active(clock)!!.topics[0].sessionTopicId to TopicRating(2)), at = clock)   // due in 1 day
+        clock += 5 * DAY_MS
+        val top = today.suggestionsForSubject("seed:biology", limit = 5, nowMs = clock).first()
+        assertEquals(overdue, top.topicId)
+        assertTrue(top.reason.contains("overdue"), top.reason)
+    }
+
+    @Test
+    fun aSubjectWhoseExamHasPassedCanStillBeBrowsed() {
+        SubjectRepository(db, now).setExamDate("seed:physics", clock - 3 * DAY_MS)
+        assertTrue(today.suggestions().none { it.subjectId == "seed:physics" })
+        assertEquals(12, today.suggestionsForSubject("seed:physics", limit = 12).size)
+    }
+
+    @Test
+    fun suggestionsSayWhereATopicSitsInTheSubject() {
+        val geo = today.suggestionsForSubject("seed:geography", limit = 40)
+        assertTrue(geo.any { it.context.contains(" › ") }, "nested topics should show their chapter/section")
+        assertTrue(today.suggestionsForSubject("seed:biology", limit = 5).all { it.context.isEmpty() }, "flat lists have no context")
+    }
 }
