@@ -16,6 +16,13 @@ status note; delete it once stale.
 
 ### Phase 6 summary
 
+**Status 2026-09-18: sync is LIVE between the user's PC and phone via Google Drive** (folder `My Drive/RevisionTracker`),
+verified both directions with manual sessions. Drive space: ~0.8 MB total. Kept small on purpose: log compaction at 1 MB
+(only if 1.5x bigger than after the last compaction), snapshots are compact JSON, weekly, keep 3 per device (best-effort:
+a failing snapshot never fails a sync). Drive allows duplicate folder names; the two devices once each created a
+`snapshots` folder at the same moment - merged by hand. Known: PC app must be open (or launched) to sync; the PC app
+syncs on launch and every 2 min; changes in the last 30s before closing wait for the next launch.
+
 **Transport changed 2026-09-18: the user chose Google Drive, not OneDrive.** The design needed no change (any
 shared folder works). Checked read-only: the phone has the Drive app (`com.google.android.apps.docs` v2.26) which
 registers a DOCUMENTS_PROVIDER; the PC had no Drive client, so Google Drive for desktop was installed with winget

@@ -239,6 +239,50 @@ class SyncTest {
     }
 
     @Test
+    fun aFailingSnapshotDoesNotFailTheSync() {
+        val a = device(snapshotEveryMs = 0, wrap = { inner ->
+            object : SyncFolder by inner {
+                override suspend fun write(dir: String, name: String, text: String) {
+                    if (dir == SyncFolder.SNAPSHOTS) error("snapshot folder unavailable")
+                    inner.write(dir, name, text)
+                }
+            }
+        })
+        val b = device()
+        a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[0].id, 15, 4)), null)
+        t += minute
+        a.sync()   // must not throw
+        b.sync()
+        assertEquals(15 * minute, b.history.load().single().totalMs)
+    }
+
+    @Test
+    fun automaticSnapshotsAreCompact() {
+        val a = device(snapshotEveryMs = 0)
+        a.sync()
+        val snap = shared.files.entries.first { it.key.startsWith("snapshots/") }.value
+        val pretty = revision.core.backup.BackupService(a.db, a.now).export(pretty = true)
+        assertTrue(snap.length < pretty.length * 3 / 4, "snapshot ${snap.length} vs pretty ${pretty.length}")
+    }
+
+    @Test
+    fun aLogThatStaysBigAfterCompactionDoesNotRestartEveryDeviceOnEveryPush() {
+        val a = device(compactBytes = 3_000)
+        val b = device()
+        repeat(30) { i ->
+            // many DIFFERENT rows, so compaction cannot shrink the log below the threshold
+            a.editor.addMany("seed:maths", null, listOf("Extra topic number $i"))
+            t += minute
+            a.sync()
+        }
+        val generation = shared.files.entries.first { it.key.startsWith("devices/${a.engine.deviceId}") }.value
+            .lines().first().substringAfter("\"generation\":").substringBefore('}').toLong()
+        assertTrue(generation < 12, "compaction should not fire on every push (generation=$generation)")
+        b.sync()
+        assertEquals(30, revision.core.data.TopicRepository(b.db, b.now).getBySubject("seed:maths").count { it.title.startsWith("Extra topic number") })
+    }
+
+    @Test
     fun aRunningSessionNeverAppearsInASnapshot() {
         val a = device(snapshotEveryMs = 0)
         a.sessions.start("seed:biology", listOf(a.bio()[0].id), t)

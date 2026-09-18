@@ -56,9 +56,11 @@ class SyncEngine(
     private val db: RevisionDatabase,
     private val now: Now,
     private val folder: SyncFolder,
-    private val compactBytes: Long = 5_000_000L,
-    private val snapshotEveryMs: Long = 24 * 3_600_000L,
-    private val snapshotsToKeep: Int = 5,
+    // Kept small on purpose: this lives in the user's cloud storage. A log only holds the newest version of
+    // each row after compaction, so it grows with the number of sessions, not with the number of edits.
+    private val compactBytes: Long = 1_000_000L,
+    private val snapshotEveryMs: Long = 7 * 24 * 3_600_000L,
+    private val snapshotsToKeep: Int = 3,
 ) {
     private val settings = SettingsRepository(db, now)
     val deviceId: String = DeviceSettings.deviceId(settings)
@@ -70,7 +72,8 @@ class SyncEngine(
     suspend fun sync(): SyncResult {
         val applied = pull()
         val push = push(applied.keys)
-        maybeSnapshot()
+        // A snapshot is a bonus safety net: if it cannot be written, the sync itself still succeeded.
+        try { maybeSnapshot() } catch (e: Exception) { /* try again next time */ }
         settings.put(DeviceSettings.LAST_OK, now().toString())
         return SyncResult(push.first, applied.count, applied.waiting, applied.devices, push.second)
     }
@@ -246,11 +249,16 @@ class SyncEngine(
 
         var generation = settings.get(DeviceSettings.GENERATION)?.toLongOrNull() ?: 0L
         var compacted = false
-        if (db.syncLogQueries.totalSize().executeAsOne() > compactBytes) {
+        // Compact when the log is big AND has grown well past what compaction last left behind, so a log
+        // that is genuinely large after compaction does not restart every other device on every push.
+        val size = db.syncLogQueries.totalSize().executeAsOne()
+        val lastCompactedSize = settings.get(DeviceSettings.COMPACTED_SIZE)?.toLongOrNull() ?: 0L
+        if (size > compactBytes && size > lastCompactedSize * 3 / 2) {
             db.transaction {
                 db.syncLogQueries.compact()
                 generation++
                 settings.put(DeviceSettings.GENERATION, generation.toString())
+                settings.put(DeviceSettings.COMPACTED_SIZE, db.syncLogQueries.totalSize().executeAsOne().toString())
             }
             compacted = true
         }
@@ -344,7 +352,7 @@ class SyncEngine(
     /** Writes a full backup into snapshots/ (the safety net that makes everything else recoverable). */
     suspend fun snapshotNow() {
         val stamp = now()
-        folder.write(SyncFolder.SNAPSHOTS, "$deviceId-$stamp.json", BackupService(db, now).export())
+        folder.write(SyncFolder.SNAPSHOTS, "$deviceId-$stamp.json", BackupService(db, now).export(pretty = false))
         settings.put(DeviceSettings.SNAPSHOT_AT, stamp.toString())
         // Only this device's own snapshots are ever deleted.
         val mine = folder.list(SyncFolder.SNAPSHOTS)

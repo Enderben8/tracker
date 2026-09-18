@@ -42,6 +42,7 @@ object DeviceSettings {
     const val SNAPSHOT_AT = "sync.snapshot_at"
     const val LAST_OK = "sync.last_ok"
     const val PUBLISHED_SEQ = "sync.published_seq"
+    const val COMPACTED_SIZE = "sync.compacted_size"
     const val PUBLISHED_GEN = "sync.published_gen"
 
     /** When this device wrote its starting topics; rows untouched since then need not be pushed. */

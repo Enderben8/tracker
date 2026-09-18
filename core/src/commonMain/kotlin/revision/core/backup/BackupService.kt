@@ -65,8 +65,10 @@ data class ImportResult(val added: Int, val updated: Int, val unchanged: Int, va
  */
 class BackupService(private val db: RevisionDatabase, private val now: Now) {
     private val json = Json { prettyPrint = true; encodeDefaults = true; ignoreUnknownKeys = true }
+    private val compactJson = Json { prettyPrint = false; encodeDefaults = true; ignoreUnknownKeys = true }
 
-    fun export(): String {
+    /** [pretty] = human-readable (for files you keep); false = compact (for automatic snapshots, ~35% smaller). */
+    fun export(pretty: Boolean = true): String {
         val sessions = db.sessionQueries.exportSessions().executeAsList().filter { it.ended_at != null }
         val sessionIds = sessions.map { it.id }.toSet()
         val sessionTopics = db.sessionQueries.exportSessionTopics().executeAsList().filter { it.session_id in sessionIds }
@@ -90,7 +92,7 @@ class BackupService(private val db: RevisionDatabase, private val now: Now) {
                 .filter { !revision.core.sync.DeviceSettings.isLocal(it.key) }
                 .map { SettingRow(it.key, it.value_, it.updated_at) },
         )
-        return json.encodeToString(BackupFile.serializer(), file)
+        return (if (pretty) json else compactJson).encodeToString(BackupFile.serializer(), file)
     }
 
     /** Throws [IllegalArgumentException] with a readable message if the text is not one of our backups. */
