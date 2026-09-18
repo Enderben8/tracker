@@ -17,35 +17,58 @@ import revision.core.sync.SyncFolder
  * Whether a given provider is dependable is exactly what "Test folder" in Settings finds out.
  */
 class SafSyncFolder(private val context: Context, private val tree: Uri) : SyncFolder {
+    // Google Drive lets several files (or folders) share a name, and its listings can lag behind
+    // changes. So: remember the exact files we created, never create a second copy of a name we
+    // already know, and if duplicates do exist, use the most recently changed one.
+    private val knownDirs = mutableMapOf<String, DocumentFile>()
+    private val knownFiles = mutableMapOf<String, Uri>()
+
     private fun root(): DocumentFile = DocumentFile.fromTreeUri(context, tree) ?: error("The folder is no longer available.")
 
     private fun dir(name: String, create: Boolean): DocumentFile? {
-        val root = root()
-        val existing = root.findFile(name)?.takeIf { it.isDirectory }
-        return existing ?: if (create) root.createDirectory(name) ?: error("Could not create the '$name' folder.") else null
+        knownDirs[name]?.let { return it }
+        val found = root().listFiles().firstOrNull { it.isDirectory && it.name == name }
+        val dir = found ?: if (create) root().createDirectory(name) ?: error("Could not create the '$name' folder.") else null
+        if (dir != null) knownDirs[name] = dir
+        return dir
     }
 
-    private fun file(dir: String, name: String): DocumentFile? = dir(dir, create = false)?.findFile(name)
+    private fun named(dir: String, name: String): List<DocumentFile> =
+        dir(dir, create = false)?.listFiles()?.filter { it.isFile && it.name == name }.orEmpty()
+
+    private fun locate(dir: String, name: String): DocumentFile? {
+        knownFiles["$dir/$name"]?.let { uri ->
+            DocumentFile.fromSingleUri(context, uri)?.takeIf { it.exists() }?.let { return it }
+            knownFiles.remove("$dir/$name")
+        }
+        return named(dir, name).maxByOrNull { it.lastModified() }?.also { knownFiles["$dir/$name"] = it.uri }
+    }
 
     override suspend fun list(dir: String): List<String> = withContext(Dispatchers.IO) {
-        dir(dir, create = false)?.listFiles()?.filter { it.isFile }?.mapNotNull { it.name }.orEmpty()
+        val names = dir(dir, create = false)?.listFiles()?.filter { it.isFile }?.mapNotNull { it.name }.orEmpty()
+        (names + knownFiles.filterKeys { it.startsWith("$dir/") }.keys.map { it.removePrefix("$dir/") }).distinct()
     }
 
     override suspend fun read(dir: String, name: String): String? = withContext(Dispatchers.IO) {
-        val f = file(dir, name) ?: return@withContext null
+        val f = locate(dir, name) ?: return@withContext null
         context.contentResolver.openInputStream(f.uri)?.use { String(it.readBytes(), Charsets.UTF_8) }
     }
 
     override suspend fun write(dir: String, name: String, text: String): Unit = withContext(Dispatchers.IO) {
         val folder = dir(dir, create = true)!!
-        val target = folder.findFile(name) ?: folder.createFile("application/json", name) ?: error("Could not create $name.")
+        val target = locate(dir, name) ?: folder.createFile("application/json", name) ?: error("Could not create $name.")
+        knownFiles["$dir/$name"] = target.uri
         // "wt" = write and truncate, so a shorter file never leaves old bytes at the end.
         context.contentResolver.openOutputStream(target.uri, "wt")?.use { it.write(text.toByteArray(Charsets.UTF_8)) }
             ?: error("Could not write $name.")
     }
 
     override suspend fun delete(dir: String, name: String) {
-        withContext(Dispatchers.IO) { file(dir, name)?.delete() }
+        withContext(Dispatchers.IO) {
+            val known = knownFiles.remove("$dir/$name")?.let { DocumentFile.fromSingleUri(context, it) }
+            known?.delete()
+            named(dir, name).forEach { it.delete() }
+        }
     }
 }
 

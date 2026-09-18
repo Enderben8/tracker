@@ -1,5 +1,6 @@
 package revision.core.sync
 
+import kotlinx.coroutines.delay
 import revision.core.Now
 import revision.core.data.SettingsRepository
 import revision.core.newId
@@ -40,6 +41,8 @@ object DeviceSettings {
     const val GENERATION = "sync.generation"
     const val SNAPSHOT_AT = "sync.snapshot_at"
     const val LAST_OK = "sync.last_ok"
+    const val PUBLISHED_SEQ = "sync.published_seq"
+    const val PUBLISHED_GEN = "sync.published_gen"
 
     /** When this device wrote its starting topics; rows untouched since then need not be pushed. */
     const val SEEDED_AT = "seeded_at"
@@ -54,14 +57,23 @@ object DeviceSettings {
 data class CheckStep(val name: String, val ok: Boolean, val detail: String, val ms: Long)
 
 /**
- * Exercises a folder the way sync will: list, create, read back, overwrite, delete. Used to find
- * out whether a storage provider (especially Drive on Android) is dependable enough for sync.
+ * Exercises a folder the way sync will use it: create, list, read back, overwrite (longer and shorter),
+ * make sure no duplicate copies appear, delete. Cloud drives are often slow to show a change, so each
+ * step waits (up to [patienceMs]) for the result and reports how long it took; only a change that
+ * never shows up counts as a failure. Used to find out whether a provider (especially the Google Drive
+ * app on Android) is dependable before sync is turned on.
  */
 object SyncFolderCheck {
-    suspend fun run(folder: SyncFolder, now: Now): List<CheckStep> {
+    suspend fun run(
+        folder: SyncFolder,
+        now: Now,
+        patienceMs: Long = 20_000,
+        everyMs: Long = 1_000,
+    ): List<CheckStep> {
         val steps = mutableListOf<CheckStep>()
         val file = "check-${newId().take(8)}.jsonl"
-        var storedName: String? = null
+        val base = file.substringBefore('.')
+        var stored: String = file
 
         suspend fun step(name: String, body: suspend () -> String) {
             val start = now()
@@ -69,34 +81,54 @@ object SyncFolderCheck {
             steps += CheckStep(name, result.first, result.second, now() - start)
         }
 
-        step("List the devices folder") { "${folder.list(SyncFolder.DEVICES).size} file(s) there" }
-        step("Create a test file") {
-            folder.write(SyncFolder.DEVICES, file, "one\n"); "created $file"
+        /** Polls until [condition] holds. Returns how many polls it took, or null if it never did. */
+        suspend fun waitFor(condition: suspend () -> Boolean): Int? {
+            val attempts = (patienceMs / everyMs).toInt().coerceAtLeast(1)
+            for (i in 0..attempts) {
+                if (condition()) return i
+                if (i < attempts) delay(everyMs)
+            }
+            return null
         }
+
+        fun took(polls: Int) = if (polls == 0) "immediately" else "after ~${polls * everyMs / 1000}s"
+        suspend fun namesLike() = folder.list(SyncFolder.DEVICES).filter { it.substringBefore('.') == base }
+
+        step("List the devices folder") { "${folder.list(SyncFolder.DEVICES).size} file(s) there" }
+        step("Create a test file") { folder.write(SyncFolder.DEVICES, file, "one\n"); "created $file" }
         step("Find it in the listing") {
-            val names = folder.list(SyncFolder.DEVICES)
-            storedName = names.firstOrNull { it.substringBefore('.') == file.substringBefore('.') }
-                ?: error("not listed (saw: ${names.joinToString().ifEmpty { "nothing" }})")
-            if (storedName == file) "listed as $file" else "listed as $storedName (renamed by the provider - sync copes with this)"
+            val polls = waitFor { namesLike().isNotEmpty() } ?: error("never appeared in the listing")
+            stored = namesLike().first()
+            (if (stored == file) "listed as $file" else "listed as $stored (renamed by the provider - sync copes with this)") + ", " + took(polls)
         }
         step("Read it back") {
-            val text = folder.read(SyncFolder.DEVICES, storedName ?: file)
-            if (text?.trim() == "one") "content matches" else error("got ${text?.take(30)?.let { "\"$it\"" } ?: "nothing"}")
+            var last: String? = null
+            val polls = waitFor { folder.read(SyncFolder.DEVICES, stored).also { last = it }?.trim() == "one" }
+                ?: error("still reads ${last?.take(30)?.let { "\"$it\"" } ?: "nothing"}")
+            "content matches, " + took(polls)
         }
         step("Overwrite it with longer content") {
-            folder.write(SyncFolder.DEVICES, storedName ?: file, "one\ntwo\nthree\n")
-            val text = folder.read(SyncFolder.DEVICES, storedName ?: file)
-            if (text == "one\ntwo\nthree\n") "replaced correctly" else error("read back ${text?.length} chars: ${text?.take(30)}")
+            folder.write(SyncFolder.DEVICES, stored, "one\ntwo\nthree\n")
+            var last: String? = null
+            val polls = waitFor { folder.read(SyncFolder.DEVICES, stored).also { last = it } == "one\ntwo\nthree\n" }
+                ?: error("never showed the new content; last read: ${last?.take(30)?.let { "\"$it\"" } ?: "nothing"}")
+            "replaced correctly, " + took(polls)
         }
         step("Overwrite it with SHORTER content") {
-            folder.write(SyncFolder.DEVICES, storedName ?: file, "x\n")
-            val text = folder.read(SyncFolder.DEVICES, storedName ?: file)
-            if (text == "x\n") "truncated correctly" else error("old bytes left behind: ${text?.take(30)}")
+            folder.write(SyncFolder.DEVICES, stored, "x\n")
+            var last: String? = null
+            val polls = waitFor { folder.read(SyncFolder.DEVICES, stored).also { last = it } == "x\n" }
+                ?: error("old bytes left behind or write ignored; last read: ${last?.take(30)?.let { "\"$it\"" } ?: "nothing"}")
+            "truncated correctly, " + took(polls)
+        }
+        step("Only one copy of the file exists") {
+            val count = namesLike().size
+            if (count == 1) "one copy" else error("$count copies with the same name - the provider made duplicates")
         }
         step("Delete it") {
-            folder.delete(SyncFolder.DEVICES, storedName ?: file)
-            val left = folder.list(SyncFolder.DEVICES).any { it.substringBefore('.') == file.substringBefore('.') }
-            if (left) error("still listed after delete") else "gone"
+            folder.delete(SyncFolder.DEVICES, stored)
+            val polls = waitFor { namesLike().isEmpty() } ?: error("still listed ${namesLike().size}x after delete")
+            "gone, " + took(polls)
         }
         return steps
     }

@@ -215,7 +215,11 @@ class SyncEngine(
 
     private class Outgoing(val table: String, val id: String, val updatedAt: Long, val deleted: Long, val data: JsonElement)
 
-    /** Returns (rows pushed, whether the log was compacted). */
+    /**
+     * Records our changes in the LOCAL log (the source of truth), then publishes that log to the shared
+     * folder. We never read our own file back from the folder: a cloud drive may serve a stale copy, and
+     * writing that back would silently drop changes. Returns (rows added, whether the log was compacted).
+     */
     private suspend fun push(justApplied: Set<String>): Pair<Int, Boolean> {
         // First ever push: every device seeds identical starting topics, so skip rows still exactly
         // as seeded and send only what has changed since.
@@ -223,50 +227,51 @@ class SyncEngine(
             ?: settings.get(DeviceSettings.SEEDED_AT)?.toLongOrNull() ?: -1L
         val changed = collect(since)
         val outgoing = changed.filter { "${it.table}/${it.id}/${it.updatedAt}" !in justApplied }
-        if (outgoing.isEmpty()) {
-            // Nothing of ours to send, but rows we just pulled must not be re-examined next time.
-            changed.maxOfOrNull { it.updatedAt }?.let { settings.put(DeviceSettings.PUSHED_AT, it.toString()) }
-            return 0 to false
-        }
 
         var seq = settings.get(DeviceSettings.SEQ)?.toLongOrNull() ?: 0L
-        val lines = outgoing.map { o ->
-            seq++
-            json.encodeToString(SyncRecord.serializer(), SyncRecord(seq, o.table, o.id, o.updatedAt, o.deleted, o.data))
-        }
-
-        val ownName = folder.list(SyncFolder.DEVICES).firstOrNull { !it.startsWith(".") && !it.endsWith(".tmp") && it.substringBefore('.') == deviceId && it.contains(".jsonl") }
-            ?: "$deviceId.jsonl"
-        val existing = folder.read(SyncFolder.DEVICES, ownName)
-        val generation = existing?.let { parse(it).first?.generation } ?: (settings.get(DeviceSettings.GENERATION)?.toLongOrNull() ?: 0L)
-        val base = existing?.trimEnd('\n', '\r')?.takeIf { it.isNotEmpty() } ?: header(generation)
-        var text = base + "\n" + lines.joinToString("\n") + "\n"
-
-        var compacted = false
-        if (text.length > compactBytes) {
-            text = compact(text, generation)
-            settings.put(DeviceSettings.GENERATION, (generation + 1).toString())
-            compacted = true
+        if (outgoing.isNotEmpty()) {
+            db.transaction {
+                for (o in outgoing) {
+                    seq++
+                    val line = json.encodeToString(SyncRecord.serializer(), SyncRecord(seq, o.table, o.id, o.updatedAt, o.deleted, o.data))
+                    db.syncLogQueries.insert(seq, o.table, o.id, line)
+                }
+                settings.put(DeviceSettings.SEQ, seq.toString())
+                settings.put(DeviceSettings.PUSHED_AT, changed.maxOf { it.updatedAt }.toString())
+            }
         } else {
-            settings.put(DeviceSettings.GENERATION, generation.toString())
+            // Nothing of ours to send, but rows we just pulled must not be re-examined next time.
+            changed.maxOfOrNull { it.updatedAt }?.let { settings.put(DeviceSettings.PUSHED_AT, it.toString()) }
         }
 
-        folder.write(SyncFolder.DEVICES, ownName, text)
-        // Only after the file is safely written do we move our bookmark forward; a crash in
-        // between just means a harmless duplicate push next time.
-        settings.put(DeviceSettings.SEQ, seq.toString())
-        settings.put(DeviceSettings.PUSHED_AT, changed.maxOf { it.updatedAt }.toString())
+        var generation = settings.get(DeviceSettings.GENERATION)?.toLongOrNull() ?: 0L
+        var compacted = false
+        if (db.syncLogQueries.totalSize().executeAsOne() > compactBytes) {
+            db.transaction {
+                db.syncLogQueries.compact()
+                generation++
+                settings.put(DeviceSettings.GENERATION, generation.toString())
+            }
+            compacted = true
+        }
+
+        // Publish whenever the shared copy is behind the local log (also retries after a failed write).
+        val publishedSeq = settings.get(DeviceSettings.PUBLISHED_SEQ)?.toLongOrNull() ?: -1L
+        val publishedGen = settings.get(DeviceSettings.PUBLISHED_GEN)?.toLongOrNull() ?: -1L
+        if (seq > publishedSeq && seq > 0 || generation != publishedGen && seq > 0) {
+            val text = header(generation) + "\n" + db.syncLogQueries.selectLines().executeAsList().joinToString("\n") + "\n"
+            val ownName = folder.list(SyncFolder.DEVICES)
+                .firstOrNull { !it.startsWith(".") && !it.endsWith(".tmp") && it.substringBefore('.') == deviceId && it.contains(".jsonl") }
+                ?: "$deviceId.jsonl"
+            folder.write(SyncFolder.DEVICES, ownName, text)
+            settings.put(DeviceSettings.PUBLISHED_SEQ, seq.toString())
+            settings.put(DeviceSettings.PUBLISHED_GEN, generation.toString())
+        }
         return outgoing.size to compacted
     }
 
     private fun header(generation: Long) =
         json.encodeToString(SyncHeader.serializer(), SyncHeader(device = deviceId, generation = generation))
-
-    /** Keeps only the newest record for each row, and starts a new generation so readers restart. */
-    private fun compact(text: String, generation: Long): String {
-        val newest = parse(text).second.groupBy { it.table to it.id }.values.map { it.maxBy { r -> r.seq } }.sortedBy { it.seq }
-        return (listOf(header(generation + 1)) + newest.map { json.encodeToString(SyncRecord.serializer(), it) }).joinToString("\n") + "\n"
-    }
 
     /**
      * Rows changed since the last push. A session that is still running is never sent (a half-open

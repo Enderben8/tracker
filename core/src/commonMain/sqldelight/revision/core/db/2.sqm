@@ -1,0 +1,7 @@
+-- Migration from schema version 2 to 3: this device's own change log.
+CREATE TABLE sync_log (
+    seq  INTEGER NOT NULL PRIMARY KEY,
+    tbl  TEXT NOT NULL,
+    rid  TEXT NOT NULL,
+    line TEXT NOT NULL
+);

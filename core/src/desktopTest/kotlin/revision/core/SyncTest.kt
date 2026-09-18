@@ -37,11 +37,12 @@ private class SharedFolder {
 }
 
 private class Device(shared: SharedFolder, private val world: () -> Long, compactBytes: Long = 5_000_000L,
-                     snapshotEveryMs: Long = 24 * 3_600_000L, snapshotsToKeep: Int = 5) {
+                     snapshotEveryMs: Long = 24 * 3_600_000L, snapshotsToKeep: Int = 5,
+                     wrap: (SyncFolder) -> SyncFolder = { it }) {
     val now: Now = world
     val db = DatabaseFactory.inMemory().also { Seeder.seedIfEmpty(it, now) }
     val view = shared.View()
-    val engine = SyncEngine(db, now, view, compactBytes, snapshotEveryMs, snapshotsToKeep).also { view.actor = it.deviceId }
+    val engine = SyncEngine(db, now, wrap(view), compactBytes, snapshotEveryMs, snapshotsToKeep).also { view.actor = it.deviceId }
     val history = HistoryService(db, now)
     val sessions = SessionService(db, now)
     val topics = TopicRepository(db, now)
@@ -56,8 +57,9 @@ class SyncTest {
     private val world: () -> Long = { t }
     private val minute = 60_000L
     private val shared = SharedFolder()
-    private fun device(compactBytes: Long = 5_000_000L, snapshotEveryMs: Long = 24 * 3_600_000L, keep: Int = 5) =
-        Device(shared, world, compactBytes, snapshotEveryMs, keep).also { t += 1000 } // let time pass after seeding
+    private fun device(compactBytes: Long = 5_000_000L, snapshotEveryMs: Long = 24 * 3_600_000L, keep: Int = 5,
+                        wrap: (SyncFolder) -> SyncFolder = { it }) =
+        Device(shared, world, compactBytes, snapshotEveryMs, keep, wrap).also { t += 1000 } // let time pass after seeding
 
     @Test
     fun aSessionFinishedOnOneDeviceAppearsOnTheOther() {
@@ -246,11 +248,88 @@ class SyncTest {
         assertFalse(snap.contains("\"endedAt\": null"))
     }
 
+    // ---------- a slow / stale / duplicating cloud drive ----------
+
+    @Test
+    fun aStaleOrMissingReadOfOurOwnFileCannotLoseChanges() {
+        val stale = mutableSetOf<String>()
+        val a = device(wrap = { inner ->
+            object : SyncFolder by inner {
+                override suspend fun read(dir: String, name: String) =
+                    if (name.substringBefore('.') in stale) null else inner.read(dir, name)
+            }
+        })
+        stale += a.engine.deviceId          // the drive "forgets" A's own file every time A looks
+        val b = device()
+        repeat(3) { i ->
+            a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[i].id, 10 + i, 3)), null)
+            t += minute
+            a.sync()
+        }
+        b.sync()
+        assertEquals(3, b.history.load().size, "every push must survive even when reads of our own file are stale")
+    }
+
+    @Test
+    fun aFailedPublishIsRetriedAndNothingIsLost() {
+        var failures = 1
+        val a = device(wrap = { inner ->
+            object : SyncFolder by inner {
+                override suspend fun write(dir: String, name: String, text: String) {
+                    if (dir == SyncFolder.DEVICES && failures-- > 0) error("drive unreachable")
+                    inner.write(dir, name, text)
+                }
+            }
+        })
+        val b = device()
+        a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[0].id, 30, 4)), null)
+        t += minute
+        var threw = false
+        try { a.sync() } catch (e: IllegalStateException) { threw = true }
+        assertTrue(threw)
+        a.sync()                              // nothing new locally, but the log is republished
+        b.sync()
+        assertEquals(30 * minute, b.history.load().single().totalMs)
+    }
+
+    @Test
+    fun theFolderCheckCatchesADriveThatCreatesDuplicateCopies() {
+        val duplicating = object : SyncFolder {
+            val names = mutableListOf<Pair<String, String>>()
+            override suspend fun list(dir: String) = names.map { it.first }
+            override suspend fun read(dir: String, name: String) = names.lastOrNull { it.first == name }?.second
+            override suspend fun write(dir: String, name: String, text: String) { names += name to text }   // always a new copy
+            override suspend fun delete(dir: String, name: String) { names.removeAll { it.first == name } }
+        }
+        val steps = runBlocking { SyncFolderCheck.run(duplicating, world, patienceMs = 100, everyMs = 10) }
+        assertTrue(steps.any { !it.ok && it.name.contains("Only one copy") }, steps.joinToString { "${it.name}=${it.ok}" })
+    }
+
+    @Test
+    fun theFolderCheckToleratesADriveThatIsSlowToShowChanges() {
+        val lagging = object : SyncFolder {
+            val files = mutableMapOf<String, String>()
+            var reads = 0
+            override suspend fun list(dir: String) = files.keys.toList()
+            // the first read after every write still returns the previous content (a stale cache)
+            val previous = mutableMapOf<String, String>()
+            val fresh = mutableSetOf<String>()
+            override suspend fun read(dir: String, name: String): String? {
+                if (name in fresh) { fresh -= name; return previous[name] ?: files[name] }
+                return files[name]
+            }
+            override suspend fun write(dir: String, name: String, text: String) { previous[name] = files[name] ?: ""; files[name] = text; fresh += name }
+            override suspend fun delete(dir: String, name: String) { files.remove(name) }
+        }
+        val steps = runBlocking { SyncFolderCheck.run(lagging, world, patienceMs = 200, everyMs = 10) }
+        assertTrue(steps.all { it.ok }, steps.filter { !it.ok }.joinToString { "${it.name}: ${it.detail}" })
+    }
+
     // ---------- the folder check used to test OneDrive on the phone ----------
 
     @Test
     fun theFolderCheckPassesOnAWellBehavedFolder() {
-        val steps = runBlocking { SyncFolderCheck.run(shared.View(), world) }
+        val steps = runBlocking { SyncFolderCheck.run(shared.View(), world, patienceMs = 100, everyMs = 10) }
         assertTrue(steps.all { it.ok }, steps.filter { !it.ok }.joinToString { "${it.name}: ${it.detail}" })
     }
 
@@ -263,7 +342,7 @@ class SyncTest {
             override suspend fun write(dir: String, name: String, text: String) { f["$dir/$name"] = text + (f["$dir/$name"]?.drop(text.length) ?: "") }
             override suspend fun delete(dir: String, name: String) { f.remove("$dir/$name") }
         }
-        val steps = runBlocking { SyncFolderCheck.run(appending, world) }
+        val steps = runBlocking { SyncFolderCheck.run(appending, world, patienceMs = 100, everyMs = 10) }
         assertTrue(steps.any { !it.ok && it.name.contains("SHORTER") }, steps.joinToString { "${it.name}=${it.ok}" })
     }
 
@@ -277,14 +356,16 @@ class SyncTest {
         java.sql.DriverManager.getConnection("jdbc:sqlite:${file.absolutePath}").use { c ->
             c.createStatement().use {
                 it.execute("DROP TABLE sync_cursor")
+                it.execute("DROP TABLE sync_log")
                 it.execute("PRAGMA user_version = 1")
             }
         }
         val reopened = DatabaseFactory.open(file)
         assertEquals(9L, reopened.subjectQueries.countAll().executeAsOne())
         assertEquals(0, reopened.syncCursorQueries.selectAll().executeAsList().size)
+        assertEquals(0, reopened.syncLogQueries.selectLines().executeAsList().size)
         java.sql.DriverManager.getConnection("jdbc:sqlite:${file.absolutePath}").use { c ->
-            c.createStatement().use { st -> st.executeQuery("PRAGMA user_version").use { assertEquals(2, it.getInt(1)) } }
+            c.createStatement().use { st -> st.executeQuery("PRAGMA user_version").use { assertEquals(3, it.getInt(1)) } }
         }
     }
 }

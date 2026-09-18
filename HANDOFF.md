@@ -24,6 +24,16 @@ and suggests `My Drive\RevisionTracker`. A hidden/temporary provider file (e.g. 
 device log (found while thinking through Drive's behaviour; tested). Where this note says OneDrive below, read
 Google Drive.
 
+**First on-phone "Test folder" result (Drive, 2026-09-18):** create/list/read-back passed; overwrite-longer read back
+nothing, overwrite-shorter still showed the OLD content, delete still listed. Unknown whether that is Drive's provider
+lagging or actually creating duplicate same-name files (Drive allows duplicates). Response, all tested: (1) the check now
+WAITS up to 20s per step and reports how long each change took, and has a "no duplicate copies" step; (2) the engine
+no longer reads its own file back - a local `sync_log` table (schema v3, `2.sqm`) is the source of truth and the shared
+file is just a published copy, re-published until it lands (`sync.published_seq/gen`), so a stale/failed drive cannot
+lose changes; (3) `SafSyncFolder` remembers exact file/dir Uris, never re-creates a name it knows, and picks the
+newest if duplicates exist. NEXT: user re-runs Test folder on the phone; if it still fails (real truncation failure or
+duplicates), fall back to the Google Drive API (needs the user to make a Google Cloud OAuth client).
+
 - `core/sync/SyncEngine.kt` implements spec 9 exactly: per-device append-only log
   `devices/<device-id>.jsonl` (each device writes ONLY its own file), header line with `generation`,
   per-device cursors in the new `sync_cursor` table (schema v2 via `1.sqm`; migration tested), last-write-wins

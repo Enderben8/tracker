@@ -1,0 +1,21 @@
+-- This device's own change log. It is the source of truth: the file in the shared folder is only a
+-- published copy of it, so a slow or stale cloud drive can never make us lose our own changes.
+CREATE TABLE sync_log (
+    seq  INTEGER NOT NULL PRIMARY KEY,
+    tbl  TEXT NOT NULL,
+    rid  TEXT NOT NULL,
+    line TEXT NOT NULL
+);
+
+selectLines:
+SELECT line FROM sync_log ORDER BY seq;
+
+insert:
+INSERT OR REPLACE INTO sync_log(seq, tbl, rid, line) VALUES (?, ?, ?, ?);
+
+totalSize:
+SELECT COALESCE(SUM(LENGTH(line)), 0) FROM sync_log;
+
+-- Keep only the newest record for each row.
+compact:
+DELETE FROM sync_log WHERE seq NOT IN (SELECT MAX(seq) FROM sync_log GROUP BY tbl, rid);
