@@ -86,11 +86,17 @@ class AndroidSyncPlatform(private val activity: ComponentActivity) : SyncPlatfor
         activity.contentResolver.takePersistableUriPermission(
             uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION,
         )
-        return uri.toString()
+        // Ask the provider for the folder's name once, here (off the UI thread), and store it alongside
+        // the address so Settings can show a readable name without touching the provider again.
+        val name = withContext(Dispatchers.IO) { DocumentFile.fromTreeUri(activity, uri)?.name }
+        return uri.toString() + SEPARATOR + (name ?: "Google Drive folder")
     }
 
-    override fun open(location: String): SyncFolder = SafSyncFolder(activity.applicationContext, Uri.parse(location))
+    override fun open(location: String): SyncFolder =
+        SafSyncFolder(activity.applicationContext, Uri.parse(location.substringBefore(SEPARATOR)))
 
     override fun describe(location: String): String =
-        Uri.decode(Uri.parse(location).lastPathSegment ?: location)
+        location.substringAfter(SEPARATOR, "").ifBlank { "your chosen Google Drive folder" }
+
+    private companion object { const val SEPARATOR = "" }
 }
