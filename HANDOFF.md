@@ -24,7 +24,7 @@ status note; delete it once stale.
 - UI: Topics (`ManageScreen`), Stats, Settings screens + `Dialogs.kt`; nav bar now Today / Timer /
   History / Topics / Stats / Settings. `FileAccess` interface (commonMain) with `DesktopFileAccess`
   (java.awt FileDialog) — Phase 5 needs an Android implementation (system document picker).
-- Tests: ~90 total, all pass (ManagementTest covers backup round-trip/merge/newer-wins/archive-travels,
+- Tests: 78 total (core + render), all pass (ManagementTest covers backup round-trip/merge/newer-wins/archive-travels,
   editing, reset, coverage, activity; RollupTest is pure commonTest).
 - NOT verified: the real file dialogs (export/import buttons) — they need a real window; the logic
   behind them is tested via strings. Off-screen renders checked Topics/Stats/Settings visually.
