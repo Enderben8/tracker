@@ -31,8 +31,7 @@ import revision.core.formatClock
 import revision.core.formatTimeOfDay
 
 @Composable
-fun App(db: RevisionDatabase) {
-    val state = androidx.compose.runtime.remember { AppState(db) }
+fun App(db: RevisionDatabase, state: AppState = androidx.compose.runtime.remember { AppState(db) }) {
 
     // Redraw once a second. Elapsed time is recomputed from stored timestamps each time,
     // so a missed tick (sleep, lag) cannot make the clock wrong.
@@ -51,6 +50,7 @@ fun App(db: RevisionDatabase) {
                 ActiveBanner(state)
                 Box(Modifier.weight(1f)) {
                     when (state.screen) {
+                        Screen.Today -> TodayScreen(state)
                         Screen.Timer -> TimerScreen(state)
                         Screen.History -> HistoryScreen(state)
                         Screen.LogPast -> LogPastScreen(state)
@@ -58,12 +58,17 @@ fun App(db: RevisionDatabase) {
                 }
                 NavigationBar {
                     NavigationBarItem(
+                        selected = state.screen == Screen.Today,
+                        onClick = { state.screen = Screen.Today },
+                        icon = { Text("★") }, label = { Text("Today") },
+                    )
+                    NavigationBarItem(
                         selected = state.screen == Screen.Timer,
                         onClick = { state.screen = Screen.Timer },
                         icon = { Text("⏱") }, label = { Text("Timer") },
                     )
                     NavigationBarItem(
-                        selected = state.screen != Screen.Timer,
+                        selected = state.screen == Screen.History || state.screen == Screen.LogPast,
                         onClick = { state.screen = Screen.History },
                         icon = { Text("☰") }, label = { Text("History") },
                     )

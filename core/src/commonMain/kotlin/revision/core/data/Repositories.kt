@@ -54,6 +54,8 @@ class TopicRepository(private val db: RevisionDatabase, private val now: Now) {
 
     fun observeAll(): Flow<List<Topic>> = q.selectAll().asFlow().mapToList(Dispatchers.Default)
 
+    fun getAll(): List<Topic> = q.selectAll().executeAsList()
+
     fun observeBySubject(subjectId: String): Flow<List<Topic>> =
         q.selectBySubject(subjectId).asFlow().mapToList(Dispatchers.Default)
 
@@ -126,6 +128,11 @@ class SessionRepository(private val db: RevisionDatabase, private val now: Now) 
     fun observeTotalsByTopic(nowMillis: Long): Flow<Map<String, Long>> =
         q.totalsByTopic(nowMillis).asFlow().mapToList(Dispatchers.Default)
             .map { rows -> rows.associate { it.topic_id to (it.total_ms ?: 0L) } }
+
+    /** Every timed segment (open ones run to [nowMillis]) for per-day totals. */
+    fun segmentSpans(nowMillis: Long): List<revision.core.stats.TimeSpan> =
+        q.segmentsWithSubject(nowMillis).executeAsList()
+            .map { revision.core.stats.TimeSpan(it.started_at, it.ended_at) }
 
     fun lastRevisedByTopic(): Map<String, Long> =
         q.lastRevisedByTopic().executeAsList().associate { it.topic_id to (it.last_at ?: 0L) }

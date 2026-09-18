@@ -30,6 +30,19 @@ fun formatDuration(millis: Long): String {
     }
 }
 
+/** "never", "today", "yesterday", "6 days ago", "3 weeks ago". */
+fun formatAgo(thenMillis: Long?, nowMillis: Long, zone: TimeZone = TimeZone.currentSystemDefault()): String {
+    if (thenMillis == null) return "never"
+    val days = (localDate(nowMillis, zone).toEpochDays() - localDate(thenMillis, zone).toEpochDays()).toInt()
+    return when {
+        days <= 0 -> "today"
+        days == 1 -> "yesterday"
+        days < 14 -> "$days days ago"
+        days < 60 -> "${days / 7} weeks ago"
+        else -> "${days / 30} months ago"
+    }
+}
+
 fun localDate(epochMillis: Long, zone: TimeZone = TimeZone.currentSystemDefault()): LocalDate =
     Instant.fromEpochMilliseconds(epochMillis).toLocalDateTime(zone).date
 

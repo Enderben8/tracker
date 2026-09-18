@@ -4,6 +4,7 @@ import revision.core.Now
 import revision.core.data.SessionRepository
 import revision.core.data.SubjectRepository
 import revision.core.data.TopicRepository
+import revision.core.scheduling.SrsService
 import revision.core.db.RevisionDatabase
 
 data class HistoryTopic(
@@ -34,6 +35,7 @@ class HistoryService(private val db: RevisionDatabase, private val now: Now) {
     private val sessions = SessionRepository(db, now)
     private val subjects = SubjectRepository(db, now)
     private val topics = TopicRepository(db, now)
+    private val srs = SrsService(db, now)
 
     /** Finished sessions, newest first. The running session is excluded. */
     fun load(): List<HistoryEntry> {
@@ -105,6 +107,7 @@ class HistoryService(private val db: RevisionDatabase, private val now: Now) {
                 cursor = end
             }
             sessions.finishSession(sessionId, cursor, notes)
+            srs.applySession(sessionId, cursor)
         }
         return sessionId
     }

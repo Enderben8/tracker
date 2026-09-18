@@ -6,6 +6,7 @@ import revision.core.db.Session
 import revision.core.data.SessionRepository
 import revision.core.data.SettingsRepository
 import revision.core.data.TopicRepository
+import revision.core.scheduling.SrsService
 
 data class ActiveTopic(
     val sessionTopicId: String,
@@ -56,6 +57,7 @@ class SessionService(
     private val sessions = SessionRepository(db, now)
     private val topics = TopicRepository(db, now)
     private val settings = SettingsRepository(db, now)
+    private val srs = SrsService(db, now)
 
     // ---------- reading state ----------
 
@@ -136,6 +138,7 @@ class SessionService(
             sessions.openSegments().forEach { sessions.closeSegment(it.id, at) }
             ratings.forEach { (stId, r) -> sessions.rateTopic(stId, r.rating?.toLong(), r.notes) }
             sessions.finishSession(sessionId, at, sessionNotes)
+            srs.applySession(sessionId, at)
         }
     }
 
@@ -174,6 +177,7 @@ class SessionService(
         db.transaction {
             sessions.openSegments().forEach { sessions.closeSegment(it.id, d.lastAliveAt) }
             sessions.finishSession(d.sessionId, d.lastAliveAt, null)
+            srs.applySession(d.sessionId, d.lastAliveAt)
         }
     }
 

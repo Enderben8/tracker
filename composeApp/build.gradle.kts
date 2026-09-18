@@ -21,6 +21,11 @@ kotlin {
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
         }
+
+        val desktopTest by getting
+        desktopTest.dependencies {
+            implementation(kotlin("test"))
+        }
     }
 }
 

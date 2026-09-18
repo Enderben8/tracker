@@ -7,8 +7,33 @@ status note; delete it once stale.
 
 - **Phase 0 (toolchain): done, committed.**
 - **Phase 1 (data layer): done, committed.**
-- **Phase 2 (timer + history): done, committed. Awaiting user check-in** (spec §13)
-  before Phase 3 (scheduler + Today screen).
+- **Phase 2 (timer + history): done, committed.**
+- **Phase 3 (scheduler + Today screen): done. Awaiting user check-in** before Phase 4.
+
+### Phase 3 summary
+
+- `core/scheduling/Scheduler.kt`: pure `Scheduler.rank` + `Sm2.review/touch` + `SchedulerConfig`
+  (every tunable in one object). Weights/terms exactly as spec §7.2. Queue: 10 items, max 3
+  per subject, ties broken by topic id (stable). `SrsService` applies SM-2 when a session stops,
+  when a crashed session is saved, and on manual logs (skipped if a newer state exists;
+  topics added but never timed are ignored). `TodayService` builds candidates (leaf topics of
+  non-archived subjects) and the today/7-day totals (`stats/TimeStats.kt`, splits sessions at
+  local midnight).
+- Decision: a subject whose exam day has passed is **excluded from the queue entirely** (spec
+  only says its topics must not top it and to "consider auto-archiving").
+- Reason text picks the largest contributor ("9 days overdue", "not revised yet",
+  "Physics exam in 12 days"); exam signal only counts when a date is set.
+- Tests: 51 total, all pass. `SchedulerTest` covers every §7.6 item (commonTest).
+- UI: `TodayScreen.kt` (summary line, 7-day bar chart per the dataviz skill: one series, no
+  legend, only today labelled, thin rounded bars; ranked list, one tap starts a session or adds
+  to the running one if same subject). Nav is now Today / Timer / History; Today is the home.
+- `composeApp/src/desktopTest/RenderTest.kt` renders screens OFF-SCREEN to
+  `composeApp/build/screenshots/*.png` — use this instead of launching/clicking the real
+  window. **Do not launch, click or kill app windows on the user's desktop** (an earlier
+  test-cleanup kill interrupted the user mid-session).
+- Known limits: deleting a session does not undo its SM-2 update; exam dates can't be set in
+  the UI yet (Phase 4 Settings) so exam pressure is the neutral 0.3 for now; light theme not
+  checked (renders followed the OS dark theme).
 
 ### Phase 2 summary
 

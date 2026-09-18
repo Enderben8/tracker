@@ -1,0 +1,63 @@
+import androidx.compose.ui.ExperimentalComposeUiApi
+import androidx.compose.ui.ImageComposeScene
+import androidx.compose.ui.unit.Density
+import org.jetbrains.skia.EncodedImageFormat
+import revision.core.DatabaseFactory
+import revision.core.data.TopicRepository
+import revision.core.seed.Seeder
+import revision.core.systemNow
+import revision.core.timer.HistoryService
+import revision.core.timer.ManualTopic
+import java.io.File
+import kotlin.test.Test
+import kotlin.test.assertTrue
+
+/**
+ * Renders screens off-screen (no window opens) into build/screenshots so the layout can be
+ * looked at without touching the desktop.
+ */
+class RenderTest {
+    private val day = 86_400_000L
+
+    private fun render(name: String, db: revision.core.db.RevisionDatabase, prepare: (AppState) -> Unit = {}) {
+        val state = AppState(db)
+        prepare(state)
+        @OptIn(ExperimentalComposeUiApi::class)
+        val scene = ImageComposeScene(width = 1000, height = 800, density = Density(1f)) { App(db, state) }
+        try {
+            scene.render(0)
+            val image = scene.render(1_000_000_000L)
+            val bytes = image.encodeToData(EncodedImageFormat.PNG)!!.bytes
+            val out = File("build/screenshots/$name.png").also { it.parentFile.mkdirs() }
+            out.writeBytes(bytes)
+            assertTrue(out.length() > 1000)
+        } finally {
+            scene.close()
+        }
+    }
+
+    private fun sampleDb(): revision.core.db.RevisionDatabase {
+        val db = DatabaseFactory.inMemory()
+        Seeder.seedIfEmpty(db, systemNow)
+        val history = HistoryService(db, systemNow)
+        val topics = TopicRepository(db, systemNow)
+        val bio = topics.getBySubject("seed:biology")
+        val phys = topics.getBySubject("seed:physics")
+        val now = systemNow()
+        history.logManual("seed:biology", now - 6 * day, listOf(ManualTopic(bio[0].id, 40, 4)), null)
+        history.logManual("seed:biology", now - 4 * day, listOf(ManualTopic(bio[1].id, 25, 2), ManualTopic(bio[4].id, 20, 5)), null)
+        history.logManual("seed:physics", now - 2 * day, listOf(ManualTopic(phys[0].id, 55, 3)), null)
+        history.logManual("seed:physics", now - 1 * day, listOf(ManualTopic(phys[1].id, 30, 1)), null)
+        history.logManual("seed:biology", now - 60_000L, listOf(ManualTopic(bio[2].id, 45, 5)), null)
+        return db
+    }
+
+    @Test
+    fun todayScreen() = render("today", sampleDb())
+
+    @Test
+    fun historyScreen() = render("history", sampleDb()) { it.screen = Screen.History }
+
+    @Test
+    fun timerSetupScreen() = render("timer-setup", sampleDb()) { it.screen = Screen.Timer }
+}

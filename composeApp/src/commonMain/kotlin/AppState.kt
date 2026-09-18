@@ -5,13 +5,14 @@ import androidx.compose.ui.graphics.Color
 import revision.core.data.SubjectRepository
 import revision.core.data.TopicRepository
 import revision.core.db.RevisionDatabase
+import revision.core.scheduling.TodayService
 import revision.core.systemNow
 import revision.core.timer.ActiveSession
 import revision.core.timer.DanglingSession
 import revision.core.timer.HistoryService
 import revision.core.timer.SessionService
 
-enum class Screen { Timer, History, LogPast }
+enum class Screen { Today, Timer, History, LogPast }
 
 /**
  * Holds everything the screens share. Compose re-draws whenever a `by mutableStateOf`
@@ -24,8 +25,9 @@ class AppState(val db: RevisionDatabase) {
     val history = HistoryService(db, now)
     val subjects = SubjectRepository(db, now)
     val topics = TopicRepository(db, now)
+    val today = TodayService(db, now)
 
-    var screen by mutableStateOf(Screen.Timer)
+    var screen by mutableStateOf(Screen.Today)
     var active by mutableStateOf<ActiveSession?>(null)
         private set
     var dangling by mutableStateOf<DanglingSession?>(null)
@@ -58,6 +60,15 @@ class AppState(val db: RevisionDatabase) {
     }
 
     fun start(subjectId: String, topicIds: List<String>) { sessions.start(subjectId, topicIds); changed() }
+    /** One tap from the "revise next" list: start a session on the topic, or add it to the running one. */
+    fun startOrAdd(subjectId: String, topicId: String) {
+        val running = active
+        if (running == null) start(subjectId, listOf(topicId))
+        else if (running.subjectId == subjectId) addTopics(listOf(topicId))
+        else return
+        screen = Screen.Timer
+    }
+
     fun switchTo(stId: String) { sessions.switchTo(stId); changed() }
     fun pause() { sessions.pause(); changed() }
     fun resume() { sessions.resume(); changed() }
