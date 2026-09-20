@@ -1,10 +1,23 @@
+# Build output and caches
 .gradle/
 build/
+.kotlin/
+
+# Per-machine settings (Android SDK location)
 local.properties
+
+# Databases - the app's data lives in %LOCALAPPDATA%\RevisionTracker, never in the repo
 *.db
 *.db-wal
 *.db-shm
+
+# Signing keys must never be committed
+*.jks
+*.keystore
+
+# IDEs and OS clutter
 .idea/
-.kotlin/
 *.iml
+.vscode/
 .DS_Store
+Thumbs.db

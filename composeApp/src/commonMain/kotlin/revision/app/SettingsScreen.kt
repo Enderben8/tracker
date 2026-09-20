@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -22,16 +23,17 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import kotlinx.coroutines.launch
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import kotlinx.coroutines.launch
 import revision.core.db.Subject
 import revision.core.localDate
 import revision.core.scheduling.DAY_MS
 import revision.core.scheduling.SchedulerConfig
 import revision.core.seed.Seeder
+import revision.core.sync.CheckStep
 import revision.core.systemNow
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -70,7 +72,7 @@ fun SettingsScreen(state: AppState, files: FileAccess, sync: SyncManager) {
         item { Text("Backup", style = MaterialTheme.typography.titleMedium) }
         item {
             Text(
-                "Export saves everything to a JSON file. Importing merges a file into what you have — the newer edit of each item wins, so nothing is thrown away. This is your only backup until sync exists.",
+                "Export saves everything to a JSON file. Importing merges a file into what you have — the newer edit of each item wins, so nothing is thrown away. Sync also keeps weekly snapshots, but an export is a backup you control.",
                 style = MaterialTheme.typography.bodySmall,
             )
         }
@@ -242,9 +244,9 @@ private fun AdvancedWeights(state: AppState) {
 }
 
 @Composable
-private fun FolderCheckDialog(steps: List<revision.core.sync.CheckStep>, onDismiss: () -> Unit) {
+private fun FolderCheckDialog(steps: List<CheckStep>, onDismiss: () -> Unit) {
     val allOk = steps.isNotEmpty() && steps.all { it.ok }
-    androidx.compose.material3.AlertDialog(
+    AlertDialog(
         onDismissRequest = onDismiss,
         title = { Text(if (allOk) "This folder works for sync" else "This folder is not reliable for sync") },
         text = {
@@ -256,7 +258,7 @@ private fun FolderCheckDialog(steps: List<revision.core.sync.CheckStep>, onDismi
                         color = if (s.ok) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.error,
                     )
                 }
-                if (!allOk) Text("Don't turn sync on with this folder. Try another location, and send me this list.", style = MaterialTheme.typography.bodySmall)
+                if (!allOk) Text("Don't turn sync on with this folder. Try another location.", style = MaterialTheme.typography.bodySmall)
             }
         },
         confirmButton = { Button(onClick = onDismiss) { Text("OK") } },

@@ -10,8 +10,8 @@ object DatabaseFactory {
 
     /**
      * The real database lives in %LOCALAPPDATA%\RevisionTracker\ — NOT next to the
-     * exe (lost on reinstall) and NEVER inside the OneDrive folder (OneDrive syncs
-     * whole files and would corrupt SQLite; see PROJECT_SPEC.md section 9.1).
+     * exe (lost on reinstall) and NEVER inside the shared sync folder (cloud drives sync
+     * whole files and would corrupt SQLite; see docs/PROJECT_SPEC.md section 9.1).
      */
     fun defaultDatabaseFile(): File {
         val base = System.getenv("LOCALAPPDATA")

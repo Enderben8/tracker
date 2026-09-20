@@ -46,7 +46,7 @@ data class SyncResult(
 )
 
 /**
- * Sync over a shared folder (PROJECT_SPEC.md section 9). Each device writes ONLY its own append-only
+ * Sync over a shared folder (docs/PROJECT_SPEC.md section 9). Each device writes ONLY its own append-only
  * log (`devices/<device-id>.jsonl`) and only reads the others, so no file ever has two writers and
  * the storage provider never has a conflict to resolve. Rows carry `updated_at`; the newer one wins
  * (ties go to the higher device id, so every device settles on the same winner). Deletions are soft,

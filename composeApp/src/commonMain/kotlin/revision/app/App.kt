@@ -6,20 +6,18 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
-import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.WindowInsetsSides
-import androidx.compose.foundation.layout.imePadding
-import androidx.compose.foundation.layout.only
-import androidx.compose.foundation.layout.safeDrawing
-import androidx.compose.foundation.layout.windowInsetsPadding
-import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -32,7 +30,10 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.compositionLocalOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -40,15 +41,30 @@ import kotlinx.coroutines.delay
 import revision.core.db.RevisionDatabase
 import revision.core.formatClock
 import revision.core.formatTimeOfDay
+import revision.core.timer.DanglingSession
 
 /** True on phone-width screens; screens use it to stack controls instead of laying them in a row. */
 val LocalCompact = compositionLocalOf { false }
 
-@Composable
-fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, syncPlatform: SyncPlatform = NoSyncPlatform, state: AppState = androidx.compose.runtime.remember { AppState(db) }) {
+/** The tabs along the bottom, in order. History also stays selected while logging a past session. */
+private val tabs = listOf(
+    Tab(Screen.Today, "★", "Today"),
+    Tab(Screen.Timer, "⏱", "Timer"),
+    Tab(Screen.History, "☰", "History", also = Screen.LogPast),
+    Tab(Screen.Topics, "✎", "Topics"),
+    Tab(Screen.Stats, "▮", "Stats"),
+    Tab(Screen.Settings, "⚙", "Settings"),
+)
 
-    val scope = androidx.compose.runtime.rememberCoroutineScope()
-    val sync = androidx.compose.runtime.remember { SyncManager(db, syncPlatform, scope) }
+private data class Tab(val screen: Screen, val icon: String, val label: String, val also: Screen? = null)
+
+@Composable
+fun App(
+    db: RevisionDatabase,
+    files: FileAccess = NoFileAccess,
+    sync: SyncManager = rememberSyncManager(db, NoSyncPlatform),
+    state: AppState = remember { AppState(db) },
+) {
     LaunchedEffect(Unit) {
         if (sync.enabled) sync.syncNow()
         sync.pollLoop()
@@ -69,63 +85,41 @@ fun App(db: RevisionDatabase, files: FileAccess = NoFileAccess, syncPlatform: Sy
 
     MaterialTheme(colorScheme = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme()) {
         Surface(Modifier.fillMaxSize()) {
-          BoxWithConstraints(Modifier.fillMaxSize()) {
-           CompositionLocalProvider(LocalCompact provides (maxWidth < 600.dp)) {
-            Column(
-                Modifier
-                    .fillMaxSize()
-                    // Keep clear of the status bar / camera cut-out; the nav bar handles the bottom edge.
-                    .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Top + WindowInsetsSides.Horizontal))
-                    .imePadding(),
-            ) {
-                ActiveBanner(state)
-                Box(Modifier.weight(1f)) {
-                    when (state.screen) {
-                        Screen.Today -> TodayScreen(state)
-                        Screen.Timer -> TimerScreen(state)
-                        Screen.History -> HistoryScreen(state)
-                        Screen.LogPast -> LogPastScreen(state)
-                        Screen.Topics -> ManageScreen(state)
-                        Screen.Stats -> StatsScreen(state)
-                        Screen.Settings -> SettingsScreen(state, files, sync)
+            BoxWithConstraints(Modifier.fillMaxSize()) {
+                CompositionLocalProvider(LocalCompact provides (maxWidth < 600.dp)) {
+                    Column(
+                        Modifier
+                            .fillMaxSize()
+                            // Keep clear of the status bar / camera cut-out; the nav bar handles the bottom edge.
+                            .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Top + WindowInsetsSides.Horizontal))
+                            .imePadding(),
+                    ) {
+                        ActiveBanner(state)
+                        Box(Modifier.weight(1f)) {
+                            when (state.screen) {
+                                Screen.Today -> TodayScreen(state)
+                                Screen.Timer -> TimerScreen(state)
+                                Screen.History -> HistoryScreen(state)
+                                Screen.LogPast -> LogPastScreen(state)
+                                Screen.Topics -> ManageScreen(state)
+                                Screen.Stats -> StatsScreen(state)
+                                Screen.Settings -> SettingsScreen(state, files, sync)
+                            }
+                        }
+                        NavigationBar {
+                            tabs.forEach { tab ->
+                                NavigationBarItem(
+                                    selected = state.screen == tab.screen || state.screen == tab.also,
+                                    onClick = { state.screen = tab.screen },
+                                    icon = { Text(tab.icon) },
+                                    label = { Text(tab.label) },
+                                )
+                            }
+                        }
                     }
-                }
-                NavigationBar {
-                    NavigationBarItem(
-                        selected = state.screen == Screen.Today,
-                        onClick = { state.screen = Screen.Today },
-                        icon = { Text("★") }, label = { Text("Today") },
-                    )
-                    NavigationBarItem(
-                        selected = state.screen == Screen.Timer,
-                        onClick = { state.screen = Screen.Timer },
-                        icon = { Text("⏱") }, label = { Text("Timer") },
-                    )
-                    NavigationBarItem(
-                        selected = state.screen == Screen.History || state.screen == Screen.LogPast,
-                        onClick = { state.screen = Screen.History },
-                        icon = { Text("☰") }, label = { Text("History") },
-                    )
-                    NavigationBarItem(
-                        selected = state.screen == Screen.Topics,
-                        onClick = { state.screen = Screen.Topics },
-                        icon = { Text("✎") }, label = { Text("Topics") },
-                    )
-                    NavigationBarItem(
-                        selected = state.screen == Screen.Stats,
-                        onClick = { state.screen = Screen.Stats },
-                        icon = { Text("▮") }, label = { Text("Stats") },
-                    )
-                    NavigationBarItem(
-                        selected = state.screen == Screen.Settings,
-                        onClick = { state.screen = Screen.Settings },
-                        icon = { Text("⚙") }, label = { Text("Settings") },
-                    )
+                    state.dangling?.let { RecoveryDialog(state, it) }
                 }
             }
-            state.dangling?.let { RecoveryDialog(state, it) }
-           }
-          }
         }
     }
 }
@@ -158,7 +152,7 @@ private fun ActiveBanner(state: AppState) {
 }
 
 @Composable
-private fun RecoveryDialog(state: AppState, d: revision.core.timer.DanglingSession) {
+private fun RecoveryDialog(state: AppState, d: DanglingSession) {
     val subject = state.subjects.get(d.subjectId)?.name ?: "a session"
     val since = formatTimeOfDay(d.segmentStartedAt)
     val lastAlive = formatTimeOfDay(d.lastAliveAt)

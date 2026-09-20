@@ -1,0 +1,10 @@
+# Store text with LF line endings so builds behave the same on Windows, Linux and CI.
+* text=auto eol=lf
+
+# Windows scripts must keep CRLF or cmd.exe misreads them.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.jar binary
+*.ico binary
+*.png binary

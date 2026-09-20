@@ -1,9 +1,10 @@
 # Revision Tracker — Implementation Spec
 
-**Status:** Not yet started. No code exists. This document is the complete brief.
+**Status:** Built. Phases 0–6 are all done and in daily use; this document
+remains the reference for *why* each part works the way it does. Where the code
+has since diverged, `NOTES.md` records it.
 **Audience:** AI agents (and humans) picking this project up cold.
 **Written:** 2026-09-17
-**Working directory:** `C:\Users\benli\Documents\revision`
 
 ---
 
@@ -79,20 +80,16 @@ Already installed — **use these, do not install alternatives**:
 Explicitly **absent**: Visual Studio (any edition), Flutter, Dart, a modern
 .NET SDK (only EOL 3.1 is present).
 
-### ⚠️ JDK warning — read before first build
+### JDK note
 
-System Java is **25**. The Android Gradle Plugin and Kotlin toolchain are very
-likely to reject or misbehave on a JDK that new. **Do not fight this.**
+This was written expecting trouble: system Java was **25**, and the Android
+Gradle Plugin was expected to reject a JDK that new, so early builds pointed
+Gradle at Android Studio's bundled JetBrains Runtime via
+`org.gradle.java.home` in `gradle.properties`.
 
-- Point Gradle at the JDK bundled with Android Studio (JetBrains Runtime,
-  normally JDK 21) rather than system Java 25.
-- Set it in `gradle.properties`:
-  `org.gradle.java.home=C\:\\Program Files\\Android\\Android Studio\\jbr`
-  (verify that path exists first; escape backslashes as shown).
-- Confirm with `./gradlew -version` before writing application code. **Getting a
-  trivial "hello world" Compose window to launch is Phase 0 and must be done
-  before anything else** — do not write the data layer and then discover the
-  toolchain is broken.
+**Resolved (2026-09-20).** AGP 9.3.1 and Kotlin 2.4.20 build fine on Java 25,
+and that machine-specific line has been removed — it would have broken the
+build for anyone else. Any **JDK 17 or newer** works; CI uses Temurin 21.
 
 ---
 
@@ -105,26 +102,31 @@ unit-tested without any UI or Android dependency.
 revision/
   settings.gradle.kts
   build.gradle.kts
-  gradle.properties              <- org.gradle.java.home lives here
+  gradle.properties              <- app.version lives here, used by both platforms
   gradle/libs.versions.toml      <- version catalog; all versions in one place
   local.properties               <- sdk.dir; MUST be gitignored
-  .gitignore
+  .github/workflows/             <- tests on every push; installers on a version tag
+  scripts/                       <- Windows build-and-install / run-from-source
 
   core/                          Kotlin Multiplatform library. No Compose.
     src/commonMain/kotlin/       models, SQLDelight queries, repositories,
-                                 scheduler, time formatting
+                                 scheduler, sync engine, time formatting
     src/commonMain/sqldelight/   .sq schema + query files
     src/androidMain/kotlin/      Android SQLite driver factory
     src/desktopMain/kotlin/      JVM SQLite driver factory
     src/commonTest/kotlin/       scheduler + repository tests
 
-  composeApp/                    Compose Multiplatform UI.
+  composeApp/                    Compose Multiplatform UI (package revision.app).
     src/commonMain/kotlin/       every screen, shared by both platforms
-    src/androidMain/kotlin/      MainActivity, AndroidManifest.xml
     src/desktopMain/kotlin/      fun main() + Window
+    src/desktopTest/kotlin/      off-screen renders of every screen
+    icons/app.ico                <- Windows installer / taskbar icon
 
-  gcse_revision_guides_contents.md   <- source data, do not delete
-  PROJECT_SPEC.md                    <- this file
+  androidApp/                    Android entry point only (see the note below).
+
+  docs/PROJECT_SPEC.md               <- this file
+  docs/NOTES.md                      <- what was decided while building
+  docs/gcse_revision_guides_contents.md   <- source data, do not delete
 ```
 
 > **Implementation note (Phase 5):** Compose 1.12 requires AGP 9.1+, and AGP 9 no longer lets one
@@ -810,8 +812,8 @@ Build one or the other — not both.
 # Desktop, during development
 ./gradlew :composeApp:run
 
-# Desktop installer (.msi on Windows)
-./gradlew :composeApp:packageDistributionForCurrentOS
+# Desktop installer (.msi on Windows) — or scripts\install-desktop.bat
+./gradlew :composeApp:packageMsi
 
 # Android
 ./gradlew :androidApp:assembleDebug

@@ -1,6 +1,6 @@
 package revision.core.seed
 
-// Source: PROJECT_SPEC.md section 6.2. The source guides have no contents pages, so the
+// Source: docs/PROJECT_SPEC.md section 6.2. The source guides have no contents pages, so the
 // seven sub-topics per text are a reasonable GUESS, not a transcription — the UI should
 // present them as editable suggestions. The Power and Conflict poems are generated: the
 // student owns no guide for the anthology.

@@ -1,7 +1,10 @@
 package revision.app
 
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
@@ -11,6 +14,7 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import revision.core.data.SettingsRepository
 import revision.core.db.RevisionDatabase
+import revision.core.formatTimeOfDay
 import revision.core.sync.CheckStep
 import revision.core.sync.DeviceSettings
 import revision.core.sync.SyncEngine
@@ -41,6 +45,13 @@ object NoSyncPlatform : SyncPlatform {
     override suspend fun chooseFolder(): String? = null
     override fun open(location: String): SyncFolder = error("Sync is not available here.")
     override fun describe(location: String) = location
+}
+
+/** A [SyncManager] that lives as long as the calling composable (the window, or the whole app). */
+@Composable
+fun rememberSyncManager(db: RevisionDatabase, platform: SyncPlatform): SyncManager {
+    val scope = rememberCoroutineScope()
+    return remember { SyncManager(db, platform, scope) }
 }
 
 /**
@@ -121,13 +132,24 @@ class SyncManager(
             if (result.applied > 0) { bits += "${result.applied} received"; pulledVersion++ }
             if (result.pushed > 0) bits += "${result.pushed} sent"
             if (result.waiting > 0) bits += "${result.waiting} waiting for related data"
-            status = "Synced " + revision.core.formatTimeOfDay(systemNow()) + if (bits.isEmpty()) " - up to date" else " - " + bits.joinToString(", ")
+            status = "Synced " + formatTimeOfDay(systemNow()) + if (bits.isEmpty()) " - up to date" else " - " + bits.joinToString(", ")
         } catch (e: Throwable) {
             status = "Couldn't sync (${e.message ?: e::class.simpleName}). Your data is safe on this device; it will retry."
         } finally {
             busy = false
             lock.unlock()
         }
+    }
+
+    /**
+     * Sends anything still waiting for the 30-second debounce, e.g. just before the app closes.
+     * Waits for a sync that is already running rather than skipping.
+     */
+    suspend fun flush() {
+        if (!enabled) return
+        pending?.cancel()
+        while (busy) delay(100)
+        syncNow().join()
     }
 
     /** Periodic pull so changes from the other device show up without any action. */

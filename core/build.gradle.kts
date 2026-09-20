@@ -7,7 +7,7 @@ plugins {
 
 kotlin {
     jvm("desktop")
-    androidLibrary {
+    android {
         namespace = "revision.core"
         compileSdk = libs.versions.androidCompileSdk.get().toInt()
         minSdk = libs.versions.androidMinSdk.get().toInt()

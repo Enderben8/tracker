@@ -11,6 +11,8 @@ import revision.core.seed.Seeder
 import revision.core.systemNow
 
 class MainActivity : ComponentActivity() {
+    private var sync: SyncManager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -22,9 +24,22 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             val state = remember { AppState(db) }
+            val sync = rememberSyncManager(db, syncPlatform).also { this@MainActivity.sync = it }
             // Back returns to Today first; back on Today leaves the app as usual.
             BackHandler(enabled = state.screen != Screen.Today) { state.screen = Screen.Today }
-            App(db, files, syncPlatform, state)
+            App(db, files, sync, state)
         }
+    }
+
+    // Coming back to the app picks up the other device's changes; leaving it sends ours
+    // straight away rather than after the usual 30-second wait (Android may stop the app soon after).
+    override fun onRestart() {
+        super.onRestart()
+        sync?.syncNow()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        sync?.syncNow()
     }
 }

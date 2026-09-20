@@ -27,7 +27,7 @@ class RenderTest {
         val state = AppState(db)
         prepare(state)
         @OptIn(ExperimentalComposeUiApi::class)
-        val scene = ImageComposeScene(width = if (phone) 900 else 1000, height = if (phone) 1950 else 800, density = Density(if (phone) 2.5f else 1f)) { App(db, NoFileAccess, NoSyncPlatform, state) }
+        val scene = ImageComposeScene(width = if (phone) 900 else 1000, height = if (phone) 1950 else 800, density = Density(if (phone) 2.5f else 1f)) { App(db, NoFileAccess, state = state) }
         try {
             scene.render(0)
             val image = scene.render(1_000_000_000L)

@@ -4,11 +4,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
+import revision.core.backup.BackupService
+import revision.core.data.SettingsRepository
 import revision.core.data.SubjectRepository
 import revision.core.data.TopicRepository
 import revision.core.db.RevisionDatabase
-import revision.core.backup.BackupService
-import revision.core.data.SettingsRepository
 import revision.core.manage.SubjectEditor
 import revision.core.manage.TopicEditor
 import revision.core.scheduling.SchedulerConfigStore
@@ -19,6 +19,7 @@ import revision.core.timer.ActiveSession
 import revision.core.timer.DanglingSession
 import revision.core.timer.HistoryService
 import revision.core.timer.SessionService
+import revision.core.timer.TopicRating
 
 enum class Screen { Today, Timer, History, LogPast, Topics, Stats, Settings }
 
@@ -97,7 +98,7 @@ class AppState(val db: RevisionDatabase) {
         changed()
     }
 
-    fun stop(ratings: Map<String, revision.core.timer.TopicRating>, notes: String?) {
+    fun stop(ratings: Map<String, TopicRating>, notes: String?) {
         val s = active ?: return
         sessions.stop(s.sessionId, ratings, notes)
         changed()

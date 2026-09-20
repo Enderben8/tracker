@@ -1,6 +1,6 @@
 package revision.core.seed
 
-// Source: PROJECT_SPEC.md section 6.3. AQA Maths, HIGHER tier. There is no book, so no
+// Source: docs/PROJECT_SPEC.md section 6.3. AQA Maths, HIGHER tier. There is no book, so no
 // page numbers; this is a generated standard topic list and should be presented as
 // editable suggestions.
 

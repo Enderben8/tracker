@@ -1,6 +1,6 @@
 package revision.core.seed
 
-// Source: PROJECT_SPEC.md section 6.3. AQA French, written from memory rather than from a
+// Source: docs/PROJECT_SPEC.md section 6.3. AQA French, written from memory rather than from a
 // document the user owns — the theme titles should be sanity-checked against the live AQA
 // specification. No book, so no page numbers; present as editable suggestions.
 
