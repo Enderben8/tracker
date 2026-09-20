@@ -1,0 +1,35 @@
+name: Build
+
+# Checks every push and pull request: the tests must pass and both apps must build.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Run tests
+        run: ./gradlew :core:desktopTest :composeApp:desktopTest --stacktrace
+
+      - name: Build the Android app
+        run: ./gradlew :androidApp:assembleDebug --stacktrace
+
+      # The rendered screens are handy for seeing what a change looked like.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshots
+          path: composeApp/build/screenshots/
+          if-no-files-found: ignore
