@@ -29,8 +29,10 @@ your data stays on your devices.
   never revised — usually the number worth acting on.
 - **Sync your PC and phone** through a shared Google Drive or OneDrive folder
   (optional, off until you turn it on). No server and no sign-in of its own.
-- **Edit everything.** ~415 starting topics across 9 GCSE subjects are seeded on
-  first run; rename, add, reorder or archive any of them.
+- **Start with your own subjects.** On first run you pick what you study and
+  which board examines each one — AQA History alongside OCR Computer Science is
+  normal — and the topic lists come from those boards' published
+  specifications. Anything can be renamed, added, reordered or archived.
 
 | Topics | Stats | Phone |
 |---|---|---|
@@ -64,17 +66,30 @@ installer is not signed with a paid certificate. *More info → Run anyway.*
 > and **export a backup from Settings beforehand**, because uninstalling deletes
 > its data. See [docs/NOTES.md](docs/NOTES.md) to set up a real signing key.
 
-## The starting topic lists
+## Where the topics come from
 
-The seeded subjects are one student's GCSE courses: AQA Biology, Chemistry,
-Physics, Computer Science, English Literature (Macbeth, A Christmas Carol,
-An Inspector Calls, Power and Conflict), Geography, History, Higher Maths and
-French. Some lists were transcribed from revision guides and some are sensible
-guesses.
+The first time you open the app it asks which subjects you take and which board
+examines each one, then installs those specifications' topic lists. Each list
+says where it came from and when it was checked, e.g. *"AQA Biology 8461
+specification, checked 20 Sep 2026"*.
 
-If your courses differ, the Topics screen lets you archive what you do not take
-and add what you do. Settings → *Restore starting topics* brings back anything
-you archived by mistake, and *Erase everything* starts over.
+Covered today — the board is chosen per subject, so any mixture works:
+
+| Board | Subjects |
+|---|---|
+| **AQA** | Biology, Chemistry, Physics, Maths, Computer Science, English Literature, English Language, Geography, History, French, Religious Studies |
+| **Edexcel** | Biology, Chemistry, Physics |
+| **OCR** | Biology, Chemistry, Computer Science |
+
+Anything not listed can be added as your own subject and filled in by hand, and
+more boards are a data change rather than a code change — see
+[docs/NOTES.md](docs/NOTES.md).
+
+Specifications are written for teachers, so the wording is drier than a revision
+guide's and some subjects include options your school does not take. Rename and
+archive freely: Settings → *Restore topics from the specification* puts back
+anything you archived, leaving your renames alone, and *Start over* returns you
+to the subject picker while keeping your logged hours.
 
 ## Build it yourself
 

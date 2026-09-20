@@ -1,0 +1,121 @@
+{
+  "key": "chemistry",
+  "ref": "ocr/chemistry-j248",
+  "board": "OCR",
+  "name": "Chemistry",
+  "specCode": "J248",
+  "sourceUrl": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "C1",
+      "title": "Particles",
+      "sourceUrl": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+      "topics": [
+        {
+          "code": "C1.1",
+          "title": "The particle model"
+        },
+        {
+          "code": "C1.2",
+          "title": "Atomic structure"
+        }
+      ]
+    },
+    {
+      "code": "C2",
+      "title": "Elements, compounds and mixtures",
+      "sourceUrl": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+      "topics": [
+        {
+          "code": "C2.1",
+          "title": "Purity and separating mixtures"
+        },
+        {
+          "code": "C2.2",
+          "title": "Bonding"
+        },
+        {
+          "code": "C2.3",
+          "title": "Properties of materials"
+        }
+      ]
+    },
+    {
+      "code": "C3",
+      "title": "Chemical reactions",
+      "sourceUrl": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+      "topics": [
+        {
+          "code": "C3.1",
+          "title": "Introducing chemical reactions"
+        },
+        {
+          "code": "C3.2",
+          "title": "Energetics"
+        },
+        {
+          "code": "C3.3",
+          "title": "Types of chemical reactions"
+        },
+        {
+          "code": "C3.4",
+          "title": "Electrolysis"
+        }
+      ]
+    },
+    {
+      "code": "C4",
+      "title": "Predicting and identifying reactions and products",
+      "sourceUrl": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+      "topics": [
+        {
+          "code": "C4.1",
+          "title": "Predicting chemical reactions"
+        },
+        {
+          "code": "C4.2",
+          "title": "Identifying the products of chemical reactions"
+        }
+      ]
+    },
+    {
+      "code": "C5",
+      "title": "Monitoring and controlling chemical",
+      "sourceUrl": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+      "topics": [
+        {
+          "code": "C5.1",
+          "title": "Monitoring chemical reactions"
+        },
+        {
+          "code": "C5.2",
+          "title": "Controlling reactions"
+        },
+        {
+          "code": "C5.3",
+          "title": "Equilibria"
+        }
+      ]
+    },
+    {
+      "code": "C6",
+      "title": "Global challenges",
+      "sourceUrl": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+      "topics": [
+        {
+          "code": "C6.1",
+          "title": "Improving processes and products"
+        },
+        {
+          "code": "C6.2",
+          "title": "Organic chemistry"
+        },
+        {
+          "code": "C6.3",
+          "title": "Interpreting and interacting with earth systems"
+        }
+      ]
+    }
+  ]
+}

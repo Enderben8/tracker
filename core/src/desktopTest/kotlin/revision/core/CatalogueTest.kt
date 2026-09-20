@@ -74,15 +74,31 @@ class CatalogueTest {
     }
 
     @Test
-    fun mixingBoardsPerSubjectInstallsBothWithTheirOwnBoard() {
+    fun mixingBoardsPerSubjectInstallsEachWithItsOwnBoard() {
         val db = DatabaseFactory.inMemory()
-        // Once other boards are added this picks two different ones; with AQA alone it still
-        // proves two subjects install side by side with the right board recorded.
-        TestCatalogue.install(db, now, listOf(TestCatalogue.history, TestCatalogue.biology))
+        // AQA History alongside OCR Computer Science: the ordinary case, not an edge case.
+        TestCatalogue.install(db, now, listOf(TestCatalogue.history, TestCatalogue.ocrComputerScience))
+
         val subjects = SubjectRepository(db, now).getAll()
-        assertEquals(listOf("History", "Biology"), subjects.map { it.name })
-        assertTrue(subjects.all { it.exam_board == "AQA" })
+        assertEquals(listOf("History", "Computer Science"), subjects.map { it.name })
+        assertEquals(listOf("AQA", "OCR"), subjects.map { it.exam_board })
         assertEquals(subjects.size, subjects.map { it.id }.toSet().size)
+    }
+
+    @Test
+    fun theSameSubjectOnTwoBoardsStaysSeparate() {
+        // They are different courses, so they must not collide on ids or merge over sync.
+        val db = DatabaseFactory.inMemory()
+        TestCatalogue.install(db, now, listOf(TestCatalogue.biology, TestCatalogue.edexcelBiology))
+
+        val subjects = SubjectRepository(db, now).getAll()
+        assertEquals(2, subjects.size)
+        assertEquals(listOf("AQA", "Edexcel"), subjects.map { it.exam_board })
+        val aqaTopics = TopicRepository(db, now).getBySubject(TestCatalogue.BIOLOGY).map { it.id }
+        val edexcelTopics = TopicRepository(db, now)
+            .getBySubject(CatalogueInstaller.subjectIdFor(TestCatalogue.edexcelBiology)).map { it.id }
+        assertTrue(aqaTopics.isNotEmpty() && edexcelTopics.isNotEmpty())
+        assertTrue(aqaTopics.none { it in edexcelTopics })
     }
 
     @Test

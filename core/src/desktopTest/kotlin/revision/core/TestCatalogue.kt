@@ -18,6 +18,8 @@ object TestCatalogue {
     val maths: SpecSubject = Catalogue.find("aqa/maths-8300")!!
     val history: SpecSubject = Catalogue.find("aqa/history-8145")!!
     val geography: SpecSubject = Catalogue.find("aqa/geography-8035")!!
+    val ocrComputerScience: SpecSubject = Catalogue.find("ocr/computer-science-j277")!!
+    val edexcelBiology: SpecSubject = Catalogue.find("edexcel/biology-1bi0")!!
     val englishLiterature: SpecSubject = Catalogue.find("aqa/english-literature-8702")!!
 
     val BIOLOGY: String = CatalogueInstaller.subjectIdFor(biology)

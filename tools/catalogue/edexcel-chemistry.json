@@ -1,0 +1,744 @@
+{
+  "key": "chemistry",
+  "ref": "edexcel/chemistry-1ch0",
+  "board": "EDEXCEL",
+  "name": "Chemistry",
+  "specCode": "1CH0",
+  "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "1",
+      "title": "Key concepts in chemistry",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "Describe how the Dalton model of an atom has changed over time because of the discovery of subatomic particles"
+        },
+        {
+          "code": "1.2",
+          "title": "Describe the structure of an atom as a nucleus containing protons and neutrons, surrounded by electrons in shells"
+        },
+        {
+          "code": "1.3",
+          "title": "Recall the relative charge and relative mass of: a a proton b a neutron c an electron"
+        },
+        {
+          "code": "1.4",
+          "title": "Explain why atoms contain equal numbers of protons and electrons"
+        },
+        {
+          "code": "1.5",
+          "title": "Describe the nucleus of an atom as very small compared to the overall size of the atom"
+        },
+        {
+          "code": "1.6",
+          "title": "Recall that most of the mass of an atom is concentrated in the nucleus"
+        },
+        {
+          "code": "1.7",
+          "title": "Recall the meaning of the term mass number of an atom"
+        },
+        {
+          "code": "1.8",
+          "title": "Describe atoms of a given element as having the same number of protons in the nucleus and that this number is unique…"
+        },
+        {
+          "code": "1.9",
+          "title": "Describe isotopes as different atoms of the same element containing the same number of protons but different numbers…"
+        },
+        {
+          "code": "1.10",
+          "title": "Calculate the numbers of protons, neutrons and electrons in atoms given the atomic number and mass number"
+        },
+        {
+          "code": "1.11",
+          "title": "Explain how the existence of isotopes results in relative atomic masses of some elements not being whole numbers"
+        },
+        {
+          "code": "1.12",
+          "title": "Calculate the relative atomic mass of an element from the relative masses and abundances of its isotopes"
+        },
+        {
+          "code": "1.13",
+          "title": "Describe how Dmitri Mendeleev arranged the elements, known at that time, in a periodic table by using properties of…"
+        },
+        {
+          "code": "1.14",
+          "title": "Describe how Dmitri Mendeleev used his table to predict the existence and properties of some elements not then…"
+        },
+        {
+          "code": "1.15",
+          "title": "Explain that Dmitri Mendeleev thought he had arranged elements in order of increasing relative atomic mass but this…"
+        },
+        {
+          "code": "1.16",
+          "title": "Explain the meaning of atomic number of an element in terms of position in the periodic table and number of protons…"
+        },
+        {
+          "code": "1.17",
+          "title": "Describe that in the periodic table a elements are arranged in order of increasing atomic number, in rows called…"
+        },
+        {
+          "code": "1.18",
+          "title": "Identify elements as metals or non-metals according to their position in the periodic table, explaining this…"
+        },
+        {
+          "code": "1.19",
+          "title": "Predict the electronic configurations of the first 20 elements in the periodic table as diagrams and in the form,…"
+        },
+        {
+          "code": "1.20",
+          "title": "Explain how the electronic configuration of an element is related to its position in the periodic table"
+        },
+        {
+          "code": "1.21",
+          "title": "Explain how ionic bonds are formed by the transfer of electrons between atoms to produce cations and anions,…"
+        },
+        {
+          "code": "1.22",
+          "title": "Recall that an ion is an atom or group of atoms with a positive or negative charge"
+        },
+        {
+          "code": "1.23",
+          "title": "C alculate the numbers of protons, neutrons and electrons in simple ions given the atomic number and mass number"
+        },
+        {
+          "code": "1.24",
+          "title": "Explain the formation of ions in ionic compounds from their atoms, limited to compounds of elements in groups 1, 2,…"
+        },
+        {
+          "code": "1.25",
+          "title": "Explain the use of the endings –ide and –ate in the names of compounds Pearson Edexcel Level 1/Level 2 GCSE (9-1) in…"
+        },
+        {
+          "code": "1.26",
+          "title": "Deduce the formulae of ionic compounds (including oxides, hydroxides, halides, nitrates, carbonates and sulfates)…"
+        },
+        {
+          "code": "1.27",
+          "title": "Explain the structure of an ionic compound as a lattice structure a consisting of a regular arrangement of ions b…"
+        },
+        {
+          "code": "1.28",
+          "title": "Explain how a covalent bond is formed when a pair of electrons is shared between two atoms"
+        },
+        {
+          "code": "1.29",
+          "title": "Recall that covalent bonding results in the formation of molecules"
+        },
+        {
+          "code": "1.30",
+          "title": "Recall the typical size (order of magnitude) of atoms and small molecules"
+        },
+        {
+          "code": "1.31",
+          "title": "Explain the formation of simple molecular, covalent substances, using dot and cross diagrams, including: a hydrogen…"
+        },
+        {
+          "code": "1.32",
+          "title": "Explain why elements and compounds can be classified as: a ionic b simple molecular (covalent) c giant covalent d…"
+        },
+        {
+          "code": "1.33",
+          "title": "Explain the properties of ionic compounds limited to: a high melting points and boiling points, in terms of forces…"
+        },
+        {
+          "code": "1.34",
+          "title": "Explain the properties of typical covalent, simple molecular compounds limited to: a low melting points and boiling…"
+        },
+        {
+          "code": "1.35",
+          "title": "Recall that graphite and diamond are different forms of carbon and that they are examples of giant covalent substances"
+        },
+        {
+          "code": "1.36",
+          "title": "Describe the structures of graphite and diamond"
+        },
+        {
+          "code": "1.37",
+          "title": "Explain, in terms of structure and bonding, why graphite is used to make electrodes and as a lubricant, whereas…"
+        },
+        {
+          "code": "1.38",
+          "title": "Explain the properties of fullerenes including C60 and graphene in terms of their structures and bonding"
+        },
+        {
+          "code": "1.39",
+          "title": "Describe, using poly(ethene) as the example, that simple polymers consist of large molecules containing chains of…"
+        },
+        {
+          "code": "1.40",
+          "title": "Explain the properties of metals, including malleability and the ability to conduct electricity"
+        },
+        {
+          "code": "1.41",
+          "title": "Describe the limitations of particular representations and models, to include dot and cross, ball and stick models…"
+        },
+        {
+          "code": "1.42",
+          "title": "Describe most metals as shiny solids which have high melting points, high density and are good conductors of…"
+        },
+        {
+          "code": "1.43",
+          "title": "Calculate: a relative formula mass given relative atomic masses b percentage by mass of an element in a compound…"
+        },
+        {
+          "code": "1.44",
+          "title": "Calculate the formulae of simple compounds from reacting masses or percentage composition and understand that these…"
+        },
+        {
+          "code": "1.45",
+          "title": "Deduce: a the empirical formula of a compound from the formula of its molecule b the molecular formula of a compound…"
+        },
+        {
+          "code": "1.46",
+          "title": "Describe an experiment to determine the empirical formula of a simple compound such as magnesium oxide"
+        },
+        {
+          "code": "1.47",
+          "title": "Explain the law of conservation of mass applied to: a a closed system including a precipitation reaction in a closed…"
+        },
+        {
+          "code": "1.48",
+          "title": "Calculate masses of reactants and products from balanced equations, given the mass of one substance"
+        },
+        {
+          "code": "1.49",
+          "title": "Calculate the concentration of solutions in g dm–3 1a, 1c"
+        },
+        {
+          "code": "1.50",
+          "title": "Recall that one mole of particles of a substance is defined as: a the Avogadro constant number of particles (6.02 ×…"
+        },
+        {
+          "code": "1.51",
+          "title": "Calculate the number of: a moles of particles of a substance in a given mass of that substance and vice versa b…"
+        },
+        {
+          "code": "1.52",
+          "title": "Explain why, in a reaction, the mass of product formed is controlled by the mass of the reactant which is not in…"
+        },
+        {
+          "code": "1.53",
+          "title": "Deduce the stoichiometry of a reaction from the masses of the reactants and products"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "States of matter and mixtures",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+      "topics": [
+        {
+          "code": "2.1",
+          "title": "Describe the arrangement, movement and the relative energy of particles in each of the three states of matter:…"
+        },
+        {
+          "code": "2.2",
+          "title": "Recall the names used for the interconversions between the three states of matter, recognising that these are…"
+        },
+        {
+          "code": "2.3",
+          "title": "Explain the changes in arrangement, movement and energy of particles during these interconversions"
+        },
+        {
+          "code": "2.4",
+          "title": "Predict the physical state of a substance under specified conditions, given suitable data"
+        },
+        {
+          "code": "2.5",
+          "title": "Explain the difference between the use of ‘pure’ in chemistry compared with its everyday use and the differences in…"
+        },
+        {
+          "code": "2.6",
+          "title": "Interpret melting point data to distinguish between pure substances which have a sharp melting point and mixtures…"
+        },
+        {
+          "code": "2.7",
+          "title": "Explain the types of mixtures that can be separated by using the following experimental techniques: a simple…"
+        },
+        {
+          "code": "2.8",
+          "title": "Describe an appropriate experimental technique to separate a mixture, knowing the properties of the components of…"
+        },
+        {
+          "code": "2.9",
+          "title": "Describe paper chromatography as the separation of mixtures of soluble substances by running a solvent (mobile…"
+        },
+        {
+          "code": "2.10",
+          "title": "Interpret a paper chromatogram: a to distinguish between pure and impure substances b to identify substances by…"
+        },
+        {
+          "code": "2.11",
+          "title": "Core Practical: Investigate the composition of inks using simple distillation and paper chromatography"
+        },
+        {
+          "code": "2.12",
+          "title": "Describe how: a waste and ground water can be made potable, including the need for sedimentation, filtration and…"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Chemical changes",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+      "topics": [
+        {
+          "code": "3.1",
+          "title": "Recall that acids in solution are sources of hydrogen ions and alkalis in solution are sources of hydroxide ions"
+        },
+        {
+          "code": "3.2",
+          "title": "Recall that a neutral solution has a pH of 7 and that acidic solutions have lower pH values and alkaline solutions…"
+        },
+        {
+          "code": "3.3",
+          "title": "Recall the effect of acids and alkalis on indicators, including litmus, methyl orange and phenolphthalein"
+        },
+        {
+          "code": "3.4",
+          "title": "Recall that the higher the concentration of hydrogen ions in an acidic solution, the lower the pH; and the higher…"
+        },
+        {
+          "code": "3.5",
+          "title": "Recall that as hydrogen ion concentration in a solution increases by a factor of 10, the pH of the solution…"
+        },
+        {
+          "code": "3.6",
+          "title": "Core Practical: Investigate the change in pH on adding powdered calcium hydroxide or calcium oxide to a fixed volume…"
+        },
+        {
+          "code": "3.7",
+          "title": "Explain the terms dilute and concentrated, with respect to amount of substances in solution"
+        },
+        {
+          "code": "3.8",
+          "title": "Explain the terms weak and strong acids, with respect to the degree of dissociation into ions"
+        },
+        {
+          "code": "3.9",
+          "title": "Recall that a base is any substance that reacts with an acid to form a salt and water only"
+        },
+        {
+          "code": "3.10",
+          "title": "Recall that alkalis are soluble bases"
+        },
+        {
+          "code": "3.11",
+          "title": "Explain the general reactions of aqueous solutions of acids with: a metals b metal oxides c metal hydroxides d metal…"
+        },
+        {
+          "code": "3.12",
+          "title": "Describe the chemical test for: a hydrogen b carbon dioxide (using limewater)"
+        },
+        {
+          "code": "3.13",
+          "title": "Describe a neutralisation reaction as a reaction between an acid and a base"
+        },
+        {
+          "code": "3.14",
+          "title": "Explain an acid-alkali neutralisation as a reaction in which hydrogen ions (H+) from the acid react with hydroxide…"
+        },
+        {
+          "code": "3.15",
+          "title": "Explain why, if soluble salts are prepared from an acid and an insoluble reactant: a excess of the reactant is added…"
+        },
+        {
+          "code": "3.16",
+          "title": "Explain why, if soluble salts are prepared from an acid and a soluble reactant: a titration must be used b the acid…"
+        },
+        {
+          "code": "3.17",
+          "title": "Core Practical: Investigate the preparation of pure, dry hydrated copper sulfate crystals starting from copper oxide…"
+        },
+        {
+          "code": "3.18",
+          "title": "Describe how to carry out an acid-alkali titration, using burette, pipette and a suitable indicator, to prepare a…"
+        },
+        {
+          "code": "3.19",
+          "title": "Recall the general rules which describe the solubility of common types of substances in water: a all common sodium,…"
+        },
+        {
+          "code": "3.20",
+          "title": "Predict, using solubility rules, whether or not a precipitate will be formed when named solutions are mixed…"
+        },
+        {
+          "code": "3.21",
+          "title": "Describe the method used to prepare a pure, dry sample of an insoluble salt Suggested practicals ● Carry out simple…"
+        },
+        {
+          "code": "3.22",
+          "title": "Recall that electrolytes are ionic compounds in the molten state or dissolved in water"
+        },
+        {
+          "code": "3.23",
+          "title": "Describe electrolysis as a process in which electrical energy, from a direct current supply, decomposes electrolytes"
+        },
+        {
+          "code": "3.24",
+          "title": "Explain the movement of ions during electrolysis, in which: a positively charged cations migrate to the negatively…"
+        },
+        {
+          "code": "3.25",
+          "title": "Explain the formation of the products in the electrolysis, using inert electrodes, of some electrolytes, including:…"
+        },
+        {
+          "code": "3.26",
+          "title": "Predict the products of electrolysis of other binary, ionic compounds in the molten state"
+        },
+        {
+          "code": "3.27",
+          "title": "Write half equations for reactions occurring at the anode and cathode in electrolysis"
+        },
+        {
+          "code": "3.28",
+          "title": "Explain oxidation and reduction in terms of loss or gain of electrons"
+        },
+        {
+          "code": "3.29",
+          "title": "Recall that reduction occurs at the cathode and that oxidation occurs at the anode in electrolysis reactions"
+        },
+        {
+          "code": "3.30",
+          "title": "Explain the formation of the products in the electrolysis of copper sulfate solution, using copper electrodes, and…"
+        },
+        {
+          "code": "3.31",
+          "title": "Core Practical: Investigate the electrolysis of copper sulfate solution with inert electrodes and copper electrodes"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Extracting metals and equilibria",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+      "topics": [
+        {
+          "code": "4.1",
+          "title": "Deduce the relative reactivity of some metals, by their reactions with water, acids and salt solutions"
+        },
+        {
+          "code": "4.2",
+          "title": "Explain displacement reactions as redox reactions, in terms of gain or loss of electrons"
+        },
+        {
+          "code": "4.3",
+          "title": "Explain the reactivity series of metals (potassium, sodium, calcium, magnesium, aluminium, (carbon), zinc, iron,…"
+        },
+        {
+          "code": "4.4",
+          "title": "Recall that: a most metals are extracted from ores found in the Earth’s crust b unreactive metals are found in the…"
+        },
+        {
+          "code": "4.5",
+          "title": "Explain oxidation as the gain of oxygen and reduction as the loss of oxygen"
+        },
+        {
+          "code": "4.6",
+          "title": "Recall that the extraction of metals involves reduction of ores"
+        },
+        {
+          "code": "4.7",
+          "title": "Explain why the method used to extract a metal from its ore is related to its position in the reactivity series and…"
+        },
+        {
+          "code": "4.8",
+          "title": "Evaluate alternative biological methods of metal extraction (bacterial and phytoextraction)"
+        },
+        {
+          "code": "4.9",
+          "title": "Explain how a metal’s relative resistance to oxidation is related to its position in the reactivity series"
+        },
+        {
+          "code": "4.10",
+          "title": "Evaluate the advantages of recycling metals, including economic implications and how recycling can preserve both the…"
+        },
+        {
+          "code": "4.11",
+          "title": "Describe that a life-cycle assessment for a product involves consideration of the effect on the environment of…"
+        },
+        {
+          "code": "4.12",
+          "title": "Evaluate data from a life cycle assessment of a product Suggested practicals ● Investigate methods for extracting…"
+        },
+        {
+          "code": "4.13",
+          "title": "Recall that chemical reactions are reversible, the use of the symbol ⇌ in equations and that the direction of some…"
+        },
+        {
+          "code": "4.14",
+          "title": "Explain what is meant by dynamic equilibrium"
+        },
+        {
+          "code": "4.15",
+          "title": "Describe the formation of ammonia as a reversible reaction between nitrogen (extracted from the air) and hydrogen…"
+        },
+        {
+          "code": "4.16",
+          "title": "Recall the conditions for the Haber process as: a temperature 450 °C b pressure 200 atmospheres c iron catalyst"
+        },
+        {
+          "code": "4.17",
+          "title": "Predict how the position of a dynamic equilibrium is affected by changes in: a temperature b pressure c…"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "title": "Groups in the periodic table",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+      "topics": [
+        {
+          "code": "6.1",
+          "title": "Explain why some elements can be classified as alkali metals (group 1), halogens (group 7) or noble gases (group 0),…"
+        },
+        {
+          "code": "6.2",
+          "title": "Recall that alkali metals: a are soft b have relatively low melting points"
+        },
+        {
+          "code": "6.3",
+          "title": "Describe the reactions of lithium, sodium and potassium with water"
+        },
+        {
+          "code": "6.4",
+          "title": "Describe the pattern in reactivity of the alkali metals, lithium, sodium and potassium, with water; and use this…"
+        },
+        {
+          "code": "6.5",
+          "title": "Explain this pattern in reactivity in terms of electronic configurations Group 7 Students should: Maths skills"
+        },
+        {
+          "code": "6.6",
+          "title": "Recall the colours and physical states of chlorine, bromine and iodine at room temperature"
+        },
+        {
+          "code": "6.7",
+          "title": "Describe the pattern in the physical properties of the halogens, chlorine, bromine and iodine, and use this pattern…"
+        },
+        {
+          "code": "6.8",
+          "title": "Describe the chemical test for chlorine"
+        },
+        {
+          "code": "6.9",
+          "title": "Describe the reactions of the halogens, chlorine, bromine and iodine, with metals to form metal halides, and use…"
+        },
+        {
+          "code": "6.10",
+          "title": "Recall that the halogens, chlorine, bromine and iodine, form hydrogen halides which dissolve in water to form acidic…"
+        },
+        {
+          "code": "6.11",
+          "title": "Describe the relative reactivity of the halogens chlorine, bromine and iodine, as shown by their displacement…"
+        },
+        {
+          "code": "6.12",
+          "title": "Explain why these displacement reactions are redox reactions in terms of gain and loss of electrons, identifying…"
+        },
+        {
+          "code": "6.13",
+          "title": "Explain the relative reactivity of the halogens in terms of electronic configurations Group 0 Students should: Maths…"
+        },
+        {
+          "code": "6.14",
+          "title": "Explain why the noble gases are chemically inert, compared with the other elements, in terms of their electronic…"
+        },
+        {
+          "code": "6.15",
+          "title": "Explain how the uses of noble gases depend on their inertness, low density and/or non-flammability"
+        },
+        {
+          "code": "6.16",
+          "title": "Describe the pattern in the physical properties of some noble gases and use this pattern to predict the physical…"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "title": "Rates of reaction and energy changes",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+      "topics": [
+        {
+          "code": "7.1",
+          "title": "Core Practical: Investigate the effects of changing the conditions of a reaction on the rates of chemical reactions…"
+        },
+        {
+          "code": "7.2",
+          "title": "Suggest practical methods for determining the rate of a given reaction"
+        },
+        {
+          "code": "7.3",
+          "title": "Explain how reactions occur when particles collide and that rates of reaction are increased when the frequency…"
+        },
+        {
+          "code": "7.4",
+          "title": "Explain the effects on rates of reaction of changes in temperature, concentration, surface area to volume ratio of a…"
+        },
+        {
+          "code": "7.5",
+          "title": "Interpret graphs of mass, volume or concentration of reactant or product against time"
+        },
+        {
+          "code": "7.6",
+          "title": "Describe a catalyst as a substance that speeds up the rate of a reaction without altering the products of the…"
+        },
+        {
+          "code": "7.7",
+          "title": "Explain how the addition of a catalyst increases the rate of a reaction in terms of activation energy"
+        },
+        {
+          "code": "7.8",
+          "title": "Recall that enzymes are biological catalysts and that enzymes are used in the production of alcoholic drinks Use of…"
+        },
+        {
+          "code": "7.9",
+          "title": "Recall that changes in heat energy accompany the following changes: a salts dissolving in water b neutralisation…"
+        },
+        {
+          "code": "7.10",
+          "title": "Describe an exothermic change or reaction as one in which heat energy is given out"
+        },
+        {
+          "code": "7.11",
+          "title": "Describe an endothermic change or reaction as one in which heat energy is taken in"
+        },
+        {
+          "code": "7.12",
+          "title": "Recall that the breaking of bonds is endothermic and the making of bonds is exothermic"
+        },
+        {
+          "code": "7.13",
+          "title": "Recall that the overall heat energy change for a reaction is: a exothermic if more heat energy is released in…"
+        },
+        {
+          "code": "7.14",
+          "title": "Calculate the energy change in a reaction given the energies of bonds (in kJ mol–1)"
+        },
+        {
+          "code": "7.15",
+          "title": "Explain the term activation energy"
+        },
+        {
+          "code": "7.16",
+          "title": "Draw and label reaction profiles for endothermic and exothermic reactions, identifying activation energy"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "title": "Fuels and Earth science",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf",
+      "topics": [
+        {
+          "code": "8.1",
+          "title": "Recall that hydrocarbons are compounds that contain carbon and hydrogen only"
+        },
+        {
+          "code": "8.2",
+          "title": "Describe crude oil as: a a complex mixture of hydrocarbons b containing molecules in which carbon atoms are in…"
+        },
+        {
+          "code": "8.3",
+          "title": "Describe and explain the separation of crude oil into simpler, more useful mixtures by the process of fractional…"
+        },
+        {
+          "code": "8.4",
+          "title": "Recall the names and uses of the following fractions: a gases, used in domestic heating and cooking b petrol, used…"
+        },
+        {
+          "code": "8.5",
+          "title": "Explain how hydrocarbons in different fractions differ from each other in: a the number of carbon and hydrogen atoms…"
+        },
+        {
+          "code": "8.6",
+          "title": "Explain an homologous series as a series of compounds which: a have the same general formula b differ by CH2 in…"
+        },
+        {
+          "code": "8.7",
+          "title": "Describe the complete combustion of hydrocarbon fuels as a reaction in which: a carbon dioxide and water are…"
+        },
+        {
+          "code": "8.8",
+          "title": "Explain why the incomplete combustion of hydrocarbons can produce carbon and carbon monoxide"
+        },
+        {
+          "code": "8.9",
+          "title": "Explain how carbon monoxide behaves as a toxic gas"
+        },
+        {
+          "code": "8.10",
+          "title": "Describe the problems caused by incomplete combustion producing carbon monoxide and soot in appliances that use…"
+        },
+        {
+          "code": "8.11",
+          "title": "Explain how impurities in some hydrocarbon fuels result in the production of sulfur dioxide"
+        },
+        {
+          "code": "8.12",
+          "title": "Explain some problems associated with acid rain caused when sulfur dioxide dissolves in rain water"
+        },
+        {
+          "code": "8.13",
+          "title": "Explain why, when fuels are burned in engines, oxygen and nitrogen can react together at high temperatures to…"
+        },
+        {
+          "code": "8.14",
+          "title": "Evaluate the advantages and disadvantages of using hydrogen, rather than petrol, as a fuel in cars"
+        },
+        {
+          "code": "8.15",
+          "title": "Recall that petrol, kerosene and diesel oil are non-renewable fossil fuels obtained from crude oil and methane is a…"
+        },
+        {
+          "code": "8.16",
+          "title": "Explain how cracking involves the breaking down of larger, saturated hydrocarbon molecules (alkanes) into smaller,…"
+        },
+        {
+          "code": "8.17",
+          "title": "Explain why cracking is necessary"
+        },
+        {
+          "code": "8.18",
+          "title": "Recall that the gases produced by volcanic activity formed the Earth’s early atmosphere"
+        },
+        {
+          "code": "8.19",
+          "title": "Describe that the Earth’s early atmosphere was thought to contain: a little or no oxygen b a large amount of carbon…"
+        },
+        {
+          "code": "8.20",
+          "title": "Explain how condensation of water vapour formed oceans"
+        },
+        {
+          "code": "8.21",
+          "title": "Explain how the amount of carbon dioxide in the atmosphere was decreased when carbon dioxide dissolved as the oceans…"
+        },
+        {
+          "code": "8.22",
+          "title": "Explain how the growth of primitive plants used carbon dioxide and released oxygen by photosynthesis and…"
+        },
+        {
+          "code": "8.23",
+          "title": "Describe the chemical test for oxygen"
+        },
+        {
+          "code": "8.24",
+          "title": "Describe how various gases in the atmosphere, including carbon dioxide, methane and water vapour, absorb heat…"
+        },
+        {
+          "code": "8.25",
+          "title": "Evaluate the evidence for human activity causing climate change, considering: a the correlation between the change…"
+        },
+        {
+          "code": "8.26",
+          "title": "Describe: a the composition of today’s atmosphere b the potential effects on the climate of increased levels of…"
+        }
+      ]
+    }
+  ]
+}

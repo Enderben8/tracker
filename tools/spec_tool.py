@@ -61,7 +61,48 @@ AQA_SUBJECTS = [
      "path": "religious-studies/gcse/religious-studies-8062"},
 ]
 
-BOARDS = {"aqa": AQA_SUBJECTS}
+# Edexcel and OCR publish specifications as PDFs rather than web pages, so those subjects
+# name the document and the shape of its headings. `group`/`topic` are matched per line;
+# `wrap` joins the lines a heading runs onto (Edexcel writes each point as a sentence).
+EDEXCEL_SUBJECTS = [
+    {"key": "biology", "name": "Biology", "spec_code": "1BI0",
+     "url": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf"},
+    {"key": "chemistry", "name": "Chemistry", "spec_code": "1CH0",
+     "url": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-chemistry-spec.pdf"},
+    {"key": "physics", "name": "Physics", "spec_code": "1PH0",
+     "url": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf"},
+]
+for subject in EDEXCEL_SUBJECTS:
+    subject["layout"] = {
+        "kind": "pdf",
+        "group": r"^Topic (\d+)\s*[–-]\s*(.+)$",
+        "topic": r"^(\d+\.\d+)\s+(.+)$",
+        "wrap": True,
+        "stop": r"^(Appendix|Assessment Objectives)\b",
+    }
+
+OCR_SUBJECTS = [
+    {"key": "computer-science", "name": "Computer Science", "spec_code": "J277",
+     "url": "https://www.ocr.org.uk/Images/558027-specification-gcse-computer-science-j277.pdf",
+     "layout": {"kind": "pdf",
+                "group": r"^(\d\.\d)\s*[–-]\s*(.+)$",
+                "topic": r"^(\d\.\d\.\d)\s+(.+)$",
+                "stop": r"^(Appendix|3\.\s)"}},
+    {"key": "biology", "name": "Biology", "spec_code": "J247",
+     "url": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+     "layout": {"kind": "pdf",
+                "group": r"^Topic (B\d+):\s+(.+)$",
+                "topic": r"^(B\d+\.\d+)\s+([A-Z].+)$",
+                "stop": r"^Appendix\b"}},
+    {"key": "chemistry", "name": "Chemistry", "spec_code": "J248",
+     "url": "https://www.ocr.org.uk/images/234598-specification-accredited-gcse-gateway-science-suite-chemistry-a-j248.pdf",
+     "layout": {"kind": "pdf",
+                "group": r"^Topic (C\d+):\s+(.+)$",
+                "topic": r"^(C\d+\.\d+)\s+([A-Z].+)$",
+                "stop": r"^Appendix\b"}},
+]
+
+BOARDS = {"aqa": AQA_SUBJECTS, "edexcel": EDEXCEL_SUBJECTS, "ocr": OCR_SUBJECTS}
 
 
 # ---------------------------------------------------------------- downloading
@@ -292,6 +333,151 @@ def extract_aqa(subject: dict) -> dict:
     }
 
 
+# ------------------------------------------------------- extracting from a PDF
+
+def fetch_pdf(board: str, subject: dict) -> None:
+    folder = SOURCES / board / subject["key"]
+    folder.mkdir(parents=True, exist_ok=True)
+    target = folder / "spec.pdf"
+    request = urllib.request.Request(subject["url"], headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=120) as response:
+        target.write_bytes(response.read())
+    print(f"  {board}/{subject['key']}  {target.stat().st_size // 1024} KB")
+
+
+def pdf_text(board: str, subject: dict) -> str:
+    """The specification as plain lines. Tabs and runs of spaces become single spaces."""
+    import pypdf   # only needed for PDF boards, so not imported at the top
+
+    path = SOURCES / board / subject["key"] / "spec.pdf"
+    reader = pypdf.PdfReader(str(path))
+    lines = []
+    for page in reader.pages:
+        for line in (page.extract_text() or "").splitlines():
+            cleaned = re.sub(r"[\t ]+", " ", line)
+            lines.append(re.sub(r"\s{2,}", " ", cleaned).strip())
+    return "\n".join(lines)
+
+
+def extract_pdf(board: str, subject: dict) -> dict:
+    layout = subject["layout"]
+    group_re = re.compile(layout["group"])
+    topic_re = re.compile(layout["topic"])
+    stop_re = re.compile(layout["stop"]) if "stop" in layout else None
+
+    groups: list[dict] = []
+    current: dict | None = None
+    pending: dict | None = None      # a heading still gathering its wrapped lines
+
+    def keep_pending() -> None:
+        nonlocal pending
+        if pending and current:
+            title = tidy_statement(pending["title"])
+            if title:
+                current["topics"].append({"code": pending["code"], "title": title})
+        pending = None
+
+    for line in pdf_text(board, subject).splitlines():
+        if not line:
+            continue
+        # Contents pages mention the appendices long before the content ends, so only stop
+        # once a real amount of content has been collected.
+        if stop_re and stop_re.match(line) and sum(len(g["topics"]) for g in groups) > 20:
+            break
+
+        group_match = group_re.match(line)
+        topic_match = topic_re.match(line)
+
+        # A code like "1.1" matches both patterns for some boards; topics are more specific.
+        if topic_match and (not group_match or len(topic_match.group(1)) > len(group_match.group(1))):
+            keep_pending()
+            pending = {"code": topic_match.group(1), "title": topic_match.group(2)}
+        elif group_match:
+            keep_pending()
+            current = {
+                "code": group_match.group(1),
+                "title": tidy_statement(group_match.group(2)),
+                "sourceUrl": subject["url"],
+                "topics": [],
+            }
+            groups.append(current)
+        elif pending and layout.get("wrap") and len(pending["title"]) < 150:
+            pending["title"] += " " + line
+    keep_pending()
+
+    return {
+        "key": subject["key"],
+        "ref": f"{board}/{subject['key']}-{subject['spec_code'].lower()}",
+        "board": board.upper(),
+        "name": subject["name"],
+        "specCode": subject["spec_code"],
+        "sourceUrl": subject["url"],
+        "checkedOn": date.today().isoformat(),
+        "groups": regroup_by_code(merge_duplicates(groups)),
+    }
+
+
+def tidy_statement(text: str) -> str:
+    """Trim a specification sentence down to something that reads as a topic title."""
+    # Two headings can share a line when the PDF lays them out side by side; keep the first.
+    text = re.split(r"\s+(?:[A-Z]\d+\.\d+|Topic\s+[A-Z]?\d+[:–-])\s+", text)[0]
+    # Specifications trail assessment references ("2c, 2f") and page furniture after the wording.
+    # Edexcel puts them in a next-door column, so they can land mid-sentence once lines are joined.
+    text = re.sub(r"\s+\d+[a-z]\b(\s*,\s*\d+[a-z]\b)*(\s+[A-Z].*)?$", "", text.strip())
+    text = re.sub(r"\s+\d+[a-z](,\s*\d+[a-z])*\s*$", "", text.strip())
+    text = re.sub(r"\s*\.{2,}\s*\d*$", "", text).strip(" .,;")
+    if len(text) > 118:
+        text = text[:117].rsplit(" ", 1)[0] + "…"
+    return text
+
+
+def regroup_by_code(groups: list[dict]) -> list[dict]:
+    """
+    Put each topic under the group its own code names.
+
+    Specifications print overview tables where several groups' topics sit side by side, and a
+    line-by-line read can file "B5.1" under B4. The code is the authority, so trust it.
+    """
+    by_code = {group["code"]: group for group in groups}
+    if not all(re.fullmatch(r"[A-Z]?\d+", code or "") for code in by_code):
+        return groups   # codes are not hierarchical for this subject; leave well alone
+
+    for group in groups:
+        keep = []
+        for topic in group["topics"]:
+            owner = (topic["code"] or "").split(".")[0]
+            if owner and owner != group["code"] and owner in by_code:
+                if all(t["code"] != topic["code"] for t in by_code[owner]["topics"]):
+                    by_code[owner]["topics"].append(topic)
+            else:
+                keep.append(topic)
+        group["topics"] = keep
+
+    for group in groups:
+        group["topics"].sort(key=lambda topic: natural_key(topic["code"]))
+    return sorted(groups, key=lambda group: natural_key(group["code"]))
+
+
+def natural_key(code: str | None) -> list:
+    return [int(part) if part.isdigit() else part for part in re.split(r"(\d+)", code or "")]
+
+
+def merge_duplicates(groups: list[dict]) -> list[dict]:
+    """Contents pages repeat headings in shortened form; keep the fullest version of each."""
+    best: dict[str, dict] = {}
+    for group in groups:
+        existing = best.get(group["code"])
+        if existing is None or len(group["topics"]) > len(existing["topics"]):
+            best[group["code"]] = group
+    for group in best.values():
+        topics: dict[str, str] = {}
+        for topic in group["topics"]:
+            if len(topic["title"]) > len(topics.get(topic["code"], "")):
+                topics[topic["code"]] = topic["title"]
+        group["topics"] = [{"code": code, "title": title} for code, title in topics.items()]
+    return [group for group in best.values() if group["topics"]]
+
+
 # ----------------------------------------------------------------- generating
 
 def kotlin_string(value: str) -> str:
@@ -368,18 +554,46 @@ def generate(spec: dict) -> str:
     return "\n".join(lines)
 
 
+def generate_index(all_specs: list[dict]) -> str:
+    """The list `Catalogue` reads, so adding a subject needs no hand-editing."""
+    ordered = sorted(all_specs, key=lambda spec: (spec["key"], spec["board"]))
+    lines = [
+        "// GENERATED by tools/spec_tool.py — every subject in the catalogue.",
+        "// Do not edit by hand: run `python tools/spec_tool.py generate` instead.",
+        "",
+        "package revision.core.catalogue",
+        "",
+    ]
+    lines += [
+        f"import revision.core.catalogue.{spec['board'].lower()}.{kotlin_name(spec['board'], spec['key'])}"
+        for spec in ordered
+    ]
+    lines += ["", "internal val generatedSubjects: List<SpecSubject> = listOf("]
+    lines += [f"    {kotlin_name(spec['board'], spec['key'])}," for spec in ordered]
+    lines += [")", ""]
+    return "\n".join(lines)
+
+
 # ------------------------------------------------------------------ verifying
+
+def is_pdf(subject: dict) -> bool:
+    return subject.get("layout", {}).get("kind") == "pdf"
+
 
 def evidence_path(spec: dict) -> Path:
     return EVIDENCE / f"{spec['board'].lower()}-{spec['key']}.txt"
 
 
-def write_evidence(spec: dict) -> None:
-    """Save the specification's wording, so `verify` needs neither the 60MB of HTML nor the network."""
-    folder = SOURCES / spec["board"].lower() / spec["key"]
-    pages = sorted(page for page in folder.glob("*.html") if page.name != "_index.html")
-    # Only the specification content: the surrounding page is menus and scripts.
-    text = "\n".join(text_of(content_of(page.read_text(encoding="utf-8"))) for page in pages)
+def write_evidence(spec: dict, subject: dict) -> None:
+    """Save the specification's wording, so `verify` needs neither the downloads nor the network."""
+    board = spec["board"].lower()
+    if is_pdf(subject):
+        text = pdf_text(board, subject)
+    else:
+        folder = SOURCES / board / spec["key"]
+        pages = sorted(page for page in folder.glob("*.html") if page.name != "_index.html")
+        # Only the specification content: the surrounding page is menus and scripts.
+        text = "\n".join(text_of(content_of(page.read_text(encoding="utf-8"))) for page in pages)
     EVIDENCE.mkdir(parents=True, exist_ok=True)
     evidence_path(spec).write_text(text, encoding="utf-8")
 
@@ -397,13 +611,14 @@ def verify(spec: dict) -> list[str]:
     evidence = evidence_path(spec)
     if not evidence.exists():
         return problems + [f"{spec['ref']}: {evidence.name} is missing — re-run `extract`"]
-    pages = evidence.read_text(encoding="utf-8")
+    # A heading can run over several lines in the source, so compare with whitespace flattened.
+    pages = re.sub(r"\s+", " ", evidence.read_text(encoding="utf-8"))
     for group in spec["groups"]:
         titles = [group["title"]] + [topic["title"] for topic in group["topics"]]
         for title in titles:
             # Titles built from two cells ("An Inspector Calls (JB Priestley)") or trimmed to
             # length are checked by their leading words, which must still be the board's own.
-            probe = title.split(" (")[0].rstrip("…")
+            probe = re.sub(r"\s+", " ", title.split(" (")[0].rstrip("…")).strip()
             if probe and probe not in pages:
                 problems.append(f"{spec['ref']}: {probe!r} is not in the downloaded specification")
     return problems
@@ -422,25 +637,32 @@ def main(argv: list[str]) -> int:
     if command == "fetch":
         print(f"Downloading {board} specifications…")
         for subject in BOARDS[board]:
-            fetch_aqa(subject)
+            if is_pdf(subject):
+                fetch_pdf(board, subject)
+            else:
+                fetch_aqa(subject)
 
     elif command == "extract":
         CATALOGUE.mkdir(parents=True, exist_ok=True)
         for subject in BOARDS[board]:
-            spec = extract_aqa(subject)
+            spec = extract_pdf(board, subject) if is_pdf(subject) else extract_aqa(subject)
             out = CATALOGUE / f"{board}-{subject['key']}.json"
             out.write_text(json.dumps(spec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-            write_evidence(spec)
+            write_evidence(spec, subject)
             topics = sum(len(group["topics"]) for group in spec["groups"])
             print(f"  {out.name}: {len(spec['groups'])} groups, {topics} topics")
 
     elif command == "generate":
-        for spec in specs():
+        everything = specs()
+        for spec in everything:
             folder = KOTLIN / spec["board"].lower()
             folder.mkdir(parents=True, exist_ok=True)
             out = folder / kotlin_file_name(spec)
             out.write_text(generate(spec), encoding="utf-8")
             print(f"  {out.relative_to(ROOT)}")
+        index = KOTLIN / "GeneratedCatalogue.kt"
+        index.write_text(generate_index(everything), encoding="utf-8")
+        print(f"  {index.relative_to(ROOT)}")
 
     elif command == "verify":
         problems = [problem for spec in specs() for problem in verify(spec)]

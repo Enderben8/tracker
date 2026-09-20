@@ -292,7 +292,18 @@ drift out of date.
 
 ---
 
-## 6. Seed data
+## 6. Starting topics
+
+> **Superseded (2026-09-20).** This section described seeding one student's nine
+> courses into every install. The app now asks: on first run a wizard takes the
+> subjects you study and, per subject, the board that examines it, then installs
+> that specification's topics from a catalogue generated from the boards' own
+> published specifications (`core/.../catalogue/`, built by
+> `tools/spec_tool.py`, verified against the boards' wording in CI). Mixing
+> boards is expected. "Add my own subject" covers anything not in the
+> catalogue. The rest of this section is kept because it records the course
+> decisions the original lists were built from, and because §6.1's transcription
+> cautions still apply to anyone extending the catalogue by hand.
 
 On first launch the database must be populated. Put the seed in
 `core/src/commonMain/` as Kotlin data (a simple list of data classes is fine and

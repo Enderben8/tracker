@@ -3,21 +3,63 @@
 Decisions taken while building that `PROJECT_SPEC.md` does not dictate, plus the
 known rough edges. The spec is the brief; this is what actually happened.
 
+## The topic catalogue
+
+Topic lists are not written by hand. `tools/spec_tool.py` downloads each board's
+specification, extracts its headings and generates the Kotlin in
+`core/.../catalogue/<board>/`:
+
+```bash
+python tools/spec_tool.py fetch aqa       # download (cached in tools/sources/, gitignored)
+python tools/spec_tool.py extract aqa     # -> tools/catalogue/*.json + tools/evidence/*.txt
+python tools/spec_tool.py generate        # -> the Kotlin, including GeneratedCatalogue.kt
+python tools/spec_tool.py verify          # every committed title must appear in the evidence
+```
+
+`verify` is the part that matters and runs in CI. It re-reads every title in the
+generated Kotlin and asserts it appears verbatim in `tools/evidence/`, which
+holds the boards' own words. A typo, a drifted spec or an invented topic fails
+the build. The raw downloads are ~60MB and are not committed; the distilled
+evidence is ~500KB and is.
+
+**Adding a board or subject** means adding a row to the tables at the top of
+`spec_tool.py` and re-running the four commands. AQA publishes HTML, so its
+subjects name a path and a layout (five shapes cover every subject: headings,
+reference tables, set-text tables, bullet lists, and option groups for History).
+Edexcel and OCR publish PDFs, so theirs name a URL and two regular expressions;
+`pip install pypdf` is needed for those.
+
+Two rules the extraction follows: a topic belongs to the group its own code
+names (overview tables print several groups side by side and a naive read files
+`B5.1` under `B4`), and the fullest version of a repeated heading wins
+(contents pages abbreviate).
+
+Known gaps: AQA's poetry anthology poems are not in the specification HTML, so
+English Literature has *Poetry* as one topic rather than fifteen; OCR Physics
+and several Edexcel subjects are not covered yet.
+
 ## Decisions not in the spec
 
 - **"Archive" is a soft delete** (`deleted = 1`). The schema has no `archived`
   column. Archiving a topic archives its descendants. History queries do not
   filter on deleted topics, so old sessions still display properly.
-- **Seed rows have stable ids** (`seed:<subject>:<title-slug-path>`) rather than
-  random UUIDs. Two devices that seed independently then produce identical rows,
-  so sync does not duplicate ~400 topics. Rows you create get random UUIDs.
+- **Installed rows have stable ids** (`spec:<board>/<subject>-<code>:<path>`)
+  rather than random UUIDs, so two devices that choose the same course produce
+  identical rows and sync merges instead of duplicating. Rows you create get
+  random UUIDs. The same subject on two boards is deliberately two separate
+  subjects: they are different courses.
+- **Starting over soft-deletes.** A hard `DELETE FROM` does not travel over
+  sync, so the other device would push the old topics straight back. Tombstones
+  travel. It also keeps logged sessions by default, because History does not
+  filter on archived topics.
+- **The first sync sends everything.** It used to skip rows untouched since
+  seeding, which assumed every device seeds identically — no longer true now
+  that each device installs what its owner picked.
 - **A subject whose exam has passed leaves the queue entirely.** The spec only
   said its topics must not top the queue.
-- **415 topics**, not the spec's estimated ~150 (Geography's chapters, 17 poems,
-  the generated Maths and French lists).
-- **Computer Science**: "Exam Questions" / "Revision Questions" rows omitted —
-  practice material would clutter the queue. Page numbers left null throughout,
-  as the source document flags them unreliable.
+- **No page numbers.** The old lists were transcribed from CGP guides and
+  carried page references; specifications have none, so the column is unused by
+  installed topics (it still exists for topics you add yourself).
 - **Sync transport is Google Drive, not OneDrive** (§9 of the spec assumed
   OneDrive). The design needs only a folder both devices can read and write, so
   nothing else changed. Either works.

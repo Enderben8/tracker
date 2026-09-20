@@ -20,6 +20,11 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
+      # The topic catalogue is generated from the exam boards' specifications; this
+      # re-checks every committed topic title against the board's own wording.
+      - name: Verify the topic catalogue
+        run: python tools/spec_tool.py verify
+
       - name: Run tests
         run: ./gradlew :core:desktopTest :composeApp:desktopTest --stacktrace
 

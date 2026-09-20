@@ -1,0 +1,922 @@
+{
+  "key": "physics",
+  "ref": "edexcel/physics-1ph0",
+  "board": "EDEXCEL",
+  "name": "Physics",
+  "specCode": "1PH0",
+  "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "1",
+      "title": "Key concepts of physics",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "Recall and use the SI unit for physical quantities, as listed in Appendix 3"
+        },
+        {
+          "code": "1.2",
+          "title": "Recall and use multiples and sub-multiples of units, including giga (G), mega (M), kilo (k), centi (c), milli (m),…"
+        },
+        {
+          "code": "1.3",
+          "title": "Be able to convert between different units, including hours to seconds"
+        },
+        {
+          "code": "1.4",
+          "title": "Use significant figures and standard form where appropriate"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Motion and forces",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "2.1",
+          "title": "Explain that a scalar quantity has magnitude (size) but no specific direction"
+        },
+        {
+          "code": "2.2",
+          "title": "Explain that a vector quantity has both magnitude (size) and a specific direction"
+        },
+        {
+          "code": "2.3",
+          "title": "Explain the difference between vector and scalar quantities"
+        },
+        {
+          "code": "2.4",
+          "title": "Recall vector and scalar quantities, including: a displacement/distance b velocity/speed c acceleration d force e…"
+        },
+        {
+          "code": "2.5",
+          "title": "Recall that velocity is speed in a stated direction"
+        },
+        {
+          "code": "2.6",
+          "title": "Recall and use the equations: a (average) speed (metre per second, m/s) = distance (metre, m) ÷ time (s) b distance…"
+        },
+        {
+          "code": "2.7",
+          "title": "Analyse distance/time graphs including determination of speed from the gradient"
+        },
+        {
+          "code": "2.8",
+          "title": "Recall and use the equation: acceleration (metre per second squared, m/s2) = change in velocity (metre per second,…"
+        },
+        {
+          "code": "2.9",
+          "title": "Use the equation: (final velocity)2 ((metre/second)2, (m/s)2) – (initial velocity)2 ((metre/second)2, (m/s)2) = 2 ×…"
+        },
+        {
+          "code": "2.10",
+          "title": "Analyse velocity/time graphs to: a compare acceleration from gradients qualitatively b calculate the acceleration…"
+        },
+        {
+          "code": "2.11",
+          "title": "Describe a range of laboratory methods for determining the speeds of objects such as the use of light gates 1a, 1d…"
+        },
+        {
+          "code": "2.12",
+          "title": "Recall some typical speeds encountered in everyday experience for wind and sound, and for walking, running, cycling…"
+        },
+        {
+          "code": "2.13",
+          "title": "Recall that the acceleration, g, in free fall is 10 m/s2 and be able to estimate the magnitudes of everyday…"
+        },
+        {
+          "code": "2.14",
+          "title": "Recall Newton’s first law and use it in the following situations: a where the resultant force on a body is zero,…"
+        },
+        {
+          "code": "2.15",
+          "title": "Recall and use Newton’s second law as: force (newton, N) = mass (kilogram, kg) × acceleration (metre per second…"
+        },
+        {
+          "code": "2.16",
+          "title": "Define weight, recall and use the equation: weight (newton, N) = mass (kilogram, kg) × gravitational field strength…"
+        },
+        {
+          "code": "2.17",
+          "title": "Describe how weight is measured"
+        },
+        {
+          "code": "2.18",
+          "title": "Describe the relationship between the weight of a body and the gravitational field strength"
+        },
+        {
+          "code": "2.19",
+          "title": "Core Practical: Investigate the relationship between force, mass and acceleration by varying the masses added to…"
+        },
+        {
+          "code": "2.20",
+          "title": "Explain that an object moving in a circular orbit at constant speed has a changing velocity (qualitative only)"
+        },
+        {
+          "code": "2.21",
+          "title": "Explain that for motion in a circle there must be a resultant force known as a centripetal force that acts towards…"
+        },
+        {
+          "code": "2.22",
+          "title": "Explain that inertial mass is a measure of how difficult it is to change the velocity of an object (including from…"
+        },
+        {
+          "code": "2.23",
+          "title": "Recall and apply Newton’s third law both to equilibrium situations and to collision interactions and relate it to…"
+        },
+        {
+          "code": "2.24",
+          "title": "Define momentum, recall and use the equation: momentum (kilogram metre per second, kg m/s) = mass (kilogram, kg) ×…"
+        },
+        {
+          "code": "2.25",
+          "title": "Describe examples of momentum in collisions 1a, 1c, 1d"
+        },
+        {
+          "code": "2.26",
+          "title": "Use Newton’s second law as: force (newton, N) = change in momentum (kilogram metre per second, kg m/s) ÷ time…"
+        },
+        {
+          "code": "2.27",
+          "title": "Explain methods of measuring human reaction times and recall typical results"
+        },
+        {
+          "code": "2.28",
+          "title": "Recall that the stopping distance of a vehicle is made up of the sum of the thinking distance and the braking distance"
+        },
+        {
+          "code": "2.29",
+          "title": "Explain that the stopping distance of a vehicle is affected by a range of factors including: a the mass of the…"
+        },
+        {
+          "code": "2.30",
+          "title": "Describe the factors affecting a driver’s reaction time including drugs and distractions 1d"
+        },
+        {
+          "code": "2.31",
+          "title": "Explain the dangers caused by large decelerations and estimate the forces involved in typical situations on a public…"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Conservation of energy",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "3.1",
+          "title": "Recall and use the equation to calculate the change in gravitational PE when an object is raised above the ground:…"
+        },
+        {
+          "code": "3.2",
+          "title": "Recall and use the equation to calculate the amounts of energy associated with a moving object: kinetic energy…"
+        },
+        {
+          "code": "3.3",
+          "title": "Draw and interpret diagrams to represent energy transfers"
+        },
+        {
+          "code": "3.4",
+          "title": "Explain what is meant by conservation of energy"
+        },
+        {
+          "code": "3.5",
+          "title": "Analyse the changes involved in the way energy is stored when a system changes, including: a an object projected…"
+        },
+        {
+          "code": "3.6",
+          "title": "Explain that where there are energy transfers in a closed system there is no net change to the total energy in that…"
+        },
+        {
+          "code": "3.7",
+          "title": "Explain that mechanical processes become wasteful when they cause a rise in temperature so dissipating energy in…"
+        },
+        {
+          "code": "3.8",
+          "title": "Explain, using examples, how in all system changes energy is dissipated so that it is stored in less useful ways"
+        },
+        {
+          "code": "3.9",
+          "title": "Explain ways of reducing unwanted energy transfer including through lubrication, thermal insulation"
+        },
+        {
+          "code": "3.10",
+          "title": "Describe the effects of the thickness and thermal conductivity of the walls of a building on its rate of cooling…"
+        },
+        {
+          "code": "3.11",
+          "title": "Recall and use the equation: ( ) ( )devicethetopliedsupenergytotal devicethebydtransferreenergyusefulefficiency =…"
+        },
+        {
+          "code": "3.12",
+          "title": "Explain how efficiency can be increased"
+        },
+        {
+          "code": "3.13",
+          "title": "Describe the main energy sources available for use on Earth (including fossil fuels, nuclear fuel, bio-fuel, wind,…"
+        },
+        {
+          "code": "3.14",
+          "title": "Explain patterns and trends in the use of energy resources"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Waves",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "4.1",
+          "title": "Recall that waves transfer energy and information without transferring matter"
+        },
+        {
+          "code": "4.2",
+          "title": "Describe evidence that with water and sound waves it is the wave and not the water or air itself that travels"
+        },
+        {
+          "code": "4.3",
+          "title": "Define and use the terms frequency and wavelength as applied to waves"
+        },
+        {
+          "code": "4.4",
+          "title": "Use the terms amplitude, period, wave velocity and wavefront as applied to waves"
+        },
+        {
+          "code": "4.5",
+          "title": "Describe the difference between longitudinal and transverse waves by referring to sound, electromagnetic, seismic…"
+        },
+        {
+          "code": "4.6",
+          "title": "Recall and use both the equations below for all waves: wave speed (metre/second, m/s) = frequency (hertz, Hz) ×…"
+        },
+        {
+          "code": "4.7",
+          "title": "Describe how to measure the velocity of sound in air and ripples on water surfaces 2g 4.8P Calculate depth or…"
+        },
+        {
+          "code": "4.10",
+          "title": "Explain how waves will be refracted at a boundary in terms of the change of direction and speed 1c"
+        },
+        {
+          "code": "4.11",
+          "title": "Recall that different substances may absorb, transmit, refract or reflect waves in ways that vary with wavelength…"
+        },
+        {
+          "code": "4.17",
+          "title": "Core Practical: Investigate the suitability of equipment to measure the speed, frequency and wavelength of a wave in…"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "title": "Light and the electromagnetic spectrum",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "5.7",
+          "title": "Recall that all electromagnetic waves are transverse, that they travel at the same speed in a vacuum"
+        },
+        {
+          "code": "5.8",
+          "title": "Explain, with examples, that all electromagnetic waves transfer energy from source to observer"
+        },
+        {
+          "code": "5.9",
+          "title": "Core Practical: Investigate refraction in rectangular glass blocks in terms of the interaction of electromagnetic…"
+        },
+        {
+          "code": "5.10",
+          "title": "Recall the main groupings of the continuous electromagnetic spectrum including (in order) radio waves, microwaves,…"
+        },
+        {
+          "code": "5.11",
+          "title": "Describe the electromagnetic spectrum as continuous from radio waves to gamma rays and that the radiations within it…"
+        },
+        {
+          "code": "5.12",
+          "title": "Recall that our eyes can only detect a limited range of frequencies of electromagnetic radiation"
+        },
+        {
+          "code": "5.13",
+          "title": "Recall that different substances may absorb, transmit, refract or reflect electromagnetic waves in ways that vary…"
+        },
+        {
+          "code": "5.14",
+          "title": "Explain the effects of differences in the velocities of electromagnetic waves in different substances 1a, 1c 3c…"
+        },
+        {
+          "code": "5.20",
+          "title": "Recall that the potential danger associated with an electromagnetic wave increases with increasing frequency"
+        },
+        {
+          "code": "5.21",
+          "title": "Describe the harmful effects on people of excessive exposure to electromagnetic radiation, including: a microwaves:…"
+        },
+        {
+          "code": "5.22",
+          "title": "Describe some uses of electromagnetic radiation a radio waves: including broadcasting, communications and satellite…"
+        },
+        {
+          "code": "5.23",
+          "title": "Recall that radio waves can be produced by, or can themselves induce, oscillations in electrical circuits"
+        },
+        {
+          "code": "5.24",
+          "title": "Recall that changes in atoms and nuclei can a generate radiations over a wide frequency range b be caused by…"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "title": "Radioactivity",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "6.1",
+          "title": "Describe an atom as a positively charged nucleus, consisting of protons and neutrons, surrounded by negatively…"
+        },
+        {
+          "code": "6.2",
+          "title": "Recall the typical size (order of magnitude) of atoms and small molecules"
+        },
+        {
+          "code": "6.3",
+          "title": "Describe the structure of nuclei of isotopes using the terms atomic (proton) number and mass (nucleon) number and…"
+        },
+        {
+          "code": "6.4",
+          "title": "Recall that the nucleus of each element has a characteristic positive charge, but that isotopes of an element differ…"
+        },
+        {
+          "code": "6.5",
+          "title": "Recall the relative masses and relative electric charges of protons, neutrons, electrons and positrons"
+        },
+        {
+          "code": "6.6",
+          "title": "Recall that in an atom the number of protons equals the number of electrons and is therefore neutral"
+        },
+        {
+          "code": "6.7",
+          "title": "Recall that in each atom its electrons orbit the nucleus at different set distances from the nucleus"
+        },
+        {
+          "code": "6.8",
+          "title": "Explain that electrons change orbit when there is absorption or emission of electromagnetic radiation"
+        },
+        {
+          "code": "6.9",
+          "title": "Explain how atoms may form positive ions by losing outer electrons"
+        },
+        {
+          "code": "6.10",
+          "title": "Recall that alpha, β– (beta minus), β+ (positron), gamma rays and neutron radiation are emitted from unstable nuclei…"
+        },
+        {
+          "code": "6.11",
+          "title": "Recall that alpha, β– (beta minus), β+ (positron) and gamma rays are ionising radiations"
+        },
+        {
+          "code": "6.12",
+          "title": "Explain what is meant by background radiation"
+        },
+        {
+          "code": "6.13",
+          "title": "Describe the origins of background radiation from Earth and space"
+        },
+        {
+          "code": "6.14",
+          "title": "Describe methods for measuring and detecting radioactivity limited to photographic film and a Geiger–Müller tube"
+        },
+        {
+          "code": "6.15",
+          "title": "Recall that an alpha particle is equivalent to a helium nucleus, a beta particle is an electron emitted from the…"
+        },
+        {
+          "code": "6.16",
+          "title": "Compare alpha, beta and gamma radiations in terms of their abilities to penetrate and ionise Pearson Edexcel Level…"
+        },
+        {
+          "code": "6.17",
+          "title": "Describe how and why the atomic model has changed over time including reference to the plum pudding model and…"
+        },
+        {
+          "code": "6.18",
+          "title": "Describe the process of β– decay (a neutron becomes a proton plus an electron)"
+        },
+        {
+          "code": "6.19",
+          "title": "Describe the process of β+ decay (a proton becomes a neutron plus a positron)"
+        },
+        {
+          "code": "6.20",
+          "title": "Explain the effects on the atomic (proton) number and mass (nucleon) number of radioactive decays (α, β, γ and…"
+        },
+        {
+          "code": "6.21",
+          "title": "Recall that nuclei that have undergone radioactive decay often undergo nuclear rearrangement with a loss of energy…"
+        },
+        {
+          "code": "6.22",
+          "title": "Use given data to balance nuclear equations in terms of mass and charge"
+        },
+        {
+          "code": "6.23",
+          "title": "Describe how the activity of a radioactive source decreases over a period of time"
+        },
+        {
+          "code": "6.24",
+          "title": "Recall that the unit of activity of a radioactive isotope is the Becquerel, Bq"
+        },
+        {
+          "code": "6.25",
+          "title": "Explain that the half-life of a radioactive isotope is the time taken for half the undecayed nuclei to decay or the…"
+        },
+        {
+          "code": "6.26",
+          "title": "Explain that it cannot be predicted when a particular nucleus will decay but half-life enables the activity of a…"
+        },
+        {
+          "code": "6.27",
+          "title": "Use the concept of half-life to carry out simple calculations on the decay of a radioactive isotope, including…"
+        },
+        {
+          "code": "6.29",
+          "title": "Describe the dangers of ionising radiation in terms of tissue damage and possible mutations and relate this to the…"
+        },
+        {
+          "code": "6.31",
+          "title": "Explain the precautions taken to ensure the safety of people exposed to radiation, including limiting the dose for…"
+        },
+        {
+          "code": "6.32",
+          "title": "Describe the differences between contamination and irradiation effects and compare the hazards associated with these…"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "title": "Energy – forces doing work",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "8.1",
+          "title": "Describe the changes involved in the way energy is stored when systems change"
+        },
+        {
+          "code": "8.2",
+          "title": "Draw and interpret diagrams to represent energy transfers"
+        },
+        {
+          "code": "8.3",
+          "title": "Explain that where there are energy transfers in a closed system there is no net change to the total energy in that…"
+        },
+        {
+          "code": "8.4",
+          "title": "Identify the different ways that the energy of a system can be changed a through work done by forces b in electrical…"
+        },
+        {
+          "code": "8.5",
+          "title": "Describe how to measure the work done by a force and understand that energy transferred (joule, J) is equal to work…"
+        },
+        {
+          "code": "8.6",
+          "title": "Recall and use the equation: work done (joule, J) = force (newton, N) × distance moved in the direction of the force…"
+        },
+        {
+          "code": "8.7",
+          "title": "Describe and calculate the changes in energy involved when a system is changed by work done by forces"
+        },
+        {
+          "code": "8.8",
+          "title": "Recall and use the equation to calculate the change in gravitational PE when an object is raised above the ground:…"
+        },
+        {
+          "code": "8.9",
+          "title": "Recall and use the equation to calculate the amounts of energy associated with a moving object: kinetic energy…"
+        },
+        {
+          "code": "8.10",
+          "title": "Explain, using examples, how in all system changes energy is dissipated so that it is stored in less useful ways…"
+        },
+        {
+          "code": "8.11",
+          "title": "Explain that mechanical processes become wasteful when they cause a rise in temperature so dissipating energy in…"
+        },
+        {
+          "code": "8.12",
+          "title": "Define power as the rate at which energy is transferred and use examples to explain this definition"
+        },
+        {
+          "code": "8.13",
+          "title": "Recall and use the equation: power (watt, W) = work done (joule, J) ÷ time taken (second, s) t EP = 1a, 1c, 1d"
+        },
+        {
+          "code": "8.14",
+          "title": "Recall that one watt is equal to one joule per second, J/s"
+        },
+        {
+          "code": "8.15",
+          "title": "Recall and use the equation: ( ) ( )devicethetopliedsupenergytotal devicethebydtransferreenergyusefulefficiency =…"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "title": "Forces and their effects",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "9.1",
+          "title": "Describe, with examples, how objects can interact a at a distance without contact, linking these to the…"
+        },
+        {
+          "code": "9.2",
+          "title": "Explain the difference between vector and scalar quantities using examples"
+        },
+        {
+          "code": "9.3",
+          "title": "Use vector diagrams to illustrate resolution of forces, a net force, and equilibrium situations (scale drawings only)"
+        },
+        {
+          "code": "9.4",
+          "title": "Draw and use free body force diagrams"
+        },
+        {
+          "code": "9.5",
+          "title": "Explain examples of the forces acting on an isolated solid object or a system where several forces lead to a…"
+        },
+        {
+          "code": "9.10",
+          "title": "Explain ways of reducing unwanted energy transfer through lubrication Use of mathematics ● Make calculations using…"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "title": "Electricity and circuits",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "10.1",
+          "title": "Describe the structure of the atom, limited to the position, mass and charge of protons, neutrons and electrons"
+        },
+        {
+          "code": "10.2",
+          "title": "Draw and use electric circuit diagrams representing them with the conventions of positive and negative terminals,…"
+        },
+        {
+          "code": "10.3",
+          "title": "Describe the differences between series and parallel circuits"
+        },
+        {
+          "code": "10.4",
+          "title": "Recall that a voltmeter is connected in parallel with a component to measure the potential difference (voltage), in…"
+        },
+        {
+          "code": "10.5",
+          "title": "Explain that potential difference (voltage) is the energy transferred per unit charge passed and hence that the volt…"
+        },
+        {
+          "code": "10.6",
+          "title": "Recall and use the equation: energy transferred (joule, J) = charge moved (coulomb, C) × potential difference (volt,…"
+        },
+        {
+          "code": "10.7",
+          "title": "Recall that an ammeter is connected in series with a component to measure the current, in amp, in the component"
+        },
+        {
+          "code": "10.8",
+          "title": "Explain that an electric current as the rate of flow of charge and the current in metals is a flow of electrons"
+        },
+        {
+          "code": "10.9",
+          "title": "Recall and use the equation: charge (coulomb, C) = current (ampere, A) × time (second, s) tIQ ×= 1a, 1b, 1c, 1d"
+        },
+        {
+          "code": "10.10",
+          "title": "Describe that when a closed circuit includes a source of potential difference there will be a current in the circuit"
+        },
+        {
+          "code": "10.11",
+          "title": "Recall that current is conserved at a junction in a circuit"
+        },
+        {
+          "code": "10.12",
+          "title": "Explain how changing the resistance in a circuit changes the current and how this can be achieved using a variable…"
+        },
+        {
+          "code": "10.13",
+          "title": "Recall and use the equation: potential difference (volt, V) = current (ampere, A) × resistance (ohm, Ω) RIV ×= 1a, 1d"
+        },
+        {
+          "code": "10.14",
+          "title": "Explain why, if two resistors are in series, the net resistance is increased, whereas with two in parallel the net…"
+        },
+        {
+          "code": "10.15",
+          "title": "Calculate the currents, potential differences and resistances in series circuits 1a, 1d"
+        },
+        {
+          "code": "10.16",
+          "title": "Explain the design and construction of series circuits for testing and measuring"
+        },
+        {
+          "code": "10.17",
+          "title": "Core Practical: Construct electrical circuits to: a investigate the relationship between potential difference,…"
+        },
+        {
+          "code": "10.18",
+          "title": "Explain how current varies with potential difference for the following devices and how this relates to resistance a…"
+        },
+        {
+          "code": "10.19",
+          "title": "Describe how the resistance of a light-dependent resistor (LDR) varies with light intensity"
+        },
+        {
+          "code": "10.20",
+          "title": "Describe how the resistance of a thermistor varies with change of temperature (negative temperature coefficient…"
+        },
+        {
+          "code": "10.21",
+          "title": "Explain how the design and use of circuits can be used to explore the variation of resistance in the following…"
+        },
+        {
+          "code": "10.22",
+          "title": "Recall that, when there is an electric current in a resistor, there is an energy transfer which heats the resistor"
+        },
+        {
+          "code": "10.23",
+          "title": "Explain that electrical energy is dissipated as thermal energy in the surroundings when an electrical current does…"
+        },
+        {
+          "code": "10.24",
+          "title": "Explain the energy transfer (in 10.22 above) as the result of collisions between electrons and the ions in the lattice"
+        },
+        {
+          "code": "10.25",
+          "title": "Explain ways of reducing unwanted energy transfer through low resistance wires"
+        },
+        {
+          "code": "10.26",
+          "title": "Describe the advantages and disadvantages of the heating effect of an electric current Pearson Edexcel Level 1/Level…"
+        },
+        {
+          "code": "10.27",
+          "title": "Use the equation: energy transferred (joule, J) = current (ampere, A) × potential difference (volt, V) × time…"
+        },
+        {
+          "code": "10.28",
+          "title": "Describe power as the energy transferred per second and recall that it is measured in watt"
+        },
+        {
+          "code": "10.29",
+          "title": "Recall and use the equation: power (watt, W) = energy transferred (joule, J) ÷ time taken (second, s) t EP = 1a, 1b,…"
+        },
+        {
+          "code": "10.30",
+          "title": "Explain how the power transfer in any circuit device is related to the potential difference across it and the…"
+        },
+        {
+          "code": "10.31",
+          "title": "Recall and use the equations: electrical power (watt, W) = current (ampere, A) × potential difference (volt, V) VIP…"
+        },
+        {
+          "code": "10.32",
+          "title": "Describe how, in different domestic devices, energy is transferred from batteries and the a.c. mains to the energy…"
+        },
+        {
+          "code": "10.33",
+          "title": "Explain the difference between direct and alternating voltage"
+        },
+        {
+          "code": "10.34",
+          "title": "Describe direct current (d.c.) as movement of charge in one direction only and recall that cells and batteries…"
+        },
+        {
+          "code": "10.35",
+          "title": "Describe that in alternating current (a.c.) the movement of charge changes direction"
+        },
+        {
+          "code": "10.36",
+          "title": "Recall that in the UK the domestic supply is a.c., at a frequency of 50 Hz and a voltage of about 230 V"
+        },
+        {
+          "code": "10.37",
+          "title": "Explain the difference in function between the live and the neutral mains input wires"
+        },
+        {
+          "code": "10.38",
+          "title": "Explain the function of an earth wire and of fuses or circuit breakers in ensuring safety"
+        },
+        {
+          "code": "10.39",
+          "title": "Explain why switches and fuses should be connected in the live wire of a domestic circuit Pearson Edexcel Level…"
+        },
+        {
+          "code": "10.40",
+          "title": "Recall the potential differences between the live, neutral and earth mains wires"
+        },
+        {
+          "code": "10.41",
+          "title": "Explain the dangers of providing any connection between the live wire and earth"
+        },
+        {
+          "code": "10.42",
+          "title": "Describe, with examples, the relationship between the power ratings for domestic electrical appliances and the…"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "title": "Magnetism and the motor effect",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "12.1",
+          "title": "Recall that unlike magnetic poles attract and like magnetic poles repel"
+        },
+        {
+          "code": "12.2",
+          "title": "Describe the uses of permanent and temporary magnetic materials including cobalt, steel, iron and nickel"
+        },
+        {
+          "code": "12.3",
+          "title": "Explain the difference between permanent and induced magnets"
+        },
+        {
+          "code": "12.4",
+          "title": "Describe the shape and direction of the magnetic field around bar magnets and for a uniform field, and relate the…"
+        },
+        {
+          "code": "12.5",
+          "title": "Describe the use of plotting compasses to show the shape and direction of the field of a magnet and the Earth’s…"
+        },
+        {
+          "code": "12.6",
+          "title": "Explain how the behaviour of a magnetic compass is related to evidence that the core of the Earth must be magnetic"
+        },
+        {
+          "code": "12.7",
+          "title": "Describe how to show that a current can create a magnetic effect around a long straight conductor, describing the…"
+        },
+        {
+          "code": "12.8",
+          "title": "Recall that the strength of the field depends on the size of the current and the distance from the long straight…"
+        },
+        {
+          "code": "12.9",
+          "title": "Explain how inside a solenoid (an example of an electromagnet) the fields from individual coils a add together to…"
+        },
+        {
+          "code": "12.10",
+          "title": "Recall that a current carrying conductor placed near a magnet experiences a force and that an equal and opposite…"
+        },
+        {
+          "code": "12.11",
+          "title": "Explain that magnetic forces are due to interactions between magnetic fields"
+        },
+        {
+          "code": "12.12",
+          "title": "Recall and use Fleming’s left-hand rule to represent the relative directions of the force, the current and the…"
+        },
+        {
+          "code": "12.13",
+          "title": "Use the equation: force on a conductor at right angles to a magnetic field carrying a current (newton, N) = magnetic…"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "title": "Electromagnetic induction",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "13.2",
+          "title": "Recall the factors that affect the size and direction of an induced potential difference, and describe how the…"
+        },
+        {
+          "code": "13.5",
+          "title": "Explain how an alternating current in one circuit can induce a current in another circuit in a transformer"
+        },
+        {
+          "code": "13.6",
+          "title": "Recall that a transformer can change the size of an alternating voltage 13.7P Use the turns ratio equation for…"
+        },
+        {
+          "code": "13.8",
+          "title": "Explain why, in the national grid, electrical energy is transferred at high voltages from power stations, and then…"
+        },
+        {
+          "code": "13.9",
+          "title": "Explain where and why step-up and step-down transformers are used in the transmission of electricity in the national…"
+        },
+        {
+          "code": "13.10",
+          "title": "Use the power equation (for transformers with100% efficiency): potential difference across primary coil (volt, V) ×…"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "title": "Particle model",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "14.1",
+          "title": "Use a simple kinetic theory model to explain the different states of matter (solids, liquids and gases) in terms of…"
+        },
+        {
+          "code": "14.2",
+          "title": "Recall and use the equation: density (kilogram per cubic metre, kg/m3) = mass (kilogram, kg) ÷ volume (cubic metre,…"
+        },
+        {
+          "code": "14.3",
+          "title": "Core Practical: Investigate the densities of solid and liquids 1a, 1b, 1c, 1d 2a, 2c, 2f 3a, 3b, 3c, 3d"
+        },
+        {
+          "code": "14.4",
+          "title": "Explain the differences in density between the different states of matter in terms of the arrangements of the atoms…"
+        },
+        {
+          "code": "14.5",
+          "title": "Describe that when substances melt, freeze, evaporate, boil, condense or sublimate mass is conserved and that these…"
+        },
+        {
+          "code": "14.6",
+          "title": "Explain how heating a system will change the energy stored within the system and raise its temperature or produce…"
+        },
+        {
+          "code": "14.7",
+          "title": "Define the terms specific heat capacity and specific latent heat and explain the differences between them"
+        },
+        {
+          "code": "14.8",
+          "title": "Use the equation: change in thermal energy (joule, J) = mass (kilogram, kg) × specific heat capacity (joule per…"
+        },
+        {
+          "code": "14.9",
+          "title": "Use the equation: thermal energy for a change of state (joule , J) = mass (kilogram, kg) × specific latent heat…"
+        },
+        {
+          "code": "14.10",
+          "title": "Explain ways of reducing unwanted energy transfer through thermal insulation Pearson Edexcel Level 1/Level 2 GCSE…"
+        },
+        {
+          "code": "14.11",
+          "title": "Core Practical: Investigate the properties of water by determining the specific heat capacity of water and obtaining…"
+        },
+        {
+          "code": "14.12",
+          "title": "Explain the pressure of a gas in terms of the motion of its particles"
+        },
+        {
+          "code": "14.13",
+          "title": "Explain the effect of changing the temperature of a gas on the velocity of its particles and hence on the pressure…"
+        },
+        {
+          "code": "14.14",
+          "title": "Describe the term absolute zero, −273 °C, in terms of the lack of movement of particles"
+        },
+        {
+          "code": "14.15",
+          "title": "Convert between the kelvin and Celsius scales 1a 2a 14.16P Explain that gases can be compressed or expanded by…"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "title": "Forces and matter",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-physics-spec.pdf",
+      "topics": [
+        {
+          "code": "15.1",
+          "title": "Explain, using springs and other elastic objects, that stretching, bending or compressing an object requires more…"
+        },
+        {
+          "code": "15.2",
+          "title": "Describe the difference between elastic and inelastic distortion"
+        },
+        {
+          "code": "15.3",
+          "title": "Recall and use the equation for linear elastic distortion including calculating the spring constant: force exerted…"
+        },
+        {
+          "code": "15.4",
+          "title": "Use the equation to calculate the work done in stretching a spring: energy transferred in stretching (joules, J) =…"
+        },
+        {
+          "code": "15.5",
+          "title": "Describe the difference between linear and non-linear relationships between force and extension"
+        },
+        {
+          "code": "15.6",
+          "title": "Core Practical: Investigate the extension and work done when applying forces to a spring 1a, 1c, 1d 2a, 2b, 2c, 2f…"
+        }
+      ]
+    }
+  ]
+}

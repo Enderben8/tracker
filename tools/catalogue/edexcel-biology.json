@@ -1,0 +1,522 @@
+{
+  "key": "biology",
+  "ref": "edexcel/biology-1bi0",
+  "board": "EDEXCEL",
+  "name": "Biology",
+  "specCode": "1BI0",
+  "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "1",
+      "title": "Key concepts in biology",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "1.1",
+          "title": "Explain how the sub-cellular structures of eukaryotic and prokaryotic cells are related to their functions,…"
+        },
+        {
+          "code": "1.2",
+          "title": "Describe how specialised cells are adapted to their function, including: a sperm cells – acrosome, haploid nucleus,…"
+        },
+        {
+          "code": "1.3",
+          "title": "Explain how changes in microscope technology, including electron microscopy, have enabled us to see cell structures…"
+        },
+        {
+          "code": "1.4",
+          "title": "Demonstrate an understanding of number, size and scale, including the use of estimations and explain when they…"
+        },
+        {
+          "code": "1.5",
+          "title": "Demonstrate an understanding of the relationship between quantitative units in relation to cells, including: a milli…"
+        },
+        {
+          "code": "1.6",
+          "title": "Core Practical: Investigate biological specimens using microscopes, including magnification calculations and…"
+        },
+        {
+          "code": "1.7",
+          "title": "Explain the mechanism of enzyme action including the active site and enzyme specificity"
+        },
+        {
+          "code": "1.8",
+          "title": "Explain how enzymes can be denatured due to changes in the shape of the active site"
+        },
+        {
+          "code": "1.9",
+          "title": "Explain the effects of temperature, substrate concentration and pH on enzyme activity"
+        },
+        {
+          "code": "1.10",
+          "title": "Core Practical: Investigate the effect of pH on enzyme activity"
+        },
+        {
+          "code": "1.11",
+          "title": "Demonstrate an understanding of rate calculations for enzyme activity"
+        },
+        {
+          "code": "1.12",
+          "title": "Explain the importance of enzymes as biological catalysts in the synthesis of carbohydrates, proteins and lipids and…"
+        },
+        {
+          "code": "1.15",
+          "title": "Explain how substances are transported into and out of cells, including by diffusion, osmosis and active transport"
+        },
+        {
+          "code": "1.16",
+          "title": "Core Practical: Investigate osmosis in potatoes 1c"
+        },
+        {
+          "code": "1.17",
+          "title": "Calculate percentage gain and loss of mass in osmosis"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Cells and control",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "2.1",
+          "title": "Describe mitosis as part of the cell cycle, including the stages interphase, prophase, metaphase, anaphase and…"
+        },
+        {
+          "code": "2.2",
+          "title": "Describe the importance of mitosis in growth, repair and asexual reproduction"
+        },
+        {
+          "code": "2.3",
+          "title": "Describe the division of a cell by mitosis as the production of two daughter cells, each with identical sets of…"
+        },
+        {
+          "code": "2.4",
+          "title": "Describe cancer as the result of changes in cells that lead to uncontrolled cell division"
+        },
+        {
+          "code": "2.5",
+          "title": "Describe growth in organisms, including: a cell division and differentiation in animals b cell division, elongation…"
+        },
+        {
+          "code": "2.6",
+          "title": "Explain the importance of cell differentiation in the development of specialised cells"
+        },
+        {
+          "code": "2.7",
+          "title": "Demonstrate an understanding of the use of percentiles charts to monitor growth"
+        },
+        {
+          "code": "2.8",
+          "title": "Describe the function of embryonic stem cells, stem cells in animals and meristems in plants"
+        },
+        {
+          "code": "2.9",
+          "title": "Discuss the potential benefits and risks associated with the use of stem cells in medicine 2.10B Describe the…"
+        },
+        {
+          "code": "2.13",
+          "title": "Explain the structure and function of sensory receptors, sensory neurones, relay neurones in the CNS, motor neurones…"
+        },
+        {
+          "code": "2.14",
+          "title": "Explain the structure and function of a reflex arc including sensory, relay and motor neurones Pearson Edexcel Level…"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Genetics",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "3.3",
+          "title": "Explain the role of meiotic cell division, including the production of four daughter cells, each with half the…"
+        },
+        {
+          "code": "3.4",
+          "title": "Describe DNA as a polymer made up of: a two strands coiled to form a double helix b strands linked by a series of…"
+        },
+        {
+          "code": "3.5",
+          "title": "Describe the genome as the entire DNA of an organism and a gene as a section of a DNA molecule that codes for a…"
+        },
+        {
+          "code": "3.6",
+          "title": "Explain how DNA can be extracted from fruit 3.7B Explain how the order of bases in a section of DNA decides the…"
+        },
+        {
+          "code": "3.12",
+          "title": "Explain why there are differences in the inherited characteristics as a result of alleles"
+        },
+        {
+          "code": "3.13",
+          "title": "Explain the terms: chromosome, gene, allele, dominant, recessive, homozygous, heterozygous, genotype, phenotype,…"
+        },
+        {
+          "code": "3.14",
+          "title": "Explain monohybrid inheritance using genetic diagrams, Punnett squares and family pedigrees 1c"
+        },
+        {
+          "code": "3.15",
+          "title": "Describe how the sex of offspring is determined at fertilisation, using genetic diagrams 1c"
+        },
+        {
+          "code": "3.16",
+          "title": "Calculate and analyse outcomes (using probabilities, ratios and percentages) from monohybrid crosses and pedigree…"
+        },
+        {
+          "code": "3.19",
+          "title": "State that most phenotypic features are the result of multiple genes rather than single gene inheritance"
+        },
+        {
+          "code": "3.20",
+          "title": "Describe the causes of variation that influence phenotype, including: a genetic variation – different…"
+        },
+        {
+          "code": "3.21",
+          "title": "Discuss the outcomes of the Human Genome Project and its potential applications within medicine"
+        },
+        {
+          "code": "3.22",
+          "title": "State that there is usually extensive genetic variation within a population of a species and that these arise…"
+        },
+        {
+          "code": "3.23",
+          "title": "State that most genetic mutations have no effect on the phenotype, some mutations have a small effect on the…"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Natural selection and genetic modification",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "4.2",
+          "title": "Explain Charles Darwin's theory of evolution by natural selection"
+        },
+        {
+          "code": "4.3",
+          "title": "Explain how the emergence of resistant organisms supports Charles Darwin's theory of evolution including antibiotic…"
+        },
+        {
+          "code": "4.4",
+          "title": "Describe the evidence for human evolution, based on fossils, including: a Ardi from 4.4 million years ago b Lucy…"
+        },
+        {
+          "code": "4.5",
+          "title": "Describe the evidence for human evolution based on stone tools, including: a the development of stone tools over…"
+        },
+        {
+          "code": "4.7",
+          "title": "Describe how genetic analysis has led to the suggestion of the three domains rather than the five kingdoms…"
+        },
+        {
+          "code": "4.8",
+          "title": "Explain selective breeding and its impact on food plants and domesticated animals 4.9B Describe the process of…"
+        },
+        {
+          "code": "4.10",
+          "title": "Describe genetic engineering as a process which involves modifying the genome of an organism to introduce desirable…"
+        },
+        {
+          "code": "4.11",
+          "title": "Describe the main stages of genetic engineering including the use of: a restriction enzymes b ligase c sticky ends d…"
+        },
+        {
+          "code": "4.14",
+          "title": "Evaluate the benefits and risks of genetic engineering and selective breeding in modern agriculture and medicine,…"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "title": "Health, disease and the development of medicines",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "5.1",
+          "title": "Describe health as a state of complete physical, mental and social well-being and not merely the absence of disease…"
+        },
+        {
+          "code": "5.2",
+          "title": "Describe the difference between communicable and non-communicable diseases"
+        },
+        {
+          "code": "5.3",
+          "title": "Explain why the presence of one disease can lead to a higher susceptibility to other diseases"
+        },
+        {
+          "code": "5.4",
+          "title": "Describe a pathogen as a disease-causing organism, including viruses, bacteria, fungi and protists"
+        },
+        {
+          "code": "5.5",
+          "title": "Describe some common infections, including: a cholera (bacteria) causes diarrhoea b tuberculosis (bacteria) causes…"
+        },
+        {
+          "code": "5.6",
+          "title": "Explain how pathogens are spread and how this spread can be reduced or prevented, including: a cholera (bacteria) –…"
+        },
+        {
+          "code": "5.8",
+          "title": "Explain how sexually transmitted infections (STIs) are spread and how this spread can be reduced or prevented,…"
+        },
+        {
+          "code": "5.12",
+          "title": "Describe how the physical barriers and chemical defences of the human body provide protection from pathogens,…"
+        },
+        {
+          "code": "5.13",
+          "title": "Explain the role of the specific immune system of the human body in defence against disease, including: a exposure…"
+        },
+        {
+          "code": "5.14",
+          "title": "Explain the body’s response to immunisation using an inactive form of a pathogen 2c, 2g 4a, 4c 5.15B Discuss the…"
+        },
+        {
+          "code": "5.16",
+          "title": "Explain that antibiotics can only be used to treat bacterial infections because they inhibit cell processes in the…"
+        },
+        {
+          "code": "5.20",
+          "title": "Describe that the process of developing new medicines, including antibiotics, has many stages, including discovery,…"
+        },
+        {
+          "code": "5.23",
+          "title": "Describe that many non-communicable human diseases are caused by the interaction of a number of factors, including…"
+        },
+        {
+          "code": "5.24",
+          "title": "Explain the effect of lifestyle factors on non-communicable diseases at local, national and global levels,…"
+        },
+        {
+          "code": "5.25",
+          "title": "Evaluate some different treatments for cardiovascular disease, including: a life-long medication b surgical…"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "title": "Plant structures and their functions",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "6.1",
+          "title": "Describe photosynthetic organisms as the main producers of food and therefore biomass"
+        },
+        {
+          "code": "6.2",
+          "title": "Describe photosynthesis in plants and algae as an endothermic reaction that uses light energy to react carbon…"
+        },
+        {
+          "code": "6.3",
+          "title": "Explain the effect of temperature, light intensity and carbon dioxide concentration as limiting factors on the rate…"
+        },
+        {
+          "code": "6.4",
+          "title": "Explain the interactions of temperature, light intensity and carbon dioxide concentration in limiting the rate of…"
+        },
+        {
+          "code": "6.5",
+          "title": "Core Practical: Investigate the effect of light intensity on the rate of photosynthesis"
+        },
+        {
+          "code": "6.6",
+          "title": "Explain how the rate of photosynthesis is directly proportional to light intensity and inversely proportional to the…"
+        },
+        {
+          "code": "6.7",
+          "title": "Explain how the structure of the root hair cells is adapted to absorb water and mineral ions"
+        },
+        {
+          "code": "6.8",
+          "title": "Explain how the structures of the xylem and phloem are adapted to their function in the plant, including: a…"
+        },
+        {
+          "code": "6.9",
+          "title": "Explain how water and mineral ions are transported through the plant by transpiration, including the structure and…"
+        },
+        {
+          "code": "6.10",
+          "title": "Describe how sucrose is transported around the plant by translocation 6.11B Explain how the structure of a leaf is…"
+        },
+        {
+          "code": "6.12",
+          "title": "Explain the effect of environmental factors on the rate of water uptake by a plant, to include light intensity, air…"
+        },
+        {
+          "code": "6.13",
+          "title": "Demonstrate an understanding of rate calculations for transpiration 1a, 1c"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "title": "Animal coordination, control and homeostasis",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "7.1",
+          "title": "Describe where hormones are produced and how they are transported from endocrine glands to their target organs,…"
+        },
+        {
+          "code": "7.2",
+          "title": "Explain that adrenalin is produced by the adrenal glands to prepare the body for fight or flight, including: a…"
+        },
+        {
+          "code": "7.3",
+          "title": "Explain how thyroxine controls metabolic rate as an example of negative feedback, including: a low levels of…"
+        },
+        {
+          "code": "7.4",
+          "title": "Describe the stages of the menstrual cycle, including the roles of the hormones oestrogen and progesterone, in the…"
+        },
+        {
+          "code": "7.5",
+          "title": "Explain the interactions of oestrogen, progesterone, FSH and LH in the control of the menstrual cycle, including the…"
+        },
+        {
+          "code": "7.6",
+          "title": "Explain how hormonal contraception influences the menstrual cycle and prevents pregnancy"
+        },
+        {
+          "code": "7.7",
+          "title": "Evaluate hormonal and barrier methods of contraception"
+        },
+        {
+          "code": "7.8",
+          "title": "Explain the use of hormones in Assisted Reproductive Technology (ART) including IVF and clomifene therapy"
+        },
+        {
+          "code": "7.9",
+          "title": "Explain the importance of maintaining a constant internal environment in response to internal and external change…"
+        },
+        {
+          "code": "7.13",
+          "title": "Explain how the hormone insulin controls blood glucose concentration"
+        },
+        {
+          "code": "7.14",
+          "title": "Explain how blood glucose concentration is regulated by glucagon"
+        },
+        {
+          "code": "7.15",
+          "title": "Explain the cause of type 1 diabetes and how it is controlled"
+        },
+        {
+          "code": "7.16",
+          "title": "Explain the cause of type 2 diabetes and how it is controlled"
+        },
+        {
+          "code": "7.17",
+          "title": "Evaluate the correlation between body mass and type 2 diabetes including waist:hip calculations and BMI, using the…"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "title": "Exchange and transport in animals",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "8.1",
+          "title": "Describe the need to transport substances into and out of a range of organisms, including oxygen, carbon dioxide,…"
+        },
+        {
+          "code": "8.2",
+          "title": "Explain the need for exchange surfaces and a transport system in multicellular organisms including the calculation…"
+        },
+        {
+          "code": "8.3",
+          "title": "Explain how alveoli are adapted for gas exchange by diffusion between air in the lungs and blood in capillaries 8.4B…"
+        },
+        {
+          "code": "8.6",
+          "title": "Explain how the structure of the blood is related to its function: a red blood cells (erythrocytes) b white blood…"
+        },
+        {
+          "code": "8.7",
+          "title": "Explain how the structure of the blood vessels is related to their function"
+        },
+        {
+          "code": "8.8",
+          "title": "Explain how the structure of the heart and circulatory system is related to its function, including the role of the…"
+        },
+        {
+          "code": "8.9",
+          "title": "Describe cellular respiration as an exothermic reaction which occurs continuously in living cells to release energy…"
+        },
+        {
+          "code": "8.10",
+          "title": "Compare the process of aerobic respiration with the process of anaerobic respiration"
+        },
+        {
+          "code": "8.11",
+          "title": "Core Practical: Investigate the rate of respiration in living organisms 1a"
+        },
+        {
+          "code": "8.12",
+          "title": "Calculate heart rate, stroke volume and cardiac output, using the equation cardiac output = stroke volume × heart…"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "title": "Ecosystems and material cycles",
+      "sourceUrl": "https://qualifications.pearson.com/content/dam/pdf/GCSE/Science/2016/Specification/gcse-biology-spec.pdf",
+      "topics": [
+        {
+          "code": "9.1",
+          "title": "Describe the different levels of organisation from individual organisms, populations, communities, to the whole…"
+        },
+        {
+          "code": "9.2",
+          "title": "Explain how communities can be affected by abiotic and biotic factors, including: a temperature, light, water,…"
+        },
+        {
+          "code": "9.3",
+          "title": "Describe the importance of interdependence in a community"
+        },
+        {
+          "code": "9.4",
+          "title": "Describe how the survival of some organisms is dependent on other species, including parasitism and mutualism"
+        },
+        {
+          "code": "9.5",
+          "title": "Core Practical: Investigate the relationship between organisms and their environment using field-work techniques,…"
+        },
+        {
+          "code": "9.6",
+          "title": "Explain how to determine the number of organisms in a given area using raw data from field-work techniques,…"
+        },
+        {
+          "code": "9.9",
+          "title": "Explain the positive and negative human interactions within ecosystems and their impacts on biodiversity, including:…"
+        },
+        {
+          "code": "9.10",
+          "title": "Explain the benefits of maintaining local and global biodiversity, including the conservation of animal species and…"
+        },
+        {
+          "code": "9.12",
+          "title": "Describe how different materials cycle through the abiotic and biotic components of an ecosystem"
+        },
+        {
+          "code": "9.13",
+          "title": "Explain the importance of the carbon cycle, including the processes involved and the role of microorganisms as…"
+        },
+        {
+          "code": "9.14",
+          "title": "Explain the importance of the water cycle, including the processes involved and the production of potable water in…"
+        },
+        {
+          "code": "9.15",
+          "title": "Explain how nitrates are made available for plant uptake, including the use of fertilisers, crop rotation and the…"
+        }
+      ]
+    }
+  ]
+}

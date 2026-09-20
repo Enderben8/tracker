@@ -1,0 +1,2419 @@
+GCSE (9-1)
+Biology
+Specification
+Pearson Edexcel Level 1/Level 2 GCSE (9 - 1) in Biology (1BI0)
+First teaching from September 2016
+First certification from 2018 Issue 4
+
+
+About Pearson
+We are the world’s leading learning company operating in countries all around the world. We
+provide content, assessment and digital services to learners, educational institutions,
+employers, governments and other partners globally. We are committed to helping equip
+learners with the skills they need to enhance their employability prospects and to succeed in
+the changing world of work. We believe that wherever learning flourishes so do people.
+References to third party materials made in this specification are made in good faith. Pearson
+does not endorse, approve or accept responsibility for the content of materials, which may
+be subject to change, or any opinions expressed therein. (Materials may include textbooks,
+journals, magazines and other publications and websites.)
+
+All information in this specification is correct at time of publication.
+
+Original origami artwork: Mark Bolitho
+Origami photography: Pearson Education Ltd/Naki Kouyioumtzis
+
+ISBN 978 1 446 95833 9
+All the material in this publication is copyright
+© Pearson Education Limited 2024
+
+
+Summary of Pearson Edexcel Level 1/Level 2
+GCSE (9–1) in Biology (1BI0) specification
+Issue 4 changes
+
+Summary of changes made between previous issue and this current issue Page
+number
+Removed named subject advisors from the ‘Get help and support’ section
+Added first name to named Scientist Mendel so this now reads Gregor Mendel for spec
+point 3.11B.
+Added first name to named Scientist Darwin so this now reads Charles Darwin for
+spec points 4.1B and 4.2.
+Added first name to named Scientist Wallace so this now reads Alfred Wallace for spec
+point 4.1B.
+Added first name to named Scientist Leakey so this now reads Richard Leakey for
+spec point 4.4.
+3
+16
+
+18
+
+If you need further information on these changes or what they mean, contact us via our
+website at: qualifications.pearson.com/en/support/contact-us.html
+
+
+Contents
+1 Introduction 2
+Why choose Edexcel GCSE in Biology? 2
+Supporting you in planning and implementing this qualification 3
+Qualification at a glance 4
+2 Subject content 5
+3 Assessment information 33
+4 Administration and general information 36
+Entries 36
+Access arrangements, reasonable adjustments, special consideration and
+malpractice 36
+Student recruitment and progression 39
+Appendix 1: Mathematical skills 43
+Appendix 2: Taxonomy 45
+Appendix 3: Apparatus and techniques 47
+Appendix 4: Practical Science Statement 52
+Appendix 5: The context for the development of this
+qualification 53
+Appendix 6: Transferable skills 55
+Appendix 7: Codes 56
+Appendix 8: Calculators 57
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+2
+1 Introduction
+Why choose Edexcel GCSE in Biology?
+Supporting success in science
+Science matters. That’s why we’ve built the most inclusive GCSE (9–1) courses, so every
+student can enjoy science and succeed in their studies.
+Every student is different. With the same science and equal number of exams across our
+tiered qualifications, you can structure the courses in the ways that mean you can best
+support and stretch your students together.
+Our specifications are straightforward, and our selection of core practicals are designed to
+help bring science learning to life. And when it comes to our assessments, they’re shaped to
+encourage all students to best show what they know and can do.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+3
+Supporting you in planning and implementing this
+qualification
+Planning
+● Our Getting Started guide gives you an overview of the new GCSE qualifications to help
+you to get to grips with the changes to content and assessment and to help you
+understand what these changes mean for you and your students.
+● We will give you editable schemes of work that you can adapt to suit your department.
+● Our mapping documents highlight key differences between the new and 2011
+qualifications.
+Teaching and learning
+There will be lots of free teaching and learning support to help you deliver the new
+qualifications, including:
+● a free series of teacher, student and technician worksheets will help cover each element of
+planning and delivering every core practical
+● a free practical guide to help you prepare for the changes to practical assessment
+● a free maths guide for scientists to help you embed mathematics in your science
+teaching.
+Preparing for exams
+We will also provide a range of resources to help you prepare your students for the
+assessments, including:
+● additional assessment materials to support formative assessments and mock exams
+● marked exemplars of student work with examiner commentaries.
+ResultsPlus
+ResutsPlus provides the most detailed analysis available of your students’ exam
+performance. It can help you identify the topics and skills where further learning would
+benefit your students.
+Get help and support
+Our subject advisor service, led by our dedicated subject advisor will ensure you receive help
+and guidance from us and that you can share ideas and information with other teachers.
+Learn more at qualifications.pearson.com
+examWizard
+examWizard is a free exam preparation tool containing a bank of Edexcel GCSE Science
+exam questions, mark schemes and examiners’ reports. Existing questions will be reviewed
+and tagged to our new specifications so they can still be used, and question descriptions will
+be updated.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+4
+Qualification at a glance
+Content and assessment overview
+The Pearson Edexcel Level 1/Level 2 GCSE (9–1) in Biology consists of two
+externally-examined papers. These are available at foundation tier and higher tier.
+Students must complete all assessments in the same tier.
+Students must complete all assessment in May/June in any single year.
+Paper 1 (*Paper code: 1BI0/1F, 1BI0/1H)
+Written examination: 1 hour and 45 minutes
+50% of the qualification
+100 marks
+Content overview
+● Topic 1 – Key concepts in biology
+● Topic 2 – Cells and control
+● Topic 3 – Genetics
+● Topic 4 – Natural selection and genetic modification
+● Topic 5 – Health, disease and the development of medicines
+Assessment overview
+A mixture of different question styles, including multiple-choice questions, short answer
+questions, calculations and extended open-response questions.
+Calculators may be used in the examination. Information on the use of calculators during
+the examinations for this qualification can be found in Appendix 8: Calculators.
+
+Paper 2 (Paper code: 1BI0/2F, 1BI0/2H)
+Written examination: 1 hour and 45 minutes
+50% of the qualification
+100 marks
+Content overview
+● Topic 1 – Key concepts in biology
+● Topic 6 – Plant structures and their functions
+● Topic 7 – Animal coordination, control and homeostasis
+● Topic 8 – Exchange and transport in animals
+● Topic 9 – Ecosystems and material cycles
+Assessment overview
+A mixture of different question styles, including multiple-choice questions, short answer
+questions, calculations and extended open-response questions.
+Calculators may be used in the examination. Information on the use of calculators during
+the examinations for this qualification can be found in Appendix 8: Calculators.
+*See Appendix 7: Codes for a description of this code and all other codes relevant to this
+qualification.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+5
+2 Subject content
+Qualification aims and objectives
+GCSE study in the sciences provides the foundation for understanding the material world.
+Scientific understanding is changing our lives and is vital to the world’s future prosperity. All
+students should learn essential aspects of the knowledge, methods, processes and uses of
+science. They should gain appreciation of how the complex and diverse phenomena of the
+natural world can be described in terms of a small number of key ideas that relate to the
+sciences and that are both inter-linked and of universal application. These key ideas include:
+● the use of conceptual models and theories to make sense of the observed diversity of
+natural phenomena
+● the assumption that every effect has one or more cause
+● that change is driven by differences between different objects and systems when they
+interact
+● that many such interactions occur over a distance without direct contact
+● that science progresses through a cycle of hypothesis, practical experimentation,
+observation, theory development and review
+● that quantitative analysis is a central element both of many theories and of scientific
+methods of inquiry.
+These key ideas are relevant in different ways and with different emphases in the three
+subjects. Examples of their relevance are given for each subject in the separate sections
+below for Biology, Chemistry and Physics.
+The three GCSE Science qualifications enable students to:
+● develop scientific knowledge and conceptual understanding through the specific disciplines
+of Biology, Chemistry and Physics
+● develop understanding of the nature, processes and methods of science, through different
+types of scientific enquiries that help them to answer scientific questions about the world
+around them
+● develop and learn to apply observational, practical, modelling, enquiry and
+problem-solving skills in the laboratory, in the field and in other learning environments
+● develop their ability to evaluate claims based on science through critical analysis of the
+methodology, evidence and conclusions, both qualitatively and quantitatively.
+Students should study the sciences in ways that help them to develop curiosity about the
+natural world, that give them an insight into how science works and that enable them to
+appreciate its relevance to their everyday lives. The scope and nature of the study should be
+broad, coherent, practical and satisfying. It should encourage students to be inspired,
+motivated and challenged by the subject and its achievements.
+The key ideas specific to the Biology content include:
+● life processes depend on molecules whose structure is related to their function
+● the fundamental units of living organisms are cells, which may be part of highly adapted
+structures, including tissues, organs and organ systems, enabling living processes to be
+performed effectively
+● living organisms may form populations of single species, communities of many species
+and ecosystems, interacting with each other, with the environment and with humans in
+many different ways
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+6
+● living organisms are interdependent and show adaptations to their environment
+● life on Earth is dependent on photosynthesis in which green plants and algae trap light
+from the Sun to fix carbon dioxide and combine it with hydrogen from water to make
+organic compounds and oxygen
+● organic compounds are used as fuels in cellular respiration to allow the other chemical
+reactions necessary for life
+● the chemicals in ecosystems are continually cycling through the natural world
+● the characteristics of a living organism are influenced by its genome and its interaction
+with the environment
+● evolution occurs by a process of natural selection and accounts both for biodiversity and
+how organisms are all related to varying degrees.
+All of these key ideas will be assessed as part of this qualification, through the subject
+content.
+Working scientifically
+The GCSE in Biology requires students to develop the skills, knowledge and understanding of
+working scientifically. Working scientifically will be assessed through examination and the
+completion of the eight core practicals.
+1 Development of scientific thinking
+a Understand how scientific methods and theories develop over time.
+b Use a variety of models, such as representational, spatial, descriptive,
+computational and mathematical, to solve problems, make predictions and to
+develop scientific explanations and an understanding of familiar and unfamiliar
+facts.
+c Appreciate the power and limitations of science, and consider any ethical issues
+that may arise.
+d Explain everyday and technological applications of science; evaluate associated
+personal, social, economic and environmental implications; and make decisions
+based on the evaluation of evidence and arguments.
+e Evaluate risks both in practical science and the wider societal context, including
+perception of risk in relation to data and consequences.
+f Recognise the importance of peer review of results and of communicating results
+to a range of audiences.
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+7
+2 Experimental skills and strategies
+a U se scientific theories and explanations to develop hypotheses.
+b P lan experiments or devise procedures to make observations, produce or
+characterise a substance, test hypotheses, check data or explore phenomena.
+c A pply a knowledge of a range of techniques, instruments, apparatus and
+materials to select those appropriate to the experiment.
+d Carry out experiments appropriately, having due regard to the correct
+manipulation of apparatus, the accuracy of measurements and health and safety
+considerations.
+e R ecognise when to apply a knowledge of sampling techniques to ensure any
+samples collected are representative.
+f M ake and record observations and measurements using a range of apparatus and
+methods.
+g E valuate methods and suggest possible improvements and further investigations.
+3 Analysis and evaluation
+A pply the cycle of collecting, presenting and analysing data, including:
+a presenting observations and other data using appropriate methods.
+b translating data from one form to another.
+c carrying out and representing mathematical and statistical analysis.
+d representing distributions of results and making estimations of uncertainty.
+e interpreting observations and other data (presented in verbal, diagrammatic,
+graphical, symbolic or numerical form), including identifying patterns and trends,
+making inferences and drawing conclusions.
+f presenting reasoned explanations, including relating data to hypotheses.
+g being objective, evaluating data in terms of accuracy, precision, repeatability and
+reproducibility and identifying potential sources of random and systematic error.
+h c ommunicating the scientific rationale for investigations, methods used, findings
+and reasoned conclusions through paper-based and electronic reports and
+presentations using verbal, diagrammatic, graphical, numerical and symbolic
+forms.
+4 Scientific vocabulary, quantities, units, symbols and nomenclature
+a U se scientific vocabulary, terminology and definitions.
+b R ecognise the importance of scientific quantities and understand how they are
+determined.
+c U se SI units (e.g. kg, g, mg; km, m, mm; kJ, J) and IUPAC chemical nomenclature
+unless inappropriate.
+d U se prefixes and powers of ten for orders of magnitude (e.g. tera, giga, mega,
+kilo, centi, milli, micro and nano).
+e I nterconvert units.
+f U se an appropriate number of significant figures in calculation.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+8
+Practical work
+The content includes eight mandatory core practicals, indicated as an entire specification
+point in italics.
+Students must carry out all eight of the mandatory core practicals listed below.
+
+Core practical:
+1.6 Investigate biological specimens using microscopes, including magnification
+calculations and labelled scientific drawings from observations
+1.10 Investigate the effect of pH on enzyme activity
+1.13B Investigate the use of chemical reagents to identify starch, reducing sugars,
+proteins and fats
+1.16 Investigate osmosis in potatoes
+5.18B Investigate the effects of antiseptics, antibiotics or plant extracts on microbial
+cultures
+6.5 Investigate the effect of light intensity on the rate of photosynthesis
+8.11 Investigate the rate of respiration in living organisms
+9.5 Investigate the relationship between organisms and their environment using
+field-work techniques, including quadrats and belt transects
+
+Students will need to use their knowledge and understanding of these practical techniques
+and procedures in the written assessments.
+Centres must confirm that each student has completed the eight mandatory core practicals.
+Students need to record the work that they have undertaken for the eight mandatory core
+practicals. The practical record must include the knowledge, skills and understanding they
+have derived from the practical activities. Centres must complete and submit a Practical
+Science Statement (see Appendix 4) to confirm that all students have completed the eight
+mandatory core practicals. This must be submitted to Pearson by 15th April in the year that
+the students will sit their examinations. Any failure by centres to provide this Practical
+Science Statement will be treated as malpractice and/or maladministration.
+Scientific diagrams should be included, where appropriate, to show the set-up and to record
+the apparatus and procedures used in practical work.
+It is important to realise that these core practicals are the minimum number of practicals
+that should be taken during the course. Suggested additional practicals are given beneath
+the content at the end of each topic. The eight mandatory core practicals cover all aspects of
+the apparatus and techniques listed in Appendix 3: Apparatus and techniques. This appendix
+also includes more detailed instructions for each core practical, which must be followed.
+Safety is an overriding requirement for all practical work. Centres are responsible for
+ensuring appropriate safety procedures are followed whenever their students complete
+practical work.
+These core practicals may be reviewed and amended if changes are required to the
+apparatus and techniques listed by the Department for Education. Pearson may also review
+and amend the core practicals if necessary. Centres will be told as soon as possible about
+any changes to core practicals, with an updated specification being published.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+9
+Qualification content
+The following notation is used in the tables that show the content for this qualification:
+● text in bold indicates content that is for higher tier only
+● entire specification points in italics indicates the core practicals.
+Specification statement numbers with a B in them refer to content which is only in the GCSE
+in Biology and is not found in the GCSE in Combined Science (e.g. 1.13B).
+Mathematics
+Maths skills that can be assessed in relation to a specification point are referenced in the
+maths column, next to this specification point. Please see Appendix 1: Mathematical skills for
+full details of each maths skill.
+After each topic of content in this specification, there are details relating to the ‘Use of
+mathematics’ which contains the Biology specific mathematic skills that are found in each
+topic of content in the document Biology, Chemistry and Physics GCSE subject content,
+published by the Department for Education (DfE) in June 2014. The reference in brackets
+after each statement refers to the mathematical skills from Appendix 1.
+
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+10
+Topics common to Paper 1 and Paper 2
+Topic 1 – Key concepts in biology
+
+Students should: Maths skills
+1.1 Explain how the sub-cellular structures of eukaryotic and
+prokaryotic cells are related to their functions, including:
+a animal cells – nucleus, cell membrane, mitochondria and
+ribosomes
+b plant cells – nucleus, cell membrane, cell wall, chloroplasts,
+mitochondria, vacuole and ribosomes
+c bacteria – chromosomal DNA, plasmid DNA, cell
+membrane, ribosomes and flagella
+
+1.2 Describe how specialised cells are adapted to their function,
+including:
+a sperm cells – acrosome, haploid nucleus, mitochondria and
+tail
+b egg cells – nutrients in the cytoplasm, haploid nucleus and
+changes in the cell membrane after fertilisation
+c ciliated epithelial cells
+
+1.3 Explain how changes in microscope technology, including
+electron microscopy, have enabled us to see cell structures
+and organelles with more clarity and detail than in the past
+and increased our understanding of the role of sub-cellular
+structures
+
+1.4 Demonstrate an understanding of number, size and scale,
+including the use of estimations and explain when they should
+be used
+1d
+2h
+1.5 Demonstrate an understanding of the relationship between
+quantitative units in relation to cells, including:
+a milli (10−3)
+b micro (10−6)
+c nano (10−9)
+d pico (10−12)
+e calculations with numbers written in standard form
+1b
+2a
+2h
+1.6 Core Practical: Investigate biological specimens using
+microscopes, including magnification calculations and labelled
+scientific drawings from observations
+1d
+2a, 2h
+3b
+1.7 Explain the mechanism of enzyme action including the active
+site and enzyme specificity
+
+1.8 Explain how enzymes can be denatured due to changes in the
+shape of the active site
+
+1.9 Explain the effects of temperature, substrate concentration
+and pH on enzyme activity
+2c, 2f
+4a, 4c
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+11
+Students should: Maths skills
+1.10 Core Practical: Investigate the effect of pH on enzyme activity 2c, 2f
+4a, 4c
+1.11 Demonstrate an understanding of rate calculations for enzyme
+activity
+1a, 1c
+1.12 Explain the importance of enzymes as biological catalysts in
+the synthesis of carbohydrates, proteins and lipids and their
+breakdown into sugars, amino acids and fatty acids and
+glycerol
+1.13B Core Practical: Investigate the use of chemical reagents to
+identify starch, reducing sugars, proteins and fats
+1.14B Explain how the energy contained in food can be measured
+using calorimetry
+1a
+2a
+1.15 Explain how substances are transported into and out of cells,
+including by diffusion, osmosis and active transport
+1.16 Core Practical: Investigate osmosis in potatoes 1c
+2b, 2f
+4a, 4c
+1.17 Calculate percentage gain and loss of mass in osmosis 1a, 1c
+4a, 4c
+Use of mathematics
+● Demonstrate an understanding of number, size and scale and the quantitative relationship
+between units (2a and 2h).
+● Use estimations and explain when they should be used (1d).
+● Carry out rate calculations for chemical reactions (1a and 1c).
+● Calculate with numbers written in standard form (1b).
+● Plot, draw and interpret appropriate graphs (4a, 4b, 4c and 4d).
+● Translate information between numerical and graphical forms (4a).
+● Construct and interpret frequency tables and diagrams, bar charts and histograms (2c).
+● Use a scatter diagram to identify a correlation between two variables (2g).
+● Understand and use simple compound measures such as the rate of a reaction
+(1a and 1c).
+● Calculate the percentage gain and loss of mass (1c).
+● Use fractions and percentages (1c).
+● Calculate arithmetic means (2b).
+● Carry out rate calculations (1a and 1c).
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+12
+Suggested practicals
+● Investigate the effect of different concentrations of digestive enzymes, using and
+evaluating models of the alimentary canal.
+● Investigate the effect of temperatures and concentration on enzyme activity.
+● Investigate plant and animal cells with a light microscope.
+● Investigate the effect of concentration on rate of diffusion.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+13
+Topics for Paper 1
+Topic 2 – Cells and control
+
+Students should: Maths skills
+2.1 Describe mitosis as part of the cell cycle, including the stages
+interphase, prophase, metaphase, anaphase and telophase
+and cytokinesis
+
+2.2 Describe the importance of mitosis in growth, repair and
+asexual reproduction
+
+2.3 Describe the division of a cell by mitosis as the production of
+two daughter cells, each with identical sets of chromosomes in
+the nucleus to the parent cell, and that this results in the
+formation of two genetically identical diploid body cells
+
+2.4 Describe cancer as the result of changes in cells that lead to
+uncontrolled cell division
+
+2.5 Describe growth in organisms, including:
+a cell division and differentiation in animals
+b cell division, elongation and differentiation in plants
+
+2.6 Explain the importance of cell differentiation in the
+development of specialised cells
+
+2.7 Demonstrate an understanding of the use of percentiles charts
+to monitor growth
+1c
+4a
+2.8 Describe the function of embryonic stem cells, stem cells in
+animals and meristems in plants
+1d
+2.9 Discuss the potential benefits and risks associated with the
+use of stem cells in medicine
+
+2.10B Describe the structures and functions of the brain including
+the cerebellum, cerebral hemispheres and medulla oblongata
+
+2.11B Explain how the difficulties of accessing brain tissue
+inside the skull can be overcome by using CT scanning
+and PET scanning to investigate brain function
+1d
+2d
+2.12B Explain some of the limitations in treating damage and
+disease in the brain and other parts of the nervous
+system, including spinal injuries and brain tumours
+
+2.13 Explain the structure and function of sensory receptors,
+sensory neurones, relay neurones in the CNS, motor neurones
+and synapses in the transmission of electrical impulses,
+including the axon, dendron, myelin sheath and the role of
+neurotransmitters
+2g
+4a, 4c
+2.14 Explain the structure and function of a reflex arc including
+sensory, relay and motor neurones
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+14
+
+Students should: Maths skills
+2.15B Explain the structure and function of the eye as a sensory
+receptor including the role of:
+a the cornea and lens
+b the iris
+c rod and cone cells in the retina
+2c
+2.16B Describe defects of the eye including cataracts, long-
+sightedness, short-sightedness and colour blindness
+
+2.17B Explain how cataracts, long-sightedness and short-sightedness
+can be corrected
+
+Use of mathematics
+● Use estimations and explain when they should be used (1d).
+● Use percentiles and calculate percentage gain and loss of mass (1c).
+● Translate information between numerical and graphical forms (4a).
+● Use a scatter diagram to identify a correlation between two variables (2g).
+● Extract and interpret information from graphs, charts and tables (2c and 4a).
+● Extract and interpret data from graphs, charts, and tables (2c).
+● Understand and use percentiles (1c).
+● Use fractions and percentages (1c).
+Suggested practicals
+● Investigate human responses to external stimuli.
+● Investigate reaction times.
+● Investigate the speed of transmission of electrical impulses in the nervous system.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+15
+Topic 3 – Genetics
+
+Students should: Maths skills
+3.1B Explain some of the advantages and disadvantages of asexual
+reproduction, including the lack of need to find a mate, a rapid
+reproductive cycle, but no variation in the population
+
+3.2B Explain some of the advantages and disadvantages of sexual
+reproduction, including variation in the population, but the
+requirement to find a mate
+
+3.3 Explain the role of meiotic cell division, including the
+production of four daughter cells, each with half the number of
+chromosomes, and that this results in the formation of
+genetically different haploid gametes
+The stages of meiosis are not required
+
+3.4 Describe DNA as a polymer made up of:
+a two strands coiled to form a double helix
+b strands linked by a series of complementary base pairs
+joined together by weak hydrogen bonds
+c nucleotides that consist of a sugar and phosphate group
+with one of the four different bases attached to the sugar
+
+3.5 Describe the genome as the entire DNA of an organism and a
+gene as a section of a DNA molecule that codes for a specific
+protein
+
+3.6 Explain how DNA can be extracted from fruit
+3.7B Explain how the order of bases in a section of DNA
+decides the order of amino acids in the protein and that
+these fold to produce specifically shaped proteins such
+as enzymes
+
+3.8B Describe the stages of protein synthesis, including
+transcription and translation:
+a RNA polymerase binds to non-coding DNA located in
+front of a gene
+b RNA polymerase produces a complementary mRNA
+strand from the coding DNA of the gene
+c the attachment of the mRNA to the ribosome
+d the coding by triplets of bases (codons) in the mRNA
+for specific amino acids
+e the transfer of amino acids to the ribosome by tRNA
+f the linking of amino acids to form polypeptides
+
+3.9B Describe how genetic variants in the non-coding DNA of
+a gene can affect phenotype by influencing the binding
+of RNA polymerase and altering the quantity of protein
+produced
+
+3.10B Describe how genetic variants in the coding DNA of a
+gene can affect phenotype by altering the sequence of
+amino acids and therefore the activity of the protein
+produced
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+16
+Students should: Maths skills
+3.11B Describe the work of Gregor Mendel in discovering the basis of
+genetics and recognise the difficulties of understanding
+inheritance before the mechanism was discovered
+1c
+2c, 2e
+
+3.12 Explain why there are differences in the inherited
+characteristics as a result of alleles
+3.13 Explain the terms: chromosome, gene, allele, dominant,
+recessive, homozygous, heterozygous, genotype, phenotype,
+gamete and zygote
+3.14 Explain monohybrid inheritance using genetic diagrams,
+Punnett squares and family pedigrees
+1c
+2c, 2e
+4a
+3.15 Describe how the sex of offspring is determined at fertilisation,
+using genetic diagrams
+1c
+2c, 2e
+4a
+3.16 Calculate and analyse outcomes (using probabilities, ratios
+and percentages) from monohybrid crosses and pedigree
+analysis for dominant and recessive traits
+1c
+2c, 2e
+4a
+3.17B Describe the inheritance of the ABO blood groups with
+reference to codominance and multiple alleles
+1c
+2c, 2e
+4a
+3.18B Explain how sex-linked genetic disorders are inherited 1c
+2c, 2e
+4a
+3.19 State that most phenotypic features are the result of multiple
+genes rather than single gene inheritance
+3.20 Describe the causes of variation that influence phenotype,
+including:
+a genetic variation – different characteristics as a result of
+mutation and sexual reproduction
+b environmental variation – different characteristics caused
+by an organism’s environment (acquired characteristics)
+3.21 Discuss the outcomes of the Human Genome Project and its
+potential applications within medicine
+3.22 State that there is usually extensive genetic variation within a
+population of a species and that these arise through mutations
+3.23 State that most genetic mutations have no effect on the
+phenotype, some mutations have a small effect on the
+phenotype and, rarely, a single mutation will significantly
+affect the phenotype
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+17
+Use of mathematics
+● Use estimations and explain when they should be used (1d).
+● Translate information between numerical and graphical forms (4a).
+● Extract and interpret information from graphs, charts and tables (2c and 4a).
+● Extract and interpret data from graphs, charts, and tables (2c).
+● Understand and use direct proportions and simple ratios in genetic crosses (1c).
+● Understand and use the concept of probability in predicting the outcome of genetic crosses
+(2e).
+● Calculate arithmetic means (2b).
+Suggested practicals
+● Investigate the variations within a species to illustrate continuous variation and
+discontinuous variation.
+● Investigate inheritance using suitable organisms or models.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+18
+Topic 4 – Natural selection and genetic modification
+
+Students should: Maths skills
+4.1B Describe the work of Charles Darwin and Alfred Wallace in the
+development of the theory of evolution by natural selection
+and explain the impact of these ideas on modern biology
+
+4.2 Explain Charles Darwin's theory of evolution by natural
+selection
+
+4.3 Explain how the emergence of resistant organisms supports
+Charles Darwin's theory of evolution including antibiotic
+resistance in bacteria
+2c
+4a
+4.4 Describe the evidence for human evolution, based on fossils,
+including:
+a Ardi from 4.4 million years ago
+b Lucy from 3.2 million years ago
+c Richard Leakey's discovery of fossils from 1.6 million years
+ago
+1a, 1b, 1c
+4a
+4.5 Describe the evidence for human evolution based on stone
+tools, including:
+a the development of stone tools over time
+b how these can be dated from their environment
+
+4.6B Describe how the anatomy of the pentadactyl limb provides
+scientists with evidence for evolution
+
+4.7 Describe how genetic analysis has led to the suggestion of the
+three domains rather than the five kingdoms classification
+method
+
+4.8 Explain selective breeding and its impact on food plants and
+domesticated animals
+
+4.9B Describe the process of tissue culture and its advantages in
+medical research and plant breeding programmes
+
+4.10 Describe genetic engineering as a process which involves
+modifying the genome of an organism to introduce desirable
+characteristics
+
+4.11 Describe the main stages of genetic engineering
+including the use of:
+a restriction enzymes
+b ligase
+c sticky ends
+d vectors
+
+4.12B Explain the advantages and disadvantages of genetic
+engineering to produce GM organisms including the
+modification of crop plants, including the introduction of genes
+for insect resistance from Bacillus thuringiensis into crop
+plants
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+19
+Students should: Maths skills
+4.13B Explain the advantages and disadvantages of agricultural
+solutions to the demands of a growing human population,
+including use of fertilisers and biological control
+2c
+4a, 4c
+4.14 Evaluate the benefits and risks of genetic engineering and
+selective breeding in modern agriculture and medicine,
+including practical and ethical implications
+2c
+4a, 4c
+Use of mathematics
+● Translate information between numerical and graphical forms (4a).
+● Construct and interpret frequency tables and diagrams, bar charts and histograms (2c).
+● Plot and draw appropriate graphs, selecting appropriate scales for axes (4a and 4c).
+● Extract and interpret information from graphs, charts and tables (2c and 4a).
+● Extract and interpret data from graphs, charts, and tables (2c).
+● Understand and use direct proportions and simple ratios in genetic crosses (1c).
+● Understand and use the concept of probability in predicting the outcome of genetic crosses
+(2e).
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+20
+Topic 5 – Health, disease and the development of medicines
+
+Students should: Maths skills
+5.1 Describe health as a state of complete physical, mental and
+social well-being and not merely the absence of disease or
+infirmity, as defined by the World Health Organization (WHO)
+
+5.2 Describe the difference between communicable and
+non-communicable diseases
+
+5.3 Explain why the presence of one disease can lead to a higher
+susceptibility to other diseases
+2c, 2d, 2g
+4a, 4c
+5.4 Describe a pathogen as a disease-causing organism, including
+viruses, bacteria, fungi and protists
+
+5.5 Describe some common infections, including:
+a cholera (bacteria) causes diarrhoea
+b tuberculosis (bacteria) causes lung damage
+c Chalara ash dieback (fungi) causes leaf loss and bark
+lesions
+d malaria (protists) causes damage to blood and liver
+e HIV (virus) destroys white blood cells, leading to the onset
+of AIDS
+fB stomach ulcers caused by Helicobacter (bacteria)
+gB Ebola (virus) causes haemorrhagic fever
+
+5.6 Explain how pathogens are spread and how this spread can be
+reduced or prevented, including:
+a cholera (bacteria) – water
+b tuberculosis (bacteria) – airborne
+c Chalara ash dieback (fungi) – airborne
+d malaria (protists) – animal vectors
+eB stomach ulcers caused by Helicobacter (bacteria) – oral
+transmission
+fB Ebola (virus) – body fluids
+
+5.7B Describe the lifecycle of a virus, including lysogenic and lytic
+pathways
+
+5.8 Explain how sexually transmitted infections (STIs) are spread
+and how this spread can be reduced or prevented, including:
+a Chlamydia (bacteria)
+b HIV (virus)
+
+5.9B Describe how some plants defend themselves against attack
+from pests and pathogens by physical barriers, including the
+leaf cuticle and cell wall
+
+5.10B Describe how plants defend themselves against attack from
+pests and pathogens by producing chemicals, some of which
+can be used to treat human diseases or relieve symptoms
+5c
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+21
+
+Students should: Maths skills
+5.11B Describe different ways plant diseases can be detected
+and identified, in the lab and in the field including the
+elimination of possible environmental causes,
+distribution analysis of affected plants, observation of
+visible symptoms and diagnostic testing to identify
+pathogens
+2d
+4c
+5c
+5.12 Describe how the physical barriers and chemical defences of
+the human body provide protection from pathogens, including:
+a physical barriers, including mucus, cilia and skin
+b chemical defence, including lysozymes and hydrochloric
+acid
+5c
+5.13 Explain the role of the specific immune system of the human
+body in defence against disease, including:
+a exposure to pathogen
+b the antigens trigger an immune response which causes the
+production of antibodies
+c the antigens also trigger production of memory
+lymphocytes
+d the role of memory lymphocytes in the secondary response
+to the antigen
+
+5.14 Explain the body’s response to immunisation using an inactive
+form of a pathogen
+2c, 2g
+4a, 4c
+5.15B Discuss the advantages and disadvantages of immunisation,
+including the concept of herd immunity
+2d, 2g
+4a, 4c
+5.16 Explain that antibiotics can only be used to treat bacterial
+infections because they inhibit cell processes in the bacterium
+but not the host organism
+5c
+5.17B Explain the aseptic techniques used in culturing
+microorganisms in the laboratory, including the use of an
+autoclave to prepare sterile growth medium and petri dishes,
+the use of sterile inoculating loops to transfer microorganisms
+and the need to keep petri dishes and culture vials covered
+
+5.18B Core Practical: Investigate the effects of antiseptics, antibiotics
+or plant extracts on microbial cultures
+1a
+2c, 2f
+5c
+5.19B Calculate cross-sectional areas of bacterial cultures and clear
+agar jelly using πr2
+1a
+2c
+5c
+5.20 Describe that the process of developing new medicines,
+including antibiotics, has many stages, including discovery,
+development, preclinical and clinical testing
+5c
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+22
+
+Students should: Maths skills
+5.21B Describe the production of monoclonal antibodies,
+including:
+a use of lymphocytes which produce desired antibodies
+but do not divide
+b production of hybridoma cells
+c hybridoma cells produce antibodies as they divide
+
+5.22B Explain the use of monoclonal antibodies, including:
+a in pregnancy testing
+b in diagnosis including locating the position of blood
+clots and cancer cells and in treatment of diseases
+including cancer
+c the advantages of using monoclonal antibodies to
+target specific cells compared to drug and
+radiotherapy treatments
+
+5.23 Describe that many non-communicable human diseases are
+caused by the interaction of a number of factors, including
+cardiovascular diseases, many forms of cancer, some lung and
+liver diseases and diseases influenced by nutrition
+
+5.24 Explain the effect of lifestyle factors on non-communicable
+diseases at local, national and global levels, including:
+a exercise and diet on obesity and malnutrition, including
+BMI and waist : hip calculations, using the BMI equation:
+
+( )
+2
+mass (kg)BMI =
+height (m)
+
+b alcohol on liver diseases
+c smoking on cardiovascular diseases
+1a, 1c
+2c, 2d, 2g
+4a, 4c
+5.25 Evaluate some different treatments for cardiovascular disease,
+including:
+a life-long medication
+b surgical procedures
+c lifestyle changes
+1c, 1d
+2c
+4a, 4c
+Use of mathematics
+● Plot, draw and interpret appropriate graphs (4a, 4b, 4c and 4d).
+● Construct and interpret frequency tables and diagrams, bar charts and histograms (2c).
+● Understand the principles of sampling as applied to scientific data (2d).
+● Use a scatter diagram to identify a correlation between two variables (2g).
+● Calculate cross-sectional areas of bacterial cultures and clear agar jelly using πr2 (5c).
+Suggested practicals
+● Investigate antimicrobial properties of plants.
+● Investigate the conditions affecting growth of microorganisms (using resazurin dye).
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+23
+Topics for Paper 2
+Topic 6 – Plant structures and their functions
+
+Students should: Maths skills
+6.1 Describe photosynthetic organisms as the main producers of
+food and therefore biomass
+
+6.2 Describe photosynthesis in plants and algae as an endothermic
+reaction that uses light energy to react carbon dioxide and
+water to produce glucose and oxygen
+
+6.3 Explain the effect of temperature, light intensity and carbon
+dioxide concentration as limiting factors on the rate of
+photosynthesis
+2c, 2d, 2g
+4a, 4c
+6.4 Explain the interactions of temperature, light intensity
+and carbon dioxide concentration in limiting the rate of
+photosynthesis
+4b, 4c, 4d
+6.5 Core Practical: Investigate the effect of light intensity on the
+rate of photosynthesis
+2c, 2f, 2g
+4a, 4c
+6.6 Explain how the rate of photosynthesis is directly
+proportional to light intensity and inversely proportional
+to the distance from a light source, including the use of
+the inverse square law calculation
+2g
+3a
+4a, 4b, 4c, 4d
+6.7 Explain how the structure of the root hair cells is adapted to
+absorb water and mineral ions
+
+6.8 Explain how the structures of the xylem and phloem are
+adapted to their function in the plant, including:
+a lignified dead cells in xylem transporting water and
+minerals through the plant
+b living cells in phloem using energy to transport sucrose
+around the plant
+
+6.9 Explain how water and mineral ions are transported through
+the plant by transpiration, including the structure and function
+of the stomata
+
+6.10 Describe how sucrose is transported around the plant by
+translocation
+
+6.11B Explain how the structure of a leaf is adapted for
+photosynthesis and gas exchange
+2d
+5c
+6.12 Explain the effect of environmental factors on the rate of
+water uptake by a plant, to include light intensity, air
+movement and temperature
+1a, 1c
+2b, 2c
+4a, 4b, 4c, 4d
+6.13 Demonstrate an understanding of rate calculations for
+transpiration
+1a, 1c
+2b, 2c
+4a, 4b, 4c, 4d
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+24
+
+Students should: Maths skills
+6.14B Explain how plants are adapted to survive in extreme
+environments including the effect of leaf size and shape, the
+cuticle and stomata
+2d
+5c
+6.15B Explain how plant hormones control and coordinate plant
+growth and development, including the role of auxins in
+phototropisms and gravitropisms
+5a
+6.16B Describe the commercial uses of auxins, gibberellins
+and ethene in plants, including:
+a auxins in weedkillers and rooting powders
+b gibberellins in germination, fruit and flower
+formation and the production of seedless fruit
+c ethene in fruit ripening
+4a, 4c
+Use of mathematics
+● Carry out rate calculations for chemical reactions (1a and 1c).
+● Use simple compound measures such as rate (1a, 1c)
+● Plot, draw and interpret appropriate graphs (4a, 4b, 4c and 4d).
+● Construct and interpret frequency tables and diagrams, bar charts and histograms (2c).
+● Understand the principles of sampling as applied to scientific data (2d).
+● Use a scatter diagram to identify a correlation between two variables (2g).
+● Understand and use simple compound measures such as the rate of a reaction
+(1a and 1c).
+● Understand and use inverse proportion – the inverse square law and light intensity in the
+context of factors affecting photosynthesis.
+● Use percentiles and calculate the percentage gain and loss of mass (1c).
+● Use fractions and percentages (1c).
+● Calculate arithmetic means (2b).
+● Calculate cross-sectional areas of bacterial cultures and clear agar jelly using πr2 (5c).
+● Carry out rate calculations (1a and 1c).
+Suggested practicals
+● Investigate the effect of pollutants on plant germination and plant growth.
+● Investigate tropic responses.
+● Investigate the effect of CO2 concentration or temperature on the rate of photosynthesis.
+● Investigate how the structure of the leaf is adapted for photosynthesis.
+● Investigate how the loss of water vapour from leaves drives transpiration.
+● Investigate the importance of photoperiodicity in plants.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+25
+Topic 7 – Animal coordination, control and homeostasis
+
+Students should: Maths skills
+7.1 Describe where hormones are produced and how they are
+transported from endocrine glands to their target organs,
+including the pituitary gland, thyroid gland, pancreas, adrenal
+glands, ovaries and testes
+
+7.2 Explain that adrenalin is produced by the adrenal glands
+to prepare the body for fight or flight, including:
+a increased heart rate
+b increased blood pressure
+c increased blood flow to the muscles
+d raised blood sugar levels by stimulating the liver to
+change glycogen into glucose
+2c
+4a, 4c
+7.3 Explain how thyroxine controls metabolic rate as an
+example of negative feedback, including:
+a low levels of thyroxine stimulates production of TRH
+in hypothalamus
+b this causes release of TSH from the pituitary gland
+c TSH acts on the thyroid to produce thyroxine
+d when thyroxine levels are normal thyroxine inhibits
+the release of TRH and the production of TSH
+2c
+4a, 4c
+7.4 Describe the stages of the menstrual cycle, including the roles
+of the hormones oestrogen and progesterone, in the control of
+the menstrual cycle
+4a
+7.5 Explain the interactions of oestrogen, progesterone,
+FSH and LH in the control of the menstrual cycle,
+including the repair and maintenance of the uterus wall,
+ovulation and menstruation
+4a, 4c
+7.6 Explain how hormonal contraception influences the menstrual
+cycle and prevents pregnancy
+
+7.7 Evaluate hormonal and barrier methods of contraception 2c, 2d
+4a
+7.8 Explain the use of hormones in Assisted Reproductive
+Technology (ART) including IVF and clomifene therapy
+
+7.9 Explain the importance of maintaining a constant internal
+environment in response to internal and external change
+
+7.10B Explain the importance of homeostasis, including:
+a thermoregulation – the effect on enzyme activity
+b osmoregulation – the effect on animal cells
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+26
+
+Students should: Maths skills
+7.11B Explain how thermoregulation takes place, with reference to
+the function of the skin, including:
+a the role of the dermis
+b the role of the epidermis
+c the role of the hypothalamus
+
+7.12B Explain how thermoregulation takes place, with reference to:
+a shivering
+b vasoconstriction
+c vasodilation
+
+7.13 Explain how the hormone insulin controls blood glucose
+concentration
+
+7.14 Explain how blood glucose concentration is regulated by
+glucagon
+
+7.15 Explain the cause of type 1 diabetes and how it is controlled
+7.16 Explain the cause of type 2 diabetes and how it is controlled
+7.17 Evaluate the correlation between body mass and type 2
+diabetes including waist:hip calculations and BMI, using the
+BMI equation:
+
+( )
+2
+mass (kg)BMI =
+height (m)
+
+1a, 1c, 2c
+2e, 3a
+7.18B Describe the structure of the urinary system
+7.19B Explain how the structure of the nephron is related to its
+function in filtering the blood and forming urine including:
+a filtration in the glomerulus and Bowman’s capsule
+b selective reabsorption of glucose
+c reabsorption of water
+
+7.20B Explain the effect of ADH on the permeability of the
+collecting duct in regulating the water content of the
+blood
+
+7.21B Describe the treatments for kidney failure, including kidney
+dialysis and organ donation
+
+7.22B State that urea is produced from the breakdown of excess
+amino acids in the liver
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+27
+Use of mathematics
+● Use simple compound measures such as rate (1a, 1c).
+● Plot, draw and interpret appropriate graphs (4a, 4b, 4c and 4d).
+● Translate information between numerical and graphical forms (4a).
+● Construct and interpret frequency tables and diagrams, bar charts and histograms (2c).
+● Understand and use percentiles (1c).
+● Extract and interpret data from graphs, charts and tables (1c).
+Suggested practical
+● Investigate the presence of sugar in simulated urine/body fluids.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+28
+Topic 8 – Exchange and transport in animals
+
+Students should: Maths skills
+8.1 Describe the need to transport substances into and out of a
+range of organisms, including oxygen, carbon dioxide, water,
+dissolved food molecules, mineral ions and urea
+
+8.2 Explain the need for exchange surfaces and a transport
+system in multicellular organisms including the calculation of
+surface area : volume ratio
+1a, 1c
+5c
+8.3 Explain how alveoli are adapted for gas exchange by diffusion
+between air in the lungs and blood in capillaries
+
+8.4B Describe the factors affecting the rate of diffusion, including
+surface area, concentration gradient and diffusion distance
+
+8.5B Calculate the rate of diffusion using Fick’s law:
+
+surface area concentration differencediffusion
+thickness of membrane
+rate of ×α
+
+1a
+3a, 3d
+8.6 Explain how the structure of the blood is related to its
+function:
+a red blood cells (erythrocytes)
+b white blood cells (phagocytes and lymphocytes)
+c plasma
+d platelets
+1b
+2h
+8.7 Explain how the structure of the blood vessels is related to
+their function
+1a
+8.8 Explain how the structure of the heart and circulatory system
+is related to its function, including the role of the major blood
+vessels, the valves and the relative thickness of chamber walls
+
+8.9 Describe cellular respiration as an exothermic reaction which
+occurs continuously in living cells to release energy for
+metabolic processes, including aerobic and anaerobic
+respiration
+
+8.10 Compare the process of aerobic respiration with the process of
+anaerobic respiration
+
+8.11 Core Practical: Investigate the rate of respiration in living
+organisms
+1a
+2a, 2c, 2f
+4a, 4c
+8.12 Calculate heart rate, stroke volume and cardiac output, using
+the equation cardiac output = stroke volume × heart rate
+1a
+2a, 2c
+3a
+4a, 4c
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+29
+Use of mathematics
+● Demonstrate an understanding of number, size and scale and the quantitative relationship
+between units (2a and 2h).
+● Calculate with numbers written in standard form (1b).
+● Calculate surface area : volume ratios (1c).
+● Plot, draw and interpret appropriate graphs (4a, 4b, 4c and 4d).
+● Translate information between numerical and graphical forms (4a).
+● Construct and interpret frequency tables and diagrams, bar charts and histograms (2c).
+● Extract and interpret information from graphs, charts and tables (2c and 4a).
+● Extract and interpret data from graphs, charts, and tables (2c).
+● Use percentiles and calculate percentage gain and loss of mass (1c).
+Suggested practicals
+● Investigate the effect of glucose concentration on the rate of anaerobic respiration in
+yeast.
+● Investigate the short-term effects of exercise on breathing rate and heart rate.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+30
+Topic 9 – Ecosystems and material cycles
+
+Students should: Maths skills
+9.1 Describe the different levels of organisation from individual
+organisms, populations, communities, to the whole ecosystem
+
+9.2 Explain how communities can be affected by abiotic and biotic
+factors, including:
+a temperature, light, water, pollutants
+b competition, predation
+4a, 4c
+9.3 Describe the importance of interdependence in a community
+9.4 Describe how the survival of some organisms is dependent on
+other species, including parasitism and mutualism
+
+9.5 Core Practical: Investigate the relationship between organisms
+and their environment using field-work techniques, including
+quadrats and belt transects
+1c, 1d,
+2b, 2c, 2d, 2f,
+2g,
+4a, 4c
+9.6 Explain how to determine the number of organisms in a given
+area using raw data from field-work techniques, including
+quadrats and belt transects
+1c, 1d
+2b, 2c, 2d, 2g
+4a, 4c
+9.7B Explain how some energy is transferred to less useful forms at
+each trophic level and that this affects the number of
+organisms at each trophic level, limits the length of a food
+chain and determines the shape of a pyramid of biomass in an
+ecosystem
+
+9.8B Calculate the efficiency of energy transfers between trophic
+levels and percentage calculations of biomass
+1a, 1b, 1c
+2c
+4a
+9.9 Explain the positive and negative human interactions within
+ecosystems and their impacts on biodiversity, including:
+a fish farming
+b introduction of non-indigenous species
+c eutrophication
+2c, 2g
+4a, 4c
+9.10 Explain the benefits of maintaining local and global
+biodiversity, including the conservation of animal species and
+the impact of reforestation
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+31
+
+Students should: Maths skills
+9.11B Describe the biological factors affecting levels of food security,
+including:
+a increasing human population
+b increasing animal farming and the increased meat and fish
+consumption
+c the impact of new pests and pathogens
+d environmental change caused by human activity
+e sustainability issues, e.g. use of land for biofuel production
+and the cost of agricultural inputs
+2c
+4a, 4c
+9.12 Describe how different materials cycle through the abiotic and
+biotic components of an ecosystem
+
+9.13 Explain the importance of the carbon cycle, including the
+processes involved and the role of microorganisms as
+decomposers
+
+9.14 Explain the importance of the water cycle, including the
+processes involved and the production of potable water in
+areas of drought including desalination
+
+9.15 Explain how nitrates are made available for plant uptake,
+including the use of fertilisers, crop rotation and the role of
+bacteria in the nitrogen cycle
+
+9.16B Evaluate the use of indicator species as evidence to
+assess the level of pollution, including:
+a polluted water – bloodworm, sludgeworm
+b clean water – freshwater shrimps, stonefly
+c air quality – different species of lichen, blackspot
+fungus on roses
+2c, 2g
+4a, 4c
+9.17B Explain the effects of temperature, water content and oxygen
+availability on the rate of decomposition in food preservation
+
+9.18B Explain the effects of temperature, water content and oxygen
+availability on the rate of decomposition in composting
+2c
+4a, 4c
+9.19B Calculate rate changes in the decay of biological material 1c
+2c, 2f
+4a, 4c
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+32
+Use of mathematics
+● Calculate surface area : volume ratios (1c).
+● Plot, draw and interpret appropriate graphs (4a, 4b, 4c and 4d).
+● Understand and use percentiles and calculate percentage gain and loss of mass (1c).
+● Translate information between numerical and graphical forms (4a).
+● Construct and interpret frequency tables and diagrams, bar charts and histograms (2c).
+● Understand the principles of sampling as applied to scientific data (2d).
+● Use a scatter diagram to identify a correlation between two variables (2g).
+● Calculate the percentage of mass (1c).
+● Use fractions and percentages (1c).
+● Calculate arithmetic means (2b).
+● Calculate the rate changes in the decay of biological material (1c).
+● Extract and interpret information from charts, graphs and tables (2c, 4a).
+Suggested practicals
+● Investigate tropic responses.
+● Investigate how indicator species can be used to assess levels of pollution in water or the
+atmosphere.
+● Investigate animal behaviour using choice chambers.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+33
+3 Assessment information
+
+Paper 1 (Paper code: 1BI0/1F, 1BI0/1H)
+● First assessment: May/June 2018.
+● The assessment is 1 hour and 45 minutes.
+● The assessment is out of 100 marks.
+● The assessment consists of ten questions.
+● Students must answer all questions.
+● The paper will include multiple-choice, short answer questions, calculations and extended
+open-response questions.
+● Calculators may be used in the examination.
+● Available at foundation tier and higher tier.
+● Students must complete all assessments for this qualification in the same tier.
+● The foundation tier paper will target grades 1–5.
+● The higher tier paper will target grades 4–9.
+● 27 marks of the paper will be overlap questions that appear in both the foundation and
+higher tier papers.
+Content assessed
+● Topic 1 – Key concepts in biology
+● Topic 2 – Cells and control
+● Topic 3 – Genetics
+● Topic 4 – Natural selection and genetic modification
+● Topic 5 – Health, disease and the development of medicines
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+34
+
+Paper 2 (Paper code: 1BI0/2F, 1BI0/2H)
+● First assessment: May/June 2018.
+● The assessment is 1 hour and 45 minutes.
+● The assessment is out of 100 marks.
+● The assessment consists of ten questions.
+● Students must answer all questions.
+● The paper will include multiple-choice, short answer questions, calculations and extended
+open-response questions.
+● Calculators may be used in the examination.
+● Available at foundation tier and higher tier.
+● Students must complete all assessments for this qualification in the same tier.
+● The foundation tier paper will target grades 1–5.
+● The higher tier paper will target grades 4–9.
+● 27 marks of the paper will be overlap questions that appear in both the foundation and
+higher tier papers.
+Content assessed
+● Topic 1 – Key concepts in biology
+● Topic 6 – Plant structures and their functions
+● Topic 7 – Animal coordination, control and homeostasis
+● Topic 8 – Exchange and transport in animals
+● Topic 9 – Ecosystems and material cycles
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+35
+Assessment Objectives
+Students must:
+% in
+GCSE
+AO1 Demonstrate knowledge and understanding of:
+● scientific ideas
+● scientific techniques and procedures.
+40
+AO2 Apply knowledge and understanding of:
+● scientific ideas
+● scientific enquiry, techniques and procedures.
+40
+AO3 Analyse information and ideas to:
+● interpret and evaluate
+● make judgements and draw conclusions
+● develop and improve experimental procedures.
+20
+Total 100%
+
+Breakdown of Assessment Objectives
+Paper
+Assessment Objectives Total for all
+Assessment
+Objectives AO1 % AO2 % AO3 %
+Paper 1 (F/H) 20 20 10 50%
+Paper 2 (F/H) 20 20 10 50%
+Total for GCSE 40% ±3 40% ±3 20% ±3 100%
+
+Synoptic assessment
+Synoptic assessment requires students to work across different parts of a qualification and to
+show their accumulated knowledge and understanding of a topic or subject area.
+Synoptic assessment enables students to show their ability to combine their skills, knowledge
+and understanding with breadth and depth of the subject.
+Questions that naturally draw together different aspects of biology will assess synopticity.
+Sample assessment materials
+Sample papers and mark schemes can be found in the Pearson Edexcel Level 1/Level 2
+GCSE (9–1) in Biology Sample Assessment Materials (SAMs) document.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+36
+4 Administration and general information
+Entries
+Details of how to enter students for the examinations for this qualification can be found in
+our UK Information Manual. A copy is made available to all examinations officers and is
+available on our website: qualifications.pearson.com
+Discount code and performance tables
+Centres should be aware that students who enter for more than one GCSE, or other Level 2
+qualifications with the same discount code, will have only the grade for their 'first entry'
+counted for the purpose of the school and college performance tables (please see
+Appendix 7: Codes). For further information about what constitutes 'first entry' and full
+details of how this policy is applied, please refer to the DfE website:
+www.gov.uk/government/organisations/department-for-education
+Students should be advised that if they take two GCSEs with the same discount code,
+schools and colleges they wish to progress to are likely to take the view that this
+achievement is equivalent to only one GCSE. The same view may be taken if students take
+two GCSEs or other Level 2 qualifications that have different discount codes but have
+significant overlap of content. Students or their advisers who have any doubts about their
+subject combinations should check with the institution they wish to progress to before
+embarking on their programmes.
+Access arrangements, reasonable adjustments,
+special consideration and malpractice
+Equality and fairness are central to our work. Our equality policy requires all students to
+have equal opportunity to access our qualifications and assessments, and our qualifications
+to be awarded in a way that is fair to every student.
+We are committed to making sure that:
+● students with a protected characteristic (as defined by the Equality Act 2010) are not,
+when they are undertaking one of our qualifications, disadvantaged in comparison to
+students who do not share that characteristic
+● all students achieve the recognition they deserve for undertaking a qualification and that
+this achievement can be compared fairly to the achievement of their peers.
+Language of assessment
+Assessment of this qualification will be available in English. All student work must be in
+English.
+Access arrangements
+Access arrangements are agreed before an assessment. They allow students with special
+educational needs, disabilities or temporary injuries to:
+● access the assessment
+● show what they know and can do without changing the demands of the assessment.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+37
+The intention behind an access arrangement is to meet the particular needs of an individual
+student with a disability, without affecting the integrity of the assessment. Access
+arrangements are the principal way in which awarding bodies comply with the duty under the
+Equality Act 2010 to make ‘reasonable adjustments’.
+Access arrangements should always be processed at the start of the course. Students will
+then know what is available and have the access arrangement(s) in place for assessment.
+Reasonable adjustments
+The Equality Act 2010 requires an awarding organisation to make reasonable adjustments
+where a person with a disability would be at a substantial disadvantage in undertaking an
+assessment. The awarding organisation is required to take reasonable steps to overcome
+that disadvantage.
+A reasonable adjustment for a particular person may be unique to that individual and
+therefore might not be in the list of available access arrangements.
+Whether an adjustment will be considered reasonable will depend on a number of factors,
+which will include:
+● the needs of the student with the disability
+● the effectiveness of the adjustment
+● the cost of the adjustment; and
+● the likely impact of the adjustment on the student with the disability and other students.
+An adjustment will not be approved if it involves unreasonable costs to the awarding
+organisation, timeframes or affects the security or integrity of the assessment. This is
+because the adjustment is not ‘reasonable’.
+Special consideration
+Special consideration is a post-examination adjustment to a student's mark or grade to
+reflect temporary injury, illness or other indisposition at the time of the examination/
+assessment, which has had, or is reasonably likely to have had, a material effect on a
+candidate’s ability to take an assessment or demonstrate their level of attainment in
+an assessment.
+Private candidates
+Private candidates can complete this qualification only if they carry-out the mandatory core
+practicals with the centre in which they are sitting the exams, as long as the centre is willing
+to accept the candidate. These candidates need to fulfil the same requirements as all other
+candidates.
+Further information
+Please see our website for further information about how to apply for access arrangements
+and special consideration.
+For further information about access arrangements, reasonable adjustments and special
+consideration, please refer to the JCQ website: www.jcq.org.uk.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+38
+Malpractice
+Candidate malpractice
+Candidate malpractice refers to any act by a candidate that compromises or seeks to
+compromise the process of assessment or which undermines the integrity of the
+qualifications or the validity of results/certificates.
+Candidate malpractice in examinations must be reported to Pearson using a JCQ M1 Form
+(available at www.jcq.org.uk/exams-office/malpractice). The form can be emailed to
+pqsmalpractice@pearson.com or posted to Investigations Team, Pearson, 190 High Holborn,
+London, WC1V 7BH. Please provide as much information and supporting documentation as
+possible. Note that the final decision regarding appropriate sanctions lies with Pearson.
+Failure to report malpractice constitutes staff or centre malpractice.
+Staff/centre malpractice
+Staff and centre malpractice includes both deliberate malpractice and maladministration of
+our qualifications. As with candidate malpractice, staff and centre malpractice is any act that
+compromises or seeks to compromise the process of assessment or which undermines the
+integrity of the qualifications or the validity of results/certificates.
+All cases of suspected staff malpractice and maladministration must be reported
+immediately, before any investigation is undertaken by the centre, to Pearson on
+a JCQ M2(a) Form (available at www.jcq.org.uk/exams-office/malpractice). The form,
+supporting documentation and as much information as possible can be emailed to
+pqsmalpractice@pearson.com or posted to Investigations Team, Pearson,
+190 High Holborn, London, WC1V 7BH. Note that the final decision regarding
+appropriate sanctions lies with Pearson.
+Failure to report malpractice itself constitutes malpractice.
+More-detailed guidance on malpractice can be found in the latest version of the document
+JCQ General and Vocational Qualifications Suspected Malpractice in Examinations and
+Assessments, available at www.jcq.org.uk/exams-office/malpractice.
+Awarding and reporting
+This qualification will be graded, awarded and certificated to comply with the requirements of
+Ofqual's General Conditions of Recognition.
+This GCSE qualification will be graded and certificated on a nine-grade scale from 9 to 1
+using the total subject mark where 9 is the highest grade. Individual papers are not graded.
+For foundation tier, grades 1–5 are available and for higher tier, grades 4–9 are available,
+however if the mark achieved is a smaller number of marks below the 4/3 grade boundary,
+then a grade 3 may be awarded.
+Students whose level of achievement is below the minimum judged by Pearson to be of
+sufficient standard to be recorded on a certificate will receive an unclassified U result.
+The first certification opportunity for this qualification will be 2018.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+39
+Student recruitment and progression
+Pearson follows the JCQ policy concerning recruitment to our qualifications in that:
+● they must be available to anyone who is capable of reaching the required standard
+● they must be free from barriers that restrict access and progression
+● equal opportunities exist for all students.
+Prior learning and other requirements
+This qualification is based on the subject content, published by the DfE. The DfE designed the
+subject content to reflect or build on Key Stage 3. Consequently, students taking this
+qualification will benefit from previously studying Biology at Key Stage 3.
+Progression
+Students can progress from this qualification to:
+● GCEs, for example in Biology
+● Level 3 vocational qualifications in science, for example BTEC Level 3 in Applied Science
+● employment, for example in a science-based industry where an Apprenticeship may be
+available.
+The content and skills for these qualifications are set by the DfE to be suitable to allow these
+progression routes.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+40
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+41
+Appendices
+Appendix 1: Mathematical skills 43
+Appendix 2: Taxonomy 45
+Appendix 3: Apparatus and techniques 47
+Appendix 4: Practical Science Statement 52
+Appendix 5: The context for the development of this qualification 53
+Appendix 6: Transferable skills 55
+Appendix 7: Codes 56
+Appendix 8: Calculators 57
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+42
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+43
+Appendix 1: Mathematical skills
+This appendix is taken from the document Biology, Chemistry and Physics GCSE subject
+content published by the Department for Education (DfE) in June 2014.
+The mathematical skills and use of mathematics statements listed will be assessed through
+the content of this qualification in the examinations. The minimum level of mathematics in
+the foundation tier examination papers will be equivalent to Key Stage 3 mathematics. The
+minimum level of mathematics in the higher tier examination papers will be equivalent to
+foundation tier GCSE in Mathematics.
+Mathematical skills
+Details of the mathematical skills in other science subjects are given for reference.
+
+Biology Chemistry Physics
+1 Arithmetic and numerical computation
+a Recognise and use expressions in decimal form   
+b Recognise and use expressions in standard form   
+c Use ratios, fractions and percentages   
+d Make estimates of the results of simple calculations   
+2 Handling data
+a Use an appropriate number of significant figures   
+b Find arithmetic means   
+c Construct and interpret frequency tables and
+diagrams, bar charts and histograms
+  
+d Understand the principles of sampling as applied to
+scientific data
+
+e Understand simple probability 
+f Understand the terms mean, mode and median  
+g Use a scatter diagram to identify a correlation
+between two variables
+ 
+h Make order of magnitude calculations   
+3 Algebra
+a Understand and use the symbols: =, <, <<, >>, >,
+∝, ~
+  
+b Change the subject of an equation  
+c Substitute numerical values into algebraic equations
+using appropriate units for physical quantities
+ 
+d Solve simple algebraic equations  
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+44
+
+Biology Chemistry Physics
+4 Graphs
+a Translate information between graphical and
+numeric form
+  
+b Understand that y = mx + c represents a linear
+relationship
+  
+c Plot two variables from experimental or other data   
+d Determine the slope and intercept of a linear
+graph
+  
+e Draw and use the slope of a tangent to a curve as
+a measure of rate of change
+ 
+f Understand the physical significance of area
+between a curve and the x-axis and measure it by
+counting squares as appropriate
+
+5 Geometry and trigonometry
+a Use angular measures in degrees 
+b Visualise and represent 2D and 3D forms,
+including two dimensional representations of
+3D objects
+ 
+c Calculate areas of triangles and rectangles,
+surface areas and volumes of cubes
+  
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+45
+Appendix 2: Taxonomy
+The following table lists the command words used in the external assessments.
+
+Command word Definition
+Add/Label Requires the addition or labelling to a stimulus material given
+in the question, for example labelling a diagram or adding
+units to a table.
+Assess
+
+Give careful consideration to all the factors or events that
+apply and identify which are the most important or relevant.
+Make a judgement on the importance of something, and come
+to a conclusion where needed.
+Calculate
+
+Obtain a numerical answer, showing relevant working. If the
+answer has a unit, this must be included. This can include
+using an equation to calculate a numerical answer.
+Comment on
+
+Requires the synthesis of a number of variables from
+data/information to form a judgement.
+Compare Looking for the similarities or differences of two (or more)
+things. Should not require the drawing of a conclusion. Answer
+must relate to both (or all) things mentioned in the question.
+Compare and contrast
+
+Looking for the similarities and differences of two (or more)
+things. Should not require the drawing of a conclusion. Answer
+must relate to both (or all) things mentioned in the question.
+The answer must include at least one similarity and one
+difference.
+Complete Requires the completion of a table/diagram.
+Deduce Draw/reach conclusion(s) from the information provided.
+Describe
+
+To give an account of something. Statements in the response
+need to be developed as they are often linked but do not need
+to include a justification or reason.
+Determine The answer must have an element which is quantitative from
+the stimulus provided, or must show how the answer can be
+reached quantitatively. To gain maximum marks there must
+be a quantitative element to the answer.
+Devise Plan or invent a procedure from existing principles/ideas.
+Discuss Identify the issue/situation/problem/argument that is being
+assessed within the question.
+Explore all aspects of an issue/situation/problem/argument.
+Investigate the issue/situation etc. by reasoning or argument.
+Draw Produce a diagram either using a ruler or using freehand.
+Estimate Find an approximate value, number, or quantity from a
+diagram/given data or through a calculation .
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+46
+
+Command word Definition
+Evaluate Review information (e.g. data, methods) then bring it together
+to form a conclusion, drawing on evidence including strengths,
+weaknesses, alternative actions, relevant data or information.
+Come to a supported judgement of a subject’s qualities and
+relation to its context.
+Explain An explanation requires a justification/exemplification of a
+point.
+The answer must contain some element of
+reasoning/justification, this can include mathematical
+explanations.
+Give/State/Name All of these command words are really synonyms. They
+generally all require recall of one or more pieces of
+information.
+Give a reason/reasons When a statement has been made and the requirement is only
+to give the reasons why.
+Identify Usually requires some key information to be selected from a
+given stimulus/resource.
+Justify Give evidence to support (either the statement given in the
+question or an earlier answer).
+Measure To determine the dimensions or angle from a diagram using
+an instrument such as a ruler or protractor.
+Plot Produce a graph by marking points accurately on a grid from
+data that is provided and then drawing a line of best fit
+through these points. A suitable scale and appropriately
+labelled axes must be included if these are not provided in the
+question.
+Predict Give an expected result.
+Show that Verify the statement given in the question.
+Sketch Produce a freehand drawing. For a graph this would need a
+line and labelled axis with important features indicated, the
+axis are not scaled.
+State and explain Make a point and link ideas to justify that point. An
+explanation requires a justification/exemplification of a point.
+The answer must contain some element of
+reasoning/justification, this can include mathematical
+explanations.
+State what is meant by When the meaning of a term is expected but there are
+different ways of how these can be described.
+Write When the questions ask for an equation.
+
+Verbs preceding a command word
+Suggest a … Suggest an explanation or suggest a description.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+47
+Appendix 3: Apparatus and techniques
+The apparatus and techniques listed in the table below are taken from the document Biology,
+Chemistry and Physics GCSE subject content published by the Department for Education
+(DfE) in June 2014.
+Use and coverage of the apparatus and techniques listed are mandatory. The eight
+mandatory core practicals cover all aspects of the listed apparatus and techniques and are
+referenced in the table.
+Safety is an overriding requirement for all practical work. Centres are responsible for
+ensuring that whenever their students complete practical work appropriate safety procedures
+are followed.
+Scientific diagrams should be included, where appropriate, to show the set-up and to record
+the apparatus and procedures used in practical work.
+
+Apparatus and techniques Core practical (specification reference)
+1
+Use of appropriate apparatus
+to make and record a range
+of measurements accurately,
+including length, area, mass,
+time, temperature, volume of
+liquids and gases, and pH
+1.6 Investigate biological specimens using
+microscopes including magnification calculations
+and labelled scientific drawings from
+observations
+1.10 Investigate the effect of pH on enzyme activity
+1.16 Investigate osmosis in potatoes
+5.18B Investigate the effects of antiseptics, antibiotics
+or plant extracts on microbial cultures
+6.5 Investigate the effect of light intensity on the
+rate of photosynthesis
+8.11 Investigate the rate of respiration in living
+organisms
+9.5 Investigate the relationship between organisms
+and their environment using field-work
+techniques, including quadrats and belt transects
+2
+Safe use of appropriate
+heating devices and
+techniques, including use of a
+Bunsen burner and a water
+bath or electric heater
+1.10 Investigate the effect of pH on enzyme activity
+1.13B Investigate the use of chemical reagents to
+identify starch, reducing sugars, proteins and
+fats
+5.18B Investigate the effects of antiseptics, antibiotics
+or plant extracts on microbial cultures
+6.5 Investigate the effect of light intensity on the
+rate of photosynthesis
+8.11 Investigate the rate of respiration in living
+organisms
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+48
+
+Apparatus and techniques Core practical (specification reference)
+3
+Use of appropriate apparatus
+and techniques for the
+observation and
+measurement of biological
+changes and/or processes
+1.6 Investigate biological specimens using
+microscopes, including magnification calculations
+and labelled scientific drawings from
+observations
+1.10 Investigate the effect of pH on enzyme activity
+1.13B Investigate the use of chemical reagents to
+identify starch, reducing sugars, proteins and
+fats
+1.16 Investigate osmosis in potatoes
+5.18B Investigate the effects of antiseptics, antibiotics
+or plant extracts on microbial cultures
+6.5 Investigate the effect of light intensity on the
+rate of photosynthesis
+8.11 Investigate the rate of respiration in living
+organisms
+4
+Safe and ethical use of living
+organisms (plants or animals)
+to measure physiological
+functions and responses to
+the environment
+6.5 Investigate the effect of light intensity on the
+rate of photosynthesis
+8.11 Investigate the rate of respiration in living
+organisms
+9.5 Investigate the relationship between organisms
+and their environment using field-work
+techniques, including quadrats and belt transects
+5
+Measurement of rates of
+reaction by a variety of
+methods, including
+production of gas, uptake of
+water and colour change of
+indicator
+1.10 Investigate the effect of pH on enzyme activity
+1.13B Investigate the use of chemical reagents to
+identify starch, reducing sugars, proteins and
+fats
+1.16 Investigate osmosis in potatoes
+6.5 Investigate the effect of light intensity on the
+rate of photosynthesis
+8.11 Investigate the rate of respiration in living
+organisms
+6
+Application of appropriate
+sampling techniques to
+investigate the distribution
+and abundance of organisms
+in an ecosystem via direct
+use in the field
+9.5 Investigate the relationship between organisms
+and their environment using field-work
+techniques, including quadrats and belt transects
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+49
+
+Apparatus and techniques Core practical (specification reference)
+7
+Use of appropriate apparatus,
+techniques and magnification,
+including microscopes, to
+make observations of
+biological specimens and
+produce labelled scientific
+drawings
+1.6 Investigate biological specimens using
+microscopes, including magnification calculations
+and labelled scientific drawings from
+observations
+5.18B Investigate the effects of antiseptics, antibiotics
+or plant extracts on microbial cultures
+9.5 Investigate the relationship between organisms
+and their environment using field-work
+techniques, including quadrats and belt transects
+8
+Use of appropriate techniques
+and qualitative reagents to
+identify biological molecules
+and processes in more
+complex and problem-solving
+contexts, including
+continuous sampling in an
+investigation.
+1.10 Investigate the effect of pH on enzyme activity
+1.13B Investigate the use of chemical reagents to
+identify starch, reducing sugars, proteins and
+fats
+
+These core practicals may be reviewed and amended if changes are required to the
+apparatus and techniques listed by the Department for Education. Pearson may also review
+and amend the core practicals if necessary. Centres will be told about any changes as soon
+as possible.
+You must follow the instructions in the table below for each core practical.
+Core practical Description
+1.6
+Investigate biological
+specimens using
+microscopes including
+magnification calculations
+and labelled scientific
+drawings from
+observations
+This practical allows students to develop their skills in
+using a light microscope, preparing slides, and
+producing labelled scientific drawings. Students need to
+be familiar with the set-up and use of a light
+microscope, as well as to be able to identify structures
+that they see. Magnification calculations will also be
+required.
+1.10 Investigate the effect of
+pH on enzyme activity
+For this core practical students will investigate the
+effect of pH, however other variables can also be
+investigated to enhance practical work in this area.
+This method uses amylase (in solutions of different pH)
+to break down starch. The reaction can be monitored
+by using iodine to test the presence of starch in the
+solution with a continuous sampling method. To
+maintain the temperature of the solution, a Bunsen
+burner and water beaker must be used.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+50
+
+Core practical Description
+1.13B
+Investigate the use of
+chemical reagents to
+identify starch, reducing
+sugars, proteins and fats
+Carry out food tests shown below:
+1. identify starch by using iodine solution
+2. identify reducing sugars using Benedict’s
+solution (and a water bath)
+3. identify protein using the Biuret test (adding
+potassium hydroxide to a solution of the food,
+followed by copper sulfate)
+4. identify fats and oils (lipids) using the emulsion
+test.
+1.16 Investigate osmosis in
+potatoes
+A known mass of potato must be added to sucrose
+solution, left for some time, and the final mass
+recorded to obtain the percentage change in mass. This
+investigation looks at the exchange of water between
+the potato and solution and allows the concentration of
+sucrose in the potato to be determined. The practical
+provides an opportunity for the appreciation of the
+need to control variables.
+5.18B
+Investigate the effects of
+antiseptics, antibiotics or
+plant extracts on microbial
+cultures
+This practical provides the opportunity for learners to
+carry out aseptic techniques (Biology statement 5.17).
+Petri dishes pre-poured with agar must be inoculated
+with bacteria and discs of antiseptic/antibiotics/plant
+extracts can be used to determine their effect on
+bacterial growth.
+Sterile aseptic technique must include the use of a
+Bunsen burner.
+6.5
+Investigate the effect of
+light intensity on the rate
+of photosynthesis
+Algal balls (or similar) must be set up and placed at
+varying distances from a light source to investigate the
+effect of light intensity on the rate of photosynthesis.
+The rate must be measured and compared to the
+distance away from the light source.
+8.11
+Investigate the rate of
+respiration in living
+organisms
+Use of a simple respirometer to measure the effect of
+temperature on the oxygen consumption of some small
+organisms. A simple respirometer can be made using a
+tube with soda lime, cotton wool and organisms with a
+capillary tube to coloured liquid. Students can then
+track the progress of the liquid up the capillary tube
+over a set time. This experiment must be carried out
+using a water bath set at different temperatures.
+Safety and ethical considerations must also be covered.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+51
+Core practical Description
+9.5
+Investigate the
+relationship between
+organisms and their
+environment using field-
+work techniques, including
+quadrats and belt
+transects
+This investigation involves the use of a belt transect
+along a gradient (e.g. shaded area to an area with no
+shade). It involves students thinking about how to
+sample their chosen area, including the identification
+and observation of plants/organisms.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+52
+
+
+
+Appendix 4: Practical Science Statement
+Pearson Edexcel Level 1/Level 2 GCSE (9–1) in
+Biology/Chemistry/Physics/Combined Science
+Head Teacher Declaration Form
+Pearson Edexcel Level 1/Level 2 GCSE (9–1) in
+Biology/Chemistry/Physics/Combined Science
+Centre number: Centre name:
+Subject(s): Please tick as appropriate
+ Biology (1BI0)  Chemistry (1CH0)
+ Physics (1PH0)  Combined Science (1SC0)
+Biology (1BI0) – students must carry out all eight of the mandatory core practicals listed on page
+8 of the specification.
+Chemistry (1CH0) – students must carry out all eight of the mandatory core practicals listed on
+page 8 of the specification.
+Physics (1PH0) – students must carry out all eight of the mandatory core practicals listed on page
+9 of the specification.
+
+Head teacher declaration
+I declare that reasonable steps have been taken to ensure each candidate has completed the
+practical activities set out above in accordance with Pearson Edexcel Level 1/Level 2 GCSE
+(9–1) in Biology/Chemistry/Physics/Combined Science practical science work requirements.
+Each candidate has made a contemporaneous record of:
+i the work that they have undertaken during these practical activities, and
+ii the knowledge, skills and understanding which that learner has derived from those
+practical activities.
+
+Head teacher name:
+Head teacher
+signature:
+Date:
+
+Please upload the completed form via our Pearson Qualifications
+website https://qualifications.pearson.com/en/forms/gcse-sciences-9-1-practical-science-
+statement.html by 15th April. Any failure by centres to provide this Practical Science
+Statement will be treated as malpractice and/or maladministration.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+53
+Appendix 5: The context for the
+development of this qualification
+All our qualifications are designed to meet our World Class Qualification Principles[1] and our
+ambition to put the student at the heart of everything we do.
+We have developed and designed this qualification by:
+● reviewing other curricula and qualifications to ensure that it is comparable with those
+taken in high-performing jurisdictions overseas
+● consulting with key stakeholders on content and assessment, including learned bodies,
+subject associations, higher education academics and teachers to ensure this qualification
+is suitable for a UK context
+● reviewing the legacy qualification and building on its positive attributes.
+This qualification has also been developed to meet criteria stipulated by Ofqual in their
+documents GCSE (9 to 1)/GCE Qualification Level Conditions and Requirements and
+GCSE/GCE Subject Level Conditions and Requirements for Single Science (Biology,
+Chemistry, Physics), published in May 2015.
+
+[1] Pearson’s World Class Qualification Principles ensure that our qualifications are:
+● demanding, through internationally benchmarked standards, encouraging deep learning and
+measuring higher-order skills
+● rigorous, through setting and maintaining standards over time, developing reliable and valid
+assessment tasks and processes, and generating confidence in end users of the knowledge, skills and
+competencies of certified students
+● inclusive, through conceptualising learning as continuous, recognising that students develop at
+different rates and have different learning needs, and focusing on progression
+● empowering, through promoting the development of transferable skills, see Appendix 6.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+54
+
+
+
+
+From Pearson’s Expert Panel for World Class Qualifications
+May 2014
+“The reform of the qualifications system in England is a profoundly important change to the
+education system. Teachers need to know that the new qualifications will assist them in
+helping their learners make progress in their lives.
+When these changes were first proposed we were approached by Pearson to join an ‘Expert
+Panel’ that would advise them on the development of the new qualifications.
+We were chosen, either because of our expertise in the UK education system, or because of
+our experience in reforming qualifications in other systems around the world as diverse as
+Singapore, Hong Kong, Australia and a number of countries across Europe.
+We have guided Pearson through what we judge to be a rigorous qualification development
+process that has included:
+● extensive international comparability of subject content against the highest-performing
+jurisdictions in the world
+● benchmarking assessments against UK and overseas providers to ensure that they are at
+the right level of demand
+● establishing External Subject Advisory Groups, drawing on independent subject-specific
+expertise to challenge and validate our qualifications
+● subjecting the final qualifications to scrutiny against the DfE content and Ofqual
+accreditation criteria in advance of submission.
+Importantly, we have worked to ensure that the content and learning is future oriented. The
+design has been guided by what is called an ‘Efficacy Framework’, meaning learner outcomes
+have been at the heart of this development throughout.
+We understand that ultimately it is excellent teaching that is the key factor to a learner’s success
+in education. As a result of our work as a panel we are confident that we have supported the
+development of qualifications that are outstanding for their coherence, thoroughness and attention
+to detail and can be regarded as representing world-class best practice.”
+
+Sir Michael Barber (Chair)
+Chief Education Advisor, Pearson plc
+Professor Lee Sing Kong
+Director, National Institute of Education,
+Singapore
+
+Bahram Bekhradnia
+President, Higher Education Policy Institute
+Professor Jonathan Osborne
+Stanford University
+
+Dame Sally Coates
+Principal, Burlington Danes Academy
+Professor Dr Ursula Renold
+Federal Institute of Technology,
+Switzerland
+
+Professor Robin Coningham
+Pro-Vice Chancellor, University of Durham
+Professor Bob Schwartz
+Harvard Graduate School of Education
+
+Dr Peter Hill
+Former Chief Executive ACARA
+
+All titles correct as at May 2014
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+55
+Appendix 6: Transferable skills
+The need for transferable skills
+In recent years, higher education institutions and employers have consistently flagged the
+need for students to develop a range of transferable skills to enable them to respond with
+confidence to the demands of undergraduate study and the world of work.
+The Organisation for Economic Co-operation and Development (OECD) defines skills, or
+competencies, as ‘the bundle of knowledge, attributes and capacities that can be learned and
+that enable individuals to successfully and consistently perform an activity or task and can be
+built upon and extended through learning.’ [1]
+To support the design of our qualifications, the Pearson Research Team selected and
+evaluated seven global 21st-century skills frameworks. Following on from this process, we
+identified the National Research Council’s (NRC) framework as the most evidence-based and
+robust skills framework. We adapted the framework slightly to include the Program for
+International Student Assessment (PISA) ICT Literacy and Collaborative Problem Solving
+(CPS) Skills.
+The adapted National Research Council’s framework of skills involves: [2]
+Cognitive skills
+● Non-routine problem solving – expert thinking, metacognition, creativity.
+● Systems thinking – decision making and reasoning.
+● Critical thinking – definitions of critical thinking are broad and usually involve general
+cognitive skills such as analysing, synthesising and reasoning skills.
+● ICT literacy – access, manage, integrate, evaluate, construct and communicate. [3]
+Interpersonal skills
+● Communication – active listening, oral communication, written communication, assertive
+communication and non-verbal communication.
+● Relationship-building skills – teamwork, trust, intercultural sensitivity, service
+orientation, self-presentation, social influence, conflict resolution and negotiation.
+● Collaborative problem solving – establishing and maintaining shared understanding,
+taking appropriate action, establishing and maintaining team organisation.
+Intrapersonal skills
+● Adaptability – ability and willingness to cope with the uncertain, handling work stress,
+adapting to different personalities, communication styles and cultures, and physical
+adaptability to various indoor and outdoor work environments.
+● Self-management and self-development – ability to work remotely in virtual teams,
+work autonomously, be self-motivating and self-monitoring, willing and able to acquire
+new information and skills related to work.
+Transferable skills enable young people to face the demands of further and higher education,
+as well as the demands of the workplace, and are important in the teaching and learning of
+this qualification. We will provide teaching and learning materials, developed with
+stakeholders, to support our qualifications.
+
+[1] OECD – Better Skills, Better Jobs, Better Lives (OECD Publishing, 2012)
+[2] Koenig J A, National Research Council – Assessing 21st Century Skills: Summary of a Workshop (National
+Academies Press, 2011)
+[3] PISA – The PISA Framework for Assessment of ICT Literacy (2011)
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+56
+Appendix 7: Codes
+
+Type of code Use of code Code
+Discount codes Every qualification eligible for performance
+tables is assigned a discount code that
+indicates the subject area to which it
+belongs.
+Discount codes are published by the DfE.
+Please see the GOV.UK
+website*
+
+Regulated
+Qualifications
+Framework (RQF)
+codes
+Each qualification title is allocated an
+Ofqual Regulated Qualifications
+Framework (RQF) code.
+The RQF code is known as a Qualification
+Number (QN). This is the code that
+features in the DfE Section 96 and on the
+LARA as being eligible for 16–18 and 19+
+funding, and is to be used for all
+qualification funding purposes. The QN will
+appear on students’ final certification
+documentation.
+The QN for this
+qualification is:
+601/8610/0
+Subject codes The subject code is used by centres to
+enter students for a qualification. Centres
+will need to use the entry codes only when
+claiming students’ qualifications.
+GCSE in Biology – 1BI0
+
+Paper codes These codes are provided for reference
+purposes. Students need to be entered for
+individual papers at the same tier.
+Paper 1: 1BI0/1F, 1BI0/1H
+Paper 2: 1BI0/2F, 1BI0/2H
+*www.gov.uk/government/publications/2018-performance-tables-discount-code
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Biology
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+57
+Appendix 8: Calculators
+Candidates may use a calculator in assessments for this qualification. Centres are
+responsible for making sure that calculators used by their students meet the requirements
+highlighted in the table below.
+Candidates must be familiar with the requirements before their assessments for this
+qualification.
+
+Calculators must be:
+● of a size suitable for use on a desk
+● either battery or solar powered
+● free of lids, cases and covers that
+have printed instructions or
+formulae.
+Calculators must not:
+● be designed or adapted to offer any of these
+facilities:
+o language translators
+o symbolic algebraic manipulation
+o symbolic differentiation or integration
+o communication with other machines or
+the internet
+● be borrowed from another candidate during
+an examination for any reason*
+● have retrievable information stored in them,
+and this includes:
+o databanks
+o dictionaries
+o mathematical formulae
+o text.
+The candidate is responsible for
+the following:
+● the calculator’s power supply
+● the calculator’s working condition
+● clearing anything stored in the
+calculator.
+
+*An invigilator may give a candidate a replacement calculator
+
+DB260224 9781446958339_GCSE2016_L12_BIOLOGY ISS4.DOC.1–64/0
+For information about Pearson Qualifications, including Pearson Edexcel,
+BTEC and LCCI qualifications visit qualifications.pearson.com
+Edexcel and BTEC are registered trademarks of Pearson Education Limited
+Pearson Education Limited. Registered in England and Wales No. 872828
+Registered Office: 80 Strand, London WC2R 0RL
+VAT Reg No GB 278 537121

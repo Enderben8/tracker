@@ -1,0 +1,2824 @@
+GCSE (9-1)
+Chemistry
+Specification
+Pearson Edexcel Level 1/Level 2 GCSE (9 - 1) in Chemistry (1CH0)
+First teaching from September 2016
+First certification from June 2018 Issue 4
+About Pearson
+We are the world’s leading learning company operating in countries all around the world. We
+provide content, assessment and digital services to learners, educational institutions,
+employers, governments and other partners globally. We are committed to helping equip
+learners with the skills they need to enhance their employability prospects and to succeed in
+the changing world of work. We believe that wherever learning flourishes so do people.
+References to third party materials made in this specification are made in good faith. Pearson
+does not endorse, approve or accept responsibility for the content of materials, which may
+be subject to change, or any opinions expressed therein. (Materials may include textbooks,
+journals, magazines and other publications and websites.)
+A
+ll information in this specification is correct at time of publication.
+Origin
+al origami artwork: Mark Bolitho
+Origami photography: Pearson Education Ltd/Naki Kouyioumtzis
+I
+SBN 978 1 446 95832 2
+All the material in this publication is copyright
+© Pearson Education Limited 2024
+Summary of Pearson Edexcel Level 1/Level 2
+GCSE (9–1) in Chemistry (1CH0) specification
+Issue 4 changes
+S
+ummary of changes made between previous issue and this current issue Page
+number
+Removed named subject advisors from the ‘Get help and support’ section
+Added first name to named Scientist Mendeleev so this now reads Dmitri Mendeleev
+for spec points 1.13, 1.14 and 1.15.
+Replacement of spec point 1.43 on page 15 with…
+1.43 Calculate:
+a relative formula mass given relative atomic masses
+b percentage by mass of an element in a compound given relative atomic masses
+3
+12
+If
+you need further information on these changes or what they mean, contact us via our
+website at: qualifications.pearson.com/en/support/contact-us.html
+Contents
+1 Introduction 2
+Why choose Edexcel GCSE in Chemistry? 2
+Supporting you in planning and implementing this qualification 3
+Qualification at a glance 4
+2 Subject content 5
+3 Assessment information 41
+4 Administration and general information 44
+Entries 44
+Access arrangements, reasonable adjustments, special consideration and
+malpractice 44
+Student recruitment and progression 47
+Appendix 1: Mathematical skills 51
+Appendix 2: Taxonomy 53
+Appendix 3: Periodic table 55
+Appendix 4: Apparatus and techniques 56
+Appendix 5: Practical Science Statement 62
+Appendix 6: The context for the development of this
+qualification 63
+Appendix 7: Transferable skills 65
+Appendix 8: Codes 66
+Appendix 9: Calculators 67
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+2
+
+1 Introduction
+Why choose Edexcel GCSE in Chemistry?
+Supporting success in science
+Science matters. That’s why we’ve built the most inclusive GCSE (9–1) courses, so every
+student can enjoy science and succeed in their studies.
+Every student is different. With the same science and equal number of exams across our
+tiered qualifications, you can structure the courses in the ways that mean you can best
+support and stretch your students together.
+Our specifications are straightforward, and our selection of core practicals are designed to
+help bring science learning to life. And when it comes to our assessments, they’re shaped to
+encourage all students to best show what they know and can do.
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+3
+Supporting you in planning and implementing this
+qualification
+Planning
+● Our Getting Started guide gives you an overview of the new GCSE qualifications to help
+you to get to grips with the changes to content and assessment and to help you
+understand what these changes mean for you and your students.
+● We will give you editable schemes of work that you can adapt to suit your department.
+● Our mapping documents highlight key differences between the new and 2011
+qualifications.
+Teaching and learning
+There will be lots of free teaching and learning support to help you deliver the new
+qualifications, including:
+● a free series of teacher, student and technician worksheets will help cover each element of
+planning and delivering every core practical
+● a free practical guide to help you prepare for the changes to practical assessment
+● a free maths guide for scientists to help you embed mathematics in your science teaching.
+Preparing for exams
+We will also provide a range of resources to help you prepare your students for the
+assessments, including:
+● additional assessment materials to support formative assessments and mock exams
+● marked exemplars of student work with examiner commentaries.
+ResultsPlus
+ResutsPlus provides the most detailed analysis available of your students’ exam
+performance. It can help you identify the topics and skills where further learning would
+benefit your students.
+Get help and support
+Our subject advisor service, led by our dedicated subject advisor will ensure you receive help
+and guidance from us and that you can share ideas and information with other teachers.
+Learn more at qualifications.pearson.com
+examWizard
+examWizard is a free exam preparation tool containing a bank of Edexcel GCSE Science
+exam questions, mark schemes and examiners’ reports. Existing questions will be reviewed
+and tagged to our new specifications so they can still be used, and question descriptions will
+be updated.
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+4
+Qualification at a glance
+Content and assessment overview
+The Pearson Edexcel Level 1/Level 2 GCSE (9–1) in Chemistry consists of two
+externally-examined papers. These are available at foundation tier and higher tier.
+Students must complete all assessments in the same tier.
+Students must complete all assessment in May/June in any single year.
+Paper 1 (*Paper code: 1CH0/1F and 1CH0/1H)
+Written examination: 1 hour and 45 minutes
+50% of the qualification
+100 marks
+Content overview
+● Topic 1 – Key concepts in chemistry
+● Topic 2 – States of matter and mixtures
+● Topic 3 – Chemical changes
+● Topic 4 – Extracting metals and equilibria
+● Topic 5 – Separate chemistry 1
+Assessment overview
+A mixture of different question styles, including multiple-choice questions, short answer
+questions, calculations and extended open-response questions.
+Calculators may be used in the examination. Information on the use of calculators during the
+examinations for this qualification can be found in Appendix 9: Calculators.
+Paper 2 (Paper code: 1CH0/2F and 1CH0/2H)
+Written examination: 1 hour and 45 minutes
+50% of the qualification
+100 marks
+Content overview
+● Topic 1 – Key concepts in chemistry
+● Topic 6 – Groups in the periodic table
+● Topic 7 – Rates of reaction and energy changes
+● Topic 8 – Fuels and Earth science
+● Topic 9 – Separate chemistry 2
+Assessment overview
+A mixture of different question styles, including multiple-choice questions, short answer
+questions, calculations and extended open-response questions.
+Calculators may be used in the examination. Information on the use of calculators during the
+examinations for this qualification can be found in Appendix 9: Calculators.
+*See Appendix 8: Codes for a description of this code and all other codes relevant to this
+qualification.
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+5
+2 Subject content
+Qualification aims and objectives
+GCSE study in the sciences provides the foundation for understanding the material world.
+Scientific understanding is changing our lives and is vital to the world’s future prosperity. All
+students should learn essential aspects of the knowledge, methods, processes and uses of
+science. They should gain appreciation of how the complex and diverse phenomena of the
+natural world can be described in terms of a small number of key ideas that relate to the
+sciences and that are both inter-linked and of universal application. These key ideas include:
+● the use of conceptual models and theories to make sense of the observed diversity of
+natural phenomena
+● the assumption that every effect has one or more cause
+● that change is driven by differences between different objects and systems when they
+interact
+● that many such interactions occur over a distance without direct contact
+● that science progresses through a cycle of hypothesis, practical experimentation,
+observation, theory development and review
+● that quantitative analysis is a central element both of many theories and of scientific
+methods of inquiry.
+These key ideas are relevant in different ways and with different emphases in the three
+subjects. Examples of their relevance are given for each subject in the separate sections
+below for Biology, Chemistry and Physics.
+The three GCSE Science qualifications enable students to:
+● develop scientific knowledge and conceptual understanding through the specific disciplines
+of Biology, Chemistry and Physics
+● develop understanding of the nature, processes and methods of science, through different
+types of scientific enquiries that help them to answer scientific questions about the world
+around them
+● develop and learn to apply observational, practical, modelling, enquiry and problem-
+solving skills in the laboratory, in the field and in other learning environments
+● develop their ability to evaluate claims based on science through critical analysis of the
+methodology, evidence and conclusions, both qualitatively and quantitatively.
+Students should study the sciences in ways that help them to develop curiosity about the
+natural world, that give them an insight into how science works and that enable them to
+appreciate its relevance to their everyday lives. The scope and nature of the study should be
+broad, coherent, practical and satisfying. It should encourage students to be inspired,
+motivated and challenged by the subject and its achievements.
+The key ideas specific to the Chemistry content include:
+● matter is composed of tiny particles called atoms and there are about 100 different
+naturally occurring types of atoms called elements
+● elements show periodic relationships in their chemical and physical properties
+● these periodic properties can be explained in terms of the atomic structure of the
+elements
+● atoms bond by either transferring electrons from one atom to another or by sharing
+electrons
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+6
+● the shapes of molecules (groups of atoms bonded together) and the way giant structures
+are arranged is of great importance in terms of the way they behave
+● there are barriers to reaction so reactions occur at different rates
+● chemical reactions take place in only three different ways:
+o proton transfer
+o electron transfer
+o electron sharing
+● energy is conserved in chemical reactions so can therefore be neither created nor
+destroyed.
+All of these key ideas will be assessed as part of this qualification, through the subject
+content.
+Working scientifically
+The GCSE in Chemistry requires students to develop the skills, knowledge and understanding
+of working scientifically. Working scientifically will be assessed through examination and the
+completion of the eight core practicals.
+1 Development of scientific thinking
+a Un derstand how scientific methods and theories develop over time.
+b U se a variety of models, such as representational, spatial, descriptive,
+computational and mathematical, to solve problems, make predictions and to
+develop scientific explanations and an understanding of familiar and unfamiliar
+facts.
+c A ppreciate the power and limitations of science, and consider any ethical issues
+that may arise.
+d E xplain everyday and technological applications of science; evaluate associated
+personal, social, economic and environmental implications; and make decisions
+based on the evaluation of evidence and arguments.
+e E valuate risks both in practical science and the wider societal context, including
+perception of risk in relation to data and consequences.
+f R ecognise the importance of peer review of results and of communicating results
+to a range of audiences.
+2 Experimental skills and strategies
+a U se scientific theories and explanations to develop hypotheses.
+b P lan experiments or devise procedures to make observations, produce or
+characterise a substance, test hypotheses, check data or explore phenomena.
+c A pply a knowledge of a range of techniques, instruments, apparatus and
+materials to select those appropriate to the experiment.
+d Carry out experiments appropriately, having due regard to the correct
+manipulation of apparatus, the accuracy of measurements and health and safety
+considerations.
+e R ecognise when to apply a knowledge of sampling techniques to ensure any
+samples collected are representative.
+f M ake and record observations and measurements using a range of apparatus and
+methods.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+7
+g Evaluate methods and suggest possible improvements and further investigations.
+3 Analysis and evaluation
+Apply the cycle of collecting, presenting and analysing data, including:
+a presenting observations and other data using appropriate methods.
+b translating data from one form to another.
+c carrying out and representing mathematical and statistical analysis.
+d representing distributions of results and making estimations of uncertainty.
+e interpreting observations and other data (presented in verbal, diagrammatic,
+graphical, symbolic or numerical form), including identifying patterns and trends,
+making inferences and drawing conclusions.
+f presenting reasoned explanations, including relating data to hypotheses.
+g being objective, evaluating data in terms of accuracy, precision, repeatability and
+reproducibility and identifying potential sources of random and systematic error.
+h communicating the scientific rationale for investigations, methods used, findings
+and reasoned conclusions through paper-based and electronic reports and
+presentations using verbal, diagrammatic, graphical, numerical and symbolic
+forms.
+4 Scientific vocabulary, quantities, units, symbols and nomenclature
+a Use scientific vocabulary, terminology and definitions.
+b Recognise the importance of scientific quantities and understand how they are
+determined.
+c Use SI units (e.g. kg, g, mg; km, m, mm; kJ, J) and IUPAC chemical nomenclature
+unless inappropriate.
+d Use prefixes and powers of ten for orders of magnitude (e.g. tera, giga, mega,
+kilo, centi, milli, micro and nano).
+e Interconvert units.
+f Use an appropriate number of significant figures in calculation.
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+8
+Practical work
+The content includes eight mandatory core practicals, indicated as an entire specification
+point in italics.
+Students must carry out all eight of the mandatory core practicals listed below.
+C
+ore practical:
+2.11 Investigate the composition of inks using simple distillation and paper
+chromatography
+3.6 Investigate the change in pH on adding powdered calcium hydroxide or calcium
+oxide to a fixed volume of dilute hydrochloric acid
+3.17 Investigate the preparation of pure, dry hydrated copper sulfate crystals starting
+from copper oxide including the use of a water bath
+3.31 Investigate the electrolysis of copper sulfate solution with inert electrodes and
+copper electrodes
+5.9C Carry out an accurate acid-alkali titration, using burette, pipette and a suitable
+indicator
+7.1 Investigate the effects of changing the conditions of a reaction on the rates of
+chemical reactions by:
+a measuring the production of a gas (in the reaction between hydrochloric acid
+and marble chips)
+b observing a colour change (in the reaction between sodium thiosulfate and
+hydrochloric acid)
+9.6C Identify the ions in unknown salts, using the tests for the specified cations and
+anions in 9.2C, 9.3C, 9.4C, 9.5C
+9.28C Investigate the temperature rise produced in a known mass of water by the
+combustion of the alcohols ethanol, propanol, butanol and pentanol
+Students will need to use their knowledge and understanding of these practical techniques
+and procedures in the written assessments.
+Centres must confirm that each student has completed the eight mandatory core practicals.
+Students need to record the work that they have undertaken for the eight mandatory core
+practicals. The practical record must include the knowledge, skills and understanding they
+have derived from the practical activities. Centres must complete and submit a Practical
+Science Statement (see Appendix 5) to confirm that all students have completed the eight
+mandatory core practicals. This must be submitted to Pearson by 15th April in the year that
+the students will sit their examinations. Any failure by centres to provide this Practical
+Science Statement will be treated as malpractice and/or maladministration.
+Scientific diagrams should be included, where appropriate, to show the set-up and to record
+the apparatus and procedures used in practical work.
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+9
+It is important to realise that these core practicals are the minimum number of practicals
+that should be taken during the course. Suggested additional practicals are given beneath
+the content at the end of each topic. The eight mandatory core practicals cover all aspects of
+the apparatus and techniques listed in Appendix 4: Apparatus and techniques. This appendix
+also includes more detailed instructions for each core practical, which must be followed.
+Safety is an overriding requirement for all practical work. Centres are responsible for
+ensuring appropriate safety procedures are followed whenever their students complete
+practical work.
+These core practicals may be reviewed and amended if changes are required to the
+apparatus and techniques listed by the Department for Education. Pearson may also review
+and amend the core practicals if necessary. Centres will be told as soon as possible about
+any changes to core practicals.
+Qualification content
+The following notation is used in the tables that show the content for this qualification:
+● text in bold indicates content that is for higher tier only
+● entire specification points in italics indicates a core practical.
+Specification statement numbers with a C in them refer to content which is only in the GCSE
+in Chemistry and is not found in the GCSE in Combined Science (e.g. 5.1C).
+Mathematics
+Maths skills that can be assessed in relation to a specification point are referenced in the
+maths column, next to this specification point. Please see Appendix 1: Mathematical skills for
+full details of each maths skill.
+After each topic of content in this specification, there are details relating to the ‘Use of
+mathematics’ which contains the Chemistry specific mathematic skills that are found in each
+topic of content in the document Biology, Chemistry and Physics GCSE subject content,
+published by the Department for Education (DfE) in June 2014. The reference in brackets
+after each statement refers to the mathematical skills from Appendix 1.
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+10
+Topics common to Paper 1 and Paper 2
+Formulae, equations and hazards
+Students should: Maths skills
+0.1 Recall the formulae of elements, simple compounds and ions
+0.2 Writ e word equations
+0.3 Write balanced chemical equations, including the use of the
+state symbols (s), (l), (g) and (aq)
+1c
+0.4 Write balanced ionic equations 1c
+0.5 Describe the use of hazard symbols on containers
+a to indicate the dangers associated with the contents
+b to inform people about safe-working precautions with these
+substances in the laboratory
+0.6 Evaluate the risks in a practical procedure and suggest suitable
+precautions for a range of practicals including those mentioned
+in the specification
+Use of mathematics
+● Arithmetic computation and ratio when balancing equations (1a and 1c).
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+11
+Topic 1 – Key concepts in chemistry
+Atomic structure
+Students should: Maths skills
+1.1 Describe how the Dalton model of an atom has changed over
+time because of the discovery of subatomic particles
+1.2 Describe the structure of an atom as a nucleus containing
+protons and neutrons, surrounded by electrons in shells
+1.3 Recall the relative charge and relative mass of:
+a a proton
+b a neutron
+c an electron
+1.4 Explain why atoms contain equal numbers of protons and
+electrons
+1.5 Describe the nucleus of an atom as very small compared to the
+overall size of the atom
+1d
+1.6 Recall that most of the mass of an atom is concentrated in the
+nucleus
+1.7 Recall the meaning of the term mass number of an atom
+1.8 Describe atoms of a given element as having the same number
+of protons in the nucleus and that this number is unique to that
+element
+1.9 Describe isotopes as different atoms of the same element
+containing the same number of protons but different numbers
+of neutrons in their nuclei
+1.10 Calculate the numbers of protons, neutrons and electrons in
+atoms given the atomic number and mass number
+3b
+1.11 Explain how the existence of isotopes results in relative atomic
+masses of some elements not being whole numbers
+1a, 1c
+1.12 Calculate the relative atomic mass of an element from
+the relative masses and abundances of its isotopes
+1a, 1c, 1d
+3a, 3c
+Use of mathematics
+● Relate size and scale of atoms to objects in the physical world (1d).
+● Estimate size and scale of atoms (1d).
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+12
+The periodic table
+Students should: Maths skills
+1.13 Describe how Dmitri Mendeleev arranged the elements, known
+at that time, in a periodic table by using properties of these
+elements and their compounds
+1.14 Describe how Dmitri Mendeleev used his table to predict the
+existence and properties of some elements not then discovered
+1.15 Explain that Dmitri Mendeleev thought he had arranged
+elements in order of increasing relative atomic mass but this
+was not always true because of the relative abundance of
+isotopes of some pairs of elements in the periodic table
+1.16 Explain the meaning of atomic number of an element in terms
+of position in the periodic table and number of protons in the
+nucleus
+1.17 Describe that in the periodic table
+a elements are arranged in order of increasing atomic number,
+in rows called periods
+b elements with similar properties are placed in the same
+vertical columns called groups
+1.18 Identify elements as metals or non-metals according to their
+position in the periodic table, explaining this division in terms of
+the atomic structures of the elements
+1.19 Predict the electronic configurations of the first 20 elements in
+the periodic table as diagrams and in the form, for example
+2.8.1
+4a
+5b
+1.20 Explain how the electronic configuration of an element is related
+to its position in the periodic table
+4a
+Ionic bonding
+Students should: Maths skills
+1.21 Explain how ionic bonds are formed by the transfer of electrons
+between atoms to produce cations and anions, including the use
+of dot and cross diagrams
+5b
+1.22 Recall that an ion is an atom or group of atoms with a positive
+or negative charge
+1.23 C alculate the numbers of protons, neutrons and electrons in
+simple ions given the atomic number and mass number
+3b
+1.24 Explain the formation of ions in ionic compounds from their
+atoms, limited to compounds of elements in groups 1, 2, 6
+and 7
+1c
+5b
+1.25 Explain the use of the endings –ide and –ate in the names of
+compounds
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+13
+
+Students should: Maths skills
+1.26 Deduce the formulae of ionic compounds (including oxides,
+hydroxides, halides, nitrates, carbonates and sulfates) given the
+formulae of the constituent ions
+1c
+1.27 Explain the structure of an ionic compound as a lattice structure
+a consisting of a regular arrangement of ions
+b held together by strong electrostatic forces (ionic bonds)
+between oppositely-charged ions
+5b
+Use of mathematics
+● Represent three dimensional shapes in two dimensions and vice versa when looking at
+chemical structures (5b).
+
+Covalent bonding
+Students should: Maths skills
+1.28 Explain how a covalent bond is formed when a pair of electrons
+is shared between two atoms
+
+1.29 Recall that covalent bonding results in the formation of
+molecules
+
+1.30 Recall the typical size (order of magnitude) of atoms and small
+molecules
+1d
+1.31 Explain the formation of simple molecular, covalent substances,
+using dot and cross diagrams, including:
+a hydrogen
+b hydrogen chloride
+c water
+d methane
+e oxygen
+f carbon dioxide
+5b
+Use of mathematics
+● Relate size and scale of atoms to objects in the physical world (1d).
+● Estimate size and scale of atoms (1d).
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+14
+Types of substance
+Students should: Maths skills
+1.32 Explain why elements and compounds can be classified as:
+a ionic
+b simple molecular (covalent)
+c giant covalent
+d metallic
+and how the structure and bonding of these types of substances
+results in different physical properties, including relative melting
+point and boiling point, relative solubility in water and ability to
+conduct electricity (as solids and in solution)
+
+1.33 Explain the properties of ionic compounds limited to:
+a high melting points and boiling points, in terms of forces
+between ions
+b whether or not they conduct electricity as solids, when
+molten and in aqueous solution
+4a
+1.34 Explain the properties of typical covalent, simple molecular
+compounds limited to:
+a low melting points and boiling points, in terms of forces
+between molecules (intermolecular forces)
+b poor conduction of electricity
+4a
+1.35 Recall that graphite and diamond are different forms of carbon
+and that they are examples of giant covalent substances
+
+1.36 Describe the structures of graphite and diamond 5b
+1.37 Explain, in terms of structure and bonding, why graphite is used
+to make electrodes and as a lubricant, whereas diamond is used
+in cutting tools
+5b
+1.38 Explain the properties of fullerenes including C60 and graphene
+in terms of their structures and bonding
+5b
+1.39 Describe, using poly(ethene) as the example, that simple
+polymers consist of large molecules containing chains of carbon
+atoms
+5b
+1.40 Explain the properties of metals, including malleability and the
+ability to conduct electricity
+5b
+1.41 Describe the limitations of particular representations and
+models, to include dot and cross, ball and stick models and
+two- and three-dimensional representations
+5b
+1.42 Describe most metals as shiny solids which have high melting
+points, high density and are good conductors of electricity
+whereas most non-metals have low boiling points and are poor
+conductors of electricity
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+15
+Use of mathematics
+● Represent three dimensional shapes in two dimensions and vice versa when looking at
+chemical structures, e.g. allotropes of carbon (5b).
+● Translate information between diagrammatic and numerical forms (4a).
+
+Calculations involving masses
+Students should: Maths skills
+1.43 Calculate:
+a relative formula mass given relative atomic masses
+b percentage by mass of an element in a compound given
+relative atomic masses
+1a, 1c
+1.44 Calculate the formulae of simple compounds from reacting
+masses or percentage composition and understand that these
+are empirical formulae
+1a, 1c
+2a
+1.45 Deduce:
+a the empirical formula of a compound from the formula of its
+molecule
+b the molecular formula of a compound from its empirical
+formula and its relative molecular mass
+1c
+
+
+1.46 Describe an experiment to determine the empirical formula of a
+simple compound such as magnesium oxide
+1a, 1c
+2a
+1.47 Explain the law of conservation of mass applied to:
+a a closed system including a precipitation reaction in a closed
+flask
+b a non-enclosed system including a reaction in an open flask
+that takes in or gives out a gas
+1a
+1.48 Calculate masses of reactants and products from balanced
+equations, given the mass of one substance
+1a, 1c
+2a
+1.49 Calculate the concentration of solutions in g dm–3 1a, 1c
+2a
+3b, 3c
+1.50 Recall that one mole of particles of a substance is defined
+as:
+a the Avogadro constant number of particles
+(6.02 × 1023 atoms, molecules, formulae or ions) of
+that substance
+b a mass of ‘relative particle mass’ g
+1b
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+16
+Students should: Maths skills
+1.51 Calculate the number of:
+a moles of particles of a substance in a given mass of
+that substance and vice versa
+b particles of a substance in a given number of moles of
+that substance and vice versa
+c particles of a substance in a given mass of that
+substance and vice versa
+1a, 1b, 1c
+2a
+3a, 3b, 3c
+1.52 Explain why, in a reaction, the mass of product formed is
+controlled by the mass of the reactant which is not in
+excess
+1c
+1.53 Deduce the stoichiometry of a reaction from the masses
+of the reactants and products
+1a, 1c
+Use of mathematics
+● Arithmetic computation and ratio when determining empirical formulae, balancing
+equations (1a and 1c).
+● Arithmetic computation, ratio, percentage and multistep calculations permeates
+quantitative chemistry (1a, 1c and 1d).
+● Calculations with numbers written in standard form when using the Avogadro
+constant (1b).
+● Change the subject of a mathematical equation (3b and 3c).
+● Provide answers to an appropriate number of significant figures (2a).
+● Convert units where appropriate particularly from mass to moles (1c).
+Suggested practicals
+● Investigate the size of an oil molecule.
+● Investigate the properties of a metal, such as electrical conductivity.
+● Investigate the different types of bonding: metallic, covalent and ionic.
+● Investigate the typical properties of simple and giant covalent compounds and ionic
+compounds.
+● Classify different types of elements and compounds by investigating their melting points
+and boiling points, solubility in water and electrical conductivity (as solids and in solution),
+including sodium chloride, magnesium sulfate, hexane, liquid paraffin, silicon(IV) oxide,
+copper sulfate, and sucrose (sugar).
+● Determine the empirical formula of a simple compound.
+● Investigate mass changes before and after reactions.
+● Determine the formula of a hydrated salt such as copper sulfate by heating to drive off
+water of crystallisation.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+17
+Topics for Paper 1
+Topic 2 – States of matter and mixtures
+States of matter
+Students should: Maths skills
+2.1 Describe the arrangement, movement and the relative energy
+of particles in each of the three states of matter: solid, liquid
+and gas
+5b
+2.2 Recall the names used for the interconversions between the
+three states of matter, recognising that these are physical
+changes: contrasted with chemical reactions that result in
+chemical changes
+
+2.3 Explain the changes in arrangement, movement and energy of
+particles during these interconversions
+5b
+2.4 Predict the physical state of a substance under specified
+conditions, given suitable data
+1d
+4a
+Use of mathematics
+● Translate information between diagrammatic and numerical forms (4a).
+
+Methods of separating and purifying substances
+Students should: Maths skills
+2.5 Explain the difference between the use of ‘pure’ in chemistry
+compared with its everyday use and the differences in
+chemistry between a pure substance and a mixture
+
+2.6 Interpret melting point data to distinguish between pure
+substances which have a sharp melting point and mixtures
+which melt over a range of temperatures
+1a
+2.7 Explain the types of mixtures that can be separated by using
+the following experimental techniques:
+a simple distillation
+b fractional distillation
+c filtration
+d crystallisation
+e paper chromatography
+
+2.8 Describe an appropriate experimental technique to separate a
+mixture, knowing the properties of the components of the
+mixture
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+18
+Students should: Maths skills
+2.9 Describe paper chromatography as the separation of mixtures
+of soluble substances by running a solvent (mobile phase)
+through the mixture on the paper (the paper contains the
+stationary phase), which causes the substances to move at
+different rates over the paper
+
+2.10 Interpret a paper chromatogram:
+a to distinguish between pure and impure substances
+b to identify substances by comparison with known substances
+c to identify substances by calculation and use of Rf values
+3a, 3c
+4a
+2.11 Core Practical: Investigate the composition of inks using simple
+distillation and paper chromatography
+
+2.12 Describe how:
+a waste and ground water can be made potable, including the
+need for sedimentation, filtration and chlorination
+b sea water can be made potable by using distillation
+c water used in analysis must not contain any dissolved salts
+
+Use of mathematics
+● Interpret charts (4a).
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+19
+Topic 3 – Chemical changes
+Acids
+Students should: Maths skills
+3.1 Recall that acids in solution are sources of hydrogen ions and
+alkalis in solution are sources of hydroxide ions
+
+3.2 Recall that a neutral solution has a pH of 7 and that acidic
+solutions have lower pH values and alkaline solutions higher pH
+values
+
+3.3 Recall the effect of acids and alkalis on indicators, including
+litmus, methyl orange and phenolphthalein
+
+3.4 Recall that the higher the concentration of hydrogen ions
+in an acidic solution, the lower the pH; and the higher the
+concentration of hydroxide ions in an alkaline solution,
+the higher the pH
+1c
+3.5 Recall that as hydrogen ion concentration in a solution
+increases by a factor of 10, the pH of the solution
+decreases by 1
+1c
+3.6 Core Practical: Investigate the change in pH on adding
+powdered calcium hydroxide or calcium oxide to a fixed volume
+of dilute hydrochloric acid
+4a, 4c
+3.7 Explain the terms dilute and concentrated, with respect
+to amount of substances in solution
+
+3.8 Explain the terms weak and strong acids, with respect to
+the degree of dissociation into ions
+
+3.9 Recall that a base is any substance that reacts with an acid to
+form a salt and water only
+
+3.10 Recall that alkalis are soluble bases
+3.11 Explain the general reactions of aqueous solutions of acids with:
+a metals
+b metal oxides
+c metal hydroxides
+d metal carbonates
+to produce salts
+
+3.12 Describe the chemical test for:
+a hydrogen
+b carbon dioxide (using limewater)
+
+3.13 Describe a neutralisation reaction as a reaction between an acid
+and a base
+
+3.14 Explain an acid-alkali neutralisation as a reaction in which
+hydrogen ions (H+) from the acid react with hydroxide ions
+(OH–) from the alkali to form water
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+20
+
+Students should: Maths skills
+3.15 Explain why, if soluble salts are prepared from an acid and an
+insoluble reactant:
+a excess of the reactant is added
+b the excess reactant is removed
+c the solution remaining is only salt and water
+
+3.16 Explain why, if soluble salts are prepared from an acid and a
+soluble reactant:
+a titration must be used
+b the acid and the soluble reactant are then mixed in the
+correct proportions
+c the solution remaining, after reaction, is only salt and water
+
+3.17 Core Practical: Investigate the preparation of pure, dry
+hydrated copper sulfate crystals starting from copper oxide
+including the use of a water bath
+
+3.18 Describe how to carry out an acid-alkali titration, using burette,
+pipette and a suitable indicator, to prepare a pure, dry salt
+
+3.19 Recall the general rules which describe the solubility of common
+types of substances in water:
+a all common sodium, potassium and ammonium salts are
+soluble
+b all nitrates are soluble
+c common chlorides are soluble except those of silver and lead
+d common sulfates are soluble except those of lead, barium
+and calcium
+e common carbonates and hydroxides are insoluble except
+those of sodium, potassium and ammonium
+
+3.20 Predict, using solubility rules, whether or not a precipitate will
+be formed when named solutions are mixed together, naming
+the precipitate if any
+
+3.21 Describe the method used to prepare a pure, dry sample of an
+insoluble salt
+
+Suggested practicals
+● Carry out simple neutralisation reactions of acids, using metal oxides, hydroxides and
+carbonates.
+● Carry out tests for hydrogen and carbon dioxide.
+● Prepare an insoluble salt by precipitation.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+21
+Electrolytic processes
+Students should: Maths skills
+3.22 Recall that electrolytes are ionic compounds in the molten state
+or dissolved in water
+
+3.23 Describe electrolysis as a process in which electrical energy,
+from a direct current supply, decomposes electrolytes
+
+3.24 Explain the movement of ions during electrolysis, in which:
+a positively charged cations migrate to the negatively charged
+cathode
+b negatively charged anions migrate to the positively charged
+anode
+
+3.25 Explain the formation of the products in the electrolysis, using
+inert electrodes, of some electrolytes, including:
+a copper chloride solution
+b sodium chloride solution
+c sodium sulfate solution
+d water acidified with sulfuric acid
+e molten lead bromide (demonstration)
+
+3.26 Predict the products of electrolysis of other binary, ionic
+compounds in the molten state
+
+3.27 Write half equations for reactions occurring at the anode
+and cathode in electrolysis
+1c
+3.28 Explain oxidation and reduction in terms of loss or gain
+of electrons
+
+3.29 Recall that reduction occurs at the cathode and that
+oxidation occurs at the anode in electrolysis reactions
+
+3.30 Explain the formation of the products in the electrolysis of
+copper sulfate solution, using copper electrodes, and how this
+electrolysis can be used to purify copper
+
+3.31 Core Practical: Investigate the electrolysis of copper sulfate
+solution with inert electrodes and copper electrodes
+1a
+4a, 4b, 4c, 4d
+Suggested practicals
+● Investigate the electrolysis of:
+a copper chloride solution
+b sodium chloride solution
+c sodium sulfate solution
+d water acidified with sulfuric acid
+e molten lead bromide (demonstration).
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+22
+Topic 4 – Extracting metals and equilibria
+Obtaining and using metals
+Students should: Maths skills
+4.1 Deduce the relative reactivity of some metals, by their reactions
+with water, acids and salt solutions
+
+4.2 Explain displacement reactions as redox reactions, in
+terms of gain or loss of electrons
+
+4.3 Explain the reactivity series of metals (potassium, sodium,
+calcium, magnesium, aluminium, (carbon), zinc, iron,
+(hydrogen), copper, silver, gold) in terms of the reactivity of
+the metals with water and dilute acids and that these reactions
+show the relative tendency of metal atoms to form cations
+
+4.4 Recall that:
+a most metals are extracted from ores found in the Earth’s
+crust
+b unreactive metals are found in the Earth’s crust as the
+uncombined elements
+
+4.5 Explain oxidation as the gain of oxygen and reduction as the
+loss of oxygen
+
+4.6 Recall that the extraction of metals involves reduction of ores
+4.7 Explain why the method used to extract a metal from its ore is
+related to its position in the reactivity series and the cost of the
+extraction process, illustrated by
+a heating with carbon (including iron)
+b electrolysis (including aluminium)
+(knowledge of the blast furnace is not required)
+
+4.8 Evaluate alternative biological methods of metal
+extraction (bacterial and phytoextraction)
+
+4.9 Explain how a metal’s relative resistance to oxidation is related
+to its position in the reactivity series
+
+4.10 Evaluate the advantages of recycling metals, including
+economic implications and how recycling can preserve both the
+environment and the supply of valuable raw materials
+
+4.11 Describe that a life-cycle assessment for a product involves
+consideration of the effect on the environment of obtaining the
+raw materials, manufacturing the product, using the product
+and disposing of the product when it is no longer useful
+
+4.12 Evaluate data from a life cycle assessment of a product
+Suggested practicals
+● Investigate methods for extracting metals from their ores.
+● Investigate simple oxidation and reduction reactions, such as burning elements in oxygen
+or competition reactions between metals and metal oxides.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+23
+Reversible reactions and equilibria
+Students should: Maths skills
+4.13 Recall that chemical reactions are reversible, the use of the
+symbol ⇌ in equations and that the direction of some reversible
+reactions can be altered by changing the reaction conditions
+
+4.14 Explain what is meant by dynamic equilibrium
+4.15 Describe the formation of ammonia as a reversible reaction
+between nitrogen (extracted from the air) and hydrogen
+(obtained from natural gas) and that it can reach a dynamic
+equilibrium
+
+4.16 Recall the conditions for the Haber process as:
+a temperature 450 °C
+b pressure 200 atmospheres
+c iron catalyst
+
+4.17 Predict how the position of a dynamic equilibrium is
+affected by changes in:
+a temperature
+b pressure
+c concentration
+
+Suggested practicals
+● Investigate simple reversible reactions, such as the decomposition of ammonium chloride.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+24
+Topic 5 – Separate chemistry 1
+Transition metals, alloys and corrosion
+Students should: Maths skills
+5.1C Recall that most metals are transition metals and that their
+typical properties include:
+a high melting point
+b high density
+c the formation of coloured compounds
+d catalytic activity of the metals and their compounds
+as exemplified by iron
+
+5.2C Recall that the oxidation of metals results in corrosion
+5.3C Explain how rusting of iron can be prevented by:
+a exclusion of oxygen
+b exclusion of water
+c sacrificial protection
+
+5.4C Explain how electroplating can be used to improve the
+appearance and/or the resistance to corrosion of metal objects
+
+5.5C Explain, using models, why converting pure metals into alloys
+often increases the strength of the product
+5b
+5.6C Explain why iron is alloyed with other metals to produce alloy
+steels
+
+5.7C Explain how the uses of metals are related to their properties
+(and vice versa), including aluminium, copper and gold and
+their alloys including magnalium and brass
+
+Suggested practicals
+● Carry out an activity to show that transition metal salts have a variety of colours.
+● Investigate the rusting of iron.
+● Electroplate a metal object.
+● Make an alloy or investigate the properties of alloys.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+25
+Quantitative analysis
+Students should: Maths skills
+5.8C Calculate the concentration of solutions in mol dm–3 and
+convert concentration in g dm–3 into mol dm–3 and vice
+versa
+1a, 1b, 1c, 1d
+2a
+3b, 3c
+5.9C Core Practical: Carry out an accurate acid-alkali titration, using
+burette, pipette and a suitable indicator
+
+5.10C Carry out simple calculations using the results of
+titrations to calculate an unknown concentration of a
+solution or an unknown volume of solution required
+1a, 1c, 1d
+2a, 2b
+3a, 3b, 3c
+5.11C Calculate the percentage yield of a reaction from the actual
+yield and the theoretical yield
+1a, 1c, 1d
+2a
+3b, 3c
+5.12C Describe that the actual yield of a reaction is usually less than
+the theoretical yield and that the causes of this include:
+a incomplete reactions
+b practical losses during the experiment
+c competing, unwanted reactions (side reactions)
+
+5.13C Recall the atom economy of a reaction forming a desired
+product
+
+5.14C Calculate the atom economy of a reaction forming a desired
+product
+1a, 1c, 1d
+2a
+3c
+5.15C Explain why a particular reaction pathway is chosen to
+produce a specified product, given appropriate data such
+as atom economy, yield, rate, equilibrium position and
+usefulness of by-products
+
+5.16C Describe the molar volume, of any gas at room
+temperature and pressure, as the volume occupied by
+one mole of molecules of any gas at room temperature
+and pressure
+(The molar volume will be provided as 24 dm3 or
+24000 cm3 in calculations where it is required)
+
+5.17C Use the molar volume and balanced equations in
+calculations involving the masses of solids and volumes
+of gases
+1a, 1c,
+2a
+3b, 3c
+5.18C Use Avogadro’s law to calculate volumes of gases
+involved in a gaseous reaction, given the relevant
+equation
+1a, 1c, 1d
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+26
+Use of mathematics
+● Arithmetic computation when calculating yields and atom economy (1a and 1c).
+● Arithmetic computation, ratio, percentage and multistep calculations permeates
+quantitative chemistry (1a, 1c and 1d).
+● Change the subject of a mathematical equation (3b and 3c).
+● Provide answers to an appropriate number of significant figures (2a).
+● Convert units where appropriate particularly from mass to moles (1c).
+Suggested practicals
+● Prepare a substance and calculate the percentage yield, given the theoretical yield.
+● Determine the volume of one mole of hydrogen gas by using the reaction of magnesium
+with hydrochloric acid.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+27
+Dynamic equilibria
+Students should: Maths skills
+5.19C Describe the Haber process as a reversible reaction between
+nitrogen and hydrogen to form ammonia
+
+5.20C Predict how the rate of attainment of equilibrium is
+affected by:
+a changes in temperature
+b changes in pressure
+c changes in concentration
+d use of a catalyst
+
+5.21C Explain how, in industrial reactions, including the Haber
+process, conditions used are related to:
+a the availability and cost of raw materials and energy
+supplies
+b the control of temperature, pressure and catalyst
+used produce an acceptable yield in an acceptable
+time
+
+5.22C Recall that fertilisers may contain nitrogen, phosphorus and
+potassium compounds to promote plant growth
+
+5.23C Describe how ammonia reacts with nitric acid to produce a salt
+that is used as a fertiliser
+
+5.24C Describe and compare:
+a the laboratory preparation of ammonium sulfate from
+ammonia solution and dilute sulfuric acid on a small scale
+b the industrial production of ammonium sulfate, used as a
+fertiliser, in which several stages are required to produce
+ammonia and sulfuric acid from their raw materials and the
+production is carried out on a much larger scale (details of
+the industrial production of sulfuric acid are not required)
+
+Suggested practicals
+● Prepare a sample of ammonium sulfate from ammonia solution and dilute sulfuric acid.
+
+Chemical cells and fuel cells
+Students should: Maths skills
+5.25C Recall that a chemical cell produces a voltage until one of the
+reactants is used up
+
+5.26C Recall that in a hydrogen–oxygen fuel cell hydrogen and
+oxygen are used to produce a voltage and water is the only
+product
+
+5.27C Evaluate the strengths and weaknesses of fuel cells for given
+uses
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+28
+Topics for Paper 2
+Topic 6 – Groups in the periodic table
+Group 1
+Students should: Maths skills
+6.1 Explain why some elements can be classified as alkali metals
+(group 1), halogens (group 7) or noble gases
+(group 0), based on their position in the periodic table
+
+6.2 Recall that alkali metals:
+a are soft
+b have relatively low melting points
+
+6.3 Describe the reactions of lithium, sodium and potassium with
+water
+
+6.4 Describe the pattern in reactivity of the alkali metals, lithium,
+sodium and potassium, with water; and use this pattern to
+predict the reactivity of other alkali metals
+
+6.5 Explain this pattern in reactivity in terms of electronic
+configurations
+
+Group 7
+Students should: Maths skills
+6.6 Recall the colours and physical states of chlorine, bromine and
+iodine at room temperature
+
+6.7 Describe the pattern in the physical properties of the
+halogens, chlorine, bromine and iodine, and use this pattern to
+predict the physical properties of other halogens
+1d
+2c
+6.8 Describe the chemical test for chlorine
+6.9 Describe the reactions of the halogens, chlorine, bromine and
+iodine, with metals to form metal halides, and use this pattern
+to predict the reactions of other halogens
+
+6.10 Recall that the halogens, chlorine, bromine and iodine, form
+hydrogen halides which dissolve in water to form acidic
+solutions, and use this pattern to predict the reactions of other
+halogens
+
+6.11 Describe the relative reactivity of the halogens chlorine,
+bromine and iodine, as shown by their displacement reactions
+with halide ions in aqueous solution, and use this pattern to
+predict the reactions of astatine
+
+6.12 Explain why these displacement reactions are redox
+reactions in terms of gain and loss of electrons,
+identifying which of the substances are oxidised and
+which are reduced
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+29
+
+Students should: Maths skills
+6.13 Explain the relative reactivity of the halogens in terms of
+electronic configurations
+
+
+Group 0
+Students should: Maths skills
+6.14 Explain why the noble gases are chemically inert, compared
+with the other elements, in terms of their electronic
+configurations
+
+6.15 Explain how the uses of noble gases depend on their
+inertness, low density and/or non-flammability
+
+6.16 Describe the pattern in the physical properties of some noble
+gases and use this pattern to predict the physical properties of
+other noble gases
+1d
+2c
+Suggested practicals
+● Investigate displacement reactions of halogens reacting with halide ions in solution.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+30
+Topic 7 – Rates of reaction and energy changes
+Rates of reaction
+Students should: Maths skills
+7.1 Core Practical: Investigate the effects of changing the
+conditions of a reaction on the rates of chemical reactions by:
+a measuring the production of a gas (in the reaction between
+hydrochloric acid and marble chips)
+b observing a colour change (in the reaction between sodium
+thiosulfate and hydrochloric acid)
+1a, 1c
+4a, 4b, 4c,
+4d, 4e
+7.2 Suggest practical methods for determining the rate of a given
+reaction
+4b, 4c, 4d, 4e
+7.3 Explain how reactions occur when particles collide and that
+rates of reaction are increased when the frequency and/or
+energy of collisions is increased
+1c
+7.4 Explain the effects on rates of reaction of changes in
+temperature, concentration, surface area to volume ratio of a
+solid and pressure (on reactions involving gases) in terms of
+frequency and/or energy of collisions between particles
+1c, 1d
+5c
+7.5 Interpret graphs of mass, volume or concentration of reactant
+or product against time
+1c
+4a, 4d, 4e
+7.6 Describe a catalyst as a substance that speeds up the rate of a
+reaction without altering the products of the reaction, being
+itself unchanged chemically and in mass at the end of the
+reaction
+
+7.7 Explain how the addition of a catalyst increases the rate of a
+reaction in terms of activation energy
+
+7.8 Recall that enzymes are biological catalysts and that enzymes
+are used in the production of alcoholic drinks
+
+Use of mathematics
+● Arithmetic computation, ratio when measuring rates of reaction (1a and 1c).
+● Drawing and interpreting appropriate graphs from data to determine rate of reaction
+(4b and 4c).
+● Determining gradients of graphs as a measure of rate of change to determine rate
+(4d and 4e).
+● Proportionality when comparing factors affecting rate of reaction (1c).
+Suggested practicals
+● Investigate the effect of potential catalysts on the rate of decomposition of hydrogen
+peroxide.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+31
+Heat energy changes in chemical reactions
+Students should: Maths skills
+7.9 Recall that changes in heat energy accompany the following
+changes:
+a salts dissolving in water
+b neutralisation reactions
+c displacement reactions
+d precipitation reactions
+and that, when these reactions take place in solution,
+temperature changes can be measured to reflect the heat
+changes
+
+7.10 Describe an exothermic change or reaction as one in which heat
+energy is given out
+
+7.11 Describe an endothermic change or reaction as one in which
+heat energy is taken in
+
+7.12 Recall that the breaking of bonds is endothermic and the
+making of bonds is exothermic
+
+7.13 Recall that the overall heat energy change for a reaction is:
+a exothermic if more heat energy is released in forming bonds
+in the products than is required in breaking bonds in the
+reactants
+b endothermic if less heat energy is released in forming bonds
+in the products than is required in breaking bonds in the
+reactants
+
+7.14 Calculate the energy change in a reaction given the
+energies of bonds (in kJ mol–1)
+1a, 1c
+7.15 Explain the term activation energy
+7.16 Draw and label reaction profiles for endothermic and
+exothermic reactions, identifying activation energy
+4a
+Use of mathematics
+● Arithmetic computation when calculating energy changes (1a).
+● Interpretation of charts and graphs when dealing with reaction profiles (4a).
+Suggested practicals
+● Measure temperature changes accompanying some of the following types of change:
+a salts dissolving in water
+b neutralisation reactions
+c displacement reactions
+d precipitation reactions.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+32
+Topic 8 – Fuels and Earth science
+Fuels
+Students should: Maths skills
+8.1 Recall that hydrocarbons are compounds that contain carbon
+and hydrogen only
+
+8.2 Describe crude oil as:
+a a complex mixture of hydrocarbons
+b containing molecules in which carbon atoms are in chains or
+rings (names, formulae and structures of specific ring
+molecules not required)
+c an important source of useful substances (fuels and
+feedstock for the petrochemical industry)
+d a finite resource
+
+8.3 Describe and explain the separation of crude oil into simpler,
+more useful mixtures by the process of fractional distillation
+
+8.4 Recall the names and uses of the following fractions:
+a gases, used in domestic heating and cooking
+b petrol, used as fuel for cars
+c kerosene, used as fuel for aircraft
+d diesel oil, used as fuel for some cars and trains
+e fuel oil, used as fuel for large ships and in some power
+stations
+f bitumen, used to surface roads and roofs
+
+8.5 Explain how hydrocarbons in different fractions differ from each
+other in:
+a the number of carbon and hydrogen atoms their molecules
+contain
+b boiling points
+c ease of ignition
+d viscosity
+and are mostly members of the alkane homologous series
+4a, 4c
+8.6 Explain an homologous series as a series of compounds which:
+a have the same general formula
+b differ by CH2 in molecular formulae from neighbouring
+compounds
+c show a gradual variation in physical properties, as
+exemplified by their boiling points
+d have similar chemical properties
+1c, 1d
+4a
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+33
+
+Students should: Maths skills
+8.7 Describe the complete combustion of hydrocarbon fuels as a
+reaction in which:
+a carbon dioxide and water are produced
+b energy is given out
+
+8.8 Explain why the incomplete combustion of hydrocarbons can
+produce carbon and carbon monoxide
+
+8.9 Explain how carbon monoxide behaves as a toxic gas
+8.10 Describe the problems caused by incomplete combustion
+producing carbon monoxide and soot in appliances that use
+carbon compounds as fuels
+
+8.11 Explain how impurities in some hydrocarbon fuels result in the
+production of sulfur dioxide
+
+8.12 Explain some problems associated with acid rain caused when
+sulfur dioxide dissolves in rain water
+
+8.13 Explain why, when fuels are burned in engines, oxygen and
+nitrogen can react together at high temperatures to produce
+oxides of nitrogen, which are pollutants
+
+8.14 Evaluate the advantages and disadvantages of using hydrogen,
+rather than petrol, as a fuel in cars
+
+8.15 Recall that petrol, kerosene and diesel oil are non-renewable
+fossil fuels obtained from crude oil and methane is a non-
+renewable fossil fuel found in natural gas
+
+8.16 Explain how cracking involves the breaking down of larger,
+saturated hydrocarbon molecules (alkanes) into smaller, more
+useful ones, some of which are unsaturated (alkenes)
+1c
+8.17 Explain why cracking is necessary 2c
+Suggested practicals
+● Investigate the fractional distillation of synthetic crude oil and the ease of ignition and
+viscosity of the fractions.
+● Investigate the products produced from the complete combustion of a hydrocarbon.
+● Investigate the cracking of paraffin oil.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+34
+Earth and atmospheric science
+Students should: Maths skills
+8.18 Recall that the gases produced by volcanic activity formed the
+Earth’s early atmosphere
+
+8.19 Describe that the Earth’s early atmosphere was thought to
+contain:
+a little or no oxygen
+b a large amount of carbon dioxide
+c water vapour
+d small amounts of other gases
+and interpret evidence relating to this
+2c
+3a
+4a
+8.20 Explain how condensation of water vapour formed oceans
+8.21 Explain how the amount of carbon dioxide in the atmosphere
+was decreased when carbon dioxide dissolved as the oceans
+formed
+
+8.22 Explain how the growth of primitive plants used carbon dioxide
+and released oxygen by photosynthesis and consequently the
+amount of oxygen in the atmosphere gradually increased
+
+8.23 Describe the chemical test for oxygen
+8.24 Describe how various gases in the atmosphere, including
+carbon dioxide, methane and water vapour, absorb heat
+radiated from the Earth, subsequently releasing energy which
+keeps the Earth warm: this is known as the greenhouse effect
+
+8.25 Evaluate the evidence for human activity causing climate
+change, considering:
+a the correlation between the change in atmospheric carbon
+dioxide concentration, the consumption of fossil fuels and
+temperature change
+b the uncertainties caused by the location where these
+measurements are taken and historical accuracy
+2c, 2h
+4a
+8.26 Describe:
+a the composition of today’s atmosphere
+b the potential effects on the climate of increased levels of
+carbon dioxide and methane generated by human activity,
+including burning fossil fuels and livestock farming
+c that these effects may be mitigated: consider scale, risk and
+environmental implications
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+35
+Use of mathematics
+● Extract and interpret information from charts, graphs and tables (2c and 4a).
+● Use orders of magnitude to evaluate the significance of data (2h).
+Suggested practicals
+● Investigate the proportion of oxygen in the atmosphere.
+● Investigate the presence of water vapour and carbon dioxide in the atmosphere.
+● Investigate the volume of air used up and products formed when candles are burned.
+● Carry out the test for oxygen.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+36
+Topic 9 – Separate chemistry 2
+Qualitative analysis: tests for ions
+Students should: Maths skills
+9.1C Explain why the test for any ion must be unique
+9.2C Describe flame tests to identify the following ions in solids:
+a lithium ion, Li+ (red)
+b sodium ion, Na+ (yellow)
+c potassium ion, K+ (lilac)
+d calcium ion, Ca2+ (orange-red)
+e copper ion, Cu2+ (blue-green)
+
+9.3C Describe tests to identify the following ions in solids or solutions
+as appropriate:
+a aluminium ion, Al3+
+b calcium ion, Ca2+
+c copper ion, Cu2+
+d iron(II) ion, Fe2+
+e iron(III) ion, Fe3+
+f ammonium ion, NH4+
+using sodium hydroxide solution
+
+9.4C Describe the chemical test for ammonia
+9.5C Describe tests to identify the following ions in solids or solutions
+as appropriate:
+a carbonate ion, CO32–, using dilute acid and identifying the
+carbon dioxide evolved
+b sulfate ion, SO42–, using dilute hydrochloric acid and barium
+chloride solution
+c chloride ion, Cl–, bromide ion, Br–, iodide ion, I–, using dilute
+nitric acid and silver nitrate solution
+
+9.6C Core Practical: Identify the ions in unknown salts, using the
+tests for the specified cations and anions in 9.2C, 9.3C, 9.4C,
+9.5C
+
+9.7C Identify the ions in unknown salts, using results of the tests
+above
+
+9.8C Describe that instrumental methods of analysis are available
+and that these may improve sensitivity, accuracy and speed of
+tests
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+37
+
+Students should: Maths skills
+9.9C Evaluate data from a flame photometer:
+a to determine the concentration of ions in dilute solution
+using a calibration curve
+b to identify metal ions by comparing the data with reference
+data
+(no knowledge of the instrument or how it works is required)
+4a
+Use of mathematics
+● Interpret charts, particularly in spectroscopy (4a).
+
+Hydrocarbons
+Students should: Maths skills
+9.10C Recall the formulae of molecules of the alkanes, methane,
+ethane, propane and butane, and draw the structures of these
+molecules, showing all covalent bonds
+5b
+9.11C Explain why the alkanes are saturated hydrocarbons
+9.12C Recall the formulae of molecules of the alkenes, ethene,
+propene, butene, and draw the structures of these molecules,
+showing all covalent bonds (but-1-ene and but-2-ene only)
+5b
+9.13C Explain why the alkenes are unsaturated hydrocarbons,
+describing that their molecules contain the functional group
+C=C
+
+9.14C Recall the addition reaction of ethene with bromine, showing
+the structures of reactants and products, and extend this to
+other alkenes
+5b
+9.15C Explain how bromine water is used to distinguish between
+alkanes and alkenes
+
+9.16C Describe how the complete combustion of alkanes and alkenes
+involves the oxidation of the hydrocarbons to produce carbon
+dioxide and water
+
+Suggested practicals
+● Test for unsaturation using bromine water.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+38
+Polymers
+Students should: Maths skills
+9.17C Recall that a polymer is a substance of high average relative
+molecular mass made up of small repeating units
+
+9.18C Describe:
+a how ethene molecules can combine together in a
+polymerisation reaction
+b that the addition polymer formed is called poly(ethene)
+(conditions and mechanisms not required)
+5b
+9.19C Describe how other addition polymers can be made by
+combining together other monomer molecules containing C=C,
+to include poly(propene), poly(chloroethene) (PVC) and
+poly(tetrafluoroethene) (PTFE)
+(conditions and mechanisms not required)
+5b
+9.20C Deduce the structure of a monomer from the structure of an
+addition polymer and vice versa
+5b
+9.21C Explain how the uses of polymers are related to their properties
+and vice versa: including poly(ethene), poly(propene),
+poly(chloroethene) (PVC) and poly(tetrafluoroethene) (PTFE)
+
+9.22C Explain:
+a why polyesters are condensation polymers
+b how a polyester is formed when a monomer molecule
+containing two carboxylic acid groups is reacted with a
+monomer molecule containing two alcohol groups
+c how a molecule of water is formed each time an ester
+link is formed
+5b
+9.23C Describe some problems associated with polymers including
+the:
+a availability of starting materials
+b persistence in landfill sites, due to non-biodegradability
+c gases produced during disposal by combustion
+d requirement to sort polymers so that they can be melted and
+reformed into a new product
+
+9.24C Evaluate the advantages and disadvantages of recycling
+polymers, including economic implications, availability of
+starting materials and environmental impact
+
+9.25C Recall that:
+a DNA is a polymer made from four different monomers called
+nucleotides (names of nucleotides not required)
+b starch is a polymer based on sugars
+c proteins are polymers based on amino acids
+5b
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+39
+Alcohols and carboxylic acids
+Students should: Maths skills
+9.26C Recall the formulae of molecules of the alcohols, methanol,
+ethanol, propanol (propan-1-ol only) and butanol (butan-1-ol
+only), and draw the structures of these molecules, showing all
+covalent bonds
+5b
+9.27C Recall that the functional group in alcohols is –OH and that
+alcohols can be dehydrated to form alkenes
+
+9.28C Core Practical: Investigate the temperature rise produced in a
+known mass of water by the combustion of the alcohols
+ethanol, propanol, butanol and pentanol
+1a, 1c
+2c
+9.29C Recall the formulae of molecules of the carboxylic acids,
+methanoic, ethanoic, propanoic and butanoic acids, and draw
+the structures of these molecules, showing all covalent bonds
+5b
+9.30C Recall that the functional group in carboxylic acids is –COOH
+and that solutions of carboxylic acids have typical acidic
+properties
+
+9.31C Recall that ethanol can be oxidised to produce ethanoic acid
+and extend this to other alcohols (reagents not required)
+
+9.32C Recall members of a given homologous series have similar
+reactions because their molecules contain the same functional
+group and use this to predict the products of other members
+of these series
+
+9.33C Describe the production of ethanol by fermentation of
+carbohydrates in aqueous solution, using yeast to provide
+enzymes
+
+9.34C Explain how to obtain a concentrated solution of ethanol by
+fractional distillation of the fermentation mixture
+
+Suggested practicals
+● Prepare a solution of ethanol by fermentation.
+Bulk and surface properties of matter including nanoparticles
+Students should: Maths skills
+9.35C Compare the size of nanoparticles with the sizes of atoms and
+molecules
+1b, 1d
+2h
+9.36C Describe how the properties of nanoparticulate materials are
+related to their uses including surface area to volume ratio of
+the particles they contain, including sunscreens
+1c
+5c
+9.37C Explain the possible risks associated with some
+nanoparticulate materials
+
+9.38C Compare, using data, the physical properties of glass and clay
+ceramics, polymers, composites and metals
+2c
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+40
+Students should: Maths skills
+9.39C Explain why the properties of a material make it suitable for a
+given use and use data to select materials appropriate for
+specific uses
+2c
+Use of mathematics
+● Estimate size and scale of atoms and nanoparticles (1d).
+● Interpret, order and calculate with numbers written in standard form when dealing with
+nanoparticles (1b).
+● Use ratios when considering relative sizes and surface area to volume comparisons (1c).
+● Calculate surface areas and volumes of cubes (5c).
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+41
+3 Assessment information
+
+Paper 1 (Paper code: 1CH0/1F and 1CH0/1H)
+● First assessment: May/June 2018.
+● The assessment is 1 hour and 45 minutes.
+● The assessment is out of 100 marks.
+● The assessment consists of ten questions.
+● Students must answer all questions.
+● The paper will include multiple-choice, short answer questions, calculations and extended
+open-response questions.
+● Calculators may be used in the examination.
+● Available at foundation tier and higher tier.
+● Students must complete all assessments for this qualification in the same tier.
+● The Foundation tier paper will target grades 1–5.
+● The Higher tier paper will target grades 4–9.
+● 27 marks of the paper will be overlap questions that appear in both the foundation and
+higher tier papers.
+Content assessed
+● Topic 1 – Key concepts in chemistry
+● Topic 2 – States of matter and mixtures
+● Topic 3 – Chemical changes
+● Topic 4 – Extracting metals and equilibria
+● Topic 5 – Separate chemistry 1
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+42
+
+Paper 2 (Paper code: 1CH0/2F and 1CH0/2H)
+● First assessment: May/June 2018.
+● The assessment is 1 hour and 45 minutes.
+● The assessment is out of 100 marks.
+● The assessment consists of ten questions.
+● Students must answer all questions.
+● The paper will include multiple-choice, short answer questions, calculations and extended
+open-response questions.
+● Calculators may be used in the examination.
+● Available at foundation tier and higher tier.
+● Students must complete all assessments for this qualification in the same tier.
+● The foundation tier paper will target grades 1–5.
+● The higher tier paper will target grades 4–9.
+● 27 marks of the paper will be overlap questions that appear in both the foundation and
+higher tier papers.
+Content assessed
+● Topic 1 – Key concepts in chemistry
+● Topic 6 – Groups in the periodic table
+● Topic 7 – Rates of reaction and energy changes
+● Topic 8 – Fuels and Earth science
+● Topic 9 – Separate chemistry 2
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+43
+Assessment Objectives
+Students must:
+% in
+GCSE
+AO1 Demonstrate knowledge and understanding of:
+● scientific ideas
+● scientific techniques and procedures.
+40
+AO2 Apply knowledge and understanding of:
+● scientific ideas
+● scientific enquiry, techniques and procedures.
+40
+AO3 Analyse information and ideas to:
+● interpret and evaluate
+● make judgements and draw conclusions
+● develop and improve experimental procedures.
+20
+Total 100%
+
+Breakdown of Assessment Objectives
+Paper
+Assessment Objectives Total for all
+Assessment
+Objectives AO1 % AO2 % AO3 %
+Paper 1 (F/H) 20 20 10 50%
+Paper 2 (F/H) 20 20 10 50%
+Total for GCSE 40% ±3 40% ±3 20% ±3 100%
+
+Synoptic assessment
+Synoptic assessment requires students to work across different parts of a qualification and to
+show their accumulated knowledge and understanding of a topic or subject area.
+Synoptic assessment enables students to show their ability to combine their skills, knowledge
+and understanding with breadth and depth of the subject.
+Questions that naturally draw together different aspects of chemistry will assess synopticity.
+Sample assessment materials
+Sample papers and mark schemes can be found in the Pearson Edexcel Level 1/Level 2
+GCSE (9–1) in Chemistry Sample Assessment Materials (SAMs) document.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+44
+4 Administration and general information
+Entries
+Details of how to enter students for the examinations for this qualification can be found in
+our UK Information Manual. A copy is made available to all examinations officers and is
+available on our website: qualifications.pearson.com
+Discount code and performance tables
+Centres should be aware that students who enter for more than one GCSE, or other Level 2
+qualifications with the same discount code, will have only the grade for their 'first entry'
+counted for the purpose of the school and college performance tables (please see
+Appendix 8: Codes). For further information about what constitutes 'first entry' and full
+details of how this policy is applied, please refer to the DfE website:
+www.gov.uk/government/organisations/department-for-education
+Students should be advised that if they take two GCSEs with the same discount code,
+schools and colleges they wish to progress to are likely to take the view that this
+achievement is equivalent to only one GCSE. The same view may be taken if students take
+two GCSEs or other Level 2 qualifications that have different discount codes but have
+significant overlap of content. Students or their advisers who have any doubts about their
+subject combinations should check with the institution they wish to progress to before
+embarking on their programmes.
+Access arrangements, reasonable adjustments,
+special consideration and malpractice
+Equality and fairness are central to our work. Our equality policy requires all students to
+have equal opportunity to access our qualifications and assessments, and our qualifications
+to be awarded in a way that is fair to every student.
+We are committed to making sure that:
+● students with a protected characteristic (as defined by the Equality Act 2010) are not,
+when they are undertaking one of our qualifications, disadvantaged in comparison to
+students who do not share that characteristic
+● all students achieve the recognition they deserve for undertaking a qualification and that
+this achievement can be compared fairly to the achievement of their peers.
+Language of assessment
+Assessment of this qualification will be available in English. All student work must be in
+English.
+Access arrangements
+Access arrangements are agreed before an assessment. They allow students with special
+educational needs, disabilities or temporary injuries to:
+● access the assessment
+● show what they know and can do without changing the demands of the assessment.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+45
+The intention behind an access arrangement is to meet the particular needs of an individual
+student with a disability, without affecting the integrity of the assessment. Access
+arrangements are the principal way in which awarding bodies comply with the duty under the
+Equality Act 2010 to make ‘reasonable adjustments’.
+Access arrangements should always be processed at the start of the course. Students will
+then know what is available and have the access arrangement(s) in place for assessment.
+Reasonable adjustments
+The Equality Act 2010 requires an awarding organisation to make reasonable adjustments
+where a person with a disability would be at a substantial disadvantage in undertaking an
+assessment. The awarding organisation is required to take reasonable steps to overcome
+that disadvantage.
+A reasonable adjustment for a particular person may be unique to that individual and
+therefore might not be in the list of available access arrangements.
+Whether an adjustment will be considered reasonable will depend on a number of factors,
+which will include:
+● the needs of the student with the disability
+● the effectiveness of the adjustment
+● the cost of the adjustment; and
+● the likely impact of the adjustment on the student with the disability and other students.
+An adjustment will not be approved if it involves unreasonable costs to the awarding
+organisation, timeframes or affects the security or integrity of the assessment. This is
+because the adjustment is not ‘reasonable’.
+Special consideration
+Special consideration is a post-examination adjustment to a student's mark or grade to
+reflect temporary injury, illness or other indisposition at the time of the examination/
+assessment, which has had, or is reasonably likely to have had, a material effect on a
+candidate’s ability to take an assessment or demonstrate their level of attainment in
+an assessment.
+Private candidates
+Private candidates can complete this qualification only if they carry-out the mandatory core
+practicals with the centre in which they are sitting the exams, as long as the centre is willing
+to accept the candidate. These candidates need to fulfil the same requirements as all other
+candidates.
+Further information
+Please see our website for further information about how to apply for access arrangements
+and special consideration.
+For further information about access arrangements, reasonable adjustments and special
+consideration, please refer to the JCQ website: www.jcq.org.uk.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+46
+Malpractice
+Candidate malpractice
+Candidate malpractice refers to any act by a candidate that compromises or seeks to
+compromise the process of assessment or which undermines the integrity of the
+qualifications or the validity of results/certificates.
+Candidate malpractice in examinations must be reported to Pearson using a JCQ M1 Form
+(available at www.jcq.org.uk/exams-office/malpractice). The form can be emailed to
+pqsmalpractice@pearson.com or posted to Investigations Team, Pearson, 190 High Holborn,
+London, WC1V 7BH. Please provide as much information and supporting documentation as
+possible. Note that the final decision regarding appropriate sanctions lies with Pearson.
+Failure to report malpractice constitutes staff or centre malpractice.
+Staff/centre malpractice
+Staff and centre malpractice includes both deliberate malpractice and maladministration of
+our qualifications. As with candidate malpractice, staff and centre malpractice is any act that
+compromises or seeks to compromise the process of assessment or which undermines the
+integrity of the qualifications or the validity of results/certificates.
+All cases of suspected staff malpractice and maladministration must be reported
+immediately, before any investigation is undertaken by the centre, to Pearson on
+a JCQ M2(a) Form (available at www.jcq.org.uk/exams-office/malpractice). The form,
+supporting documentation and as much information as possible can be emailed to
+pqsmalpractice@pearson.com or posted to Investigations Team, Pearson,
+190 High Holborn, London, WC1V 7BH. Note that the final decision regarding
+appropriate sanctions lies with Pearson.
+Failure to report malpractice itself constitutes malpractice.
+More-detailed guidance on malpractice can be found in the latest version of the document
+JCQ General and Vocational Qualifications Suspected Malpractice in Examinations and
+Assessments, available at www.jcq.org.uk/exams-office/malpractice.
+Awarding and reporting
+This qualification will be graded, awarded and certificated to comply with the requirements of
+Ofqual's General Conditions of Recognition.
+This GCSE qualification will be graded and certificated on a nine-grade scale from 9 to 1
+using the total subject mark where 9 is the highest grade. Individual papers are not graded.
+For foundation tier, grades 1–5 are available and for higher tier, grades 4–9 are available,
+however if the mark achieved is a smaller number of marks below the 4/3 grade boundary,
+then a grade 3 may be awarded.
+Students whose level of achievement is below the minimum judged by Pearson to be of
+sufficient standard to be recorded on a certificate will receive an unclassified U result.
+The first certification opportunity for this qualification will be 2018.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+47
+Student recruitment and progression
+Pearson follows the JCQ policy concerning recruitment to our qualifications in that:
+● they must be available to anyone who is capable of reaching the required standard
+● they must be free from barriers that restrict access and progression
+● equal opportunities exist for all students.
+Prior learning and other requirements
+This qualification is based on the subject content, published by the DfE. The DfE designed the
+subject content to reflect or build on Key Stage 3. Consequently, students taking this
+qualification will benefit from previously studying Chemistry at Key Stage 3.
+Progression
+Students can progress from this qualification to:
+● GCEs, for example in Chemistry
+● Level 3 vocational qualifications in science, for example BTEC Level 3 in Applied Science
+● employment, for example in a science-based industry where an Apprenticeship may be
+available.
+The content and skills for these qualifications are set by the DfE to be suitable to allow these
+progression routes.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+48
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+49
+Appendices
+Appendix 1: Mathematical skills 51
+Appendix 2: Taxonomy 53
+Appendix 3: Periodic table 55
+Appendix 4: Apparatus and techniques 56
+Appendix 5: Practical Science Statement 62
+Appendix 6: The context for the development of this qualification 63
+Appendix 7: Transferable skills 65
+Appendix 8: Codes 66
+Appendix 9: Calculators 67
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+50
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+51
+Appendix 1: Mathematical skills
+This appendix is taken from the document Biology, Chemistry and Physics GCSE subject
+content published by the Department for Education (DfE) in June 2014.
+The mathematical skills and use of mathematics statements listed will be assessed through
+the content of this qualification in the examinations. The minimum level of mathematics in
+the foundation tier examination papers will be equivalent to Key Stage 3 mathematics. The
+minimum level of mathematics in the higher tier examination papers will be equivalent to
+foundation tier GCSE in Mathematics.
+Mathematical skills
+Details of the mathematical skills in other science subjects are given for reference.
+
+Biology Chemistry Physics
+1 Arithmetic and numerical computation
+a Recognise and use expressions in decimal form   
+b Recognise and use expressions in standard form   
+c Use ratios, fractions and percentages   
+d Make estimates of the results of simple
+calculations
+  
+2 Handling data
+a Use an appropriate number of significant figures   
+b Find arithmetic means   
+c Construct and interpret frequency tables and
+diagrams, bar charts and histograms
+  
+d Understand the principles of sampling as applied
+to scientific data
+
+e Understand simple probability 
+f Understand the terms mean, mode and median  
+g Use a scatter diagram to identify a correlation
+between two variables
+ 
+h Make order of magnitude calculations   
+3 Algebra
+a Understand and use the symbols: =, <, <<, >>,
+>, ∝, ~
+  
+b Change the subject of an equation  
+c Substitute numerical values into algebraic
+equations using appropriate units for physical
+quantities
+ 
+d Solve simple algebraic equations  
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+52
+
+Biology Chemistry Physics
+4 Graphs
+a Translate information between graphical and
+numeric form
+  
+b Understand that y = mx + c represents a linear
+relationship
+  
+c Plot two variables from experimental or other
+data
+  
+d Determine the slope and intercept of a linear
+graph
+  
+e Draw and use the slope of a tangent to a curve
+as a measure of rate of change
+ 
+f Understand the physical significance of area
+between a curve and the x-axis and measure it
+by counting squares as appropriate
+
+5 Geometry and trigonometry
+a Use angular measures in degrees 
+b Visualise and represent 2D and 3D forms,
+including two dimensional representations of
+3D objects
+ 
+c Calculate areas of triangles and rectangles,
+surface areas and volumes of cubes
+  
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+53
+Appendix 2: Taxonomy
+The following table lists the command words used in the external assessments.
+
+Command word Definition
+Add/Label Requires the addition or labelling to a stimulus material given in
+the question, for example labelling a diagram or adding units to
+a table.
+Assess Give careful consideration to all the factors or events that apply
+and identify which are the most important or relevant. Make a
+judgement on the importance of something, and come to a
+conclusion where needed.
+Calculate Obtain a numerical answer, showing relevant working. If the
+answer has a unit, this must be included. This can include using
+an equation to calculate a numerical answer.
+Comment on Requires the synthesis of a number of variables from
+data/information to form a judgement.
+Compare Looking for the similarities or differences of two (or more) things.
+Should not require the drawing of a conclusion. Answer must
+relate to both (or all) things mentioned in the question.
+Compare and contrast Looking for the similarities and differences of two (or more)
+things. Should not require the drawing of a conclusion. Answer
+must relate to both (or all) things mentioned in the question.
+The answer must include at least one similarity and one
+difference.
+Complete Requires the completion of a table/diagram.
+Deduce Draw/reach conclusion(s) from the information provided.
+Describe
+
+To give an account of something. Statements in the response
+need to be developed as they are often linked but do not need to
+include a justification or reason.
+Determine The answer must have an element which is quantitative from the
+stimulus provided, or must show how the answer can be reached
+quantitatively. To gain maximum marks there must be a
+quantitative element to the answer.
+Devise Plan or invent a procedure from existing principles/ideas.
+Discuss Identify the issue/situation/problem/argument that is being
+assessed within the question.
+Explore all aspects of an issue/situation/problem/argument.
+Investigate the issue/situation etc. by reasoning or argument.
+Draw Produce a diagram either using a ruler or using freehand.
+Estimate Find an approximate value, number, or quantity from a
+diagram/given data or through a calculation .
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+54
+
+Command word Definition
+Evaluate Review information (e.g. data, methods) then bring it together
+to form a conclusion, drawing on evidence including strengths,
+weaknesses, alternative actions, relevant data or information.
+Come to a supported judgement of a subject’s qualities and
+relation to its context.
+Explain An explanation requires a justification/exemplification of a point.
+The answer must contain some element of reasoning/
+justification, this can include mathematical explanations.
+Give/State/Name All of these command words are really synonyms. They generally
+all require recall of one or more pieces of information.
+Give a reason/reasons When a statement has been made and the requirement is only to
+give the reasons why.
+Identify Usually requires some key information to be selected from a
+given stimulus/resource.
+Justify Give evidence to support (either the statement given in the
+question or an earlier answer).
+Measure To determine the dimensions or angle from a diagram using an
+instrument such as a ruler or protractor.
+Plot Produce a graph by marking points accurately on a grid from
+data that is provided and then drawing a line of best fit through
+these points. A suitable scale and appropriately labelled axes
+must be included if these are not provided in the question.
+Predict Give an expected result.
+Show that Verify the statement given in the question.
+Sketch Produce a freehand drawing. For a graph this would need a line
+and labelled axis with important features indicated, the axis are
+not scaled.
+State and explain Make a point and link ideas to justify that point. An explanation
+requires a justification/exemplification of a point. The answer
+must contain some element of reasoning/justification, this can
+include mathematical explanations.
+State what is meant by When the meaning of a term is expected but there are different
+ways of how these can be described.
+Write When the questions ask for an equation.
+
+Verbs preceding a command word
+Suggest a … Suggest an explanation or suggest a description.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+55
+Appendix 3: Periodic table
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+56
+Appendix 4: Apparatus and techniques
+The apparatus and techniques listed in the table below are taken from the document Biology,
+Chemistry and Physics GCSE Subject content published by the Department for Education
+(DfE) in June 2014.
+Use and coverage of the apparatus and techniques listed are mandatory. The eight
+mandatory core practicals cover all aspects of the listed apparatus and techniques and are
+referenced in the table.
+Safety is an overriding requirement for all practical work. Centres are responsible for
+ensuring that whenever their students complete practical work appropriate safety procedures
+are followed.
+Scientific diagrams should be included, where appropriate, to show the set-up and to record
+the apparatus and procedures used in practical work.
+
+Apparatus and techniques Core practical (specification reference)
+1
+Use of appropriate apparatus
+to make and record a range
+of measurements accurately,
+including mass, time,
+temperature, and volume of
+liquids and gases
+2.11 Investigate the composition of inks using simple
+distillation and paper chromatography
+3.6 Investigate the change in pH on adding
+powdered calcium hydroxide or calcium oxide to
+a fixed volume of dilute hydrochloric acid
+3.17 Investigate the preparation of pure, dry
+hydrated copper sulfate crystals starting from
+copper oxide including the use of a water bath
+3.31 Investigate the electrolysis of copper sulfate
+solution with inert electrodes and copper
+electrodes
+5.9C Carry out an accurate acid-alkali titration, using
+burette, pipette and a suitable indicator
+7.1 Investigate the effects of changing the
+conditions of a reaction on the rates of chemical
+reactions by:
+a measuring the production of a gas (in the
+reaction between hydrochloric acid and
+marble chips)
+b observing a colour change (in the reaction
+between sodium thiosulfate and hydrochloric
+acid)
+9.28C Investigate the temperature rise produced in a
+known mass of water by the combustion of the
+alcohols ethanol, propanol, butanol and pentanol
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+57
+
+Apparatus and techniques Core practical (specification reference)
+2
+Safe use of appropriate
+heating devices and
+techniques including use of a
+Bunsen burner and a water
+bath or electric heater
+2.11 Investigate the composition of inks using simple
+distillation and paper chromatography
+3.17 Investigate the preparation of pure, dry
+hydrated copper sulfate crystals starting from
+copper oxide including the use of a water bath
+7.1 Investigate the effects of changing the
+conditions of a reaction on the rates of chemical
+reactions by:
+a measuring the production of a gas (in the
+reaction between hydrochloric acid and
+marble chips)
+b observing a colour change (in the reaction
+between sodium thiosulfate and hydrochloric
+acid)
+3
+Use of appropriate apparatus
+and techniques for conducting
+and monitoring chemical
+reactions, including
+appropriate reagents and/or
+techniques for the
+measurement of pH in
+different situations
+3.6 Investigate the change in pH on adding
+powdered calcium hydroxide or calcium oxide to
+a fixed volume of dilute hydrochloric acid
+3.31 Investigate the electrolysis of copper sulfate
+solution with inert electrodes and copper
+electrodes
+5.9C Carry out an accurate acid-alkali titration, using
+burette, pipette and a suitable indicator
+7.1 Investigate the effects of changing the
+conditions of a reaction on the rates of chemical
+reactions by:
+a measuring the production of a gas (in the
+reaction between hydrochloric acid and
+marble chips)
+b observing a colour change (in the reaction
+between sodium thiosulfate and hydrochloric
+acid)
+9.6C Identify the ions in unknown salts, using the
+tests for the specified cations and anions in
+9.2C, 9.3C, 9.4C, 9.5C
+9.28C Investigate the temperature rise produced in a
+known mass of water by the combustion of the
+alcohols ethanol, propanol, butanol and pentanol
+4
+Safe use of a range of
+equipment to purify and/or
+separate chemical mixtures
+including evaporation,
+filtration, crystallisation,
+chromatography and
+distillation
+2.11 Investigate the composition of inks using simple
+distillation and paper chromatography
+3.17 Investigate the preparation of pure, dry
+hydrated copper sulfate crystals starting from
+copper oxide including the use of a water bath
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+58
+
+Apparatus and techniques Core practical (specification reference)
+5
+Making and recording of
+appropriate observations
+during chemical reactions
+including changes in
+temperature and the
+measurement of rates of
+reaction by a variety of
+methods such as production
+of gas and colour change
+3.6 Investigate the change in pH on adding
+powdered calcium hydroxide or calcium oxide to
+a fixed volume of dilute hydrochloric acid
+5.9C Carry out an accurate acid-alkali titration, using
+burette, pipette and a suitable indicator
+7.1 Investigate the effects of changing the conditions
+of a reaction on the rates of chemical reactions
+by:
+a measuring the production of a gas (in the
+reaction between hydrochloric acid and
+marble chips)
+b observing a colour change (in the reaction
+between sodium thiosulfate and hydrochloric
+acid)
+9.28C Investigate the temperature rise produced in a
+known mass of water by the combustion of the
+alcohols ethanol, propanol, butanol and pentanol
+6
+Safe use and careful handling
+of gases, liquids and solids,
+including careful mixing of
+reagents under controlled
+conditions, using appropriate
+apparatus to explore chemical
+changes and/or products
+2.11 Investigate the composition of inks using simple
+distillation and paper chromatography
+3.6 Investigate the change in pH on adding
+powdered calcium hydroxide or calcium oxide to
+a fixed volume of dilute hydrochloric acid
+3.17 Investigate the preparation of pure, dry hydrated
+copper sulfate crystals starting from copper
+oxide including the use of a water bath
+3.31 Investigate the electrolysis of copper sulfate
+solution with inert electrodes and copper
+electrodes
+5.9C Carry out an accurate acid-alkali titration, using
+burette, pipette and a suitable indicator
+7.1 Investigate the effects of changing the conditions
+of a reaction on the rates of chemical reactions
+by:
+a measuring the production of a gas (in the
+reaction between hydrochloric acid and
+marble chips)
+b observing a colour change (in the reaction
+between sodium thiosulfate and hydrochloric
+acid)
+9.6C Identify the ions in unknown salts, using the
+tests for the specified cations and anions in 9.2C,
+9.3C, 9.4C, 9.5C
+9.28C Investigate the temperature rise produced in a
+known mass of water by the combustion of the
+alcohols ethanol, propanol, butanol and pentanol
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+59
+
+Apparatus and techniques Core practical (specification reference)
+7
+Use of appropriate apparatus
+and techniques to draw, set
+up and use electrochemical
+cells for separation and
+production of elements and
+compounds
+3.31 Investigate the electrolysis of copper sulfate
+solution with inert electrodes and copper
+electrodes
+8
+Use of appropriate qualitative
+reagents and techniques to
+analyse and identify unknown
+samples or products including
+gas tests, flame tests,
+precipitation reactions, and
+the determination of
+concentrations of strong acids
+and strong alkalis
+5.9C Carry out an accurate acid-alkali titration, using
+burette, pipette and a suitable indicator
+9.6C Identify the ions in unknown salts, using the
+tests for the specified cations and anions in
+9.2C, 9.3C, 9.4C, 9.5C
+
+These core practicals may be reviewed and amended if changes are required to the
+apparatus and techniques listed by the Department for Education. Pearson may also review
+and amend the core practicals if necessary. Centres will be told about any changes as soon
+as possible.
+This appendix also includes more detailed instructions for each core practical, which must be
+followed.
+Core practical Description
+2.11
+Investigate the composition
+of inks using simple
+distillation and paper
+chromatography
+This core practical is in two parts; a simple
+chromatography practical to obtain a chromatogram
+of dyes in ink and using simple distillation apparatus
+to separate pure water from ink.
+It needs to cover usage of a Bunsen burner,
+methods used in chromatography and distillation
+and safety of handling liquids.
+3.6
+Investigate the change in pH
+on adding powdered calcium
+hydroxide or calcium oxide to
+a fixed volume of dilute
+hydrochloric acid
+This practical focuses on recording the pH at
+intervals when calcium hydroxide or calcium oxide
+reacts with dilute hydrochloric acid. An initial mass
+of the solid must be added to a fixed volume of the
+acid, and the pH recorded each time more of the
+solid is added to the acid. The pH can be recorded
+using a pH meter, or universal indicator paper with
+a glass rod used to take a pH measurement at each
+interval.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+60
+
+Core practical Description
+3.17
+Investigate the preparation of
+pure, dry hydrated copper
+sulfate crystals starting from
+copper oxide including the
+use of a water bath
+Excess copper oxide must be added to warm dilute
+sulfuric acid (warmed using a water bath), which
+will react to produce a blue solution of the salt
+copper(II) sulfate. The solution then needs to be
+filtered using filter paper and evaporated using an
+evaporating basin and Bunsen burner, followed by
+final drying using a watch glass to allow all the
+water to evaporate.
+3.31
+Investigate the electrolysis of
+copper sulfate solution with
+inert electrodes and copper
+electrodes
+This involves setting up an electrolysis to investigate
+the effect of changing the current on the mass of
+the copper electrodes used in the electrolysis of
+copper sulfate solution. The second part of this
+investigation covers the products formed during the
+electrolysis of copper sulfate solution using inert
+(graphite) electrodes. Quantitative analysis when
+using copper electrodes will be expected.
+5.9C
+Carry out an accurate acid-
+alkali titration, using burette,
+pipette and a suitable
+indicator
+A titration is carried out to determine the volume of
+hydrochloric acid required to neutralise a solution of
+unknown concentration of sodium hydroxide. An
+indicator must be used to determine the end point.
+Standard procedure for a titration must be carried
+out, such as the use of a white tile and swirling the
+conical flask to obtain an accurate end point. The
+data must then be used to determine the
+concentration of the unknown solution.
+7.1
+Investigate the effects of
+changing the conditions of a
+reaction on the rates of
+chemical reactions by:
+a measuring the production
+of a gas (in the reaction
+between hydrochloric acid
+and marble chips)
+b observing a colour change
+(in the reaction between
+sodium thiosulfate and
+hydrochloric acid)
+This investigation is in two parts. Both parts require
+the reaction to be observed with respect to time to
+obtain the rate.
+In the first part, marble chips must be added to
+hydrochloric acid, and the volume of gas collected
+and measured over time. This will lead to graphical
+analysis to calculate rate, as well as an appreciation
+for how the rate may change with varying
+concentration of acid/temperature/surface area of
+marble chips.
+The second part involves sodium thiosulfate reacting
+with dilute hydrochloric acid to produce a precipitate
+using the idea of a ‘disappearing cross’ to observe
+the change in the appearance of the reaction
+mixture as a precipitate of sulfur is formed. This
+must be carried out at different temperatures by
+warming the thiosulfate solution. A graph must be
+drawn to show the time taken for the reaction to
+take place at different temperatures.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+61
+
+Core practical Description
+9.6C
+Identify the ions in unknown
+salts, using the tests for the
+specified cations and anions
+in 9.2C, 9.3C, 9.4C, 9.5C
+Tests must be carried out to determine the ions
+present as described in specification points 9.2C,
+9.3C, 9.4C and 9.5C. This will include gas tests,
+flame tests and precipitation reactions.
+9.28C
+Investigate the temperature
+rise produced in a known
+mass of water by the
+combustion of the alcohols
+ethanol, propanol, butanol
+and pentanol
+Apparatus set up to measure the increase in
+temperature when the different fuels given are
+burnt. This must lead to a comparison of the results
+for the four alcohols.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+62
+
+
+
+Appendix 5: Practical Science Statement
+Pearson Edexcel Level 1/Level 2 GCSE (9–1) in
+Biology/Chemistry/Physics/Combined Science
+Head Teacher Declaration Form
+Pearson Edexcel Level 1/Level 2 GCSE (9–1) in
+Biology/Chemistry/Physics/Combined Science
+Centre number: Centre name:
+Subject(s): Please tick as appropriate
+ Biology (1BI0)  Chemistry (1CH0)
+ Physics (1PH0)  Combined Science (1SC0)
+Biology (1BI0) – students must carry out all eight of the mandatory core practicals listed on page
+8 of the specification.
+Chemistry (1CH0) – students must carry out all eight of the mandatory core practicals listed on
+page 8 of the specification.
+Physics (1PH0) – students must carry out all eight of the mandatory core practicals listed on page
+9 of the specification.
+
+Head teacher declaration
+I declare that reasonable steps have been taken to ensure each candidate has completed the
+practical activities set out above in accordance with Pearson Edexcel Level 1/Level 2 GCSE
+(9–1) in Biology/Chemistry/Physics/Combined Science practical science work requirements.
+Each candidate has made a contemporaneous record of:
+i the work that they have undertaken during these practical activities, and
+ii the knowledge, skills and understanding which that learner has derived from those
+practical activities.
+
+Head teacher name:
+Head teacher
+signature:
+Date:
+
+Please upload the completed form via our Pearson Qualifications
+website https://qualifications.pearson.com/en/forms/gcse-sciences-9-1-practical-science-
+statement.html by 15th April. Any failure by centres to provide this Practical Science Statement will
+be treated as malpractice and/or maladministration.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+63
+Appendix 6: The context for the
+development of this qualification
+All our qualifications are designed to meet our World Class Qualification Principles[1] and our
+ambition to put the student at the heart of everything we do.
+We have developed and designed this qualification by:
+● reviewing other curricula and qualifications to ensure that it is comparable with those
+taken in high-performing jurisdictions overseas
+● consulting with key stakeholders on content and assessment, including learned bodies,
+subject associations, higher education academics and teachers to ensure this qualification
+is suitable for a UK context
+● reviewing the legacy qualification and building on its positive attributes.
+This qualification has also been developed to meet criteria stipulated by Ofqual in their
+documents GCSE (9 to 1) Qualification Level Conditions and Requirements and GCSE Subject
+Level Conditions and Requirements for Single Science (Biology, Chemistry and Physics)
+published in April 2014.
+
+
+
+[1] Pearson’s World Class Qualification Principles ensure that our qualifications are:
+● demanding, through internationally benchmarked standards, encouraging deep learning and
+measuring higher-order skills
+● rigorous, through setting and maintaining standards over time, developing reliable and valid
+assessment tasks and processes, and generating confidence in end users of the knowledge, skills
+and competencies of certified students
+● inclusive, through conceptualising learning as continuous, recognising that students develop at
+different rates and have different learning needs, and focusing on progression
+● empowering, through promoting the development of transferable skills, see Appendix 7.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+64
+
+From Pearson’s Expert Panel for World Class Qualifications
+May 2014
+“The reform of the qualifications system in England is a profoundly important change to the
+education system. Teachers need to know that the new qualifications will assist them in
+helping their learners make progress in their lives.
+When these changes were first proposed we were approached by Pearson to join an ‘Expert
+Panel’ that would advise them on the development of the new qualifications.
+We were chosen, either because of our expertise in the UK education system, or because of
+our experience in reforming qualifications in other systems around the world as diverse as
+Singapore, Hong Kong, Australia and a number of countries across Europe.
+We have guided Pearson through what we judge to be a rigorous qualification development
+process that has included:
+● extensive international comparability of subject content against the highest-performing
+jurisdictions in the world
+● benchmarking assessments against UK and overseas providers to ensure that they are at
+the right level of demand
+● establishing External Subject Advisory Groups, drawing on independent subject-specific
+expertise to challenge and validate our qualifications
+● subjecting the final qualifications to scrutiny against the DfE content and Ofqual
+accreditation criteria in advance of submission.
+Importantly, we have worked to ensure that the content and learning is future oriented. The
+design has been guided by what is called an ‘Efficacy Framework’, meaning learner outcomes
+have been at the heart of this development throughout.
+We understand that ultimately it is excellent teaching that is the key factor to a learner’s
+success in education. As a result of our work as a panel we are confident that we have
+supported the development of qualifications that are outstanding for their coherence,
+thoroughness and attention to detail and can be regarded as representing world-class best
+practice.”
+
+Sir Michael Barber (Chair)
+Chief Education Advisor, Pearson plc
+Professor Lee Sing Kong
+Director, National Institute of Education,
+Singapore
+
+Bahram Bekhradnia
+President, Higher Education Policy Institute
+Professor Jonathan Osborne
+Stanford University
+
+Dame Sally Coates
+Principal, Burlington Danes Academy
+Professor Dr Ursula Renold
+Federal Institute of Technology,
+Switzerland
+
+Professor Robin Coningham
+Pro-Vice Chancellor, University of Durham
+Professor Bob Schwartz
+Harvard Graduate School of Education
+
+Dr Peter Hill
+Former Chief Executive ACARA
+
+All titles correct as at May 2014
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+65
+Appendix 7: Transferable skills
+The need for transferable skills
+In recent years, higher education institutions and employers have consistently flagged the
+need for students to develop a range of transferable skills to enable them to respond with
+confidence to the demands of undergraduate study and the world of work.
+The Organisation for Economic Co-operation and Development (OECD) defines skills, or
+competencies, as ‘the bundle of knowledge, attributes and capacities that can be learned and
+that enable individuals to successfully and consistently perform an activity or task and can be
+built upon and extended through learning.’ [1]
+To support the design of our qualifications, the Pearson Research Team selected and
+evaluated seven global 21st-century skills frameworks. Following on from this process, we
+identified the National Research Council’s (NRC) framework as the most evidence-based and
+robust skills framework. We adapted the framework slightly to include the Program for
+International Student Assessment (PISA) ICT Literacy and Collaborative Problem Solving
+(CPS) Skills.
+The adapted National Research Council’s framework of skills involves: [2]
+Cognitive skills
+● Non-routine problem solving – expert thinking, metacognition, creativity.
+● Systems thinking – decision making and reasoning.
+● Critical thinking – definitions of critical thinking are broad and usually involve general
+cognitive skills such as analysing, synthesising and reasoning skills.
+● ICT literacy – access, manage, integrate, evaluate, construct and communicate. [3]
+Interpersonal skills
+● Communication – active listening, oral communication, written communication, assertive
+communication and non-verbal communication.
+● Relationship-building skills – teamwork, trust, intercultural sensitivity, service
+orientation, self-presentation, social influence, conflict resolution and negotiation.
+● Collaborative problem solving – establishing and maintaining shared understanding,
+taking appropriate action, establishing and maintaining team organisation.
+Intrapersonal skills
+● Adaptability – ability and willingness to cope with the uncertain, handling work stress,
+adapting to different personalities, communication styles and cultures, and physical
+adaptability to various indoor and outdoor work environments.
+● Self-management and self-development – ability to work remotely in virtual teams,
+work autonomously, be self-motivating and self-monitoring, willing and able to acquire
+new information and skills related to work.
+Transferable skills enable young people to face the demands of further and higher education,
+as well as the demands of the workplace, and are important in the teaching and learning of
+this qualification. We will provide teaching and learning materials, developed with
+stakeholders, to support our qualifications.
+
+
+[1] OECD – Better Skills, Better Jobs, Better Lives (OECD Publishing, 2012)
+[2] Koenig J A, National Research Council – Assessing 21st Century Skills: Summary of a Workshop (National
+Academies Press, 2011)
+[3] PISA – The PISA Framework for Assessment of ICT Literacy (2011)
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+66
+Appendix 8: Codes
+
+Type of code Use of code Code
+Discount codes Every qualification eligible for performance
+tables is assigned a discount code that
+indicates the subject area to which it
+belongs.
+Discount codes are published by the DfE.
+Please see the GOV.UK
+website*
+
+Regulated
+Qualifications
+Framework (RQF)
+codes
+Each qualification title is allocated an
+Ofqual Regulated Qualifications
+Framework (RQF) code.
+The RQF code is known as a Qualification
+Number (QN). This is the code that
+features in the DfE Section 96 and on the
+LARA as being eligible for 16–18 and 19+
+funding, and is to be used for all
+qualification funding purposes. The QN will
+appear on students’ final certification
+documentation.
+The QN for this
+qualification is:
+601/8611/2
+Subject codes The subject code is used by centres to
+enter students for a qualification. Centres
+will need to use the entry codes only when
+claiming students’ qualifications.
+GCSE – 1CH0
+Paper codes These codes are provided for reference
+purposes. Students need to be entered for
+individual papers at the same tier.
+Paper 1: 1CH0/1F or
+1CH0/1H
+Paper 2: 1CH0/2F or
+1CH0/2H
+*www.gov.uk/government/publications/2018-performance-tables-discount-code
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Chemistry
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+67
+Appendix 9: Calculators
+Candidates may use a calculator in assessments for this qualification. Centres are
+responsible for making sure that calculators used by their students meet the requirements
+highlighted in the table below.
+Candidates must be familiar with the requirements before their assessments for this
+qualification.
+
+Calculators must be:
+● of a size suitable for use on a desk
+● either battery or solar powered
+● free of lids, cases and covers that
+have printed instructions or
+formulae.
+Calculators must not:
+● be designed or adapted to offer any of these
+facilities:
+o language translators
+o symbolic algebraic manipulation
+o symbolic differentiation or integration
+o communication with other machines or
+the internet
+● be borrowed from another candidate during
+an examination for any reason*
+● have retrievable information stored in them,
+and this includes:
+o databanks
+o dictionaries
+o mathematical formulae
+o text.
+The candidate is responsible for
+the following:
+● the calculator’s power supply
+● the calculator’s working condition
+● clearing anything stored in the
+calculator.
+
+*An invigilator may give a candidate a replacement calculator
+
+
+
+
+DB110324 9781446958322_GCSE2016_L12_CHEMISTRY_ISS4.DOC.1–72/0
+For information about Pearson Qualifications, including Pearson Edexcel,
+BTEC and LCCI qualifications visit qualifications.pearson.com
+Edexcel and BTEC are registered trademarks of Pearson Education Limited
+Pearson Education Limited. Registered in England and Wales No. 872828
+Registered Office: 80 Strand, London WC2R 0RL
+VAT Reg No GB 278 537121

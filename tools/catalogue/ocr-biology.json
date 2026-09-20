@@ -1,0 +1,113 @@
+{
+  "key": "biology",
+  "ref": "ocr/biology-j247",
+  "board": "OCR",
+  "name": "Biology",
+  "specCode": "J247",
+  "sourceUrl": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "B1",
+      "title": "Cell level systems",
+      "sourceUrl": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+      "topics": [
+        {
+          "code": "B1.1",
+          "title": "Cell structures"
+        },
+        {
+          "code": "B1.2",
+          "title": "What happens in cells (and what do cells need)?"
+        },
+        {
+          "code": "B1.3",
+          "title": "Respiration"
+        },
+        {
+          "code": "B1.4",
+          "title": "Photosynthesis"
+        }
+      ]
+    },
+    {
+      "code": "B2",
+      "title": "Scaling up",
+      "sourceUrl": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+      "topics": [
+        {
+          "code": "B2.1",
+          "title": "Supplying the cell"
+        },
+        {
+          "code": "B2.2",
+          "title": "The challenges of size"
+        }
+      ]
+    },
+    {
+      "code": "B3",
+      "title": "Organism level systems",
+      "sourceUrl": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+      "topics": [
+        {
+          "code": "B3.1",
+          "title": "Coordination and control – the nervous system"
+        },
+        {
+          "code": "B3.2",
+          "title": "Coordination and control – the endocrine system"
+        },
+        {
+          "code": "B3.3",
+          "title": "Maintaining internal environments"
+        }
+      ]
+    },
+    {
+      "code": "B4",
+      "title": "Community level systems",
+      "sourceUrl": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+      "topics": [
+        {
+          "code": "B4.1",
+          "title": "Ecosystems"
+        }
+      ]
+    },
+    {
+      "code": "B5",
+      "title": "Genes, inheritance and selection",
+      "sourceUrl": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+      "topics": [
+        {
+          "code": "B5.1",
+          "title": "Inheritance"
+        },
+        {
+          "code": "B5.2",
+          "title": "Natural selection and evolution"
+        }
+      ]
+    },
+    {
+      "code": "B6",
+      "title": "Global challenges",
+      "sourceUrl": "https://www.ocr.org.uk/images/234594-specification-accredited-gcse-gateway-science-suite-biology-a-j247.pdf",
+      "topics": [
+        {
+          "code": "B6.1",
+          "title": "Monitoring and maintaining the environment"
+        },
+        {
+          "code": "B6.2",
+          "title": "Feeding the human race"
+        },
+        {
+          "code": "B6.3",
+          "title": "Monitoring and maintaining health"
+        }
+      ]
+    }
+  ]
+}

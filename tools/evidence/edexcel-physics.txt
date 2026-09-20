@@ -1,0 +1,3295 @@
+GCSE (9-1)
+Physics
+Specification
+Pearson Edexcel Level 1/Level 2 GCSE (9 - 1) in Physics (1PH0)
+First teaching from September 2016
+First certification from June 2018 Issue 4
+
+
+About Pearson
+We are the world’s leading learning company operating in countries all around the world.
+We provide content, assessment and digital services to learners, educational institutions,
+employers, governments and other partners globally. We are committed to helping equip
+learners with the skills they need to enhance their employability prospects and to succeed in
+the changing world of work. We believe that wherever learning flourishes so do people.
+References to third party materials made in this specification are made in good faith. Pearson
+does not endorse, approve or accept responsibility for the content of materials, which may
+be subject to change, or any opinions expressed therein. (Materials may include textbooks,
+journals, magazines and other publications and websites.)
+
+All information in this specification is correct at time of publication.
+
+Original origami artwork: Mark Bolitho
+Origami photography: Pearson Education Ltd/Naki Kouyioumtzis
+
+ISBN 978 1 446 95835 3
+All the material in this publication is copyright
+© Pearson Education Limited 2024
+
+
+Summary of Pearson Edexcel Level 1/Level 2
+GCSE (9–1) in Physics (1PH0) specification
+Issue 4 changes
+
+Summary of changes made between previous issue and this current issue Page
+number
+Removed named subject advisors from the ‘Get help and support’ section
+Emboldened the spec point 10.25 to bring this in line with Combined Science
+specification on highlighting of higher tier content
+3
+33
+
+If you need further information on these changes or what they mean, contact us via our
+website at: qualifications.pearson.com/en/support/contact-us.html
+
+
+
+
+
+
+Contents
+1 Introduction 2
+Why choose Edexcel GCSE in Physics? 2
+Supporting you in planning and implementing this qualification 3
+Qualification at a glance 4
+2 Subject content 6
+3 Assessment information 46
+4 Administration and general information 49
+Entries 49
+Access arrangements, reasonable adjustments, special consideration and
+malpractice 49
+Student recruitment and progression 52
+Appendix 1: Mathematical skills 55
+Appendix 2: Equations in Physics 57
+Appendix 3: SI Units in Physics 61
+Appendix 4: Taxonomy 62
+Appendix 5: Apparatus and techniques 64
+Appendix 6: Practical Science Statement 68
+Appendix 7: The context for the development of this
+qualification 69
+Appendix 8: Transferable skills 71
+Appendix 9: Codes 72
+Appendix 10: Calculators 73
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+2
+1 Introduction
+Why choose Edexcel GCSE in Physics?
+Supporting success in science
+Science matters. That’s why we’ve built the most inclusive GCSE (9–1) courses, so every
+student can enjoy science and succeed in their studies.
+Every student is different. With the same science and equal number of exams across our
+tiered qualifications, you can structure the courses in the ways that mean you can best
+support and stretch your students together.
+Our specifications are straightforward, and our selection of core practicals are designed to
+help bring science learning to life. And when it comes to our assessments, they’re shaped to
+encourage all students to best show what they know and can do.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+3
+Supporting you in planning and implementing this
+qualification
+Planning
+● Our Getting Started guide gives you an overview of the new GCSE qualifications to help
+you to get to grips with the changes to content and assessment and to help you
+understand what these changes mean for you and your students.
+● We will give you editable schemes of work that you can adapt to suit your department.
+● Our mapping documents highlight key differences between the new and 2011
+qualifications.
+Teaching and learning
+There will be lots of free teaching and learning support to help you deliver the new
+qualifications, including:
+● a free series of teacher, student and technician worksheets will help cover each element
+of planning and delivering every core practical
+● a free practical guide to help you prepare for the changes to practical assessment
+● a free maths guide for scientists to help you embed mathematics in your science
+teaching.
+Preparing for exams
+We will also provide a range of resources to help you prepare your students for the
+assessments, including:
+● additional assessment materials to support formative assessments and mock exams
+● marked exemplars of student work with examiner commentaries.
+ResultsPlus
+ResutsPlus provides the most detailed analysis available of your students’ exam
+performance. It can help you identify the topics and skills where further learning would
+benefit your students.
+Get help and support
+Our subject advisor service, led by our dedicated subject advisor will ensure you receive help
+and guidance from us and that you can share ideas and information with other teachers.
+Learn more at qualifications.pearson.com
+examWizard
+examWizard is a free exam preparation tool containing a bank of Edexcel GCSE Science
+exam questions, mark schemes and examiners’ reports. Existing questions will be reviewed
+and tagged to our new specifications so they can still be used, and question descriptions will
+be updated.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+4
+Qualification at a glance
+Content and assessment overview
+The Pearson Edexcel Level 1/Level 2 GCSE (9–1) in Physics consists of two
+externally-examined papers. These are available at foundation tier and higher tier.
+Students must complete all assessments in the same tier.
+Students must complete all assessment in May/June in any single year.
+Paper 1 (*Paper code: 1PH0/1F and 1PH0/1H)
+Written examination: 1 hour and 45 minutes
+50% of the qualification
+100 marks
+Content overview
+● Topic 1 – Key concepts of physics
+● Topic 2 – Motion and forces
+● Topic 3 – Conservation of energy
+● Topic 4 – Waves
+● Topic 5 – Light and the electromagnetic spectrum
+● Topic 6 – Radioactivity
+● Topic 7 – Astronomy
+Assessment overview
+A mixture of different question styles, including multiple-choice questions, short answer
+questions, calculations and extended open-response questions.
+Calculators may be used in the examination. Information on the use of calculators during
+the examinations for this qualification can be found in Appendix 10: Calculators.
+*See Appendix 9: Codes for a description of this code and all other codes relevant to this
+qualification.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+5
+
+Paper 2 (Paper code: 1PH0/2F and 1PH0/2H)
+Written examination: 1 hour and 45 minutes
+50% of the qualification
+100 marks
+Content overview
+● Topic 1 – Key concepts of physics
+● Topic 8 – Energy - Forces doing work
+● Topic 9 – Forces and their effects
+● Topic 10 – Electricity and circuits
+● Topic 11 – Static electricity
+● Topic 12 – Magnetism and the motor effect
+● Topic 13 – Electromagnetic induction
+● Topic 14 – Particle model
+● Topic 15 – Forces and matter
+Assessment overview
+A mixture of different question styles, including multiple-choice questions, short answer
+questions, calculations and extended open-response questions.
+Calculators may be used in the examination. Information on the use of calculators during
+the examinations for this qualification can be found in Appendix 10: Calculators.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+6
+2 Subject content
+Qualification aims and objectives
+GCSE study in the sciences provides the foundation for understanding the material world.
+Scientific understanding is changing our lives and is vital to the world’s future prosperity. All
+students should learn essential aspects of the knowledge, methods, processes and uses of
+science. They should gain appreciation of how the complex and diverse phenomena of the
+natural world can be described in terms of a small number of key ideas that relate to the
+sciences and that are both inter-linked and of universal application. These key ideas include:
+● the use of conceptual models and theories to make sense of the observed diversity of
+natural phenomena
+● the assumption that every effect has one or more cause
+● that change is driven by differences between different objects and systems when they
+interact
+● that many such interactions occur over a distance without direct contact
+● that science progresses through a cycle of hypothesis, practical experimentation,
+observation, theory development and review
+● that quantitative analysis is a central element both of many theories and of scientific
+methods of inquiry.
+These key ideas will be assessed through the content of this qualification in the
+examinations.
+These key ideas are relevant in different ways and with different emphases in the three
+subjects. Examples of their relevance are given for each subject in the separate sections
+below for Biology, Chemistry and Physics.
+The three GCSE Science qualifications enable students to:
+● develop scientific knowledge and conceptual understanding through the specific disciplines
+of Biology, Chemistry and Physics
+● develop understanding of the nature, processes and methods of science, through different
+types of scientific enquiries that help them to answer scientific questions about the world
+around them
+● develop and learn to apply observational, practical, modelling, enquiry and problem-
+solving skills in the laboratory, in the field and in other learning environments
+● develop their ability to evaluate claims based on science through critical analysis of the
+methodology, evidence and conclusions, both qualitatively and quantitatively.
+Students should study the sciences in ways that help them to develop curiosity about the
+natural world, that give them an insight into how science works and that enable them to
+appreciate its relevance to their everyday lives. The scope and nature of the study should be
+broad, coherent, practical and satisfying. It should encourage students to be inspired,
+motivated and challenged by the subject and its achievements.
+The key ideas specific to the Physics content include:
+● the use of models, as in the particle model of matter or the wave models of light and of
+sound
+● the concept of cause and effect in explaining such links as those between force and
+acceleration, or between changes in atomic nuclei and radioactive emissions
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+7
+● the phenomena of ‘action at a distance’ and the related concept of the field as the key to
+analysing electrical, magnetic and gravitational effects
+● that differences, for example between pressures or temperatures or electrical potentials,
+are the drivers of change
+● that proportionality, for example between weight and mass of an object or between force
+and extension in a spring, is an important aspect of many models in science
+● that physical laws and models are expressed in mathematical form.
+All of these key ideas will be assessed as part of this qualification, through the subject
+content.
+Working scientifically
+The GCSE in Physics requires students to develop the skills, knowledge and understanding of
+working scientifically. Working scientifically will be assessed through examination and the
+completion of the eight core practicals.
+1 Development of scientific thinking
+a Understand how scientific methods and theories develop over time.
+b Use a variety of models, such as representational, spatial, descriptive,
+computational and mathematical, to solve problems, make predictions and to
+develop scientific explanations and an understanding of familiar and unfamiliar
+facts.
+c Appreciate the power and limitations of science, and consider any ethical issues
+that may arise.
+d Explain everyday and technological applications of science; evaluate associated
+personal, social, economic and environmental implications; and make decisions
+based on the evaluation of evidence and arguments.
+e Evaluate risks both in practical science and the wider societal context, including
+perception of risk in relation to data and consequences.
+f Recognise the importance of peer review of results and of communicating results
+to a range of audiences.
+2 Experimental skills and strategies
+a Use scientific theories and explanations to develop hypotheses.
+b Plan experiments or devise procedures to make observations, produce or
+characterise a substance, test hypotheses, check data or explore phenomena.
+c Apply a knowledge of a range of techniques, instruments, apparatus and materials
+to select those appropriate to the experiment.
+d Carry out experiments appropriately, having due regard to the correct
+manipulation of apparatus, the accuracy of measurements and health and safety
+considerations.
+e Recognise when to apply a knowledge of sampling techniques to ensure any
+samples collected are representative.
+f Make and record observations and measurements using a range of apparatus and
+methods.
+g Evaluate methods and suggest possible improvements and further investigations.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+8
+3 Analysis and evaluation
+Apply the cycle of collecting, presenting and analysing data, including:
+a presenting observations and other data using appropriate methods
+b translating data from one form to another
+c carrying out and representing mathematical and statistical analysis
+d representing distributions of results and making estimations of uncertainty
+e interpreting observations and other data (presented in verbal, diagrammatic,
+graphical, symbolic or numerical form), including identifying patterns and trends,
+making inferences and drawing conclusions
+f presenting reasoned explanations, including relating data to hypotheses
+g being objective, evaluating data in terms of accuracy, precision, repeatability and
+reproducibility and identifying potential sources of random and systematic error
+h communicating the scientific rationale for investigations, methods used, findings
+and reasoned conclusions through paper-based and electronic reports and
+presentations using verbal, diagrammatic, graphical, numerical and symbolic
+forms.
+4 Scientific vocabulary, quantities, units, symbols and nomenclature
+a Use scientific vocabulary, terminology and definitions.
+b Recognise the importance of scientific quantities and understand how they are
+determined.
+c Use SI units (e.g. kg, g, mg; km, m, mm; kJ, J) and IUPAC chemical nomenclature
+unless inappropriate.
+d Use prefixes and powers of ten for orders of magnitude (e.g. tera, giga, mega,
+kilo, centi, milli, micro and nano).
+e Interconvert units.
+f Use an appropriate number of significant figures in calculation.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+9
+Practical work
+The content includes eight mandatory core practicals, indicated as an entire specification
+point in italics.
+Students must carry out all eight of the mandatory core practicals listed below.
+
+Core practical:
+2.19 Investigate the relationship between force, mass and acceleration by varying the
+masses added to trolleys
+4.17 Investigate the suitability of equipment to measure the speed, frequency and
+wavelength of a wave in a solid and a fluid
+5.9 Investigate refraction in rectangular glass blocks in terms of the interaction of
+electromagnetic waves with matter
+5.19P Investigate how the nature of a surface affects the amount of thermal energy
+radiated or absorbed.
+10.17 Construct electrical circuits to:
+a investigate the relationship between potential difference, current and resistance
+for a resistor and a filament lamp
+b test series and parallel circuits using resistors and filament lamps
+14.3 Investigate the densities of solid and liquids
+14.11 Investigate the properties of water by determining the specific heat capacity of
+water and obtaining a temperature-time graph for melting ice
+15.6 Investigate the extension and work done when applying forces to a spring
+
+Students will need to use their knowledge and understanding of these practical techniques
+and procedures in the written assessments.
+Centres must confirm that each student has completed the eight mandatory core practicals.
+Students need to record the work that they have undertaken for the eight mandatory core
+practicals. The practical record must include the knowledge, skills and understanding they
+have derived from the practical activities. Centres must complete and submit a Practical
+Science Statement (see Appendix 6) to confirm that all students have completed the eight
+mandatory core practicals. This must be submitted to Pearson by 15th April in the year that
+the students will sit their examinations. Any failure by centres to provide this Practical
+Science Statement will be treated as malpractice and/or maladministration.
+Scientific diagrams should be included, where appropriate, to show the set-up and to record
+the apparatus and procedures used in practical work.
+It is important to realise that these core practicals are the minimum number of practicals
+that should be taken during the course. Suggested additional practicals are given beneath
+the content at the end of each topic. The eight mandatory core practicals cover all aspects of
+the apparatus and techniques listed in Appendix 5: Apparatus and techniques. This appendix
+also includes more detailed instructions for each core practical, which must be followed.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+10
+Safety is an overriding requirement for all practical work. Centres are responsible for
+ensuring appropriate safety procedures are followed whenever their students complete
+practical work.
+These core practicals may be reviewed and amended if changes are required to the
+apparatus and techniques listed by the Department for Education. Pearson may also review
+and amend the core practicals if necessary. Centres will be told as soon as possible about
+any changes to core practicals.
+Qualification content
+The following notation is used in the tables that show the content for this qualification:
+● text in bold indicates content that is for higher tier only
+● entire specification points in italics indicates the core practicals.
+Specification statement numbers with a P in them refer to content which is only in the GCSE
+in Physics and is not found in the GCSE in Combined Science (e.g. 3.18P).
+Mathematics
+Maths skills that can be assessed in relation to a specification point are referenced in the
+maths column, next to this specification point. Please see Appendix 1: Mathematical skills for
+full details of each maths skill.
+After each topic of content in this specification, there are details relating to the ‘Use of
+mathematics’ which contains the Physics specific mathematic skills that are found in each
+topic of content in the document Biology, Chemistry and Physics GCSE subject content,
+published by the Department for Education (DfE) in June 2014. The reference in brackets
+after each statement refers to the mathematical skills from Appendix 1.
+Equations
+The required physics equations are listed in Appendix 2: Equations in Physics. The first list
+shows the equations which students are expected to recall for use in the exam papers. These
+equations may sometimes be given in the exam papers. The equations required for higher
+tier only are shown in bold text. These equations are also listed in the specification content.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+11
+Topics common to Paper 1 and Paper 2
+Topic 1 – Key concepts of physics
+
+Students should: Maths skills
+1.1 Recall and use the SI unit for physical quantities, as listed in
+Appendix 3
+
+1.2 Recall and use multiples and sub-multiples of units, including
+giga (G), mega (M), kilo (k), centi (c), milli (m), micro (μ) and
+nano (n)
+3c
+1.3 Be able to convert between different units, including hours to
+seconds
+1c
+1.4 Use significant figures and standard form where appropriate 1b
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+12
+Topics for Paper 1
+Topic 2 – Motion and forces
+
+Students should: Maths skills
+2.1 Explain that a scalar quantity has magnitude (size) but no
+specific direction
+
+2.2 Explain that a vector quantity has both magnitude (size) and a
+specific direction
+5b
+2.3 Explain the difference between vector and scalar quantities 5b
+2.4 Recall vector and scalar quantities, including:
+a displacement/distance
+b velocity/speed
+c acceleration
+d force
+e weight/mass
+f momentum
+g energy
+
+2.5 Recall that velocity is speed in a stated direction 5b
+2.6 Recall and use the equations:
+a (average) speed (metre per second, m/s) = distance
+(metre, m) ÷ time (s)
+b distance travelled (metre, m) = average speed (metre per
+second, m/s) × time (s)
+1a, 1c, 1d
+2a
+3a, 3c, 3d
+2.7 Analyse distance/time graphs including determination of speed
+from the gradient
+2a
+4a, 4b, 4d, 4e
+2.8 Recall and use the equation:
+acceleration (metre per second squared, m/s2) = change in
+velocity (metre per second, m/s) ÷ time taken (second, s)
+
+( )
+t
+uva −=
+
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.9 Use the equation:
+(final velocity)2 ((metre/second)2, (m/s)2) – (initial velocity)2
+((metre/second)2, (m/s)2) = 2 × acceleration (metre per
+second squared, m/s2) × distance (metre, m)
+xauv ××=− 222
+1a, 1c, 1d
+2a
+3a, 3c, 3d
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+13
+
+Students should: Maths skills
+2.10 Analyse velocity/time graphs to:
+a compare acceleration from gradients qualitatively
+b calculate the acceleration from the gradient (for uniform
+acceleration only)
+c determine the distance travelled using the area between
+the graph line and the time axis (for uniform acceleration
+only)
+1a, 1c, 1d
+2a
+4a, 4b, 4c, 4d,
+4e, 4f
+5c
+2.11 Describe a range of laboratory methods for determining the
+speeds of objects such as the use of light gates
+1a, 1d
+2a, 2b, 2c, 2f,
+2h
+3a, 3c, 3d
+4a, 4c
+2.12 Recall some typical speeds encountered in everyday
+experience for wind and sound, and for walking, running,
+cycling and other transportation systems
+
+2.13 Recall that the acceleration, g, in free fall is 10 m/s2 and be
+able to estimate the magnitudes of everyday accelerations
+1d
+2h
+2.14 Recall Newton’s first law and use it in the following situations:
+a where the resultant force on a body is zero, i.e. the body is
+moving at a constant velocity or is at rest
+b where the resultant force is not zero, i.e. the speed and/or
+direction of the body change(s)
+1a, 1d
+2a
+3a, 3c, 3d
+2.15 Recall and use Newton’s second law as:
+force (newton, N) = mass (kilogram, kg) × acceleration
+(metre per second squared, m/s2)
+amF ×=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.16 Define weight, recall and use the equation:
+weight (newton, N) = mass (kilogram, kg) × gravitational field
+strength (newton per kilogram, N/kg)
+gmW ×=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.17 Describe how weight is measured
+2.18 Describe the relationship between the weight of a body and
+the gravitational field strength
+1c
+2.19 Core Practical: Investigate the relationship between force,
+mass and acceleration by varying the masses added to trolleys
+1a, 1c,1d
+2a, 2b, 2f
+3a, 3b, 3c, 3d
+4a, 4b, 4c, 4d
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+14
+
+Students should: Maths skills
+2.20 Explain that an object moving in a circular orbit at
+constant speed has a changing velocity (qualitative
+only)
+5b
+2.21 Explain that for motion in a circle there must be a
+resultant force known as a centripetal force that acts
+towards the centre of the circle
+5b
+2.22 Explain that inertial mass is a measure of how difficult it
+is to change the velocity of an object (including from
+rest) and know that it is defined as the ratio of force
+over acceleration
+1c,
+2.23 Recall and apply Newton’s third law both to equilibrium
+situations and to collision interactions and relate it to the
+conservation of momentum in collisions
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.24 Define momentum, recall and use the equation:
+momentum (kilogram metre per second, kg m/s) =
+mass (kilogram, kg) × velocity (metre per second, m/s)
+vmp ×=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.25 Describe examples of momentum in collisions 1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.26 Use Newton’s second law as:
+force (newton, N) = change in momentum (kilogram
+metre per second, kg m/s) ÷ time (second, s)
+
+( )
+t
+mumvF −=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.27 Explain methods of measuring human reaction times and
+recall typical results
+2a, 2b, 2c, 2g
+2.28 Recall that the stopping distance of a vehicle is made up of the
+sum of the thinking distance and the braking distance
+1a
+2.29 Explain that the stopping distance of a vehicle is affected by a
+range of factors including:
+a the mass of the vehicle
+b the speed of the vehicle
+c the driver’s reaction time
+d the state of the vehicle’s brakes
+e the state of the road
+f the amount of friction between the tyre and the road
+surface
+1c, 1d
+2b, 2c, 2h
+3b, 3c
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+15
+Students should: Maths skills
+2.30 Describe the factors affecting a driver’s reaction time including
+drugs and distractions
+1d
+2b, 2h
+3c
+2.31 Explain the dangers caused by large decelerations and
+estimate the forces involved in typical situations on a
+public road
+1c, 1d,
+2c, 2h,
+3b, 3c
+2.32P Estimate how the distance required for a road vehicle to stop
+in an emergency varies over a range of typical speeds
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+2.33P Carry out calculations on work done to show the dependence
+of braking distance for a vehicle on initial velocity squared
+(work done to bring a vehicle to rest equals its initial kinetic
+energy)
+1c, 1d
+2b, 2h
+3b, 3c
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Relate changes and differences in motion to appropriate distance-time, and velocity-time
+graphs, and interpret lines and slopes (4a, 4b, 4c, 4d).
+● Interpret enclosed areas in velocity-time graphs (4a, 4b, 4c, 4d, 4f).
+● Apply formulae relating distance, time and speed, for uniform motion, and for motion with
+uniform acceleration, and calculate average speed for non-uniform motion (1a, 1c, 3c).
+● Estimate how the distances required for road vehicles to stop in an emergency, varies
+over a range of typical speeds (1c, 1d, 2c, 2h, 3b, 3c).
+● Apply formulae relating force, mass and relevant physical constants, including
+gravitational field strength, to explore how changes in these are inter-related (1c, 3b, 3c).
+● Apply formulae relating force, mass, velocity and acceleration to explain how the changes
+involved are inter-related (3b, 3c, 3d).
+● Estimate, for everyday road transport, the speed, accelerations and forces involved in
+large accelerations (1d, 2b, 2h, 3c).
+Suggested practicals
+● Investigate the acceleration, g, in free fall and the magnitudes of everyday accelerations.
+● Investigate conservation of momentum during collisions.
+● Investigate inelastic collisions with the two objects remaining together after the collision
+and also ‘near’ elastic collisions.
+● Investigate the relationship between mass and weight.
+● Investigate how crumple zones can be used to reduce the forces in collisions.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+16
+Topic 3 – Conservation of energy
+
+Students should: Maths skills
+3.1 Recall and use the equation to calculate the change in
+gravitational PE when an object is raised above the ground:
+change in gravitational potential energy (joule, J) = mass
+(kilogram, kg) × gravitational field strength (newton per
+kilogram, N/kg) × change in vertical height (metre, m)
+hgmGPE ∆××=∆
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+3.2 Recall and use the equation to calculate the amounts of
+energy associated with a moving object:
+kinetic energy (joule, J) =
+2
+1 × mass (kilogram, kg) ×
+(speed)2 ((metre/second)2, (m/s)2)
+
+2
+2
+1 vmKE ××=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+3.3 Draw and interpret diagrams to represent energy transfers 1c
+2c
+3.4 Explain what is meant by conservation of energy
+3.5 Analyse the changes involved in the way energy is stored
+when a system changes, including:
+a an object projected upwards or up a slope
+b a moving object hitting an obstacle
+c an object being accelerated by a constant force
+d a vehicle slowing down
+e bringing water to a boil in an electric kettle
+
+3.6 Explain that where there are energy transfers in a closed
+system there is no net change to the total energy in that
+system
+
+3.7 Explain that mechanical processes become wasteful when they
+cause a rise in temperature so dissipating energy in heating
+the surroundings
+
+3.8 Explain, using examples, how in all system changes energy is
+dissipated so that it is stored in less useful ways
+
+3.9 Explain ways of reducing unwanted energy transfer including
+through lubrication, thermal insulation
+
+3.10 Describe the effects of the thickness and thermal conductivity
+of the walls of a building on its rate of cooling qualitatively
+
+3.11 Recall and use the equation:
+
+( )
+( )devicethetopliedsupenergytotal
+devicethebydtransferreenergyusefulefficiency =
+
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+17
+
+Students should: Maths skills
+3.12 Explain how efficiency can be increased
+3.13 Describe the main energy sources available for use on Earth
+(including fossil fuels, nuclear fuel, bio-fuel, wind, hydro-
+electricity, the tides and the Sun), and compare the ways in
+which both renewable and non-renewable sources are used
+2c, 2g
+3.14 Explain patterns and trends in the use of energy resources 2c, 2g
+
+Uses of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Calculate relevant values of stored energy and energy transfers; convert between
+newton-metres and joules (1c, 3c).
+● Make calculations of the energy changes associated with changes in a system, recalling or
+selecting the relevant equations for mechanical, electrical, and thermal processes; thereby
+express in quantitative form and on a common scale the overall redistribution of energy in
+the system (1a, 1c, 3c).
+Suggested practicals
+● Investigate conservation of energy.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+18
+Topic 4 – Waves
+
+Students should: Maths skills
+4.1 Recall that waves transfer energy and information without
+transferring matter
+
+4.2 Describe evidence that with water and sound waves it is the
+wave and not the water or air itself that travels
+
+4.3 Define and use the terms frequency and wavelength as applied
+to waves
+
+4.4 Use the terms amplitude, period, wave velocity and wavefront
+as applied to waves
+
+4.5 Describe the difference between longitudinal and transverse
+waves by referring to sound, electromagnetic, seismic and
+water waves
+
+4.6 Recall and use both the equations below for all waves:
+wave speed (metre/second, m/s) = frequency (hertz, Hz) ×
+wavelength (metre, m)
+λ×= fv
+wave speed (metre/second, m/s) = distance (metre, m) ÷
+time (second, s)
+
+t
+xv =
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+4.7 Describe how to measure the velocity of sound in air and
+ripples on water surfaces
+2g
+4.8P Calculate depth or distance from time and wave velocity 1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+4.9P Describe the effects of
+a reflection
+b refraction
+c transmission
+d absorption
+of waves at material interfaces
+5b
+4.10 Explain how waves will be refracted at a boundary in terms of
+the change of direction and speed
+1c
+3c
+5b
+4.11 Recall that different substances may absorb, transmit,
+refract or reflect waves in ways that vary with
+wavelength
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+19
+
+Students should: Maths skills
+4.12P Describe the processes which convert wave
+disturbances between sound waves and vibrations in
+solids, and
+a explain why such processes only work over a limited
+frequency range
+b use this to explain the way the human ear works
+
+4.13P Recall that sound with frequencies greater than
+20 000 hertz, Hz, is known as ultrasound
+
+4.14P Recall that sound with frequencies less than 20 hertz,
+Hz, is known as infrasound
+
+4.15P Explain uses of ultrasound and infrasound, including
+a sonar
+b foetal scanning
+c exploration of the Earth’s core
+1a, 1b, 1c,
+2a
+3a, 3b, 3c, 3d
+5b
+4.16P Describe how changes, if any, in velocity, frequency and
+wavelength, in the transmission of sound waves from one
+medium to another are inter-related
+1a, 1c, 1d
+2a
+3a, 3c, 3d
+4.17 Core Practical: Investigate the suitability of equipment to
+measure the speed, frequency and wavelength of a wave in a
+solid and a fluid
+2g
+Use of mathematics
+● Apply formulae relating velocity, frequency and wavelength (1c, 3c).
+● Show how changes, if any, in velocity, frequency and wavelength, in transmission of
+sound waves from one medium to another, are inter-related (1c, 3c).
+Suggested practicals
+● Investigate models to show refraction, such as toy cars travelling into a region of sand.
+● Investigate refraction in rectangular glass blocks.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+20
+Topic 5 – Light and the electromagnetic spectrum
+
+Students should: Maths skills
+5.1P Explain, with the aid of ray diagrams, reflection, refraction and
+total internal reflection (TIR), including the law of reflection
+and critical angle
+5a, 5b
+
+5.2P Explain the difference between specular and diffuse reflection 5b
+5.3P Explain how colour of light is related to
+a differential absorption at surfaces
+b transmission of light through filters
+
+5.4P Relate the power of a lens to its focal length and shape 5b
+5.5P Use ray diagrams to show the similarities and differences in
+the refraction of light by converging and diverging lenses
+5b
+5.6P Explain the effects of different types of lens in producing real
+and virtual images
+5b
+5.7 Recall that all electromagnetic waves are transverse, that they
+travel at the same speed in a vacuum
+
+5.8 Explain, with examples, that all electromagnetic waves
+transfer energy from source to observer
+
+5.9 Core Practical: Investigate refraction in rectangular glass
+blocks in terms of the interaction of electromagnetic waves
+with matter
+
+5.10 Recall the main groupings of the continuous electromagnetic
+spectrum including (in order) radio waves, microwaves,
+infrared, visible (including the colours of the visible spectrum),
+ultraviolet, x-rays and gamma rays
+
+5.11 Describe the electromagnetic spectrum as continuous from
+radio waves to gamma rays and that the radiations within it
+can be grouped in order of decreasing wavelength and
+increasing frequency
+1a, 1c
+3c
+5.12 Recall that our eyes can only detect a limited range of
+frequencies of electromagnetic radiation
+
+5.13 Recall that different substances may absorb, transmit,
+refract or reflect electromagnetic waves in ways that
+vary with wavelength
+
+5.14 Explain the effects of differences in the velocities of
+electromagnetic waves in different substances
+1a, 1c
+3c
+5.15P Explain that all bodies emit radiation, that the intensity and
+wavelength distribution of any emission depends on their
+temperature
+5c
+5.16P Explain that for a body to be at a constant temperature
+it needs to radiate the same average power that it
+absorbs
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+21
+Students should: Maths skills
+5.17P Explain what happens to a body if the average power it
+radiates is less or more than the average power that it
+absorbs
+
+5.18P Explain how the temperature of the Earth is affected by
+factors controlling the balance between incoming
+radiation and radiation emitted
+
+5.19P Core Practical: Investigate how the nature of a surface affects
+the amount of thermal energy radiated or absorbed
+1a, 1c, 1d
+2a, 2c, 2f
+3a, 3c, 3d
+4a, 4c
+5.20 Recall that the potential danger associated with an
+electromagnetic wave increases with increasing frequency
+
+5.21 Describe the harmful effects on people of excessive exposure
+to electromagnetic radiation, including:
+a microwaves: internal heating of body cells
+b infrared: skin burns
+c ultraviolet: damage to surface cells and eyes, leading to
+skin cancer and eye conditions
+d x-rays and gamma rays: mutation or damage to cells in the
+body
+
+5.22 Describe some uses of electromagnetic radiation
+a radio waves: including broadcasting, communications and
+satellite transmissions
+b microwaves: including cooking, communications and
+satellite transmissions
+c infrared: including cooking, thermal imaging, short range
+communications, optical fibres, television remote controls
+and security systems
+d visible light: including vision, photography and illumination
+e ultraviolet: including security marking, fluorescent lamps,
+detecting forged bank notes and disinfecting water
+f x-rays: including observing the internal structure of objects,
+airport security scanners and medical x-rays
+g gamma rays: including sterilising food and medical
+equipment, and the detection of cancer and its treatment
+
+5.23 Recall that radio waves can be produced by, or can
+themselves induce, oscillations in electrical circuits
+
+5.24 Recall that changes in atoms and nuclei can
+a generate radiations over a wide frequency range
+b be caused by absorption of a range of radiations
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+22
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Apply the relationships between frequency and wavelength across the electromagnetic
+spectrum (1a, 1c, 3c).
+● Construct two-dimensional ray diagrams to illustrate reflection and refraction
+(qualitative – equations not needed) (5a, 5b).
+Suggested practicals
+● Investigate total internal reflection using a semi-circular block (glass or plastic).
+● Construct devices using two converging lenses of differing focal lengths.
+● Construct a simple spectrometer, from a CD or DVD, and use it to analyse common light
+sources.
+● Investigate the areas beyond the visible spectrum, such as the work of Herschel and Ritter
+in discovering IR and UV respectively.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+23
+Topic 6 – Radioactivity
+
+Students should: Maths skills
+6.1 Describe an atom as a positively charged nucleus, consisting
+of protons and neutrons, surrounded by negatively charged
+electrons, with the nuclear radius much smaller than that of
+the atom and with almost all of the mass in the nucleus
+5b
+6.2 Recall the typical size (order of magnitude) of atoms and small
+molecules
+
+6.3 Describe the structure of nuclei of isotopes using the terms
+atomic (proton) number and mass (nucleon) number and
+using symbols in the format using symbols in the format
+6
+13
+C
+1a
+3a
+6.4 Recall that the nucleus of each element has a characteristic
+positive charge, but that isotopes of an element differ in mass
+by having different numbers of neutrons
+2g
+5b
+6.5 Recall the relative masses and relative electric charges of
+protons, neutrons, electrons and positrons
+
+6.6 Recall that in an atom the number of protons equals the
+number of electrons and is therefore neutral
+
+6.7 Recall that in each atom its electrons orbit the nucleus at
+different set distances from the nucleus
+5b
+6.8 Explain that electrons change orbit when there is absorption or
+emission of electromagnetic radiation
+5b
+6.9 Explain how atoms may form positive ions by losing outer
+electrons
+5b
+6.10 Recall that alpha, β– (beta minus), β+ (positron), gamma rays
+and neutron radiation are emitted from unstable nuclei in a
+random process
+
+6.11 Recall that alpha, β– (beta minus), β+ (positron) and gamma
+rays are ionising radiations
+
+6.12 Explain what is meant by background radiation
+6.13 Describe the origins of background radiation from Earth and
+space
+
+6.14 Describe methods for measuring and detecting radioactivity
+limited to photographic film and a Geiger–Müller tube
+
+6.15 Recall that an alpha particle is equivalent to a helium nucleus,
+a beta particle is an electron emitted from the nucleus and a
+gamma ray is electromagnetic radiation
+
+6.16 Compare alpha, beta and gamma radiations in terms of their
+abilities to penetrate and ionise
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+24
+
+Students should: Maths skills
+6.17 Describe how and why the atomic model has changed over
+time including reference to the plum pudding model and
+Rutherford alpha particle scattering leading to the Bohr model
+5b
+6.18 Describe the process of β– decay (a neutron becomes a proton
+plus an electron)
+1b, 1c,
+3c
+6.19 Describe the process of β+ decay (a proton becomes a
+neutron plus a positron)
+1b, 1c,
+3c
+6.20 Explain the effects on the atomic (proton) number and mass
+(nucleon) number of radioactive decays (α, β, γ and neutron
+emission)
+1b, 1c,
+3c
+6.21 Recall that nuclei that have undergone radioactive decay often
+undergo nuclear rearrangement with a loss of energy as
+gamma radiation
+
+6.22 Use given data to balance nuclear equations in terms of mass
+and charge
+1b, 1c,
+3c
+6.23 Describe how the activity of a radioactive source decreases
+over a period of time
+2g
+4c
+6.24 Recall that the unit of activity of a radioactive isotope is the
+Becquerel, Bq
+
+6.25 Explain that the half-life of a radioactive isotope is the time
+taken for half the undecayed nuclei to decay or the activity of
+a source to decay by half
+1c, 1d
+2a
+6.26 Explain that it cannot be predicted when a particular nucleus
+will decay but half-life enables the activity of a very large
+number of nuclei to be predicted during the decay process
+1c, 3d
+6.27 Use the concept of half-life to carry out simple calculations on
+the decay of a radioactive isotope, including graphical
+representations
+1a, 1b, 1c, 1d
+2a, 2g
+3a, 3b, 3c, 3d
+6.28P Describe uses of radioactivity, including:
+a household fire (smoke) alarms
+b irradiating food
+c sterilisation of equipment
+d tracing and gauging thicknesses
+e diagnosis and treatment of cancer
+
+6.29 Describe the dangers of ionising radiation in terms of tissue
+damage and possible mutations and relate this to the
+precautions needed
+
+6.30P Explain how the dangers of ionising radiation depend on half-
+life and relate this to the precautions needed
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+25
+
+Students should: Maths skills
+6.31 Explain the precautions taken to ensure the safety of people
+exposed to radiation, including limiting the dose for patients
+and the risks to medical personnel
+
+6.32 Describe the differences between contamination and
+irradiation effects and compare the hazards associated with
+these two
+
+6.33P Compare and contrast the treatment of tumours using
+radiation applied internally or externally
+5b
+6.34P Explain some of the uses of radioactive substances in
+diagnosis of medical conditions, including PET scanners and
+tracers
+
+6.35P Explain why isotopes used in PET scanners have to be
+produced nearby
+
+6.36P Evaluate the advantages and disadvantages of nuclear power
+for generating electricity, including the lack of carbon dioxide
+emissions, risks, public perception, waste disposal and safety
+issues
+
+6.37P Recall that nuclear reactions, including fission, fusion and
+radioactive decay, can be a source of energy
+
+6.38P Explain how the fission of U-235 produces two daughter nuclei
+and the emission of two or more neutrons, accompanied by a
+release of energy
+1b, 1c, 3c
+6.39P Explain the principle of a controlled nuclear chain reaction
+6.40P Explain how the chain reaction is controlled in a nuclear
+reactor, including the action of moderators and control rods
+5b
+6.41P Describe how thermal (heat) energy from the chain reaction is
+used in the generation of electricity in a nuclear power station
+
+6.42P Recall that the products of nuclear fission are radioactive
+6.43P Describe nuclear fusion as the creation of larger nuclei
+resulting in a loss of mass from smaller nuclei, accompanied
+by a release of energy, and recognise fusion as the energy
+source for stars
+1b, 1c, 3c
+6.44P Explain the difference between nuclear fusion and nuclear
+fission
+
+6.45P Explain why nuclear fusion does not happen at low
+temperatures and pressures, due to electrostatic repulsion of
+protons
+
+6.46P Relate the conditions for fusion to the difficulty of making a
+practical and economic form of power station
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+26
+Uses of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Balance equations representing alpha-, beta- or gamma-radiations in terms of the masses
+and charges of the atoms involved (1b, 1c, 3c).
+● Calculate the net decline, expressed as a ratio, in a radioactive emission after a
+given number of half-lives (1c, 3d).
+Suggested practicals
+● Investigate models which simulate radioactive decay.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+27
+Topic 7 – Astronomy
+
+Students should: Maths skills
+7.1P Explain how and why both the weight of any body and the
+value of g differ between the surface of the Earth and the
+surface of other bodies in space, including the Moon
+
+7.2P Recall that our Solar System consists of the Sun (our star),
+eight planets and their natural satellites (such as our Moon);
+dwarf planets; asteroids and comets
+5b
+7.3P Recall the names and order, in terms of distance from the
+Sun, of the eight planets
+
+7.4P Describe how ideas about the structure of the Solar System
+have changed over time
+5b
+7.5P Describe the orbits of moons, planets, comets and artificial
+satellites
+5b
+7.6P Explain for circular orbits how the force of gravity can lead to
+changing velocity of a planet but unchanged speed
+5b
+7.7P Explain how, for a stable orbit, the radius must change if
+orbital speed changes (qualitative only)
+
+7.8P Compare the Steady State and Big Bang theories 5b
+7.9P Describe evidence supporting the Big Bang theory, limited to
+red-shift and the cosmic microwave background (CMB)
+radiation
+
+7.10P Recall that as there is more evidence supporting the Big Bang
+theory than the Steady State theory, it is the currently
+accepted model for the origin of the Universe
+
+7.11P Describe that if a wave source is moving relative to an
+observer there will be a change in the observed frequency and
+wavelength
+5b
+7.12P Describe the red-shift in light received from galaxies at
+different distances away from the Earth
+2g
+5b
+7.13P Explain why the red-shift of galaxies provides evidence for the
+Universe expanding
+5b
+7.14P Explain how both the Big Bang and Steady State theories of
+the origin of the Universe both account for red-shift of galaxies
+
+7.15P Explain how the discovery of the CMB radiation led to the Big
+Bang theory becoming the currently accepted model
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+28
+
+Students should: Maths skills
+7.16P Describe the evolution of stars of similar mass to the Sun
+through the following stages:
+a nebula
+b star (main sequence)
+c red giant
+d white dwarf
+2g
+7.17P Explain how the balance between thermal expansion and
+gravity affects the life cycle of stars
+
+7.18P Describe the evolution of stars with a mass larger than
+the Sun
+2g
+7.19P Describe how methods of observing the Universe have
+changed over time including why some telescopes are located
+outside the Earth’s atmosphere
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+29
+Topics for Paper 2
+Topic 8 – Energy – forces doing work
+
+Students should: Maths skills
+8.1 Describe the changes involved in the way energy is stored
+when systems change
+
+8.2 Draw and interpret diagrams to represent energy transfers 1c, 2c
+8.3 Explain that where there are energy transfers in a closed
+system there is no net change to the total energy in that
+system
+
+8.4 Identify the different ways that the energy of a system can be
+changed
+a through work done by forces
+b in electrical equipment
+c in heating
+
+8.5 Describe how to measure the work done by a force and
+understand that energy transferred (joule, J) is equal to work
+done (joule, J)
+
+8.6 Recall and use the equation:
+work done (joule, J) = force (newton, N) × distance moved in
+the direction of the force (metre, m)
+dFE ×=
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+4f
+8.7 Describe and calculate the changes in energy involved when a
+system is changed by work done by forces
+
+8.8 Recall and use the equation to calculate the change in
+gravitational PE when an object is raised above the ground:
+change in gravitational potential energy (joule, J) = mass
+(kilogram, kg) × gravitational field strength (newton per
+kilogram, N/kg) × change in vertical height (metre, m)
+hgmGPE ∆××=∆
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+8.9 Recall and use the equation to calculate the amounts of
+energy associated with a moving object:
+kinetic energy (joule, J) =
+2
+1 × mass (kilogram, kg) ×
+(speed)2 ((metre/second)2, (m/s)2)
+
+2
+2
+1 vmKE ××=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+8.10 Explain, using examples, how in all system changes energy is
+dissipated so that it is stored in less useful ways
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+30
+Students should: Maths skills
+8.11 Explain that mechanical processes become wasteful when they
+cause a rise in temperature so dissipating energy in heating
+the surroundings
+
+8.12 Define power as the rate at which energy is transferred and
+use examples to explain this definition
+1c
+8.13 Recall and use the equation:
+power (watt, W) = work done (joule, J) ÷ time taken
+(second, s)
+
+t
+EP =
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+8.14 Recall that one watt is equal to one joule per second, J/s 1c
+8.15 Recall and use the equation:
+
+( )
+( )devicethetopliedsupenergytotal
+devicethebydtransferreenergyusefulefficiency =
+
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+Use of mathematics
+● Make calculations of the energy changes associated with changes in a system, recalling or
+selecting the relevant equations for mechanical, electrical, and thermal processes; thereby
+express in quantitative form and on a common scale the overall redistribution of energy in
+the system (1a, 1c, 3c).
+● Calculate relevant values of stored energy and energy transfers; convert between
+newton-metres and joules (1c, 3c).
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+Suggested practicals
+● Investigate power by moving up the stairs, step-ups onto a low platform or lifting objects
+of different weights.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+31
+Topic 9 – Forces and their effects
+
+Students should: Maths skills
+9.1 Describe, with examples, how objects can interact
+a at a distance without contact, linking these to the
+gravitational, electrostatic and magnetic fields involved
+b by contact, including normal contact force and friction
+c producing pairs of forces which can be represented as
+vectors
+
+9.2 Explain the difference between vector and scalar quantities
+using examples
+
+9.3 Use vector diagrams to illustrate resolution of forces, a
+net force, and equilibrium situations (scale drawings
+only)
+4a, 5a, 5b
+9.4 Draw and use free body force diagrams 4a, 5a, 5b
+9.5 Explain examples of the forces acting on an isolated
+solid object or a system where several forces lead to a
+resultant force on an object and the special case of
+balanced forces when the resultant force is zero
+5a
+9.6P Describe situations where forces can cause rotation
+9.7P Recall and use the equation:
+moment of a force (newton metre, N m) = force (newton, N) ×
+distance normal to the direction of the force (metre, m)
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+9.8P Recall and use the principle of moments in situations where
+rotational forces are in equilibrium:
+the sum of clockwise moments = the sum of anti-clockwise
+moments
+for rotational forces in equilibrium
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+9.9P Explain how levers and gears transmit the rotational effects of
+forces
+5b
+9.10 Explain ways of reducing unwanted energy transfer through
+lubrication
+
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Use vector diagrams to illustrate resolution of forces, a net force, and
+equilibrium situations (scale drawings only) (4a, 5a, 5b).
+Suggested practicals
+● Investigate levers and gears.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+32
+Topic 10 – Electricity and circuits
+
+Students should: Maths skills
+10.1 Describe the structure of the atom, limited to the position,
+mass and charge of protons, neutrons and electrons
+5b
+10.2 Draw and use electric circuit diagrams representing them with
+the conventions of positive and negative terminals, and the
+symbols that represent cells, including batteries, switches,
+voltmeters, ammeters, resistors, variable resistors, lamps,
+motors, diodes, thermistors, LDRs and LEDs
+5b
+10.3 Describe the differences between series and parallel circuits
+10.4 Recall that a voltmeter is connected in parallel with a
+component to measure the potential difference (voltage), in
+volt, across it
+
+10.5 Explain that potential difference (voltage) is the energy
+transferred per unit charge passed and hence that the volt is a
+joule per coulomb
+1a, 1c
+3c
+10.6 Recall and use the equation:
+energy transferred (joule, J) = charge moved (coulomb, C) ×
+potential difference (volt, V)
+VQE ×=
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+10.7 Recall that an ammeter is connected in series with a
+component to measure the current, in amp, in the component
+
+10.8 Explain that an electric current as the rate of flow of charge
+and the current in metals is a flow of electrons
+
+10.9 Recall and use the equation:
+charge (coulomb, C) = current (ampere, A) × time (second, s)
+tIQ ×=
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+10.10 Describe that when a closed circuit includes a source of
+potential difference there will be a current in the circuit
+
+10.11 Recall that current is conserved at a junction in a circuit
+10.12 Explain how changing the resistance in a circuit changes the
+current and how this can be achieved using a variable resistor
+
+10.13 Recall and use the equation:
+potential difference (volt, V) = current (ampere, A) ×
+resistance (ohm, Ω)
+RIV ×=
+1a, 1d
+2a
+3a, 3c, 3d
+10.14 Explain why, if two resistors are in series, the net resistance is
+increased, whereas with two in parallel the net resistance is
+decreased
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+33
+
+Students should: Maths skills
+10.15 Calculate the currents, potential differences and resistances in
+series circuits
+1a, 1d
+2a
+3a, 3c, 3d
+10.16 Explain the design and construction of series circuits for
+testing and measuring
+
+10.17 Core Practical: Construct electrical circuits to:
+a investigate the relationship between potential difference,
+current and resistance for a resistor and a filament lamp
+b test series and parallel circuits using resistors and filament
+lamps
+1a, 1c, 1d
+2a, 2b, 2f
+3a, 3b, 3c, 3d
+4a, 4b, 4c, 4d,
+4e
+10.18 Explain how current varies with potential difference for the
+following devices and how this relates to resistance
+a filament lamps
+b diodes
+c fixed resistors
+2g
+4a, 4b, 4c, 4d,
+4e
+10.19 Describe how the resistance of a light-dependent resistor
+(LDR) varies with light intensity
+4c, 4d
+10.20 Describe how the resistance of a thermistor varies with change
+of temperature (negative temperature coefficient thermistors
+only)
+4c, 4d
+10.21 Explain how the design and use of circuits can be used to
+explore the variation of resistance in the following devices
+a filament lamps
+b diodes
+c thermistors
+d LDRs
+5b
+10.22 Recall that, when there is an electric current in a resistor,
+there is an energy transfer which heats the resistor
+
+10.23 Explain that electrical energy is dissipated as thermal energy
+in the surroundings when an electrical current does work
+against electrical resistance
+
+10.24 Explain the energy transfer (in 10.22 above) as the result of
+collisions between electrons and the ions in the lattice
+
+10.25 Explain ways of reducing unwanted energy transfer
+through low resistance wires
+
+10.26 Describe the advantages and disadvantages of the heating
+effect of an electric current
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+34
+
+Students should: Maths skills
+10.27 Use the equation:
+energy transferred (joule, J) = current (ampere, A) × potential
+difference (volt, V) × time (second, s)
+tVIE ××=
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+10.28 Describe power as the energy transferred per second and
+recall that it is measured in watt
+1c
+10.29 Recall and use the equation:
+power (watt, W) = energy transferred (joule, J) ÷ time taken
+(second, s)
+
+t
+EP =
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+10.30 Explain how the power transfer in any circuit device is related
+to the potential difference across it and the current in it
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+10.31 Recall and use the equations:
+electrical power (watt, W) = current (ampere, A) × potential
+difference (volt, V)
+VIP ×=
+electrical power (watt, W) = current squared (ampere2, A2) ×
+resistance (ohm, Ω)
+RIP ×= 2
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+10.32 Describe how, in different domestic devices, energy is
+transferred from batteries and the a.c. mains to the energy of
+motors and heating devices
+
+10.33 Explain the difference between direct and alternating voltage 4c
+10.34 Describe direct current (d.c.) as movement of charge in one
+direction only and recall that cells and batteries supply direct
+current (d.c.)
+
+10.35 Describe that in alternating current (a.c.) the movement of
+charge changes direction
+
+10.36 Recall that in the UK the domestic supply is a.c., at a
+frequency of 50 Hz and a voltage of about 230 V
+
+10.37 Explain the difference in function between the live and the
+neutral mains input wires
+
+10.38 Explain the function of an earth wire and of fuses or circuit
+breakers in ensuring safety
+
+10.39 Explain why switches and fuses should be connected in the live
+wire of a domestic circuit
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+35
+
+Students should: Maths skills
+10.40 Recall the potential differences between the live, neutral and
+earth mains wires
+
+10.41 Explain the dangers of providing any connection between the
+live wire and earth
+
+10.42 Describe, with examples, the relationship between the power
+ratings for domestic electrical appliances and the changes in
+stored energy when they are in use
+1c
+2c
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Apply the equations relating p.d., current, quantity of charge, resistance, power, energy,
+and time, and solve problems for circuits which include resistors in series, using the
+concept of equivalent resistance (1c, 3b, 3c, 3d).
+● Use graphs to explore whether circuit elements are linear or non-linear and relate the
+curves produced to their function and properties (4c, 4d).
+● Make calculations of the energy changes associated with changes in a system, recalling or
+selecting the relevant equations for mechanical, electrical, and thermal processes; thereby
+express in quantitative form and on a common scale the overall redistribution of energy in
+the system (1a, 1c, 3c).
+Suggested practicals
+● Investigate the power consumption of low-voltage electrical items.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+36
+Topic 11 – Static electricity
+
+Students should: Maths skills
+11.1P Explain how an insulator can be charged by friction, through
+the transfer of electrons
+
+11.2P Explain how the material gaining electrons becomes negatively
+charged and the material losing electrons is left with an equal
+positive charge
+
+11.3P Recall that like charges repel and unlike charges attract
+11.4P Explain common electrostatic phenomena in terms of
+movement of electrons, including
+a shocks from everyday objects
+b lightning
+c attraction by induction such as a charged balloon attracted
+to a wall and a charged comb picking up small pieces of
+paper
+
+11.5P Explain how earthing removes excess charge by movement of
+electrons
+
+11.6P Explain some of the uses of electrostatic charges in everyday
+situations, including insecticide sprayers
+
+11.7P Describe some of the dangers of sparking in everyday
+situations, including fuelling cars, and explain the use of
+earthing to prevent dangerous build-up of charge
+
+11.8P Define an electric field as the region where an electric charge
+experiences a force
+
+11.9P Describe the shape and direction of the electric field around a
+point charge and between parallel plates and relate the
+strength of the field to the concentration of lines
+5b
+11.10P Explain how the concept of an electric field helps to explain the
+phenomena of static electricity
+
+Suggested practicals
+● Investigate the forces of attraction and repulsion between charged objects.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+37
+Topic 12 – Magnetism and the motor effect
+
+Students should: Maths skills
+12.1 Recall that unlike magnetic poles attract and like magnetic
+poles repel
+
+12.2 Describe the uses of permanent and temporary magnetic
+materials including cobalt, steel, iron and nickel
+
+12.3 Explain the difference between permanent and induced
+magnets
+
+12.4 Describe the shape and direction of the magnetic field around
+bar magnets and for a uniform field, and relate the strength of
+the field to the concentration of lines
+5b
+12.5 Describe the use of plotting compasses to show the shape and
+direction of the field of a magnet and the Earth’s magnetic
+field
+5b
+12.6 Explain how the behaviour of a magnetic compass is related to
+evidence that the core of the Earth must be magnetic
+5b
+12.7 Describe how to show that a current can create a magnetic
+effect around a long straight conductor, describing the shape
+of the magnetic field produced and relating the direction of the
+magnetic field to the direction of the current
+5b
+12.8 Recall that the strength of the field depends on the size of the
+current and the distance from the long straight conductor
+
+12.9 Explain how inside a solenoid (an example of an
+electromagnet) the fields from individual coils
+a add together to form a very strong almost uniform field
+along the centre of the solenoid
+b cancel to give a weaker field outside the solenoid
+5b
+12.10 Recall that a current carrying conductor placed near a
+magnet experiences a force and that an equal and
+opposite force acts on the magnet
+5b
+12.11 Explain that magnetic forces are due to interactions
+between magnetic fields
+
+12.12 Recall and use Fleming’s left-hand rule to represent the
+relative directions of the force, the current and the
+magnetic field for cases where they are mutually
+perpendicular
+5b
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+38
+
+Students should: Maths skills
+12.13 Use the equation:
+force on a conductor at right angles to a magnetic field
+carrying a current (newton, N) = magnetic flux density
+(tesla, T or newton per ampere metre, N/A m) × current
+(ampere, A) × length (metre, m)
+lIBF ××=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+12.14P Explain how the force on a conductor in a magnetic field
+is used to cause rotation in electric motors
+5b
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+Suggested practicals
+● Construct an electric motor.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+39
+Topic 13 – Electromagnetic induction
+
+Students should: Maths skills
+13.1P Explain how to produce an electric current by the
+relative movement of a magnet and a conductor
+a on a small scale in the laboratory
+b in the large-scale generation of electrical energy
+
+13.2 Recall the factors that affect the size and direction of an
+induced potential difference, and describe how the
+magnetic field produced opposes the original change
+5b
+13.3P Explain how electromagnetic induction is used in
+alternators to generate current which alternates in
+direction (a.c.) and in dynamos to generate direct
+current (d.c.)
+5b
+13.4P Explain the action of the microphone in converting the
+pressure variations in sound waves into variations in
+current in electrical circuits, and the reverse effect as
+used in loudspeakers and headphones
+5b
+13.5 Explain how an alternating current in one circuit can
+induce a current in another circuit in a transformer
+
+13.6 Recall that a transformer can change the size of an
+alternating voltage
+
+13.7P Use the turns ratio equation for transformers to
+calculate either the missing voltage or the missing
+number of turns:
+
+coilondarysecinturnsofnumber
+coilprimaryinturnsofnumber
+coilondarysecacrossdifferencepotential
+coilprimaryacrossdifferencepotential =
+
+
+N
+N
+V
+V
+s
+p
+s
+p
+=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+5b
+13.8 Explain why, in the national grid, electrical energy is
+transferred at high voltages from power stations, and then
+transferred at lower voltages in each locality for domestic uses
+as it improves the efficiency by reducing heat loss in
+transmission lines
+
+13.9 Explain where and why step-up and step-down transformers
+are used in the transmission of electricity in the national grid
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+40
+
+Students should: Maths skills
+13.10 Use the power equation (for transformers with100%
+efficiency):
+potential difference across primary coil (volt, V) × current in
+primary coil (ampere, A) = potential difference across
+secondary coil (volt, V) × current in secondary coil (ampere,
+A)
+SSPP IVIV ×=×
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+13.11P Explain the advantages of power transmission in high-
+voltage cables, using the equations in 10.29, 10.31,
+13.7P and 13.10
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+5b
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Apply the equations linking the p.d.s and numbers of turns in the two coils of a
+transformer, to the currents and the power transfer involved, and relate these to
+the advantages of power transmission at high voltages (1c, 3b, 3c).
+● Make calculations of the energy changes associated with changes in a system, recalling or
+selecting the relevant equations for mechanical, electrical, and thermal processes; thereby
+express in quantitative form and on a common scale the overall redistribution of energy in
+the system (1a, 1c, 3c).
+Suggested practicals
+● Investigate factors affecting the generation of electric current by induction.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+41
+Topic 14 – Particle model
+
+Students should: Maths skills
+14.1 Use a simple kinetic theory model to explain the different
+states of matter (solids, liquids and gases) in terms of the
+movement and arrangement of particles
+
+14.2 Recall and use the equation:
+density (kilogram per cubic metre, kg/m3) = mass (kilogram,
+kg) ÷ volume (cubic metre, m3)
+V
+m=ρ
+
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+5c
+14.3 Core Practical: Investigate the densities of solid and liquids 1a, 1b, 1c, 1d
+2a, 2c, 2f
+3a, 3b, 3c, 3d
+4a, 4c
+5c
+14.4 Explain the differences in density between the different states
+of matter in terms of the arrangements of the atoms or
+molecules
+5b
+14.5 Describe that when substances melt, freeze, evaporate, boil,
+condense or sublimate mass is conserved and that these
+physical changes differ from some chemical changes because
+the material recovers its original properties if the change is
+reversed
+
+14.6 Explain how heating a system will change the energy stored
+within the system and raise its temperature or produce
+changes of state
+
+14.7 Define the terms specific heat capacity and specific latent heat
+and explain the differences between them
+
+14.8 Use the equation:
+change in thermal energy (joule, J) = mass (kilogram, kg) ×
+specific heat capacity (joule per kilogram degree Celsius,
+J/kg °C) × change in temperature (degree Celsius, °C)
+θ∆××=∆ cmQ
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+14.9 Use the equation:
+thermal energy for a change of state (joule , J) = mass
+(kilogram, kg) × specific latent heat (joule per kilogram, J/kg)
+LmQ ×=
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+14.10 Explain ways of reducing unwanted energy transfer through
+thermal insulation
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+42
+
+Students should: Maths skills
+14.11 Core Practical: Investigate the properties of water by
+determining the specific heat capacity of water and obtaining a
+temperature-time graph for melting ice
+1a, 1b, 1c, 1d
+2a, 2b, 2f
+3a, 3b, 3c, 3d
+4a, 4c, 4e
+14.12 Explain the pressure of a gas in terms of the motion of its
+particles
+5b
+14.13 Explain the effect of changing the temperature of a gas on the
+velocity of its particles and hence on the pressure produced by
+a fixed mass of gas at constant volume (qualitative only)
+5b
+14.14 Describe the term absolute zero, −273 °C, in terms of the lack
+of movement of particles
+
+14.15 Convert between the kelvin and Celsius scales 1a
+2a
+14.16P Explain that gases can be compressed or expanded by
+pressure changes
+
+14.17P Explain that the pressure of a gas produces a net force at right
+angles to any surface
+
+14.18P Explain the effect of changing the volume of a gas on the rate
+at which its particles collide with the walls of its container and
+hence on the pressure produced by a fixed mass of gas at
+constant temperature
+5b
+14.19P Use the equation:
+2211 VPVP ×=×
+to calculate pressure or volume for gases of fixed mass at
+constant temperature
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+14.20P Explain why doing work on a gas can increase its
+temperature, including a bicycle pump
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+43
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Make calculations of the energy changes associated with changes in a system, recalling or
+selecting the relevant equations for mechanical, electrical, and thermal processes; thereby
+express in quantitative form and on a common scale the overall redistribution of energy in
+the system (1a, 1c, 3c).
+● Calculate relevant values of stored energy and energy transfers; convert between newton-
+metres and joules (1c, 3c).
+● Apply the relationship between density, mass and volume to changes where mass is
+conserved (1a, 1b, 1c, 3c).
+● Apply the relationship between change in internal energy of a material and its mass,
+specific heat capacity and temperature change to calculate the energy change involved;
+apply the relationship between specific latent heat and mass to calculate the energy
+change involved in a change of state (1a, 3c, 3d).
+Suggested practicals
+● Investigate the temperature and volume relationship for a gas.
+● Investigate the volume and pressure relationship for a gas.
+● Investigate latent heat of vaporisation.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+44
+Topic 15 – Forces and matter
+
+Students should: Maths skills
+15.1 Explain, using springs and other elastic objects, that
+stretching, bending or compressing an object requires more
+than one force
+
+15.2 Describe the difference between elastic and inelastic distortion
+15.3 Recall and use the equation for linear elastic distortion
+including calculating the spring constant:
+force exerted on a spring (newton, N) = spring constant
+(newton per metre, N/m) × extension (metre, m)
+xkF ×=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+15.4 Use the equation to calculate the work done in stretching a
+spring:
+energy transferred in stretching (joules, J) = 0.5 × spring
+constant (newton per metre, N/m) × (extension (metre, m))2
+
+2
+2
+1 xkE ××=
+1a, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+4c, 4e, 4f
+15.5 Describe the difference between linear and non-linear
+relationships between force and extension
+4c, 4e
+15.6 Core Practical: Investigate the extension and work done when
+applying forces to a spring
+1a, 1c, 1d
+2a, 2b, 2c, 2f
+3a, 3b, 3c, 3d
+4a, 4b, 4c, 4d
+15.7P Explain why atmospheric pressure varies with height above
+the Earth’s surface with reference to a simple model of the
+Earth’s atmosphere
+
+15.8P Describe the pressure in a fluid as being due to the fluid and
+atmospheric pressure
+
+15.9P Recall that the pressure in fluids causes a force normal to any
+surface
+
+15.10P Explain how pressure is related to force and area, using
+appropriate examples
+1c
+15.11P Recall and use the equation:
+pressure (pascal, Pa) = force normal to surface (newton, N) ÷
+area of surface (square metre, m2)
+A
+FP =
+
+1a, 1b, 1c, 1d
+2a
+3a, 3c, 3d
+5b, 5c
+15.12P Describe how pressure in fluids increases with depth and
+density
+1c
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+45
+
+Students should: Maths skills
+15.13P Explain why the pressure in liquids varies with density
+and depth
+1c
+15.14P Use the equation to calculate the magnitude of the
+pressure in liquids and calculate the differences in
+pressure at different depths in a liquid:
+pressure due to a column of liquid (pascal, Pa) = height
+of column (metre, m) × density of liquid (kilogram per
+cubic metre, kg/m3) × gravitational field strength
+(newton per kilogram, N/kg)
+ghP ××= ρ
+1a, 1b, 1c, 1d
+2a
+3a, 3b, 3c, 3d
+15.15P Explain why an object in a fluid is subject to an upwards
+force (upthrust) and relate this to examples including
+objects that are fully immersed in a fluid (liquid or gas)
+or partially immersed in a liquid
+5b
+15.16P Recall that the upthrust is equal to the weight of fluid
+displaced
+
+15.17P Explain how the factors (upthrust, weight, density of
+fluid) influence whether an object will float or sink
+5b
+Use of mathematics
+● Make calculations using ratios and proportional reasoning to convert units and to compute
+rates (1c, 3c).
+● Calculate the differences in pressure at different depths in a liquid (1c, 3c).
+● Calculate relevant values of stored energy and energy transfers; convert between newton-
+metres and joules (1c, 3c).
+● Make calculations of the energy changes associated with changes in a system, recalling or
+selecting the relevant equations for mechanical, electrical, and thermal processes; thereby
+express in quantitative form and on a common scale the overall redistribution of energy in
+the system (1a, 1c, 3c).
+Suggested practicals
+● Investigate the upthrust on objects in different liquids.
+● Investigate the stretching of rubber bands.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+46
+3 Assessment information
+Paper 1 (Paper code: 1PH0/1F, 1PH0/1H)
+● First assessment: May/June 2018.
+● The assessment is 1 hour and 45 minutes.
+● The assessment is out of 100 marks.
+● The assessment consists of ten questions.
+● Students must answer all questions.
+● The paper will include multiple-choice, short answer questions, calculations and extended
+open response questions.
+● Calculators may be used in the examination.
+● Available at foundation tier and higher tier.
+● Students must complete all assessments for this qualification in the same tier.
+● The foundation tier paper will target grades 1–5.
+● The higher tier paper will target grades 4–9.
+● 27 marks of the paper will be overlap questions that appear in both the foundation and
+higher tier papers.
+Content assessed
+● Topic 1 – Key concepts of physics
+● Topic 2 – Motion and forces
+● Topic 3 – Conservation of energy
+● Topic 4 – Waves
+● Topic 5 – Light and the electromagnetic spectrum
+● Topic 6 – Radioactivity
+● Topic 7 – Astronomy
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+47
+
+Paper 2 (Paper code: 1PH0/2F, 1PH0/2H)
+● First assessment: May/June 2018.
+● The assessment is 1 hour and 45 minutes.
+● The assessment is out of 100 marks.
+● The assessment consists of ten questions.
+● Students must answer all questions.
+● The paper will include multiple-choice, short answer questions, calculations and extended
+open response questions.
+● Calculators may be used in the examination.
+● Available at foundation tier and higher tier.
+● Students must complete all assessments for this qualification in the same tier.
+● The foundation tier paper will target grades 1–5.
+● The higher tier paper will target grades 4–9.
+● 27 marks of the paper will be overlap questions that appear in both the foundation and
+higher tier papers.
+Content assessed
+● Topic 1 – Key concepts of physics
+● Topic 8 – Energy - Forces doing work
+● Topic 9 – Forces and their effects
+● Topic 10 – Electricity and circuits
+● Topic 11 – Static electricity
+● Topic 12 – Magnetism and the motor effect
+● Topic 13 – Electromagnetic induction
+● Topic 14 – Particle model
+● Topic 15 – Forces and matter
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+48
+Assessment Objectives
+Students must:
+% in
+GCSE
+AO1 Demonstrate knowledge and understanding of:
+● scientific ideas
+● scientific techniques and procedures.
+40
+AO2 Apply knowledge and understanding of:
+● scientific ideas
+● scientific enquiry, techniques and procedures.
+40
+AO3 Analyse information and ideas to:
+● interpret and evaluate
+● make judgements and draw conclusions
+● develop and improve experimental procedures.
+20
+Total 100%
+
+Breakdown of Assessment Objectives
+Paper
+Assessment Objectives Total for all
+Assessment
+Objectives AO1 % AO2 % AO3 %
+Paper 1 (F/H) 20 20 10 50%
+Paper 2 (F/H) 20 20 10 50%
+Total for GCSE 40% ±3 40% ±3 20% ±3 100%
+
+Synoptic assessment
+Synoptic assessment requires students to work across different parts of a qualification and to
+show their accumulated knowledge and understanding of a topic or subject area.
+Synoptic assessment enables students to show their ability to combine their skills, knowledge
+and understanding with breadth and depth of the subject.
+Questions that naturally draw together different aspects of physics will assess synopticity.
+Sample assessment materials
+Sample papers and mark schemes can be found in the Pearson Edexcel Level 1/Level 2
+GCSE (9–1) in Physics Sample Assessment Materials (SAMs) document.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+49
+4 Administration and general information
+Entries
+Details of how to enter students for the examinations for this qualification can be found in
+our UK Information Manual. A copy is made available to all examinations officers and is
+available on our website: qualifications.pearson.com
+Discount code and performance tables
+Centres should be aware that students who enter for more than one GCSE, or other Level 2
+qualifications with the same discount code, will have only the grade for their 'first entry'
+counted for the purpose of the school and college performance tables (please see
+Appendix 9: Codes). For further information about what constitutes 'first entry' and full
+details of how this policy is applied, please refer to the DfE website:
+www.gov.uk/government/organisations/department-for-education
+Students should be advised that if they take two GCSEs with the same discount code,
+schools and colleges they wish to progress to are likely to take the view that this
+achievement is equivalent to only one GCSE. The same view may be taken if students take
+two GCSEs or other Level 2 qualifications that have different discount codes but have
+significant overlap of content. Students or their advisers who have any doubts about their
+subject combinations should check with the institution they wish to progress to before
+embarking on their programmes.
+Access arrangements, reasonable adjustments,
+special consideration and malpractice
+Equality and fairness are central to our work. Our equality policy requires all students to
+have equal opportunity to access our qualifications and assessments, and our qualifications
+to be awarded in a way that is fair to every student.
+We are committed to making sure that:
+● students with a protected characteristic (as defined by the Equality Act 2010) are not,
+when they are undertaking one of our qualifications, disadvantaged in comparison to
+students who do not share that characteristic
+● all students achieve the recognition they deserve for undertaking a qualification and that
+this achievement can be compared fairly to the achievement of their peers.
+Language of assessment
+Assessment of this qualification will be available in English. All student work must be in
+English.
+Access arrangements
+Access arrangements are agreed before an assessment. They allow students with special
+educational needs, disabilities or temporary injuries to:
+● access the assessment
+● show what they know and can do without changing the demands of the assessment.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+50
+The intention behind an access arrangement is to meet the particular needs of an individual
+student with a disability, without affecting the integrity of the assessment. Access
+arrangements are the principal way in which awarding bodies comply with the duty under the
+Equality Act 2010 to make ‘reasonable adjustments’.
+Access arrangements should always be processed at the start of the course. Students will
+then know what is available and have the access arrangement(s) in place for assessment.
+Reasonable adjustments
+The Equality Act 2010 requires an awarding organisation to make reasonable adjustments
+where a person with a disability would be at a substantial disadvantage in undertaking an
+assessment. The awarding organisation is required to take reasonable steps to overcome
+that disadvantage.
+A reasonable adjustment for a particular person may be unique to that individual and
+therefore might not be in the list of available access arrangements.
+Whether an adjustment will be considered reasonable will depend on a number of factors,
+which will include:
+● the needs of the student with the disability
+● the effectiveness of the adjustment
+● the cost of the adjustment; and
+● the likely impact of the adjustment on the student with the disability and other students.
+An adjustment will not be approved if it involves unreasonable costs to the awarding
+organisation, timeframes or affects the security or integrity of the assessment. This is
+because the adjustment is not ‘reasonable’.
+Special consideration
+Special consideration is a post-examination adjustment to a student's mark or grade to
+reflect temporary injury, illness or other indisposition at the time of the examination/
+assessment, which has had, or is reasonably likely to have had, a material effect on a
+candidate’s ability to take an assessment or demonstrate their level of attainment in
+an assessment.
+Private candidates
+Private candidates can complete this qualification only if they carry-out the mandatory core
+practicals with the centre in which they are sitting the exams, as long as the centre is willing
+to accept the candidate. These candidates need to fulfil the same requirements as all other
+candidates.
+Further information
+Please see our website for further information about how to apply for access arrangements
+and special consideration.
+For further information about access arrangements, reasonable adjustments and special
+consideration, please refer to the JCQ website: www.jcq.org.uk.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+51
+Malpractice
+Candidate malpractice
+Candidate malpractice refers to any act by a candidate that compromises or seeks to
+compromise the process of assessment or which undermines the integrity of the
+qualifications or the validity of results/certificates.
+Candidate malpractice in examinations must be reported to Pearson using a JCQ M1 Form
+(available at www.jcq.org.uk/exams-office/malpractice). The form can be emailed to
+pqsmalpractice@pearson.com or posted to Investigations Team, Pearson, 190 High Holborn,
+London, WC1V 7BH. Please provide as much information and supporting documentation as
+possible. Note that the final decision regarding appropriate sanctions lies with Pearson.
+Failure to report malpractice constitutes staff or centre malpractice.
+Staff/centre malpractice
+Staff and centre malpractice includes both deliberate malpractice and maladministration of
+our qualifications. As with candidate malpractice, staff and centre malpractice is any act that
+compromises or seeks to compromise the process of assessment or which undermines the
+integrity of the qualifications or the validity of results/certificates.
+All cases of suspected staff malpractice and maladministration must be reported
+immediately, before any investigation is undertaken by the centre, to Pearson on
+a JCQ M2(a) Form (available at www.jcq.org.uk/exams-office/malpractice). The form,
+supporting documentation and as much information as possible can be emailed to
+pqsmalpractice@pearson.com or posted to Investigations Team, Pearson,
+190 High Holborn, London, WC1V 7BH. Note that the final decision regarding
+appropriate sanctions lies with Pearson.
+Failure to report malpractice itself constitutes malpractice.
+More-detailed guidance on malpractice can be found in the latest version of the document
+JCQ General and Vocational Qualifications Suspected Malpractice in Examinations and
+Assessments, available at www.jcq.org.uk/exams-office/malpractice.
+Awarding and reporting
+This qualification will be graded, awarded and certificated to comply with the requirements of
+Ofqual's General Conditions of Recognition.
+This GCSE qualification will be graded and certificated on a nine-grade scale from 9 to 1
+using the total subject mark where 9 is the highest grade. Individual papers are not graded.
+For foundation tier, grades 1–5 are available and for higher tier, grades 4–9 are available,
+however if the mark achieved is a smaller number of marks below the 4/3 grade boundary,
+then a grade 3 may be awarded.
+Students whose level of achievement is below the minimum judged by Pearson to be of
+sufficient standard to be recorded on a certificate will receive an unclassified U result.
+The first certification opportunity for this qualification will be 2018.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+52
+Student recruitment and progression
+Pearson follows the JCQ policy concerning recruitment to our qualifications in that:
+● they must be available to anyone who is capable of reaching the required standard
+● they must be free from barriers that restrict access and progression
+● equal opportunities exist for all students.
+Prior learning and other requirements
+This qualification is based on the subject content, published by the DfE. The DfE designed the
+subject content to reflect or build on Key Stage 3. Consequently, students taking this
+qualification will benefit from previously studying Physics at Key Stage 3.
+Progression
+Students can progress from this qualification to:
+● GCEs, for example in Physics
+● Level 3 vocational qualifications in science, for example BTEC Level 3 in Applied Science
+● employment, for example in a science-based industry where an Apprenticeship may be
+available.
+The content and skills for these qualifications are set by the DfE to be suitable to allow these
+progression routes.
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+53
+Appendices
+Appendix 1: Mathematical skills 55
+Appendix 2: Equations in Physics 57
+Appendix 3: SI Units in Physics 61
+Appendix 4: Taxonomy 62
+Appendix 5: Apparatus and techniques 64
+Appendix 6: Practical Science Statement 68
+Appendix 7: The context for the development of this qualification 69
+Appendix 8: Transferable skills 71
+Appendix 9: Codes 72
+Appendix 10: Calculators 73
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+54
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+55
+Appendix 1: Mathematical skills
+This appendix is taken from the document Biology, Chemistry and Physics GCSE subject
+content published by the Department for Education (DfE) in June 2014.
+The mathematical skills and use of mathematics statements listed will be assessed through
+the content of this qualification in the examinations. The minimum level of mathematics in
+the foundation tier examination papers will be equivalent to Key Stage 3 mathematics. The
+minimum level of mathematics in the higher tier examination papers will be equivalent to
+foundation tier GCSE in Mathematics.
+Mathematical skills
+Details of the mathematical skills in other science subjects are given for reference.
+
+Biology Chemistry Physics
+1 Arithmetic and numerical computation
+a Recognise and use expressions in decimal form   
+b Recognise and use expressions in standard form   
+c Use ratios, fractions and percentages   
+d Make estimates of the results of simple calculations   
+2 Handling data
+a Use an appropriate number of significant figures   
+b Find arithmetic means   
+c Construct and interpret frequency tables and
+diagrams, bar charts and histograms
+  
+d Understand the principles of sampling as applied to
+scientific data
+
+e Understand simple probability 
+f Understand the terms mean, mode and median  
+g Use a scatter diagram to identify a correlation
+between two variables
+ 
+h Make order of magnitude calculations   
+3 Algebra
+a Understand and use the symbols: =, <, <<, >>, >,
+∝, ~
+  
+b Change the subject of an equation  
+c Substitute numerical values into algebraic equations
+using appropriate units for physical quantities
+ 
+d Solve simple algebraic equations  
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+56
+
+Biology Chemistry Physics
+4 Graphs
+a Translate information between graphical and
+numeric form
+  
+b Understand that y = mx + c represents a linear
+relationship
+  
+c Plot two variables from experimental or other data   
+d Determine the slope and intercept of a linear graph   
+e Draw and use the slope of a tangent to a curve as a
+measure of rate of change
+ 
+f Understand the physical significance of area
+between a curve and the x-axis and measure it by
+counting squares as appropriate
+
+5 Geometry and trigonometry
+a Use angular measures in degrees 
+b Visualise and represent 2D and 3D forms, including
+two dimensional representations of 3D objects
+ 
+c Calculate areas of triangles and rectangles, surface
+areas and volumes of cubes.
+  
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+57
+Appendix 2: Equations in Physics
+This appendix is taken from the document Biology, Chemistry and Physics GCSE subject
+content published by the Department for Education (DfE) in June 2014.
+This identifies which equations students are required to recall and apply (list a) and which
+they are required to select from a list and apply (list b). List b also includes three additional
+equations to the DfE equations.
+a Students should be able to recall and apply all the following equations
+Students may be asked to recall, recall and apply, or only apply these equations in the exam
+papers. If students are required to only apply an equation from this section the equation will
+be given in the question.
+Equations required for higher tier only are shown in bold text. Higher tier only equations will
+not be required in the foundation tier papers.
+
+Specification
+reference
+Equation
+2.6b distance travelled = average speed × time
+2.8 acceleration = change in velocity ÷ time taken
+( )
+t
+uva −=
+2.15 force = mass × acceleration
+amF ×=
+2.16 weight = mass × gravitational field strength
+gmW ×=
+2.24 momentum = mass × velocity
+vmp ×=
+3.1 and 8.8 change in gravitational potential energy = mass × gravitational field
+strength × change in vertical height
+hgmGPE ∆××=∆
+3.2 and 8.9 kinetic energy =
+2
+1 × mass × (speed)2
+2
+2
+1 vmKE ××=
+3.11 and 8.15 ( )
+( )devicethetopliedsupenergytotal
+devicethebydtransferreenergyusefulefficiency =
+
+4.6 wave speed = frequency × wavelength
+λ×= fv
+wave speed = distance ÷ time
+t
+xv =
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+58
+
+Specification
+reference
+Equation
+8.6 work done = force × distance moved in the direction of the force
+dFE ×=
+8.13 power = work done ÷ time taken
+t
+EP =
+9.7P moment of a force = force × distance normal to the direction of the force
+10.6 energy transferred = charge moved × potential difference
+VQE ×=
+10.9 charge = current × time
+tIQ ×=
+10.13 potential difference = current × resistance
+RIV ×=
+10.29 power = energy transferred ÷ time taken
+
+t
+EP =
+10.31 electrical power = current × potential difference
+VIP ×=
+electrical power = current squared × resistance
+RIP ×= 2
+14.2 density = mass ÷ volume
+V
+m=ρ
+
+15.3 force exerted on a spring = spring constant × extension
+xkF ×=
+15.11P pressure = force normal to surface ÷ area of surface
+A
+FP =
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+59
+b Students should be able to select and apply the following equations
+Students may be asked to select and apply these equations in the exam papers. These
+equations will be given in a formulae sheet at the end of the exam papers.
+Equations required for higher tier only are shown in bold text. Higher tier only equations will
+not be given in the formulae sheet for the foundation tier papers.
+
+Specification
+reference
+Equation
+2.9 (final velocity)2 – (initial velocity)2 = 2 × acceleration × distance
+xauv ××=− 222
+2.26 force = change in momentum ÷ time
+( )
+t
+mumvF −=
+
+10.27 energy transferred = current × potential difference × time
+tVIE ××=
+12.13 force on a conductor at right angles to a magnetic field carrying a
+current = magnetic flux density × current × length
+lIBF ××=
+13.7P
+coilondarysecinturnsofnumber
+coilprimaryinturnsofnumber
+coilondarysecacrossdifferencepotential
+coilprimaryacrossdifferencepotential =
+N
+N
+V
+V
+s
+p
+s
+p
+=
+13.10 For transformers with 100% efficiency, potential difference across primary
+coil × current in primary coil = potential difference across secondary coil ×
+current in secondary coil
+PP SSVI VI×=×
+14.8 change in thermal energy = mass × specific heat capacity × change in
+temperature
+θ∆××=∆ cmQ
+14.9 thermal energy for a change of state = mass × specific latent heat
+LmQ ×=
+14.19P 2211 VPVP ×=×
+to calculate pressure or volume for gases of fixed mass at constant
+temperature
+15.4 energy transferred in stretching = 0.5 × spring constant × (extension)2
+2
+2
+1 xkE ××=
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+60
+
+Specification
+reference
+Equation
+15.14P pressure due to a column of liquid = height of column × density of
+liquid × gravitational field strength
+ghP ××= ρ
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+61
+Appendix 3: SI Units in Physics
+This appendix is taken from the document Biology, Chemistry and Physics GCSE subject
+content published by the Department for Education (DfE) in June 2014.
+The International System of Units (Système International d'Unités), which is abbreviated SI,
+is a coherent system of base units. The six which are relevant for the GCSE in Physics are
+listed below. Also listed are eight of the derived units (which have special names) selected
+from the SI list of derived units in the same source.
+Base units
+These units and their associated quantities are dimensionally independent.
+metre
+Unit symbol: m
+kilogram
+Unit symbol: kg
+second
+Unit symbol: s
+ampere
+Unit symbol: A
+kelvin
+Unit symbol: K
+mole
+Unit symbol: mol
+Some derived units with special names
+name unit abbreviation
+Frequency hertz Hz
+Force newton N
+Energy joule J
+Power watt W
+Pressure pascal Pa
+Electric charge coulomb C
+Electric potential difference volt V
+Electric resistance ohm Ω
+Magnetic flux density tesla T
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+62
+Appendix 4: Taxonomy
+The following table lists the command words used in the external assessments.
+
+Command word Definition
+Add/Label Requires the addition or labelling to a stimulus material given
+in the question, for example labelling a diagram or adding
+units to a table.
+Assess Give careful consideration to all the factors or events that
+apply and identify which are the most important or relevant.
+Make a judgement on the importance of something, and come
+to a conclusion where needed.
+Calculate Obtain a numerical answer, showing relevant working. If the
+answer has a unit, this must be included. This can include
+using an equation to calculate a numerical answer.
+Comment on Requires the synthesis of a number of variables from
+data/information to form a judgement.
+Compare Looking for the similarities or differences of two (or more)
+things. Should not require the drawing of a conclusion. Answer
+must relate to both (or all) things mentioned in the question.
+Compare and contrast Looking for the similarities and differences of two (or more)
+things. Should not require the drawing of a conclusion. Answer
+must relate to both (or all) things mentioned in the question.
+The answer must include at least one similarity and one
+difference.
+Complete Requires the completion of a table/diagram.
+Deduce Draw/reach conclusion(s) from the information provided.
+Describe To give an account of something. Statements in the response
+need to be developed as they are often linked but do not need
+to include a justification or reason.
+Determine The answer must have an element which is quantitative from
+the stimulus provided, or must show how the answer can be
+reached quantitatively. To gain maximum marks there must
+be a quantitative element to the answer.
+Devise Plan or invent a procedure from existing principles/ideas.
+Discuss
+
+Identify the issue/situation/problem/argument that is being
+assessed within the question.
+Explore all aspects of an issue/situation/problem/argument.
+Investigate the issue/situation etc. by reasoning or argument.
+Draw Produce a diagram either using a ruler or using freehand.
+Estimate Find an approximate value, number, or quantity from a
+diagram/given data or through a calculation .
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+63
+
+Command word Definition
+Evaluate
+
+Review information (e.g. data, methods) then bring it together
+to form a conclusion, drawing on evidence including strengths,
+weaknesses, alternative actions, relevant data or information.
+Come to a supported judgement of a subject’s qualities and
+relation to its context.
+Explain
+
+An explanation requires a justification/exemplification of a
+point.
+The answer must contain some element of
+reasoning/justification, this can include mathematical
+explanations.
+Give/State/Name All of these command words are really synonyms. They
+generally all require recall of one or more pieces of
+information.
+Give a reason/reasons When a statement has been made and the requirement is only
+to give the reasons why.
+Identify Usually requires some key information to be selected from a
+given stimulus/resource.
+Justify Give evidence to support (either the statement given in the
+question or an earlier answer).
+Measure To determine the dimensions or angle from a diagram using
+an instrument such as a ruler or protractor.
+Plot Produce a graph by marking points accurately on a grid from
+data that is provided and then drawing a line of best fit
+through these points. A suitable scale and appropriately
+labelled axes must be included if these are not provided in the
+question.
+Predict Give an expected result.
+Show that Verify the statement given in the question.
+Sketch Produce a freehand drawing. For a graph this would need a
+line and labelled axis with important features indicated, the
+axis are not scaled.
+State and explain Make a point and link ideas to justify that point. An
+explanation requires a justification/exemplification of a point.
+The answer must contain some element of
+reasoning/justification, this can include mathematical
+explanations.
+State what is meant by When the meaning of a term is expected but there are
+different ways of how these can be described.
+Write When the questions ask for an equation.
+
+Verbs preceding a command word
+Suggest a … Suggest an explanation or suggest a description.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+64
+Appendix 5: Apparatus and techniques
+The apparatus and techniques listed in the table below are taken from the document Biology,
+Chemistry and Physics GCSE subject content published by the Department for Education
+(DfE) in June 2014.
+Use and coverage of the apparatus and techniques listed are mandatory. The eight
+mandatory core practicals cover all aspects of the listed apparatus and techniques and are
+referenced in the table.
+Safety is an overriding requirement for all practical work. Centres are responsible for
+ensuring that whenever their students complete practical work appropriate safety procedures
+are followed.
+Scientific diagrams should be included, where appropriate, to show the set-up and to record
+the apparatus and procedures used in practical work.
+
+Apparatus and techniques Core practical (specification reference)
+1
+Use of appropriate apparatus
+to make and record a range of
+measurements accurately,
+including length, area, mass,
+time, volume and
+temperature. Use of such
+measurements to determine
+densities of solid and liquid
+objects.
+2.19 Investigate the relationship between force, mass
+and acceleration by varying the masses added to
+trolleys
+4.17 Investigate the suitability of equipment to
+measure the speed, frequency and wavelength
+of a wave in a solid and a fluid
+14.3 Investigate the densities of solid and liquids
+14.11 Investigate the properties of water by
+determining the specific heat capacity of water
+and obtaining a temperature-time graph for
+melting ice
+2
+Use of appropriate apparatus
+to measure and observe the
+effects of forces including the
+extension of springs
+2.19 Investigate the relationship between force, mass
+and acceleration by varying the masses added to
+trolleys
+15.6 Investigate the extension and work done when
+applying forces to a spring
+3
+Use of appropriate apparatus
+and techniques for measuring
+motion, including
+determination of speed and
+rate of change of speed
+(acceleration/deceleration)
+2.19 Investigate the relationship between force, mass
+and acceleration by varying the masses added
+to trolleys
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+65
+
+Apparatus and techniques Core practical (specification reference)
+4
+Making observations of waves
+in fluids and solids to identify
+the suitability of apparatus to
+measure
+speed/frequency/wavelength.
+Making observations of the
+effects of the interaction of
+electromagnetic waves with
+matter.
+4.17 Investigate the suitability of equipment to
+measure the speed, frequency and wavelength
+of a wave in a solid and a fluid
+5.9 Investigate refraction in rectangular glass blocks
+in terms of the interaction of electromagnetic
+waves with matter
+5.19P Investigate how the nature of a surface affects
+the amount of thermal energy radiated or
+absorbed
+5
+Safe use of appropriate
+apparatus in a range of
+contexts to measure energy
+changes/transfers and
+associated values such as
+work done
+14.11 Investigate the properties of water by
+determining the specific heat capacity of water
+and obtaining a temperature-time graph for
+melting ice
+15.6 Investigate the extension and work done when
+applying forces to a spring
+6
+Use of appropriate apparatus
+to measure current, potential
+difference (voltage) and
+resistance, and to explore the
+characteristics of a variety of
+circuit elements
+10.17 Construct electrical circuits to:
+a investigate the relationship between potential
+difference, current and resistance for a
+resistor and a filament lamp
+b test series and parallel circuits using resistors
+and filament lamps
+7
+Use of circuit diagrams to
+construct and check series
+and parallel circuits including
+a variety of common circuit
+elements
+10.17 Construct electrical circuits to:
+a investigate the relationship between potential
+difference, current and resistance for a
+resistor and a filament lamp
+b test series and parallel circuits using resistors
+and filament lamps
+8
+Making observations of waves
+in fluids and solids to identify
+the suitability of apparatus to
+measure the effects of the
+interaction of waves with
+matter.
+4.17 Investigate the suitability of equipment to
+measure the speed, frequency and wavelength
+of a wave in a solid and a fluid
+
+These core practicals may be reviewed and amended if changes are required to the
+apparatus and techniques listed by the Department for Education. Pearson may also review
+and amend the core practicals if necessary. Centres will be told about any changes as soon
+as possible.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+66
+You must follow the instructions in the table below for each core practical.
+Core practical Description
+2.19
+Investigate the relationship
+between force, mass and
+acceleration by varying the
+masses added to trolleys
+Different masses must be used to investigate the
+effect of varying masses on the acceleration of a
+trolley down a ramp. Appropriate methods must be
+used to measure the force and time taken for the
+trolley to travel down the ramp, and data analysis
+must include calculating the acceleration.
+4.17
+Investigate the suitability of
+equipment to measure the
+speed, frequency and
+wavelength of a wave in a
+solid and a fluid
+This investigation involves looking at the
+characteristics of waves and using the equation:
+λ×= fv
+It is expected that students will have looked at waves
+in a liquid using a ripple tank, and waves in a solid
+using a metal rod and a method of measuring the
+frequency. Suitability of apparatus to take these
+measurements must also be considered.
+5.9
+Investigate refraction in
+rectangular glass blocks in
+terms of the interaction of
+electromagnetic waves with
+matter
+A light source with grating must be used to produce a
+beam of light, which must then be used to investigate
+the effect of refraction using a glass block. An
+appreciation of the interaction of the light ray with the
+glass block and the effect of changing medium on the
+light ray (moving towards and away from the normal)
+must be included.
+5.19P
+Investigate how the nature
+of a surface affects the
+amount of thermal energy
+radiated or absorbed
+A minimum of four different beakers or test tubes
+must be covered in different materials (different
+colours, or shiny/dull surfaces). The same volume of
+hot water must then be poured into each container,
+and covered with a lid. Using a thermometer the
+temperature can be monitored and recorded at fixed
+times using a stopwatch.
+10.17
+Construct electrical circuits
+to:
+a investigate the
+relationship between
+potential difference,
+current and resistance for
+a resistor and a filament
+lamp
+b test series and parallel
+circuits using resistors and
+filament lamps
+This investigation involves constructing a circuit to
+investigate potential difference, current and
+resistance for a resistor and a filament lamp. The
+behaviour of parallel and series circuits must also be
+included, and this must be done using filament lamps.
+A series circuit should be set up initially with a
+resistor, ammeter and voltmeter. The current must
+be recorded at different voltages. This must then be
+repeated using a filament lamp instead of a resistor.
+To investigate series and parallel circuits, a parallel
+circuit must be set up with ammeters, voltmeters,
+and filament lamps. Readings from this circuit must
+then be compared with series circuits used initially.
+Analysis must include use of the equation:
+RIV ×=
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+67
+
+Core practical Description
+14.3 Investigate the densities of
+solid and liquids
+The density of a solid object must be determined by
+measuring the mass and volume of the object, and
+then using the equation:
+v
+mρ =
+The volume must be determined by putting the object
+into water, and measuring the volume of water that
+has been displaced.
+The density of a liquid can be calculated by weighing
+the liquid using a balance, and determining the
+volume. The equation:
+v
+mρ =
+must then be used to calculate the density.
+14.11
+Investigate the properties of
+water by determining the
+specific heat capacity of
+water and obtaining a
+temperature-time graph for
+melting ice
+The temperature of crushed ice must be recorded
+using a thermometer. This must then be melted using
+a Bunsen burner and beaker of water as a water bath.
+The temperature must be monitored as the ice melts.
+To determine specific heat capacity of water, the
+temperature of water using a thermometer must be
+monitored while heating it using a heat supply
+connected to a joulemeter. This must then be used to
+calculate the specific heat capacity.
+15.6
+Investigate the extension
+and work done when
+applying forces to a spring
+The stretching of a spring must be investigated by
+measuring the length of a spring with no weights,
+followed by adding varying masses and measuring
+the new length. This must include calculating the
+work done and an appreciation of the forces involved.
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+68
+
+
+
+Appendix 6: Practical Science Statement
+Pearson Edexcel Level 1/Level 2 GCSE (9–1) in
+Biology/Chemistry/Physics/Combined Science
+Head Teacher Declaration Form
+Pearson Edexcel Level 1/Level 2 GCSE (9–1) in
+Biology/Chemistry/Physics/Combined Science
+Centre number: Centre name:
+Subject(s): Please tick as appropriate
+ Biology (1BI0)  Chemistry (1CH0)
+ Physics (1PH0)  Combined Science (1SC0)
+Biology (1BI0) – students must carry out all eight of the mandatory core practicals listed on page
+8 of the specification.
+Chemistry (1CH0) – students must carry out all eight of the mandatory core practicals listed on
+page 8 of the specification.
+Physics (1PH0) – students must carry out all eight of the mandatory core practicals listed on page
+9 of the specification.
+
+Head teacher declaration
+I declare that reasonable steps have been taken to ensure each candidate has completed the
+practical activities set out above in accordance with Pearson Edexcel Level 1/Level 2 GCSE
+(9–1) in Biology/Chemistry/Physics/Combined Science practical science work requirements.
+Each candidate has made a contemporaneous record of:
+i the work that they have undertaken during these practical activities, and
+ii the knowledge, skills and understanding which that learner has derived from those
+practical activities.
+
+Head teacher name:
+Head teacher
+signature:
+Date:
+
+Please upload the completed form via our Pearson Qualifications
+website https://qualifications.pearson.com/en/forms/gcse-sciences-9-1-practical-science-
+statement.html by 15th April. Any failure by centres to provide this Practical Science
+Statement will be treated as malpractice and/or maladministration.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+69
+Appendix 7: The context for the
+development of this qualification
+All our qualifications are designed to meet our World Class Qualification Principles[1] and our
+ambition to put the student at the heart of everything we do.
+We have developed and designed this qualification by:
+● reviewing other curricula and qualifications to ensure that it is comparable with those
+taken in high-performing jurisdictions overseas
+● consulting with key stakeholders on content and assessment, including learned bodies,
+subject associations, higher education academics and teachers to ensure this qualification
+is suitable for a UK context
+● reviewing the legacy qualification and building on its positive attributes.
+This qualification has also been developed to meet criteria stipulated by Ofqual in their
+documents GCSE (9 to 1) Qualification Level Conditions and Requirements and GCSE Subject
+Level Conditions and Requirements for Single Science (Biology, Chemistry and Physics),
+published in April 2014.
+
+
+[1] Pearson’s World Class Qualification Principles ensure that our qualifications are:
+● demanding, through internationally benchmarked standards, encouraging deep learning and
+measuring higher-order skills
+● rigorous, through setting and maintaining standards over time, developing reliable and valid
+assessment tasks and processes, and generating confidence in end users of the knowledge, skills
+and competencies of certified students
+● inclusive, through conceptualising learning as continuous, recognising that students develop at
+different rates and have different learning needs, and focusing on progression
+● empowering, through promoting the development of transferable skills, see Appendix 8.
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+70
+
+From Pearson’s Expert Panel for World Class Qualifications
+May 2014
+“The reform of the qualifications system in England is a profoundly important change to the
+education system. Teachers need to know that the new qualifications will assist them in
+helping their learners make progress in their lives.
+When these changes were first proposed we were approached by Pearson to join an ‘Expert
+Panel’ that would advise them on the development of the new qualifications.
+We were chosen, either because of our expertise in the UK education system, or because of
+our experience in reforming qualifications in other systems around the world as diverse as
+Singapore, Hong Kong, Australia and a number of countries across Europe.
+We have guided Pearson through what we judge to be a rigorous qualification development
+process that has included:
+● extensive international comparability of subject content against the highest-performing
+jurisdictions in the world
+● benchmarking assessments against UK and overseas providers to ensure that they are at
+the right level of demand
+● establishing External Subject Advisory Groups, drawing on independent subject-specific
+expertise to challenge and validate our qualifications
+● subjecting the final qualifications to scrutiny against the DfE content and Ofqual
+accreditation criteria in advance of submission.
+Importantly, we have worked to ensure that the content and learning is future oriented. The
+design has been guided by what is called an ‘Efficacy Framework’, meaning learner outcomes
+have been at the heart of this development throughout.
+We understand that ultimately it is excellent teaching that is the key factor to a learner’s
+success in education. As a result of our work as a panel we are confident that we have
+supported the development of qualifications that are outstanding for their coherence,
+thoroughness and attention to detail and can be regarded as representing world-class best
+practice.”
+
+Sir Michael Barber (Chair)
+Chief Education Advisor, Pearson plc
+Professor Lee Sing Kong
+Director, National Institute of Education,
+Singapore
+
+Bahram Bekhradnia
+President, Higher Education Policy Institute
+Professor Jonathan Osborne
+Stanford University
+
+Dame Sally Coates
+Principal, Burlington Danes Academy
+Professor Dr Ursula Renold
+Federal Institute of Technology,
+Switzerland
+
+Professor Robin Coningham
+Pro-Vice Chancellor, University of Durham
+Professor Bob Schwartz
+Harvard Graduate School of Education
+
+Dr Peter Hill
+Former Chief Executive ACARA
+
+All titles correct as at May 2014
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+71
+Appendix 8: Transferable skills
+The need for transferable skills
+In recent years, higher education institutions and employers have consistently flagged the
+need for students to develop a range of transferable skills to enable them to respond with
+confidence to the demands of undergraduate study and the world of work.
+The Organisation for Economic Co-operation and Development (OECD) defines skills, or
+competencies, as ‘the bundle of knowledge, attributes and capacities that can be learned and
+that enable individuals to successfully and consistently perform an activity or task and can be
+built upon and extended through learning.’ [1]
+To support the design of our qualifications, the Pearson Research Team selected and
+evaluated seven global 21st-century skills frameworks. Following on from this process, we
+identified the National Research Council’s (NRC) framework as the most evidence-based and
+robust skills framework. We adapted the framework slightly to include the Program for
+International Student Assessment (PISA) ICT Literacy and Collaborative Problem Solving
+(CPS) Skills.
+The adapted National Research Council’s framework of skills involves: [2]
+Cognitive skills
+● Non-routine problem solving – expert thinking, metacognition, creativity.
+● Systems thinking – decision making and reasoning.
+● Critical thinking – definitions of critical thinking are broad and usually involve general
+cognitive skills such as analysing, synthesising and reasoning skills.
+● ICT literacy – access, manage, integrate, evaluate, construct and communicate. [3]
+Interpersonal skills
+● Communication – active listening, oral communication, written communication, assertive
+communication and non-verbal communication.
+● Relationship-building skills – teamwork, trust, intercultural sensitivity, service
+orientation, self-presentation, social influence, conflict resolution and negotiation.
+● Collaborative problem solving – establishing and maintaining shared understanding,
+taking appropriate action, establishing and maintaining team organisation.
+Intrapersonal skills
+● Adaptability – ability and willingness to cope with the uncertain, handling work stress,
+adapting to different personalities, communication styles and cultures, and physical
+adaptability to various indoor and outdoor work environments.
+● Self-management and self-development – ability to work remotely in virtual teams,
+work autonomously, be self-motivating and self-monitoring, willing and able to acquire
+new information and skills related to work.
+Transferable skills enable young people to face the demands of further and higher education,
+as well as the demands of the workplace, and are important in the teaching and learning of
+this qualification. We will provide teaching and learning materials, developed with
+stakeholders, to support our qualifications.
+
+[1] OECD – Better Skills, Better Jobs, Better Lives (OECD Publishing, 2012)
+[2] Koenig J A, National Research Council – Assessing 21st Century Skills: Summary of a Workshop
+(National Academies Press, 2011)
+[3] PISA – The PISA Framework for Assessment of ICT Literacy (2011)
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+72
+Appendix 9: Codes
+
+Type of code Use of code Code
+Discount codes Every qualification eligible for performance
+tables is assigned a discount code that
+indicates the subject area to which it
+belongs.
+Discount codes are published by the DfE.
+Please see the GOV.UK
+website*
+
+Regulated
+Qualifications
+Framework (RQF)
+codes
+Each qualification title is allocated an
+Ofqual Regulated Qualifications
+Framework (RQF) code.
+The RQF code is known as a Qualification
+Number (QN). This is the code that
+features in the DfE Section 96 and on the
+LARA as being eligible for 16–18 and 19+
+funding, and is to be used for all
+qualification funding purposes. The QN will
+appear on students’ final certification
+documentation.
+The QN for this
+qualification is:
+601/8609/4
+Subject codes The subject code is used by centres to
+enter students for a qualification. Centres
+will need to use the entry codes only when
+claiming students’ qualifications.
+GCSE – 1PH0
+
+Paper codes These codes are provided for reference
+purposes. Students do not need to be
+entered for individual components.
+Paper 1: 1PH0/1F,
+1PH0/1H
+Paper 2: 1PH0/2F,
+1PH0/2H
+*www.gov.uk/government/publications/2018-performance-tables-discount-code
+
+
+
+Pearson Edexcel Level 1/Level 2 GCSE (9-1) in Physics
+Specification – Issue 4 – March 2024 © Pearson Education Limited 2024
+73
+Appendix 10: Calculators
+Candidates may use a calculator in assessments for this qualification. Centres are
+responsible for making sure that calculators used by their students meet the requirements
+highlighted in the table below.
+Candidates must be familiar with the requirements before their assessments for this
+qualification.
+
+Calculators must be:
+● of a size suitable for use on a desk
+● either battery or solar powered
+● free of lids, cases and covers that
+have printed instructions or
+formulae.
+Calculators must not:
+● be designed or adapted to offer any of these
+facilities:
+o language translators
+o symbolic algebraic manipulation
+o symbolic differentiation or integration
+o communication with other machines or
+the internet
+● be borrowed from another candidate during
+an examination for any reason*
+● have retrievable information stored in them,
+and this includes:
+o databanks
+o dictionaries
+o mathematical formulae
+o text.
+The candidate is responsible for
+the following:
+● the calculator’s power supply
+● the calculator’s working condition
+● clearing anything stored in the
+calculator.
+
+*An invigilator may give a candidate a replacement calculator
+
+
+
+
+DB270424 9781446958353_GCSE2016_L12_PHYSICS_ISS4.DOC.1–80/0
+For information about Pearson Qualifications, including Pearson Edexcel,
+BTEC and LCCI qualifications visit qualifications.pearson.com
+Edexcel and BTEC are registered trademarks of Pearson Education Limited
+Pearson Education Limited. Registered in England and Wales No. 872828
+Registered Office: 80 Strand, London WC2R 0RL
+VAT Reg No GB 278 537121
