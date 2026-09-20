@@ -7,7 +7,6 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.remember
 import revision.core.DatabaseFactory
-import revision.core.seed.Seeder
 import revision.core.systemNow
 
 class MainActivity : ComponentActivity() {
@@ -17,8 +16,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+        // No topics are written here: the app asks which subjects you take on first run.
         val db = DatabaseFactory.open(this)
-        Seeder.seedIfEmpty(db, systemNow)
         val files = AndroidFileAccess(this)
         val syncPlatform = AndroidSyncPlatform(this)
 

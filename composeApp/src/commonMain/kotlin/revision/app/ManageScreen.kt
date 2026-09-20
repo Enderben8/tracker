@@ -51,6 +51,7 @@ fun ManageScreen(state: AppState) {
     var showArchived by remember { mutableStateOf(false) }
     var editSubject by remember { mutableStateOf(false) }
     var addSubject by remember { mutableStateOf(false) }
+    var addFromCatalogue by remember { mutableStateOf(false) }
     var archiveSubject by remember { mutableStateOf(false) }
 
     val selectedSubject = subjects.firstOrNull { it.id == subjectId }
@@ -58,10 +59,12 @@ fun ManageScreen(state: AppState) {
     Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text("Subjects & topics", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
-            OutlinedButton(onClick = { addSubject = true }) { Text("+ Subject") }
+            OutlinedButton(onClick = { addFromCatalogue = true }) { Text("+ From spec") }
+            OutlinedButton(onClick = { addSubject = true }) { Text("+ My own") }
         }
         Text(
-            "Several starting lists are educated guesses (Maths, French, English Literature sub-topics, and any Geography chapter your course skips). Rename, reorder or archive anything.",
+            "Topic lists come from the exam boards' published specifications, so they use the board's own " +
+                "wording and may include options your course skips. Rename, reorder or archive anything.",
             style = MaterialTheme.typography.bodySmall,
         )
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -100,6 +103,7 @@ fun ManageScreen(state: AppState) {
     }
 
     if (editSubject && selectedSubject != null) SubjectEditDialog(state, selectedSubject) { editSubject = false }
+    if (addFromCatalogue) AddSubjectDialog(state) { addFromCatalogue = false }
     if (addSubject) TextPromptDialog(
         title = "New subject", label = "Name", confirmLabel = "Add",
         onConfirm = { name ->

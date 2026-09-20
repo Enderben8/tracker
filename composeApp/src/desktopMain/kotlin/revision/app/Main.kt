@@ -12,7 +12,6 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import kotlinx.coroutines.withTimeoutOrNull
 import revision.core.DatabaseFactory
-import revision.core.seed.Seeder
 import revision.core.systemNow
 import java.io.File
 import java.io.RandomAccessFile
@@ -33,8 +32,8 @@ fun main() {
         return
     }
 
+    // No topics are written here: the app asks which subjects you take on first run.
     val db = DatabaseFactory.open(dbFile)
-    Seeder.seedIfEmpty(db, systemNow)
 
     application {
         val sync = rememberSyncManager(db, DesktopSyncPlatform())

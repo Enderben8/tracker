@@ -224,10 +224,12 @@ class SyncEngine(
      * writing that back would silently drop changes. Returns (rows added, whether the log was compacted).
      */
     private suspend fun push(justApplied: Set<String>): Pair<Int, Boolean> {
-        // First ever push: every device seeds identical starting topics, so skip rows still exactly
-        // as seeded and send only what has changed since.
-        val since = settings.get(DeviceSettings.PUSHED_AT)?.toLongOrNull()
-            ?: settings.get(DeviceSettings.SEEDED_AT)?.toLongOrNull() ?: -1L
+        // The first push sends everything this device has. It used to skip rows untouched since
+        // seeding, back when every device seeded the same starting topics — now that each device
+        // installs whichever subjects its owner chose, that assumption is gone. Ids are still
+        // derived from the choice, so a peer that picked the same course merges rather than
+        // duplicating; the cost is a few hundred small lines on the very first sync.
+        val since = settings.get(DeviceSettings.PUSHED_AT)?.toLongOrNull() ?: -1L
         val changed = collect(since)
         val outgoing = changed.filter { "${it.table}/${it.id}/${it.updatedAt}" !in justApplied }
 

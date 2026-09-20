@@ -94,30 +94,41 @@ fun App(
                             .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Top + WindowInsetsSides.Horizontal))
                             .imePadding(),
                     ) {
-                        ActiveBanner(state)
-                        Box(Modifier.weight(1f)) {
-                            when (state.screen) {
-                                Screen.Today -> TodayScreen(state)
-                                Screen.Timer -> TimerScreen(state)
-                                Screen.History -> HistoryScreen(state)
-                                Screen.LogPast -> LogPastScreen(state)
-                                Screen.Topics -> ManageScreen(state)
-                                Screen.Stats -> StatsScreen(state)
-                                Screen.Settings -> SettingsScreen(state, files, sync)
+                        if (state.needsSetup) {
+                            // First run: no tabs and no banner until there are subjects to show.
+                            // The bottom inset is normally the nav bar's job, so add it here.
+                            Box(
+                                Modifier.weight(1f)
+                                    .windowInsetsPadding(WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom)),
+                            ) {
+                                SetupScreen(state, sync) { state.screen = Screen.Today }
                             }
-                        }
-                        NavigationBar {
-                            tabs.forEach { tab ->
-                                NavigationBarItem(
-                                    selected = state.screen == tab.screen || state.screen == tab.also,
-                                    onClick = { state.screen = tab.screen },
-                                    icon = { Text(tab.icon) },
-                                    label = { Text(tab.label) },
-                                )
+                        } else {
+                            ActiveBanner(state)
+                            Box(Modifier.weight(1f)) {
+                                when (state.screen) {
+                                    Screen.Today -> TodayScreen(state)
+                                    Screen.Timer -> TimerScreen(state)
+                                    Screen.History -> HistoryScreen(state)
+                                    Screen.LogPast -> LogPastScreen(state)
+                                    Screen.Topics -> ManageScreen(state)
+                                    Screen.Stats -> StatsScreen(state)
+                                    Screen.Settings -> SettingsScreen(state, files, sync)
+                                }
+                            }
+                            NavigationBar {
+                                tabs.forEach { tab ->
+                                    NavigationBarItem(
+                                        selected = state.screen == tab.screen || state.screen == tab.also,
+                                        onClick = { state.screen = tab.screen },
+                                        icon = { Text(tab.icon) },
+                                        label = { Text(tab.label) },
+                                    )
+                                }
                             }
                         }
                     }
-                    state.dangling?.let { RecoveryDialog(state, it) }
+                    if (!state.needsSetup) state.dangling?.let { RecoveryDialog(state, it) }
                 }
             }
         }

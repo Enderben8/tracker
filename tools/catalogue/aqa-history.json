@@ -1,0 +1,418 @@
+{
+  "key": "history",
+  "ref": "aqa/history-8145",
+  "board": "AQA",
+  "name": "History",
+  "specCode": "8145",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "3.1",
+      "title": "Rationale",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/rationale",
+      "topics": [
+        {
+          "code": "3.1",
+          "title": "Rationale"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "AA America, 1840–1895: Expansion and consolidation",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Expansion: opportunities and challenges"
+        },
+        {
+          "code": null,
+          "title": "Part two: Conflict across America"
+        },
+        {
+          "code": null,
+          "title": "Part three: Consolidation: forging the nation"
+        }
+      ],
+      "choice": {
+        "group": "Section A: Period studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "AB Germany, 1890–1945: Democracy and dictatorship",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Germany and the growth of democracy"
+        },
+        {
+          "code": null,
+          "title": "Part two: Germany and the Depression"
+        },
+        {
+          "code": null,
+          "title": "Part three: The experiences of Germans under the Nazis"
+        }
+      ],
+      "choice": {
+        "group": "Section A: Period studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "AC Russia, 1894–1945: Tsardom and communism",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: The end of Tsardom"
+        },
+        {
+          "code": null,
+          "title": "Part two: Lenin's new society"
+        },
+        {
+          "code": null,
+          "title": "Part three: Stalin's USSR"
+        }
+      ],
+      "choice": {
+        "group": "Section A: Period studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "AD America, 1920–1973: Opportunity and inequality",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: American people and the 'Boom'"
+        },
+        {
+          "code": null,
+          "title": "Part two: Bust – Americans' experiences of the Depression and New Deal"
+        },
+        {
+          "code": null,
+          "title": "Part three: Post-war America"
+        }
+      ],
+      "choice": {
+        "group": "Section A: Period studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BA Conflict and tension: the First World War, 1894–1918",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: The causes of the First World War"
+        },
+        {
+          "code": null,
+          "title": "Part two: The First World War: stalemate"
+        },
+        {
+          "code": null,
+          "title": "Part three: Ending the war"
+        }
+      ],
+      "choice": {
+        "group": "Section B: Wider world depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BB Conflict and tension: the inter-war years, 1918–1939",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Peacemaking"
+        },
+        {
+          "code": null,
+          "title": "Part two: The League of Nations and international peace"
+        },
+        {
+          "code": null,
+          "title": "Part three: The origins and outbreak of the Second World War"
+        }
+      ],
+      "choice": {
+        "group": "Section B: Wider world depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BC Conflict and tension between East and West, 1945–1972",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: The origins of the Cold War"
+        },
+        {
+          "code": null,
+          "title": "Part two: The development of the Cold War"
+        },
+        {
+          "code": null,
+          "title": "Part three: Transformation of the Cold War"
+        }
+      ],
+      "choice": {
+        "group": "Section B: Wider world depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BD Conflict and tension in Asia, 1950–1975",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Conflict in Korea"
+        },
+        {
+          "code": null,
+          "title": "Part two: Escalation of conflict in Vietnam"
+        },
+        {
+          "code": null,
+          "title": "Part three: The ending of conflict in Vietnam"
+        }
+      ],
+      "choice": {
+        "group": "Section B: Wider world depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BE Conflict and tension in the Gulf and Afghanistan, 1990–2009",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/understanding-the-modern-world",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Tensions in the Gulf"
+        },
+        {
+          "code": null,
+          "title": "Part two: The war on Al-Qaeda"
+        },
+        {
+          "code": null,
+          "title": "Part three: The Iraq War"
+        }
+      ],
+      "choice": {
+        "group": "Section B: Wider world depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "AA Britain: Health and the people: c1000 to the present day",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/shaping-the-nation",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Medicine stands still"
+        },
+        {
+          "code": null,
+          "title": "Part two: The beginnings of change"
+        },
+        {
+          "code": null,
+          "title": "Part three: A revolution in medicine"
+        },
+        {
+          "code": null,
+          "title": "Part four: Modern medicine"
+        }
+      ],
+      "choice": {
+        "group": "Section A: Thematic studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BB Britain: Power and the people: c1170 to the present day",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/shaping-the-nation",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Challenging authority and feudalism"
+        },
+        {
+          "code": null,
+          "title": "Part two: Challenging royal authority"
+        },
+        {
+          "code": null,
+          "title": "Part three: Reform and reformers"
+        },
+        {
+          "code": null,
+          "title": "Part four: Equality and rights"
+        }
+      ],
+      "choice": {
+        "group": "Section A: Thematic studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "AC Britain: Migration, empires and the people: c790 to the present day",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/shaping-the-nation",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Conquered and conquerors"
+        },
+        {
+          "code": null,
+          "title": "Part two: Looking west"
+        },
+        {
+          "code": null,
+          "title": "Part three: Expansion and empire"
+        },
+        {
+          "code": null,
+          "title": "Part four: Britain in the 20th century"
+        }
+      ],
+      "choice": {
+        "group": "Section A: Thematic studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BA Norman England, c1066–c1100",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/shaping-the-nation",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: The Normans: conquest and control"
+        },
+        {
+          "code": null,
+          "title": "Part two: Life under the Normans"
+        },
+        {
+          "code": null,
+          "title": "Part three: The Norman Church and monasticism"
+        },
+        {
+          "code": null,
+          "title": "Part four: The historic environment of Norman England"
+        }
+      ],
+      "choice": {
+        "group": "Section B: British depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BB Medieval England - the reign of Edward I, 1272–1307",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/shaping-the-nation",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Government, the rights of King and people"
+        },
+        {
+          "code": null,
+          "title": "Part two: Life in Medieval England"
+        },
+        {
+          "code": null,
+          "title": "Part three: Edward I’s military campaigns in Wales and Scotland"
+        },
+        {
+          "code": null,
+          "title": "Part four: The historic environment of Medieval England"
+        }
+      ],
+      "choice": {
+        "group": "Section B: British depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BC Elizabethan England, c1568–1603",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/shaping-the-nation",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Elizabeth's court and Parliament"
+        },
+        {
+          "code": null,
+          "title": "Part two: Life in Elizabethan times"
+        },
+        {
+          "code": null,
+          "title": "Part three: Troubles at home and abroad"
+        },
+        {
+          "code": null,
+          "title": "Part four: The historic environment of Elizabethan England"
+        }
+      ],
+      "choice": {
+        "group": "Section B: British depth studies",
+        "pick": 1
+      }
+    },
+    {
+      "code": null,
+      "title": "BD Restoration England, 1660–1685",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/history/gcse/history-8145/specification/subject-content/shaping-the-nation",
+      "topics": [
+        {
+          "code": null,
+          "title": "Part one: Crown, Parliament, plots and court life"
+        },
+        {
+          "code": null,
+          "title": "Part two: Life in Restoration England"
+        },
+        {
+          "code": null,
+          "title": "Part three: Land, trade and war"
+        },
+        {
+          "code": null,
+          "title": "Part four: The historic environment of Restoration England"
+        }
+      ],
+      "choice": {
+        "group": "Section B: British depth studies",
+        "pick": 1
+      }
+    }
+  ]
+}

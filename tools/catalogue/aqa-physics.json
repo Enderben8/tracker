@@ -1,0 +1,198 @@
+{
+  "key": "physics",
+  "ref": "aqa/physics-8463",
+  "board": "AQA",
+  "name": "Physics",
+  "specCode": "8463",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "4.1",
+      "title": "Energy",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/energy",
+      "topics": [
+        {
+          "code": "4.1.1",
+          "title": "Energy changes in a system, and the ways energy is stored before and after such changes"
+        },
+        {
+          "code": "4.1.2",
+          "title": "Conservation and dissipation of energy"
+        },
+        {
+          "code": "4.1.3",
+          "title": "National and global energy resources"
+        }
+      ]
+    },
+    {
+      "code": "4.2",
+      "title": "Electricity",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/electricity",
+      "topics": [
+        {
+          "code": "4.2.1",
+          "title": "Current, potential difference and resistance"
+        },
+        {
+          "code": "4.2.2",
+          "title": "Series and parallel circuits"
+        },
+        {
+          "code": "4.2.3",
+          "title": "Domestic uses and safety"
+        },
+        {
+          "code": "4.2.4",
+          "title": "Energy transfers"
+        },
+        {
+          "code": "4.2.5",
+          "title": "Static electricity (physics only)"
+        }
+      ]
+    },
+    {
+      "code": "4.3",
+      "title": "Particle model of matter",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/particle-model-of-matter",
+      "topics": [
+        {
+          "code": "4.3.1",
+          "title": "Changes of state and the particle model"
+        },
+        {
+          "code": "4.3.2",
+          "title": "Internal energy and energy transfers"
+        },
+        {
+          "code": "4.3.3",
+          "title": "Particle model and pressure"
+        }
+      ]
+    },
+    {
+      "code": "4.4",
+      "title": "Atomic structure",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/atomic-structure",
+      "topics": [
+        {
+          "code": "4.4.1",
+          "title": "Atoms and isotopes"
+        },
+        {
+          "code": "4.4.2",
+          "title": "Atoms and nuclear radiation"
+        },
+        {
+          "code": "4.4.3",
+          "title": "Hazards and uses of radioactive emissions and of background radiation (physics only)"
+        },
+        {
+          "code": "4.4.4",
+          "title": "Nuclear fission and fusion (physics only)"
+        }
+      ]
+    },
+    {
+      "code": "4.5",
+      "title": "Forces",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/forces",
+      "topics": [
+        {
+          "code": "4.5.1",
+          "title": "Forces and their interactions"
+        },
+        {
+          "code": "4.5.2",
+          "title": "Work done and energy transfer"
+        },
+        {
+          "code": "4.5.3",
+          "title": "Forces and elasticity"
+        },
+        {
+          "code": "4.5.4",
+          "title": "Moments, levers and gears (physics only)"
+        },
+        {
+          "code": "4.5.5",
+          "title": "Pressure and pressure differences in fluids (physics only)"
+        },
+        {
+          "code": "4.5.6",
+          "title": "Forces and motion"
+        },
+        {
+          "code": "4.5.7",
+          "title": "Momentum (HT only)"
+        }
+      ]
+    },
+    {
+      "code": "4.6",
+      "title": "Waves",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves",
+      "topics": [
+        {
+          "code": "4.6.1",
+          "title": "Waves in air, fluids and solids"
+        },
+        {
+          "code": "4.6.2",
+          "title": "Electromagnetic waves"
+        },
+        {
+          "code": "4.6.3",
+          "title": "Black body radiation (physics only)"
+        }
+      ]
+    },
+    {
+      "code": "4.7",
+      "title": "Magnetism and electromagnetism",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/magnetism-and-electromagnetism",
+      "topics": [
+        {
+          "code": "4.7.1",
+          "title": "Permanent and induced magnetism, magnetic forces and fields"
+        },
+        {
+          "code": "4.7.2",
+          "title": "The motor effect"
+        },
+        {
+          "code": "4.7.3",
+          "title": "Induced potential, transformers and the National Grid (physics only) (HT only)"
+        }
+      ]
+    },
+    {
+      "code": "4.8",
+      "title": "Space physics (physics only)",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/space-physics-physics-only",
+      "topics": [
+        {
+          "code": "4.8.1",
+          "title": "Solar system; stability of orbital motions; satellites (physics only)"
+        },
+        {
+          "code": "4.8.2",
+          "title": "Red-shift (physics only)"
+        }
+      ]
+    },
+    {
+      "code": "4.9",
+      "title": "Key ideas",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/key-ideas",
+      "topics": [
+        {
+          "code": "4.9",
+          "title": "Key ideas"
+        }
+      ]
+    }
+  ]
+}

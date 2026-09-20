@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import revision.core.backup.BackupService
+import revision.core.catalogue.CatalogueInstaller
 import revision.core.data.SettingsRepository
 import revision.core.data.SubjectRepository
 import revision.core.data.TopicRepository
@@ -23,6 +24,9 @@ import revision.core.timer.TopicRating
 
 enum class Screen { Today, Timer, History, LogPast, Topics, Stats, Settings }
 
+/** Which part of the first-run wizard is showing. */
+enum class SetupStep { Subjects, Boards, Options, Review }
+
 /**
  * Holds everything the screens share. Compose re-draws whenever a `by mutableStateOf`
  * property below changes. The running session itself lives in the database, so this
@@ -34,8 +38,8 @@ class AppState(val db: RevisionDatabase) {
     val history = HistoryService(db, now)
     val subjects = SubjectRepository(db, now)
     val topics = TopicRepository(db, now)
-    private val settingsRepo = SettingsRepository(db, now)
-    val schedulerConfig = SchedulerConfigStore(settingsRepo)
+    val settings = SettingsRepository(db, now)
+    val schedulerConfig = SchedulerConfigStore(settings)
     val today = TodayService(db, now, schedulerConfig::load)
     val topicEditor = TopicEditor(db, now)
     val subjectEditor = SubjectEditor(db, now)
@@ -43,6 +47,13 @@ class AppState(val db: RevisionDatabase) {
     val backup = BackupService(db, now)
 
     var screen by mutableStateOf(Screen.Today)
+    /**
+     * True until subjects have been chosen. Kept as a setting rather than "are there any
+     * subjects?", so archiving everything does not send you back to the wizard — and because it
+     * syncs, a second device that receives your subjects skips setup too.
+     */
+    var needsSetup by mutableStateOf(!CatalogueInstaller.isSetUp(settings))
+        private set
     /** The subject chosen on the Topics screen; kept here so it survives switching tabs. */
     var manageSubjectId by mutableStateOf<String?>(null)
     /** The subject chosen on the Timer screen; kept so it survives switching tabs. */
@@ -75,6 +86,7 @@ class AppState(val db: RevisionDatabase) {
     private fun changed() {
         tick = now()
         active = sessions.active(tick)
+        needsSetup = !CatalogueInstaller.isSetUp(settings)
         historyVersion++
     }
 

@@ -1,0 +1,223 @@
+{
+  "key": "english-literature",
+  "ref": "aqa/english-literature-8702",
+  "board": "AQA",
+  "name": "English Literature",
+  "specCode": "8702",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "3.1.1",
+      "title": "Shakespeare",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/shakespeare-and-the-19th-century-novel",
+      "topics": [
+        {
+          "code": null,
+          "title": "Macbeth"
+        },
+        {
+          "code": null,
+          "title": "Romeo and Juliet"
+        },
+        {
+          "code": null,
+          "title": "The Tempest"
+        },
+        {
+          "code": null,
+          "title": "The Merchant of Venice"
+        },
+        {
+          "code": null,
+          "title": "Much Ado About Nothing"
+        },
+        {
+          "code": null,
+          "title": "Julius Caesar"
+        }
+      ]
+    },
+    {
+      "code": "3.1.2",
+      "title": "The 19th-century novel",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/shakespeare-and-the-19th-century-novel",
+      "topics": [
+        {
+          "code": null,
+          "title": "The Strange Case of Dr Jekyll and Mr Hyde (Robert Louis Stevenson)"
+        },
+        {
+          "code": null,
+          "title": "A Christmas Carol (Charles Dickens)"
+        },
+        {
+          "code": null,
+          "title": "Great Expectations (1867) (Charles Dickens)"
+        },
+        {
+          "code": null,
+          "title": "Jane Eyre (Charlotte Brontë)"
+        },
+        {
+          "code": null,
+          "title": "Frankenstein (1831) (Mary Shelley)"
+        },
+        {
+          "code": null,
+          "title": "Pride and Prejudice (Jane Austen)"
+        },
+        {
+          "code": null,
+          "title": "The Sign of Four (Sir Arthur Conan Doyle)"
+        }
+      ]
+    },
+    {
+      "code": "3.2.1",
+      "title": "Modern texts",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+      "topics": [
+        {
+          "code": null,
+          "title": "An Inspector Calls (JB Priestley)"
+        },
+        {
+          "code": null,
+          "title": "Blood Brothers (musical version) (Willy Russell)"
+        },
+        {
+          "code": null,
+          "title": "The History Boys (Last exam 2024) (Alan Bennett)"
+        },
+        {
+          "code": null,
+          "title": "DNA (Dennis Kelly)"
+        },
+        {
+          "code": null,
+          "title": "The Curious Incident of the Dog in the Night-Time (play script) (Last exam 2024) (Simon Stephens)"
+        },
+        {
+          "code": null,
+          "title": "A Taste of Honey (Shelagh Delaney)"
+        },
+        {
+          "code": null,
+          "title": "Princess & The Hustler (First teaching 2023, first exam 2025) (Chinonyerem Odimba)"
+        },
+        {
+          "code": null,
+          "title": "Leave Taking (First teaching 2023, first exam 2025) (Winsome Pinnock)"
+        },
+        {
+          "code": null,
+          "title": "Lord of the Flies (William Golding)"
+        },
+        {
+          "code": null,
+          "title": "Telling Tales (AQA Anthology)"
+        },
+        {
+          "code": null,
+          "title": "Animal Farm (George Orwell)"
+        },
+        {
+          "code": null,
+          "title": "Never Let Me Go (Last exam 2024) (Kazuo Ishiguro)"
+        },
+        {
+          "code": null,
+          "title": "Anita and Me (Meera Syal)"
+        },
+        {
+          "code": null,
+          "title": "Pigeon English (Stephen Kelman)"
+        },
+        {
+          "code": null,
+          "title": "My Name is Leon (First teaching 2023, first exam 2025) (Kit de Waal)"
+        }
+      ]
+    },
+    {
+      "code": "3.2.2",
+      "title": "Poetry",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+      "topics": [
+        {
+          "code": null,
+          "title": "Love and Relationships"
+        },
+        {
+          "code": null,
+          "title": "Power and Conflict"
+        },
+        {
+          "code": null,
+          "title": "Worlds and Lives (First teaching 2023, first exam 2025)"
+        }
+      ]
+    },
+    {
+      "code": "3.2.3",
+      "title": "Unseen poetry",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+      "topics": [
+        {
+          "code": "3.2.3",
+          "title": "Unseen poetry"
+        }
+      ]
+    },
+    {
+      "code": "3.3",
+      "title": "Skills",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills",
+      "topics": [
+        {
+          "code": "3.3",
+          "title": "Skills"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "Reading comprehension and reading critically",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills",
+      "topics": [
+        {
+          "code": null,
+          "title": "literal and inferential comprehension: understanding a word, phrase or sentence in context; exploring aspects of plot, characterisation, events and settings; distinguishing between what is stated explicitly and what is implied; explaining motivation, sequence of events, and the relationship between actions or events"
+        },
+        {
+          "code": null,
+          "title": "critical reading: identifying the theme and distinguishing between themes; supporting a point of view by referring to evidence in the text; recognising the possibility of and evaluating different responses to a text; using understanding of writers’ social, historical and cultural contexts to inform evaluation; making an informed personal response that derives from analysis and evaluation of the text"
+        },
+        {
+          "code": null,
+          "title": "evaluation of a writer’s choice of vocabulary, grammatical and structural features: analysing and evaluating how language, structure, form and presentation contribute to quality and impact; using linguistic and literary terminology for such evaluation"
+        },
+        {
+          "code": null,
+          "title": "comparing texts: comparing and contrasting texts studied, referring where relevant to theme, characterisation, context (where known), style and literary quality; comparing two texts critically with respect to the above"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "Writing",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills",
+      "topics": [
+        {
+          "code": null,
+          "title": "producing clear and coherent text: writing effectively about literature for a range of purposes such as: to describe, explain, summarise, argue, analyse and evaluate; discussing and maintaining a point of view; selecting and emphasising key points; using relevant quotation and using detailed textual references"
+        },
+        {
+          "code": null,
+          "title": "accurate Standard English: accurate spelling, punctuation and grammar"
+        }
+      ]
+    }
+  ]
+}

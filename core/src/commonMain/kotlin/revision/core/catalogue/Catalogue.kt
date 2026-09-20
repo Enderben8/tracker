@@ -1,0 +1,160 @@
+package revision.core.catalogue
+
+import revision.core.catalogue.aqa.aqaBiology
+import revision.core.catalogue.aqa.aqaChemistry
+import revision.core.catalogue.aqa.aqaComputerScience
+import revision.core.catalogue.aqa.aqaEnglishLanguage
+import revision.core.catalogue.aqa.aqaEnglishLiterature
+import revision.core.catalogue.aqa.aqaFrench
+import revision.core.catalogue.aqa.aqaGeography
+import revision.core.catalogue.aqa.aqaHistory
+import revision.core.catalogue.aqa.aqaMaths
+import revision.core.catalogue.aqa.aqaPhysics
+import revision.core.catalogue.aqa.aqaReligiousStudies
+
+/** An exam board. The board is chosen per subject: AQA History next to OCR Computer Science is normal. */
+enum class Board(val label: String) {
+    AQA("AQA"),
+    EDEXCEL("Edexcel"),
+    OCR("OCR"),
+}
+
+/** Foundation or Higher, where a subject is tiered (Maths, the sciences at some boards). */
+enum class Tier(val label: String) {
+    FOUNDATION("Foundation"),
+    HIGHER("Higher"),
+}
+
+/**
+ * One subject as one board specifies it.
+ *
+ * [key] is the same across boards ("biology"), which is how setup lists a subject once and
+ * then offers only the boards that publish it. [ref] identifies this board's version of it
+ * and becomes part of every row id, so two devices choosing the same course agree on ids and
+ * sync merges instead of duplicating.
+ */
+data class SpecSubject(
+    val key: String,
+    val ref: String,
+    val board: Board,
+    val name: String,
+    val specCode: String,
+    val sourceUrl: String,
+    val checkedOn: String,
+    val groups: List<SpecGroup>,
+) {
+    /** Colour is per subject, not per board, so Biology looks the same whoever examines it. */
+    val colour: String get() = SubjectPalette.colourFor(key)
+
+    val topicCount: Int get() = groups.sumOf { it.topics.size }
+
+    /** True when some content is Higher-only, so the student must say which tier they sit. */
+    val tiered: Boolean get() = groups.any { group -> group.topics.any { it.tier != null } }
+
+    /** "AQA Biology (8461)" — how the subject is named in the picker. */
+    val label: String get() = "${board.label} $name ($specCode)"
+}
+
+/**
+ * A top-level section of a specification, e.g. "4.1 Cell biology".
+ *
+ * [choice] marks a section the student picks between rather than takes wholesale — one biome,
+ * two landscapes, one History option. Null means the section is compulsory.
+ */
+data class SpecGroup(
+    val code: String?,
+    val title: String,
+    val topics: List<SpecTopic>,
+    val choice: Choice? = null,
+) {
+    val ref: String get() = code ?: title
+}
+
+/** A revisable topic: the leaf the scheduler queues. */
+data class SpecTopic(
+    val code: String?,
+    val title: String,
+    val tier: Tier? = null,
+)
+
+/**
+ * "Choose [pick] of these" — a set of optional sections sharing a [group] name. Every group in
+ * the same choice group is offered together and the student keeps [pick] of them.
+ */
+data class Choice(val group: String, val pick: Int)
+
+/** Every subject the app knows how to install, across all boards. */
+object Catalogue {
+
+    val all: List<SpecSubject> = listOf(
+        aqaBiology,
+        aqaChemistry,
+        aqaPhysics,
+        aqaMaths,
+        aqaComputerScience,
+        aqaEnglishLiterature,
+        aqaEnglishLanguage,
+        aqaGeography,
+        aqaHistory,
+        aqaFrench,
+        aqaReligiousStudies,
+    )
+
+    /** One entry per subject, each holding the boards that publish it — what setup step 1 lists. */
+    val bySubject: List<CatalogueSubject> by lazy {
+        all.groupBy { it.key }
+            .map { (key, specs) -> CatalogueSubject(key, specs.first().name, specs.sortedBy { it.board }) }
+            .sortedBy { it.name }
+    }
+
+    fun find(ref: String): SpecSubject? = all.firstOrNull { it.ref == ref }
+
+    fun boardsFor(key: String): List<Board> = all.filter { it.key == key }.map { it.board }
+}
+
+/** A subject, plus the boards that publish it. */
+data class CatalogueSubject(
+    val key: String,
+    val name: String,
+    val specs: List<SpecSubject>,
+) {
+    val colour: String get() = SubjectPalette.colourFor(key)
+
+    fun forBoard(board: Board): SpecSubject? = specs.firstOrNull { it.board == board }
+}
+
+/**
+ * Subject colours, used for chips and charts. They need to stay apart from one another in both
+ * light and dark themes (see docs/PROJECT_SPEC.md section 6.4), so they are assigned here rather
+ * than picked per board.
+ */
+object SubjectPalette {
+
+    private val byKey = mapOf(
+        "biology" to "#43A047",
+        "chemistry" to "#00897B",
+        "physics" to "#1E88E5",
+        "combined-science" to "#3949AB",
+        "maths" to "#E53935",
+        "computer-science" to "#5E35B1",
+        "english-literature" to "#8E24AA",
+        "english-language" to "#D81B60",
+        "geography" to "#00ACC1",
+        "history" to "#F4511E",
+        "french" to "#FB8C00",
+        "spanish" to "#FDD835",
+        "german" to "#6D4C41",
+        "religious-studies" to "#546E7A",
+        "business" to "#7CB342",
+        "music" to "#AB47BC",
+        "art" to "#EC407A",
+        "design-technology" to "#26A69A",
+        "physical-education" to "#9CCC65",
+    )
+
+    /** A colour for anything not listed, spread around the wheel so two unknowns rarely clash. */
+    private val fallbacks = listOf("#7E57C2", "#26A69A", "#EF5350", "#42A5F5", "#FFA726", "#66BB6A")
+
+    fun colourFor(key: String): String =
+        byKey[key] ?: fallbacks[(key.hashCode() and 0x7fffffff) % fallbacks.size]
+}

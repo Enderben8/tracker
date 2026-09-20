@@ -15,6 +15,11 @@ local.properties
 *.jks
 *.keystore
 
+# Downloaded specification pages: ~60MB, refetchable with tools/spec_tool.py fetch.
+# The distilled wording in tools/evidence/ is committed instead, and is what verify reads.
+tools/sources/
+__pycache__/
+
 # IDEs and OS clutter
 .idea/
 *.iml

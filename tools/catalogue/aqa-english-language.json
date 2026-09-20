@@ -1,0 +1,30 @@
+{
+  "key": "english-language",
+  "ref": "aqa/english-language-8700",
+  "board": "AQA",
+  "name": "English Language",
+  "specCode": "8700",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "3.1",
+      "title": "Scope of study",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/subject-content/scope-of-study",
+      "topics": [
+        {
+          "code": "3.1.1",
+          "title": "Critical reading and comprehension"
+        },
+        {
+          "code": "3.1.2",
+          "title": "Writing"
+        },
+        {
+          "code": "3.1.3",
+          "title": "Spoken language"
+        }
+      ]
+    }
+  ]
+}

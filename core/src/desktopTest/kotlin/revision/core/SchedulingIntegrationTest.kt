@@ -6,7 +6,6 @@ import revision.core.data.TopicRepository
 import revision.core.data.TopicStateRepository
 import revision.core.scheduling.DAY_MS
 import revision.core.scheduling.TodayService
-import revision.core.seed.Seeder
 import revision.core.timer.HistoryService
 import revision.core.timer.ManualTopic
 import revision.core.timer.SessionService
@@ -20,16 +19,16 @@ import kotlin.test.assertTrue
 class SchedulingIntegrationTest {
     private var clock = 400 * DAY_MS
     private val now: Now = { clock }
-    private val db = DatabaseFactory.inMemory().also { Seeder.seedIfEmpty(it, now) }
+    private val db = DatabaseFactory.inMemory().also { TestCatalogue.installAll(it, now) }
     private val sessions = SessionService(db, now)
     private val history = HistoryService(db, now)
     private val today = TodayService(db, now)
     private val states = TopicStateRepository(db)
-    private val bio = TopicRepository(db, now).getBySubject("seed:biology")
+    private val bio = TopicRepository(db, now).getBySubject(TestCatalogue.BIOLOGY)
     private val minute = 60_000L
 
     private fun runSession(topicIds: List<String>, ratings: Map<Int, Int?>, minutes: Long = 10) {
-        val id = sessions.start("seed:biology", topicIds, clock)
+        val id = sessions.start(TestCatalogue.BIOLOGY, topicIds, clock)
         clock += minutes * minute
         val active = sessions.active(clock)!!
         val rated = ratings.mapNotNull { (i, r) -> r?.let { active.topics[i].sessionTopicId to TopicRating(it) } }.toMap()
@@ -58,7 +57,7 @@ class SchedulingIntegrationTest {
 
     @Test
     fun aTopicAddedButNeverTimedIsNotMarkedRevised() {
-        val id = sessions.start("seed:biology", listOf(bio[0].id), clock)
+        val id = sessions.start(TestCatalogue.BIOLOGY, listOf(bio[0].id), clock)
         sessions.addTopic(id, bio[1].id, makeActive = false, at = clock)
         clock += 5 * minute
         sessions.stop(id, at = clock)
@@ -72,7 +71,7 @@ class SchedulingIntegrationTest {
         runSession(listOf(topic), mapOf(0 to 5))
         val newer = states.get(topic)!!
         // log something that happened three days ago, rated badly
-        history.logManual("seed:biology", clock - 3 * DAY_MS, listOf(ManualTopic(topic, 20, 1)), null)
+        history.logManual(TestCatalogue.BIOLOGY, clock - 3 * DAY_MS, listOf(ManualTopic(topic, 20, 1)), null)
         assertEquals(newer.due_at, states.get(topic)!!.due_at)
     }
 
@@ -94,14 +93,14 @@ class SchedulingIntegrationTest {
 
     @Test
     fun archivedSubjectsNeverAppear() {
-        SubjectRepository(db, now).getAll().filter { it.id != "seed:maths" }.forEach { SubjectRepository(db, now).archive(it.id) }
-        assertTrue(today.suggestions().all { it.subjectId == "seed:maths" })
+        SubjectRepository(db, now).getAll().filter { it.id != TestCatalogue.MATHS }.forEach { SubjectRepository(db, now).archive(it.id) }
+        assertTrue(today.suggestions().all { it.subjectId == TestCatalogue.MATHS })
     }
 
     @Test
     fun aSubjectWhoseExamHasPassedDisappears() {
-        SubjectRepository(db, now).setExamDate("seed:physics", clock - 2 * DAY_MS)
-        assertTrue(today.suggestions().none { it.subjectId == "seed:physics" })
+        SubjectRepository(db, now).setExamDate(TestCatalogue.PHYSICS, clock - 2 * DAY_MS)
+        assertTrue(today.suggestions().none { it.subjectId == TestCatalogue.PHYSICS })
     }
 
     @Test
@@ -114,9 +113,9 @@ class SchedulingIntegrationTest {
 
     @Test
     fun revisingWithinASubjectIsRankedOnlyFromThatSubject_andIsNotCappedAtThree() {
-        val list = today.suggestionsForSubject("seed:biology", limit = 12)
+        val list = today.suggestionsForSubject(TestCatalogue.BIOLOGY, limit = 12)
         assertEquals(12, list.size)
-        assertTrue(list.all { it.subjectId == "seed:biology" })
+        assertTrue(list.all { it.subjectId == TestCatalogue.BIOLOGY })
         assertEquals(list.sortedByDescending { it.score }.map { it.topicId }.toSet(), list.map { it.topicId }.toSet())
         // the overall queue still limits each subject to three
         assertTrue(today.suggestions().groupBy { it.subjectId }.values.all { it.size <= 3 })
@@ -124,36 +123,39 @@ class SchedulingIntegrationTest {
 
     @Test
     fun aTopicYouJustRevisedDropsOutOfTheSubjectsList() {
-        val first = today.suggestionsForSubject("seed:biology", limit = 12).first().topicId
-        val id = sessions.start("seed:biology", listOf(first), clock)
+        val first = today.suggestionsForSubject(TestCatalogue.BIOLOGY, limit = 12).first().topicId
+        val id = sessions.start(TestCatalogue.BIOLOGY, listOf(first), clock)
         clock += 10 * minute
         sessions.stop(id, mapOf(sessions.active(clock)!!.topics[0].sessionTopicId to TopicRating(5)), at = clock)
-        assertTrue(today.suggestionsForSubject("seed:biology", limit = 12).none { it.topicId == first })
+        assertTrue(today.suggestionsForSubject(TestCatalogue.BIOLOGY, limit = 12).none { it.topicId == first })
     }
 
     @Test
     fun anOverdueTopicComesFirstWithinItsSubject() {
         val overdue = bio[3].id
-        val id = sessions.start("seed:biology", listOf(overdue), clock)
+        val id = sessions.start(TestCatalogue.BIOLOGY, listOf(overdue), clock)
         clock += 10 * minute
         sessions.stop(id, mapOf(sessions.active(clock)!!.topics[0].sessionTopicId to TopicRating(2)), at = clock)   // due in 1 day
         clock += 5 * DAY_MS
-        val top = today.suggestionsForSubject("seed:biology", limit = 5, nowMs = clock).first()
+        val top = today.suggestionsForSubject(TestCatalogue.BIOLOGY, limit = 5, nowMs = clock).first()
         assertEquals(overdue, top.topicId)
         assertTrue(top.reason.contains("overdue"), top.reason)
     }
 
     @Test
     fun aSubjectWhoseExamHasPassedCanStillBeBrowsed() {
-        SubjectRepository(db, now).setExamDate("seed:physics", clock - 3 * DAY_MS)
-        assertTrue(today.suggestions().none { it.subjectId == "seed:physics" })
-        assertEquals(12, today.suggestionsForSubject("seed:physics", limit = 12).size)
+        SubjectRepository(db, now).setExamDate(TestCatalogue.PHYSICS, clock - 3 * DAY_MS)
+        assertTrue(today.suggestions().none { it.subjectId == TestCatalogue.PHYSICS })
+        assertEquals(12, today.suggestionsForSubject(TestCatalogue.PHYSICS, limit = 12).size)
     }
 
     @Test
     fun suggestionsSayWhereATopicSitsInTheSubject() {
-        val geo = today.suggestionsForSubject("seed:geography", limit = 40)
-        assertTrue(geo.any { it.context.contains(" › ") }, "nested topics should show their chapter/section")
-        assertTrue(today.suggestionsForSubject("seed:biology", limit = 5).all { it.context.isEmpty() }, "flat lists have no context")
+        // Specification subjects are a section with topics under it, so each suggestion names its section.
+        val geo = today.suggestionsForSubject(TestCatalogue.GEOGRAPHY, limit = 40)
+        assertTrue(geo.any { it.context.isNotEmpty() }, "nested topics should show their section")
+        val sections = TopicRepository(db, now).getBySubject(TestCatalogue.GEOGRAPHY)
+            .filter { it.parent_id == null }.map { it.title }
+        assertTrue(geo.filter { it.context.isNotEmpty() }.all { it.context.substringAfterLast(" › ") in sections })
     }
 }

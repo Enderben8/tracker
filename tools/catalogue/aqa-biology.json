@@ -1,0 +1,167 @@
+{
+  "key": "biology",
+  "ref": "aqa/biology-8461",
+  "board": "AQA",
+  "name": "Biology",
+  "specCode": "8461",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "4.1",
+      "title": "Cell biology",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/cell-biology",
+      "topics": [
+        {
+          "code": "4.1.1",
+          "title": "Cell structure"
+        },
+        {
+          "code": "4.1.2",
+          "title": "Cell division"
+        },
+        {
+          "code": "4.1.3",
+          "title": "Transport in cells"
+        }
+      ]
+    },
+    {
+      "code": "4.2",
+      "title": "Organisation",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/organisation",
+      "topics": [
+        {
+          "code": "4.2.1",
+          "title": "Principles of organisation"
+        },
+        {
+          "code": "4.2.2",
+          "title": "Animal tissues, organs and organ systems"
+        },
+        {
+          "code": "4.2.3",
+          "title": "Plant tissues, organs and systems"
+        }
+      ]
+    },
+    {
+      "code": "4.3",
+      "title": "Infection and response",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/infection-and-response",
+      "topics": [
+        {
+          "code": "4.3.1",
+          "title": "Communicable diseases"
+        },
+        {
+          "code": "4.3.2",
+          "title": "Monoclonal antibodies (biology only) (HT only)"
+        },
+        {
+          "code": "4.3.3",
+          "title": "Plant disease (biology only)"
+        }
+      ]
+    },
+    {
+      "code": "4.4",
+      "title": "Bioenergetics",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/bioenergetics",
+      "topics": [
+        {
+          "code": "4.4.1",
+          "title": "Photosynthesis"
+        },
+        {
+          "code": "4.4.2",
+          "title": "Respiration"
+        }
+      ]
+    },
+    {
+      "code": "4.5",
+      "title": "Homeostasis and response",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/homeostasis-and-response",
+      "topics": [
+        {
+          "code": "4.5.1",
+          "title": "Homeostasis"
+        },
+        {
+          "code": "4.5.2",
+          "title": "The human nervous system"
+        },
+        {
+          "code": "4.5.3",
+          "title": "Hormonal coordination in humans"
+        },
+        {
+          "code": "4.5.4",
+          "title": "Plant hormones (biology only)"
+        }
+      ]
+    },
+    {
+      "code": "4.6",
+      "title": "Inheritance, variation and evolution",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/inheritance-variation-and-evolution",
+      "topics": [
+        {
+          "code": "4.6.1",
+          "title": "Reproduction"
+        },
+        {
+          "code": "4.6.2",
+          "title": "Variation and evolution"
+        },
+        {
+          "code": "4.6.3",
+          "title": "The development of understanding of genetics and evolution"
+        },
+        {
+          "code": "4.6.4",
+          "title": "Classification of living organisms"
+        }
+      ]
+    },
+    {
+      "code": "4.7",
+      "title": "Ecology",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/ecology",
+      "topics": [
+        {
+          "code": "4.7.1",
+          "title": "Adaptations, interdependence and competition"
+        },
+        {
+          "code": "4.7.2",
+          "title": "Organisation of an ecosystem"
+        },
+        {
+          "code": "4.7.3",
+          "title": "Biodiversity and the effect of human interaction on ecosystems"
+        },
+        {
+          "code": "4.7.4",
+          "title": "Trophic levels in an ecosystem (biology only)"
+        },
+        {
+          "code": "4.7.5",
+          "title": "Food production (biology only)"
+        }
+      ]
+    },
+    {
+      "code": "4.8",
+      "title": "Key ideas",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/subject-content/key-ideas",
+      "topics": [
+        {
+          "code": "4.8",
+          "title": "Key ideas"
+        }
+      ]
+    }
+  ]
+}

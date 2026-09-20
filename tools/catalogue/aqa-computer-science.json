@@ -1,0 +1,207 @@
+{
+  "key": "computer-science",
+  "ref": "aqa/computer-science-8525",
+  "board": "AQA",
+  "name": "Computer Science",
+  "specCode": "8525",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "3.1",
+      "title": "Fundamentals of algorithms",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/fundamentals-of-algorithms",
+      "topics": [
+        {
+          "code": "3.1.1",
+          "title": "Representing algorithms"
+        },
+        {
+          "code": "3.1.2",
+          "title": "Efficiency of algorithms"
+        },
+        {
+          "code": "3.1.3",
+          "title": "Searching algorithms"
+        },
+        {
+          "code": "3.1.4",
+          "title": "Sorting algorithms"
+        }
+      ]
+    },
+    {
+      "code": "3.2",
+      "title": "Programming",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/programming",
+      "topics": [
+        {
+          "code": "3.2.1",
+          "title": "Data types"
+        },
+        {
+          "code": "3.2.2",
+          "title": "Programming concepts"
+        },
+        {
+          "code": "3.2.3",
+          "title": "Arithmetic operations in a programming language"
+        },
+        {
+          "code": "3.2.4",
+          "title": "Relational operations in a programming language"
+        },
+        {
+          "code": "3.2.5",
+          "title": "Boolean operations in a programming language"
+        },
+        {
+          "code": "3.2.6",
+          "title": "Data structures"
+        },
+        {
+          "code": "3.2.7",
+          "title": "Input/output"
+        },
+        {
+          "code": "3.2.8",
+          "title": "String handling operations in a programming language"
+        },
+        {
+          "code": "3.2.9",
+          "title": "Random number generation in a programming language"
+        },
+        {
+          "code": "3.2.10",
+          "title": "Structured programming and subroutines (procedures and functions)"
+        },
+        {
+          "code": "3.2.11",
+          "title": "Robust and secure programming"
+        }
+      ]
+    },
+    {
+      "code": "3.3",
+      "title": "Fundamentals of data representation",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/fundamentals-of-data-representation",
+      "topics": [
+        {
+          "code": "3.3.1",
+          "title": "Number bases"
+        },
+        {
+          "code": "3.3.2",
+          "title": "Converting between number bases"
+        },
+        {
+          "code": "3.3.3",
+          "title": "Units of information"
+        },
+        {
+          "code": "3.3.4",
+          "title": "Binary arithmetic"
+        },
+        {
+          "code": "3.3.5",
+          "title": "Character encoding"
+        },
+        {
+          "code": "3.3.6",
+          "title": "Representing images"
+        },
+        {
+          "code": "3.3.7",
+          "title": "Representing sound"
+        },
+        {
+          "code": "3.3.8",
+          "title": "Data compression"
+        }
+      ]
+    },
+    {
+      "code": "3.4",
+      "title": "Computer systems",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/computer-systems",
+      "topics": [
+        {
+          "code": "3.4.1",
+          "title": "Hardware and software"
+        },
+        {
+          "code": "3.4.2",
+          "title": "Boolean logic"
+        },
+        {
+          "code": "3.4.3",
+          "title": "Software classification"
+        },
+        {
+          "code": "3.4.4",
+          "title": "Classification of programming languages and translators"
+        },
+        {
+          "code": "3.4.5",
+          "title": "Systems architecture"
+        }
+      ]
+    },
+    {
+      "code": "3.5",
+      "title": "Fundamentals of computer networks",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/fundamentals-of-computer-networks",
+      "topics": [
+        {
+          "code": "3.5",
+          "title": "Fundamentals of computer networks"
+        }
+      ]
+    },
+    {
+      "code": "3.6",
+      "title": "Cyber security",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/cyber-security",
+      "topics": [
+        {
+          "code": "3.6.1",
+          "title": "Fundamentals of cyber security"
+        },
+        {
+          "code": "3.6.2",
+          "title": "Cyber security threats"
+        },
+        {
+          "code": "3.6.3",
+          "title": "Methods to detect and prevent cyber security threats"
+        }
+      ]
+    },
+    {
+      "code": "3.7",
+      "title": "Relational databases and structured query language (SQL)",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/relational-databases-and-structured-query-language-sql",
+      "topics": [
+        {
+          "code": "3.7.1",
+          "title": "Relational databases"
+        },
+        {
+          "code": "3.7.2",
+          "title": "Structured query language (SQL)"
+        }
+      ]
+    },
+    {
+      "code": "3.8",
+      "title": "Ethical, legal and environmental impacts of digital technology on wider society, including issues of privacy",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/subject-content/ethical-legal-and-environmental-impacts-of-digital-technology-on-wider-society-including-issues-of-privacy",
+      "topics": [
+        {
+          "code": "3.8",
+          "title": "Ethical, legal and environmental impacts of digital technology on wider society, including issues of privacy"
+        }
+      ]
+    }
+  ]
+}

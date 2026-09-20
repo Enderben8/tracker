@@ -11,7 +11,6 @@ import revision.core.manage.TopicEditor
 import revision.core.scheduling.DAY_MS
 import revision.core.scheduling.SchedulerConfig
 import revision.core.scheduling.SchedulerConfigStore
-import revision.core.seed.Seeder
 import revision.core.stats.StatsService
 import revision.core.timer.HistoryService
 import revision.core.timer.ManualTopic
@@ -28,26 +27,26 @@ class ManagementTest {
     private val now: Now = { clock }
     private val minute = 60_000L
 
-    private fun seeded() = DatabaseFactory.inMemory().also { Seeder.seedIfEmpty(it, now) }
+    private fun seeded() = DatabaseFactory.inMemory().also { TestCatalogue.installAll(it, now) }
 
     // ---------- backup ----------
 
     @Test
     fun exportThenImportIntoAnEmptyDatabaseRebuildsEverything() {
         val a = seeded()
-        val bio = TopicRepository(a, now).getBySubject("seed:biology")
-        HistoryService(a, now).logManual("seed:biology", clock - DAY_MS, listOf(ManualTopic(bio[0].id, 30, 4), ManualTopic(bio[1].id, 20)), "note")
-        SubjectRepository(a, now).setExamDate("seed:physics", clock + 30 * DAY_MS)
+        val bio = TopicRepository(a, now).getBySubject(TestCatalogue.BIOLOGY)
+        HistoryService(a, now).logManual(TestCatalogue.BIOLOGY, clock - DAY_MS, listOf(ManualTopic(bio[0].id, 30, 4), ManualTopic(bio[1].id, 20)), "note")
+        SubjectRepository(a, now).setExamDate(TestCatalogue.PHYSICS, clock + 30 * DAY_MS)
         val text = BackupService(a, now).export()
 
         val b = DatabaseFactory.inMemory()
         val result = BackupService(b, now).import(text)
 
         assertEquals(0, result.skipped)
-        assertEquals(9L, b.subjectQueries.countAll().executeAsOne())
+        assertEquals(a.subjectQueries.countAll().executeAsOne(), b.subjectQueries.countAll().executeAsOne())
         assertEquals(a.topicQueries.countAll().executeAsOne(), b.topicQueries.countAll().executeAsOne())
         assertEquals(SessionRepository(a, now).totalsByTopic(clock), SessionRepository(b, now).totalsByTopic(clock))
-        assertEquals(clock + 30 * DAY_MS, SubjectRepository(b, now).get("seed:physics")!!.exam_date)
+        assertEquals(clock + 30 * DAY_MS, SubjectRepository(b, now).get(TestCatalogue.PHYSICS)!!.exam_date)
         assertEquals(1, HistoryService(b, now).load().size)
         assertEquals(4, HistoryService(b, now).load().single().topics[0].rating)
     }
@@ -67,10 +66,10 @@ class ManagementTest {
         val old = BackupService(a, now).export()
 
         clock += DAY_MS
-        TopicEditor(a, now).rename(TopicRepository(a, now).getBySubject("seed:biology")[0].id, "Cells (my wording)")
+        TopicEditor(a, now).rename(TopicRepository(a, now).getBySubject(TestCatalogue.BIOLOGY)[0].id, "Cells (my wording)")
         val result = BackupService(a, now).import(old)
 
-        assertEquals("Cells (my wording)", TopicRepository(a, now).getBySubject("seed:biology")[0].title)
+        assertEquals("Cells (my wording)", TopicRepository(a, now).getBySubject(TestCatalogue.BIOLOGY)[0].title)
         assertEquals(0, result.updated)
     }
 
@@ -79,7 +78,7 @@ class ManagementTest {
         val a = seeded()
         val b = seeded()
         clock += DAY_MS
-        SubjectRepository(a, now).archive("seed:french")
+        SubjectRepository(a, now).archive(TestCatalogue.FRENCH)
         BackupService(b, now).import(BackupService(a, now).export())
         assertTrue(SubjectRepository(b, now).getAll().none { it.name == "French" })
     }
@@ -87,8 +86,8 @@ class ManagementTest {
     @Test
     fun aRunningSessionIsNotExported() {
         val a = seeded()
-        val bio = TopicRepository(a, now).getBySubject("seed:biology")
-        SessionService(a, now).start("seed:biology", listOf(bio[0].id), clock)
+        val bio = TopicRepository(a, now).getBySubject(TestCatalogue.BIOLOGY)
+        SessionService(a, now).start(TestCatalogue.BIOLOGY, listOf(bio[0].id), clock)
         val b = DatabaseFactory.inMemory()
         BackupService(b, now).import(BackupService(a, now).export())
         assertTrue(SessionRepository(b, now).unfinishedSessions().isEmpty())
@@ -105,8 +104,8 @@ class ManagementTest {
     @Test
     fun rowsPointingAtMissingParentsAreSkippedNotCrashed() {
         val a = seeded()
-        val text = BackupService(a, now).export().replace("\"seed:subject-that-does-not-exist\"", "x")
-        val broken = text.replaceFirst("\"subjectId\": \"seed:biology\"", "\"subjectId\": \"nope\"")
+        val text = BackupService(a, now).export().replace("\"spec:subject-that-does-not-exist\"", "x")
+        val broken = text.replaceFirst("\"subjectId\": \"${TestCatalogue.BIOLOGY}\"", "\"subjectId\": \"nope\"")
         val result = BackupService(DatabaseFactory.inMemory(), now).import(broken)
         assertTrue(result.skipped > 0)
     }
@@ -118,23 +117,24 @@ class ManagementTest {
         val db = seeded()
         val ed = TopicEditor(db, now)
         val topics = TopicRepository(db, now)
-        fun titles() = topics.getBySubject("seed:biology").filter { it.parent_id == null }.map { it.title }
+        fun roots() = topics.getBySubject(TestCatalogue.BIOLOGY).filter { it.parent_id == null }
+        fun titles() = roots().map { it.title }
         val first = titles()[0]; val second = titles()[1]
-        val secondId = topics.getBySubject("seed:biology")[1].id
+        val secondId = roots()[1].id
         ed.moveUp(secondId)
         assertEquals(listOf(second, first), titles().take(2))
         ed.moveDown(secondId)
         assertEquals(listOf(first, second), titles().take(2))
-        ed.moveUp(topics.getBySubject("seed:biology")[0].id) // already first: no-op, no crash
+        ed.moveUp(roots()[0].id) // already first: no-op, no crash
         assertEquals(first, titles()[0])
     }
 
     @Test
     fun bulkAddCreatesOneTopicPerNonBlankLine() {
         val db = seeded()
-        val ids = TopicEditor(db, now).addMany("seed:maths", null, listOf("Loci", "  ", "  Vectors 2  "))
+        val ids = TopicEditor(db, now).addMany(TestCatalogue.MATHS, null, listOf("Loci", "  ", "  Vectors 2  "))
         assertEquals(2, ids.size)
-        val titles = TopicRepository(db, now).getBySubject("seed:maths").map { it.title }
+        val titles = TopicRepository(db, now).getBySubject(TestCatalogue.MATHS).map { it.title }
         assertTrue("Vectors 2" in titles)
     }
 
@@ -143,14 +143,14 @@ class ManagementTest {
         val db = seeded()
         val topics = TopicRepository(db, now)
         val ed = TopicEditor(db, now)
-        val chapter = topics.getBySubject("seed:history").first { it.parent_id == null }
-        val child = topics.getBySubject("seed:history").first { it.parent_id == chapter.id }
+        val chapter = topics.getBySubject(TestCatalogue.HISTORY).first { it.parent_id == null }
+        val child = topics.getBySubject(TestCatalogue.HISTORY).first { it.parent_id == chapter.id }
         ed.archiveMany(listOf(chapter.id))
-        assertTrue(topics.getBySubject("seed:history").none { it.id == chapter.id || it.id == child.id })
+        assertTrue(topics.getBySubject(TestCatalogue.HISTORY).none { it.id == chapter.id || it.id == child.id })
         assertTrue(ed.archived().any { it.id == child.id })
 
         ed.restore(child.id) // restoring a child must also restore its archived parent
-        val after = topics.getBySubject("seed:history").map { it.id }
+        val after = topics.getBySubject(TestCatalogue.HISTORY).map { it.id }
         assertTrue(chapter.id in after && child.id in after)
     }
 
@@ -158,44 +158,17 @@ class ManagementTest {
     fun subjectEditingAndReordering() {
         val db = seeded()
         val ed = SubjectEditor(db, now)
-        ed.edit("seed:maths", "Mathematics", "#123456", "Edexcel", clock + 10 * DAY_MS)
-        val m = SubjectRepository(db, now).get("seed:maths")!!
+        ed.edit(TestCatalogue.MATHS, "Mathematics", "#123456", "Edexcel", clock + 10 * DAY_MS)
+        val m = SubjectRepository(db, now).get(TestCatalogue.MATHS)!!
         assertEquals("Mathematics", m.name); assertEquals("Edexcel", m.exam_board); assertEquals(clock + 10 * DAY_MS, m.exam_date)
-        ed.moveUp("seed:maths")
-        val names = SubjectRepository(db, now).getAll().map { it.id }
-        assertEquals(listOf("seed:maths", "seed:history"), names.subList(6, 8))
+        val before = SubjectRepository(db, now).getAll().map { it.id }
+        val at = before.indexOf(TestCatalogue.MATHS)
+        ed.moveUp(TestCatalogue.MATHS)
+        val after = SubjectRepository(db, now).getAll().map { it.id }
+        assertEquals(listOf(TestCatalogue.MATHS, before[at - 1]), after.subList(at - 1, at + 1))
     }
 
-    // ---------- reset / restore ----------
-
-    @Test
-    fun restoreMissingBringsBackArchivedStartingTopicsButKeepsRenames() {
-        val db = seeded()
-        val topics = TopicRepository(db, now)
-        val cells = topics.getBySubject("seed:biology")[0]
-        TopicEditor(db, now).rename(cells.id, "My cells")
-        TopicEditor(db, now).archiveMany(listOf(topics.getBySubject("seed:biology")[1].id))
-        SubjectRepository(db, now).archive("seed:french")
-
-        val changed = Seeder.restoreMissing(db, now)
-
-        assertTrue(changed >= 2)
-        assertEquals("My cells", topics.get(cells.id)!!.title)
-        assertTrue(SubjectRepository(db, now).getAll().any { it.name == "French" })
-        assertEquals(20, topics.getBySubject("seed:biology").size)
-    }
-
-    @Test
-    fun resetAllWipesHistoryAndReseeds() {
-        val db = seeded()
-        val bio = TopicRepository(db, now).getBySubject("seed:biology")
-        HistoryService(db, now).logManual("seed:biology", clock, listOf(ManualTopic(bio[0].id, 10, 3)), null)
-        TopicEditor(db, now).addMany("seed:maths", null, listOf("Custom"))
-        Seeder.resetAll(db, now)
-        assertTrue(HistoryService(db, now).load().isEmpty())
-        assertEquals(9L, db.subjectQueries.countAll().executeAsOne())
-        assertFalse(TopicRepository(db, now).getBySubject("seed:maths").any { it.title == "Custom" })
-    }
+    // Restoring and starting over are the catalogue's job now, and are covered by CatalogueTest.
 
     // ---------- settings & stats ----------
 
@@ -214,23 +187,26 @@ class ManagementTest {
     @Test
     fun coverageCountsNeverRevisedLeavesPerSubject() {
         val db = seeded()
-        val bio = TopicRepository(db, now).getBySubject("seed:biology")
-        HistoryService(db, now).logManual("seed:biology", clock, listOf(ManualTopic(bio[0].id, 30, 5), ManualTopic(bio[1].id, 15)), null)
-        val s = StatsService(db, now).subjectStats(clock + DAY_MS).first { it.subjectId == "seed:biology" }
+        val bio = TopicRepository(db, now).getBySubject(TestCatalogue.BIOLOGY)
+        val leaves = bio.filter { topic -> bio.none { it.parent_id == topic.id } }
+        HistoryService(db, now).logManual(
+            TestCatalogue.BIOLOGY, clock, listOf(ManualTopic(leaves[0].id, 30, 5), ManualTopic(leaves[1].id, 15)), null,
+        )
+        val s = StatsService(db, now).subjectStats(clock + DAY_MS).first { it.subjectId == TestCatalogue.BIOLOGY }
         assertEquals(45 * minute, s.totalMs)
-        assertEquals(20, s.leafCount)
-        assertEquals(18, s.neverRevised)
-        val top = StatsService(db, now).topicStats("seed:biology", clock + DAY_MS).first()
-        assertEquals(bio[0].id, top.topicId)
+        assertEquals(TestCatalogue.leafCount(TestCatalogue.biology), s.leafCount)
+        assertEquals(s.leafCount - 2, s.neverRevised)
+        val top = StatsService(db, now).topicStats(TestCatalogue.BIOLOGY, clock + DAY_MS).first()
+        assertEquals(leaves[0].id, top.topicId)
     }
 
     @Test
     fun activityCountsDaysAndRuns() {
         val db = seeded()
-        val bio = TopicRepository(db, now).getBySubject("seed:biology")
+        val bio = TopicRepository(db, now).getBySubject(TestCatalogue.BIOLOGY)
         val h = HistoryService(db, now)
         listOf(0L, 1L, 2L, 5L).forEach { back ->
-            h.logManual("seed:biology", clock - back * DAY_MS, listOf(ManualTopic(bio[0].id, 10)), null)
+            h.logManual(TestCatalogue.BIOLOGY, clock - back * DAY_MS, listOf(ManualTopic(bio[0].id, 10)), null)
         }
         val a = StatsService(db, now).activity(clock + 60 * minute, TimeZone.UTC)
         assertEquals(4, a.daysActive)

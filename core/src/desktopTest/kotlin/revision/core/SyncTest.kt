@@ -4,7 +4,6 @@ import kotlinx.coroutines.runBlocking
 import revision.core.data.SettingsRepository
 import revision.core.data.TopicRepository
 import revision.core.manage.TopicEditor
-import revision.core.seed.Seeder
 import revision.core.sync.DeviceSettings
 import revision.core.sync.SyncEngine
 import revision.core.sync.SyncFolder
@@ -40,7 +39,7 @@ private class Device(shared: SharedFolder, private val world: () -> Long, compac
                      snapshotEveryMs: Long = 24 * 3_600_000L, snapshotsToKeep: Int = 5,
                      wrap: (SyncFolder) -> SyncFolder = { it }) {
     val now: Now = world
-    val db = DatabaseFactory.inMemory().also { Seeder.seedIfEmpty(it, now) }
+    val db = DatabaseFactory.inMemory().also { TestCatalogue.installAll(it, now) }
     val view = shared.View()
     val engine = SyncEngine(db, now, wrap(view), compactBytes, snapshotEveryMs, snapshotsToKeep).also { view.actor = it.deviceId }
     val history = HistoryService(db, now)
@@ -48,7 +47,7 @@ private class Device(shared: SharedFolder, private val world: () -> Long, compac
     val topics = TopicRepository(db, now)
     val editor = TopicEditor(db, now)
     fun sync() = runBlocking { engine.sync() }
-    fun bio() = topics.getBySubject("seed:biology")
+    fun bio() = topics.getBySubject(TestCatalogue.BIOLOGY)
     fun title(id: String) = topics.get(id)!!.title
 }
 
@@ -65,7 +64,7 @@ class SyncTest {
     fun aSessionFinishedOnOneDeviceAppearsOnTheOther() {
         val a = device(); val b = device()
         val topic = a.bio()[0].id
-        a.history.logManual("seed:biology", t - 3600_000, listOf(ManualTopic(topic, 30, 4)), "at school")
+        a.history.logManual(TestCatalogue.BIOLOGY, t - 3600_000, listOf(ManualTopic(topic, 30, 4)), "at school")
         t += minute
         a.sync(); b.sync()
 
@@ -79,7 +78,7 @@ class SyncTest {
     @Test
     fun aRunningSessionIsNotSentUntilItFinishes_andThenItsOlderRowsFollow() {
         val a = device(); val b = device()
-        val id = a.sessions.start("seed:biology", listOf(a.bio()[0].id), t)
+        val id = a.sessions.start(TestCatalogue.BIOLOGY, listOf(a.bio()[0].id), t)
         t += 5 * minute
         a.sync(); b.sync()
         assertTrue(b.history.load().isEmpty())
@@ -95,8 +94,8 @@ class SyncTest {
     @Test
     fun noFileEverHasTwoWriters() {
         val a = device(); val b = device()
-        a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[0].id, 10, 3)), null); t += minute
-        b.history.logManual("seed:biology", t, listOf(ManualTopic(b.bio()[1].id, 10, 3)), null); t += minute
+        a.history.logManual(TestCatalogue.BIOLOGY, t, listOf(ManualTopic(a.bio()[0].id, 10, 3)), null); t += minute
+        b.history.logManual(TestCatalogue.BIOLOGY, t, listOf(ManualTopic(b.bio()[1].id, 10, 3)), null); t += minute
         repeat(3) { a.sync(); b.sync(); t += minute }
         assertEquals(2, shared.files.keys.count { it.startsWith("devices/") })
         shared.writers.filterKeys { it.startsWith("devices/") }.forEach { (path, who) ->
@@ -133,7 +132,7 @@ class SyncTest {
     fun anArchiveTravels() {
         val a = device(); val b = device()
         t += minute
-        revision.core.data.SubjectRepository(a.db, a.now).archive("seed:french")
+        revision.core.data.SubjectRepository(a.db, a.now).archive(TestCatalogue.FRENCH)
         a.sync(); b.sync()
         assertTrue(revision.core.data.SubjectRepository(b.db, b.now).getAll().none { it.name == "French" })
     }
@@ -141,7 +140,9 @@ class SyncTest {
     @Test
     fun aSecondSyncWithNothingNewDoesNothing_andPulledRowsAreNotEchoedBack() {
         val a = device(); val b = device()
-        a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[0].id, 20, 5)), null); t += minute
+        // Both devices send their own installed subjects first, so what follows is only the session.
+        a.sync(); b.sync()
+        a.history.logManual(TestCatalogue.BIOLOGY, t, listOf(ManualTopic(a.bio()[0].id, 20, 5)), null); t += minute
         a.sync()
         val first = b.sync()
         assertTrue(first.applied > 0)
@@ -154,7 +155,7 @@ class SyncTest {
     @Test
     fun aDeviceStartingFromNothingCatchesUp() {
         val a = device()
-        a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[0].id, 45, 5)), null); t += minute
+        a.history.logManual(TestCatalogue.BIOLOGY, t, listOf(ManualTopic(a.bio()[0].id, 45, 5)), null); t += minute
         a.sync()
         val fresh = device()
         fresh.sync()
@@ -182,8 +183,9 @@ class SyncTest {
         val topicId = b.bio()[0].id
         fun rec(seq: Int, table: String, id: String, data: String) =
             """{"seq":$seq,"table":"$table","id":"$id","updated_at":${t + 5},"deleted":0,"data":$data}"""
-        val child = """{"id":"kid","subjectId":"seed:biology","parentId":"parent","code":null,"title":"Child","pageStart":null,"sortOrder":0,"notes":null,"updatedAt":${t + 5},"deleted":0}"""
-        val parent = """{"id":"parent","subjectId":"seed:biology","parentId":null,"code":null,"title":"Parent","pageStart":null,"sortOrder":99,"notes":null,"updatedAt":${t + 5},"deleted":0}"""
+        val subject = TestCatalogue.BIOLOGY
+        val child = """{"id":"kid","subjectId":"$subject","parentId":"parent","code":null,"title":"Child","pageStart":null,"sortOrder":0,"notes":null,"updatedAt":${t + 5},"deleted":0}"""
+        val parent = """{"id":"parent","subjectId":"$subject","parentId":null,"code":null,"title":"Parent","pageStart":null,"sortOrder":99,"notes":null,"updatedAt":${t + 5},"deleted":0}"""
         val header = """{"header":true,"format":1,"device":"zzz","generation":0}"""
 
         shared.files["devices/zzz.jsonl"] = header + "\n" + rec(1, "topic", "kid", child) + "\n"
@@ -249,7 +251,7 @@ class SyncTest {
             }
         })
         val b = device()
-        a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[0].id, 15, 4)), null)
+        a.history.logManual(TestCatalogue.BIOLOGY, t, listOf(ManualTopic(a.bio()[0].id, 15, 4)), null)
         t += minute
         a.sync()   // must not throw
         b.sync()
@@ -271,7 +273,7 @@ class SyncTest {
         val b = device()
         repeat(30) { i ->
             // many DIFFERENT rows, so compaction cannot shrink the log below the threshold
-            a.editor.addMany("seed:maths", null, listOf("Extra topic number $i"))
+            a.editor.addMany(TestCatalogue.MATHS, null, listOf("Extra topic number $i"))
             t += minute
             a.sync()
         }
@@ -279,13 +281,13 @@ class SyncTest {
             .lines().first().substringAfter("\"generation\":").substringBefore('}').toLong()
         assertTrue(generation < 12, "compaction should not fire on every push (generation=$generation)")
         b.sync()
-        assertEquals(30, revision.core.data.TopicRepository(b.db, b.now).getBySubject("seed:maths").count { it.title.startsWith("Extra topic number") })
+        assertEquals(30, revision.core.data.TopicRepository(b.db, b.now).getBySubject(TestCatalogue.MATHS).count { it.title.startsWith("Extra topic number") })
     }
 
     @Test
     fun aRunningSessionNeverAppearsInASnapshot() {
         val a = device(snapshotEveryMs = 0)
-        a.sessions.start("seed:biology", listOf(a.bio()[0].id), t)
+        a.sessions.start(TestCatalogue.BIOLOGY, listOf(a.bio()[0].id), t)
         t += minute
         a.sync()
         val snap = shared.files.entries.first { it.key.startsWith("snapshots/") }.value
@@ -306,7 +308,7 @@ class SyncTest {
         stale += a.engine.deviceId          // the drive "forgets" A's own file every time A looks
         val b = device()
         repeat(3) { i ->
-            a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[i].id, 10 + i, 3)), null)
+            a.history.logManual(TestCatalogue.BIOLOGY, t, listOf(ManualTopic(a.bio()[i].id, 10 + i, 3)), null)
             t += minute
             a.sync()
         }
@@ -326,7 +328,7 @@ class SyncTest {
             }
         })
         val b = device()
-        a.history.logManual("seed:biology", t, listOf(ManualTopic(a.bio()[0].id, 30, 4)), null)
+        a.history.logManual(TestCatalogue.BIOLOGY, t, listOf(ManualTopic(a.bio()[0].id, 30, 4)), null)
         t += minute
         var threw = false
         try { a.sync() } catch (e: IllegalStateException) { threw = true }
@@ -395,7 +397,7 @@ class SyncTest {
     @Test
     fun anExistingVersionOneDatabaseGainsTheSyncTableWithoutLosingData() {
         val file = File.createTempFile("revision-migrate", ".db").also { it.deleteOnExit() }
-        DatabaseFactory.open(file).also { Seeder.seedIfEmpty(it, world) }
+        DatabaseFactory.open(file).also { TestCatalogue.installAll(it, world) }
 
         java.sql.DriverManager.getConnection("jdbc:sqlite:${file.absolutePath}").use { c ->
             c.createStatement().use {
@@ -405,7 +407,10 @@ class SyncTest {
             }
         }
         val reopened = DatabaseFactory.open(file)
-        assertEquals(9L, reopened.subjectQueries.countAll().executeAsOne())
+        assertEquals(
+            revision.core.catalogue.Catalogue.all.size.toLong(),
+            reopened.subjectQueries.countAll().executeAsOne(),
+        )
         assertEquals(0, reopened.syncCursorQueries.selectAll().executeAsList().size)
         assertEquals(0, reopened.syncLogQueries.selectLines().executeAsList().size)
         java.sql.DriverManager.getConnection("jdbc:sqlite:${file.absolutePath}").use { c ->

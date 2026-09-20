@@ -1,0 +1,752 @@
+{
+  "key": "maths",
+  "ref": "aqa/maths-8300",
+  "board": "AQA",
+  "name": "Maths",
+  "specCode": "8300",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "3.1.1",
+      "title": "Structure and calculation",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.1-number",
+      "topics": [
+        {
+          "code": "N1",
+          "title": "order positive and negative integers, decimals and fractions use the symbols =, ≠, <, >, ≤, ≥",
+          "tier": null
+        },
+        {
+          "code": "N2",
+          "title": "apply the four operations, including formal written methods, to integers, decimals and simple fractions (proper and i…",
+          "tier": null
+        },
+        {
+          "code": "N3",
+          "title": "recognise and use relationships between operations, including inverse operations (eg cancellation to simplify calcula…",
+          "tier": null
+        },
+        {
+          "code": "N4",
+          "title": "use the concepts and vocabulary of prime numbers, factors (divisors), multiples, common factors, common multiples, hi…",
+          "tier": null
+        },
+        {
+          "code": "N5",
+          "title": "apply systematic listing strategies",
+          "tier": null
+        },
+        {
+          "code": "N6",
+          "title": "use positive integer powers and associated real roots (square, cube and higher), recognise powers of 2, 3, 4, 5",
+          "tier": null
+        },
+        {
+          "code": "N7",
+          "title": "calculate with roots, and with integer indices",
+          "tier": null
+        },
+        {
+          "code": "N8",
+          "title": "calculate exactly with fractions",
+          "tier": null
+        },
+        {
+          "code": "N9",
+          "title": "calculate with and interpret standard form A × 10 n , where 1 ≤ A 10 and n is an integer",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": "3.1.2",
+      "title": "Fractions, decimals and percentages",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.1-number",
+      "topics": [
+        {
+          "code": "N10",
+          "title": "work interchangeably with terminating decimals and their corresponding fractions (such as 3.5 and 7 2 or 0.375 and 3 …",
+          "tier": null
+        },
+        {
+          "code": "N11",
+          "title": "identify and work with fractions in ratio problems",
+          "tier": null
+        },
+        {
+          "code": "N12",
+          "title": "interpret fractions and percentages as operators",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": "3.1.3",
+      "title": "Measures and accuracy",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.1-number",
+      "topics": [
+        {
+          "code": "N13",
+          "title": "use standard units of mass, length, time, money and other measures (including standard compound measures) using decim…",
+          "tier": null
+        },
+        {
+          "code": "N14",
+          "title": "estimate answers check calculations using approximation and estimation, including answers obtained using technology",
+          "tier": null
+        },
+        {
+          "code": "N15",
+          "title": "round numbers and measures to an appropriate degree of accuracy (eg to a specified number of decimal places or signif…",
+          "tier": null
+        },
+        {
+          "code": "N16",
+          "title": "apply and interpret limits of accuracy",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": "3.2.1",
+      "title": "Notation, vocabulary and manipulation",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.2-algebra",
+      "topics": [
+        {
+          "code": "A1",
+          "title": "use and interpret algebraic notation, including: a b in place of a × b 3 y in place of y + y + y and 3 × y a 2 in pla…",
+          "tier": null
+        },
+        {
+          "code": "A2",
+          "title": "substitute numerical values into formulae and expressions, including scientific formulae",
+          "tier": null
+        },
+        {
+          "code": "A3",
+          "title": "understand and use the concepts and vocabulary of expressions, equations, formulae, inequalities, terms and factors",
+          "tier": null
+        },
+        {
+          "code": "A4",
+          "title": "simplify and manipulate algebraic expressions by:",
+          "tier": null
+        },
+        {
+          "code": "A5",
+          "title": "understand and use standard mathematical formulae rearrange formulae to change the subject",
+          "tier": null
+        },
+        {
+          "code": "A6",
+          "title": "know the difference between an equation and an identity",
+          "tier": null
+        },
+        {
+          "code": "A7",
+          "title": "where appropriate, interpret simple expressions as functions with inputs and outputs",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": "3.2.2",
+      "title": "Graphs",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.2-algebra",
+      "topics": [
+        {
+          "code": "A8",
+          "title": "work with coordinates in all four quadrants",
+          "tier": null
+        },
+        {
+          "code": "A9",
+          "title": "plot graphs of equations that correspond to straight-line graphs in the coordinate plane",
+          "tier": null
+        },
+        {
+          "code": "A10",
+          "title": "identify and interpret gradients and intercepts of linear functions graphically and algebraically",
+          "tier": null
+        },
+        {
+          "code": "A11",
+          "title": "identify and interpret roots, intercepts and turning points of quadratic functions graphically",
+          "tier": null
+        },
+        {
+          "code": "A12",
+          "title": "recognise, sketch and interpret graphs of linear functions and quadratic functions",
+          "tier": null
+        },
+        {
+          "code": "A13",
+          "title": "sketch translations and reflections of a given function",
+          "tier": "HIGHER"
+        },
+        {
+          "code": "A14",
+          "title": "plot and interpret graphs, and graphs of non-standard functions in real contexts, to find approximate solutions to pr…",
+          "tier": null
+        },
+        {
+          "code": "A15",
+          "title": "calculate or estimate gradients of graphs and areas under graphs (including quadratic and other non-linear graphs), a…",
+          "tier": "HIGHER"
+        },
+        {
+          "code": "A16",
+          "title": "recognise and use the equation of a circle with centre at the origin find the equation of a tangent to a circle at a …",
+          "tier": "HIGHER"
+        }
+      ]
+    },
+    {
+      "code": "3.2.3",
+      "title": "Solving equations and inequalities",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.2-algebra",
+      "topics": [
+        {
+          "code": "A17",
+          "title": "solve linear equations in one unknown algebraically find approximate solutions using a graph",
+          "tier": null
+        },
+        {
+          "code": "A18",
+          "title": "solve quadratic equations algebraically by factorising",
+          "tier": null
+        },
+        {
+          "code": "A19",
+          "title": "solve two simultaneous equations in two variables (linear/linear) algebraically find approximate solutions using a gr…",
+          "tier": null
+        },
+        {
+          "code": "A20",
+          "title": "find approximate solutions to equations numerically using iteration",
+          "tier": "HIGHER"
+        },
+        {
+          "code": "A21",
+          "title": "translate simple situations or procedures into algebraic expressions or formulae derive an equation (or two simultane…",
+          "tier": null
+        },
+        {
+          "code": "A22",
+          "title": "solve linear inequalities in one variable",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": "3.2.4",
+      "title": "Sequences",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.2-algebra",
+      "topics": [
+        {
+          "code": "A23",
+          "title": "generate terms of a sequence from either a term-to-term or a position-to-term rule",
+          "tier": null
+        },
+        {
+          "code": "A24",
+          "title": "recognise and use sequences of triangular, square and cube numbers and simple arithmetic progressions",
+          "tier": null
+        },
+        {
+          "code": "A25",
+          "title": "deduce expressions to calculate the n th term of linear sequences",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R1",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R1"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R2",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R2"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R3",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R3"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R4",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R4"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R5",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R5"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R6",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R6"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R7",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R7"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R8",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R8"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R9",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R9"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R10",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R10"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R11",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R11"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R12",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R12"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R13",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R13"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R14",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R14"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R15",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R15"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "R16",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.3-ratio-proportion-and-rates-of-change",
+      "topics": [
+        {
+          "code": null,
+          "title": "R16"
+        }
+      ]
+    },
+    {
+      "code": "3.4.1",
+      "title": "Properties and constructions",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.4-geometry-and-measures",
+      "topics": [
+        {
+          "code": "G1",
+          "title": "use conventional terms and notations: points, lines, vertices, edges, planes, parallel lines, perpendicular lines, ri…",
+          "tier": null
+        },
+        {
+          "code": "G2",
+          "title": "use the standard ruler and compass constructions (perpendicular bisector of a line segment, constructing a perpendicu…",
+          "tier": null
+        },
+        {
+          "code": "G3",
+          "title": "apply the properties of angles at a point, angles at a point on a straight line, vertically opposite angles understan…",
+          "tier": null
+        },
+        {
+          "code": "G4",
+          "title": "derive and apply the properties and definitions of: special types of quadrilaterals, including square, rectangle, par…",
+          "tier": null
+        },
+        {
+          "code": "G5",
+          "title": "use the basic congruence criteria for triangles (SSS, SAS, ASA, RHS)",
+          "tier": null
+        },
+        {
+          "code": "G6",
+          "title": "apply angle facts, triangle congruence, similarity and properties of quadrilaterals to conjecture and derive results …",
+          "tier": null
+        },
+        {
+          "code": "G7",
+          "title": "identify, describe and construct congruent and similar shapes, including on coordinate axes, by considering rotation,…",
+          "tier": null
+        },
+        {
+          "code": "G8",
+          "title": "describe the changes and invariance achieved by combinations of rotations, reflections and translations",
+          "tier": "HIGHER"
+        },
+        {
+          "code": "G9",
+          "title": "identify and apply circle definitions and properties, including: centre, radius, chord, diameter, circumference",
+          "tier": null
+        },
+        {
+          "code": "G10",
+          "title": "apply and prove the standard circle theorems concerning angles, radii, tangents and chords, and use them to prove rel…",
+          "tier": "HIGHER"
+        },
+        {
+          "code": "G11",
+          "title": "solve geometrical problems on coordinate axes",
+          "tier": null
+        },
+        {
+          "code": "G12",
+          "title": "identify properties of the faces, surfaces, edges and vertices of: cubes, cuboids, prisms, cylinders, pyramids, cones…",
+          "tier": null
+        },
+        {
+          "code": "G13",
+          "title": "interpret plans and elevations of 3D shapes",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": "3.4.2",
+      "title": "Mensuration and calculation",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.4-geometry-and-measures",
+      "topics": [
+        {
+          "code": "G14",
+          "title": "use standard units of measure and related concepts (length, area, volume/capacity, mass, time, money etc.)",
+          "tier": null
+        },
+        {
+          "code": "G15",
+          "title": "measure line segments and angles in geometric figures, including interpreting maps and scale drawings and use of bear…",
+          "tier": null
+        },
+        {
+          "code": "G16",
+          "title": "know and apply formulae to calculate: area of triangles, parallelograms, trapezia; volume of cuboids and other right …",
+          "tier": null
+        },
+        {
+          "code": "G17",
+          "title": "know the formulae: circumference of a circle = 2 π r = π d area of a circle = π r 2 calculate perimeters of 2D shapes…",
+          "tier": null
+        },
+        {
+          "code": "G18",
+          "title": "calculate arc lengths, angles and areas of sectors of circles",
+          "tier": null
+        },
+        {
+          "code": "G19",
+          "title": "apply the concepts of congruence and similarity, including the relationships between lengths in similar figures",
+          "tier": null
+        },
+        {
+          "code": "G20",
+          "title": "know the formulae for: Pythagoras’ theorem, a 2 + b 2 = c 2 and the trigonometric ratios, sin θ = opposite hypotenuse…",
+          "tier": null
+        },
+        {
+          "code": "G21",
+          "title": "know the exact values of sin θ and cos θ for θ = 0°, 30°, 45° , 60° and 90° know the exact value of tan θ for θ = 0°,…",
+          "tier": null
+        },
+        {
+          "code": "G22",
+          "title": "know and apply the sine rule, a sin ⁡ A = b sin ⁡ B = c sin ⁡ C and cosine rule, a 2 = b 2 + c 2 - 2 b c cos A to fin…",
+          "tier": "HIGHER"
+        },
+        {
+          "code": "G23",
+          "title": "know and apply A r e a = 1 2 a b sin C to calculate the area, sides or angles of any triangle",
+          "tier": "HIGHER"
+        }
+      ]
+    },
+    {
+      "code": "3.4.3",
+      "title": "Vectors",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.4-geometry-and-measures",
+      "topics": [
+        {
+          "code": "G24",
+          "title": "describe translations as 2D vectors",
+          "tier": null
+        },
+        {
+          "code": "G25",
+          "title": "apply addition and subtraction of vectors, multiplication of vectors by a scalar, and diagrammatic and column represe…",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P1",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P1"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P2",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P2"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P3",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P3"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P4",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P4"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P5",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P5"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P6",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P6"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P7",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P7"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P8",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P8"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "P9",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.5-probability",
+      "topics": [
+        {
+          "code": null,
+          "title": "P9"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "S1",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.6-statistics",
+      "topics": [
+        {
+          "code": null,
+          "title": "S1"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "S2",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.6-statistics",
+      "topics": [
+        {
+          "code": null,
+          "title": "S2"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "S3",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.6-statistics",
+      "topics": [
+        {
+          "code": null,
+          "title": "S3"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "S4",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.6-statistics",
+      "topics": [
+        {
+          "code": null,
+          "title": "S4"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "S5",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.6-statistics",
+      "topics": [
+        {
+          "code": null,
+          "title": "S5"
+        }
+      ]
+    },
+    {
+      "code": null,
+      "title": "S6",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification/subject-content/3.6-statistics",
+      "topics": [
+        {
+          "code": null,
+          "title": "S6"
+        }
+      ]
+    }
+  ]
+}

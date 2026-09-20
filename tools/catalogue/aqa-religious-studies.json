@@ -1,0 +1,61 @@
+{
+  "key": "religious-studies",
+  "ref": "aqa/religious-studies-8062",
+  "board": "AQA",
+  "name": "Religious Studies",
+  "specCode": "8062",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/religious-studies/gcse/religious-studies-8062/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "3.1",
+      "title": "Component 1: The study of religions: beliefs, teachings and practices",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/religious-studies/gcse/religious-studies-8062/specification/subject-content/component-1-the-study-of-religions-beliefs-teachings-and-practices",
+      "topics": [
+        {
+          "code": "3.1.1",
+          "title": "Buddhism"
+        },
+        {
+          "code": "3.1.2",
+          "title": "Christianity"
+        },
+        {
+          "code": "3.1.3",
+          "title": "Catholic Christianity"
+        },
+        {
+          "code": "3.1.4",
+          "title": "Hinduism"
+        },
+        {
+          "code": "3.1.5",
+          "title": "Islam"
+        },
+        {
+          "code": "3.1.6",
+          "title": "Judaism"
+        },
+        {
+          "code": "3.1.7",
+          "title": "Sikhism"
+        }
+      ]
+    },
+    {
+      "code": "3.2",
+      "title": "Component 2: Thematic studies",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/religious-studies/gcse/religious-studies-8062/specification/subject-content/component-2-thematic-studies",
+      "topics": [
+        {
+          "code": "3.2.1",
+          "title": "Religious, philosophical and ethical studies"
+        },
+        {
+          "code": "3.2.2",
+          "title": "Textual studies"
+        }
+      ]
+    }
+  ]
+}

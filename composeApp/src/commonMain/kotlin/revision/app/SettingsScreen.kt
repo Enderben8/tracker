@@ -32,7 +32,8 @@ import revision.core.db.Subject
 import revision.core.localDate
 import revision.core.scheduling.DAY_MS
 import revision.core.scheduling.SchedulerConfig
-import revision.core.seed.Seeder
+import revision.core.catalogue.CatalogueInstaller
+import revision.core.catalogue.ResetService
 import revision.core.sync.CheckStep
 import revision.core.systemNow
 
@@ -148,11 +149,18 @@ fun SettingsScreen(state: AppState, files: FileAccess, sync: SyncManager) {
         if (showAdvanced) item { AdvancedWeights(state) }
 
         item { HorizontalDivider(Modifier.padding(vertical = 8.dp)) }
-        item { Text("Reset", style = MaterialTheme.typography.titleMedium) }
+        item { Text("Subjects", style = MaterialTheme.typography.titleMedium) }
+        item {
+            Text(
+                "Topic lists come from the exam boards' published specifications. Restoring puts back " +
+                    "anything you archived without touching what you renamed or added.",
+                style = MaterialTheme.typography.bodySmall,
+            )
+        }
         item {
             FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                OutlinedButton(onClick = { confirmRestore = true }) { Text("Restore starting topics") }
-                OutlinedButton(onClick = { confirmReset = true }) { Text("Erase everything…", color = MaterialTheme.colorScheme.error) }
+                OutlinedButton(onClick = { confirmRestore = true }) { Text("Restore topics from the specification") }
+                OutlinedButton(onClick = { confirmReset = true }) { Text("Start over…", color = MaterialTheme.colorScheme.error) }
             }
         }
     }
@@ -160,17 +168,27 @@ fun SettingsScreen(state: AppState, files: FileAccess, sync: SyncManager) {
     sync.lastCheck?.let { steps -> FolderCheckDialog(steps, onDismiss = { sync.dismissCheck() }) }
     editing?.let { SubjectEditDialog(state, it) { editing = null } }
     if (confirmRestore) ConfirmDialog(
-        title = "Restore starting topics?",
-        text = "Puts back any starting subject or topic you archived or removed. Anything you renamed, added or reordered is left alone, and no history is touched.",
+        title = "Restore topics from the specification?",
+        text = "Puts back any subject or topic you archived or removed from the specifications you chose. " +
+            "Anything you renamed, added or reordered is left alone, and no history is touched.",
         confirmLabel = "Restore",
-        onConfirm = { val n = Seeder.restoreMissing(state.db, systemNow); state.dataChanged(); message = "Restored $n item${if (n == 1) "" else "s"}." },
+        onConfirm = {
+            val n = CatalogueInstaller.restoreMissing(state.db, systemNow)
+            state.dataChanged()
+            message = "Restored $n item${if (n == 1) "" else "s"}."
+        },
         onDismiss = { confirmRestore = false },
     )
     if (confirmReset) ConfirmDialog(
-        title = "Erase everything?",
-        text = "This deletes ALL sessions, ratings, schedules and your own topics, then re-creates the starting topic lists. It cannot be undone — export a backup first.",
-        confirmLabel = "Erase everything",
-        onConfirm = { Seeder.resetAll(state.db, systemNow); state.dataChanged(); message = "Everything was erased and the starting topics restored." },
+        title = "Start over?",
+        text = "Clears your subjects and topics and asks you to choose again. Your logged sessions and " +
+            "hours are kept — History and Stats still show them. Export a backup first if you are unsure. " +
+            "If you sync, the other device is cleared too the next time it syncs.",
+        confirmLabel = "Start over",
+        onConfirm = {
+            ResetService.startOver(state.db, systemNow, keepHistory = true)
+            state.dataChanged()
+        },
         onDismiss = { confirmReset = false },
     )
 }

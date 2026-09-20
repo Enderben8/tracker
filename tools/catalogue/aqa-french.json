@@ -1,0 +1,83 @@
+{
+  "key": "french",
+  "ref": "aqa/french-8652",
+  "board": "AQA",
+  "name": "French",
+  "specCode": "8652",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/french/gcse/french-8652/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "3.1.1",
+      "title": "Theme 1: People and lifestyle",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/french/gcse/french-8652/specification/subject-content/themes",
+      "topics": [
+        {
+          "code": null,
+          "title": "Topic 1: Identity and relationships with others"
+        },
+        {
+          "code": null,
+          "title": "Topic 2: Healthy living and lifestyle"
+        },
+        {
+          "code": null,
+          "title": "Topic 3: Education and work"
+        }
+      ]
+    },
+    {
+      "code": "3.1.2",
+      "title": "Theme 2: Popular culture",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/french/gcse/french-8652/specification/subject-content/themes",
+      "topics": [
+        {
+          "code": null,
+          "title": "Topic 1: Free-time activities"
+        },
+        {
+          "code": null,
+          "title": "Topic 2: Customs, festivals and celebrations"
+        },
+        {
+          "code": null,
+          "title": "Topic 3: Celebrity culture"
+        }
+      ]
+    },
+    {
+      "code": "3.1.3",
+      "title": "Theme 3: Communication and the world around us",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/french/gcse/french-8652/specification/subject-content/themes",
+      "topics": [
+        {
+          "code": null,
+          "title": "Topic 1: Travel and tourism, including places of interest"
+        },
+        {
+          "code": null,
+          "title": "Topic 2: Media and technology"
+        },
+        {
+          "code": null,
+          "title": "Topic 3: The environment and where people live"
+        }
+      ]
+    },
+    {
+      "code": "3.2",
+      "title": "Grammar",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/french/gcse/french-8652/specification/subject-content/grammar",
+      "topics": [
+        {
+          "code": "3.2.1",
+          "title": "Foundation tier"
+        },
+        {
+          "code": "3.2.2",
+          "title": "Higher tier"
+        }
+      ]
+    }
+  ]
+}

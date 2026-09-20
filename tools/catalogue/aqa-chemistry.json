@@ -1,0 +1,220 @@
+{
+  "key": "chemistry",
+  "ref": "aqa/chemistry-8462",
+  "board": "AQA",
+  "name": "Chemistry",
+  "specCode": "8462",
+  "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content",
+  "checkedOn": "2026-09-20",
+  "groups": [
+    {
+      "code": "4.1",
+      "title": "Atomic structure and the periodic table",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/atomic-structure-and-the-periodic-table",
+      "topics": [
+        {
+          "code": "4.1.1",
+          "title": "A simple model of the atom, symbols, relative atomic mass, electronic charge and isotopes"
+        },
+        {
+          "code": "4.1.2",
+          "title": "The periodic table"
+        },
+        {
+          "code": "4.1.3",
+          "title": "Properties of transition metals (chemistry only)"
+        }
+      ]
+    },
+    {
+      "code": "4.2",
+      "title": "Bonding, structure, and the properties of matter",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/bonding-structure-and-the-properties-of-matter",
+      "topics": [
+        {
+          "code": "4.2.1",
+          "title": "Chemical bonds, ionic, covalent and metallic"
+        },
+        {
+          "code": "4.2.2",
+          "title": "How bonding and structure are related to the properties of substances"
+        },
+        {
+          "code": "4.2.3",
+          "title": "Structure and bonding of carbon"
+        },
+        {
+          "code": "4.2.4",
+          "title": "Bulk and surface properties of matter including nanoparticles (chemistry only)"
+        }
+      ]
+    },
+    {
+      "code": "4.3",
+      "title": "Quantitative chemistry",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/quantitative-chemistry",
+      "topics": [
+        {
+          "code": "4.3.1",
+          "title": "Chemical measurements, conservation of mass and the quantitative interpretation of chemical equations"
+        },
+        {
+          "code": "4.3.2",
+          "title": "Use of amount of substance in relation to masses of pure substances"
+        },
+        {
+          "code": "4.3.3",
+          "title": "Yield and atom economy of chemical reactions (chemistry only)"
+        },
+        {
+          "code": "4.3.4",
+          "title": "Using concentrations of solutions in mol/dm 3 (chemistry only) (HT only)"
+        },
+        {
+          "code": "4.3.5",
+          "title": "Use of amount of substance in relation to volumes of gases (chemistry only) (HT only)"
+        }
+      ]
+    },
+    {
+      "code": "4.4",
+      "title": "Chemical changes",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/chemical-changes",
+      "topics": [
+        {
+          "code": "4.4.1",
+          "title": "Reactivity of metals"
+        },
+        {
+          "code": "4.4.2",
+          "title": "Reactions of acids"
+        },
+        {
+          "code": "4.4.3",
+          "title": "Electrolysis"
+        }
+      ]
+    },
+    {
+      "code": "4.5",
+      "title": "Energy changes",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/energy-changes",
+      "topics": [
+        {
+          "code": "4.5.1",
+          "title": "Exothermic and endothermic reactions"
+        },
+        {
+          "code": "4.5.2",
+          "title": "Chemical cells and fuel cells (chemistry only)"
+        }
+      ]
+    },
+    {
+      "code": "4.6",
+      "title": "The rate and extent of chemical change",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/the-rate-and-extent-of-chemical-change",
+      "topics": [
+        {
+          "code": "4.6.1",
+          "title": "Rate of reaction"
+        },
+        {
+          "code": "4.6.2",
+          "title": "Reversible reactions and dynamic equilibrium"
+        }
+      ]
+    },
+    {
+      "code": "4.7",
+      "title": "Organic chemistry",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/organic-chemistry",
+      "topics": [
+        {
+          "code": "4.7.1",
+          "title": "Carbon compounds as fuels and feedstock"
+        },
+        {
+          "code": "4.7.2",
+          "title": "Reactions of alkenes and alcohols (chemistry only)"
+        },
+        {
+          "code": "4.7.3",
+          "title": "Synthetic and naturally occurring polymers (chemistry only)"
+        }
+      ]
+    },
+    {
+      "code": "4.8",
+      "title": "Chemical analysis",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/chemical-analysis",
+      "topics": [
+        {
+          "code": "4.8.1",
+          "title": "Purity, formulations and chromatography"
+        },
+        {
+          "code": "4.8.2",
+          "title": "Identification of common gases"
+        },
+        {
+          "code": "4.8.3",
+          "title": "Identification of ions by chemical and spectroscopic means (chemistry only)"
+        }
+      ]
+    },
+    {
+      "code": "4.9",
+      "title": "Chemistry of the atmosphere",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/chemistry-of-the-atmosphere",
+      "topics": [
+        {
+          "code": "4.9.1",
+          "title": "The composition and evolution of the Earth's atmosphere"
+        },
+        {
+          "code": "4.9.2",
+          "title": "Carbon dioxide and methane as greenhouse gases"
+        },
+        {
+          "code": "4.9.3",
+          "title": "Common atmospheric pollutants and their sources"
+        }
+      ]
+    },
+    {
+      "code": "4.10",
+      "title": "Using resources",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/using-resources",
+      "topics": [
+        {
+          "code": "4.10.1",
+          "title": "Using the Earth's resources and obtaining potable water"
+        },
+        {
+          "code": "4.10.2",
+          "title": "Life cycle assessment and recycling"
+        },
+        {
+          "code": "4.10.3",
+          "title": "Using materials (chemistry only)"
+        },
+        {
+          "code": "4.10.4",
+          "title": "The Haber process and the use of NPK fertilisers (chemistry only)"
+        }
+      ]
+    },
+    {
+      "code": "4.11",
+      "title": "Key ideas",
+      "sourceUrl": "https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/key-ideas",
+      "topics": [
+        {
+          "code": "4.11",
+          "title": "Key ideas"
+        }
+      ]
+    }
+  ]
+}
