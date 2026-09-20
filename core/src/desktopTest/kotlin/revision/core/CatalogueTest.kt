@@ -204,6 +204,22 @@ class CatalogueTest {
     }
 
     @Test
+    fun aDatabaseFromAnOlderVersionIsNotSentBackToSetup() {
+        // Upgrading with subjects already in place: no setup flag, but nothing to ask about.
+        val db = DatabaseFactory.inMemory()
+        SubjectRepository(db, now).add("Biology", "#43A047")
+        val settings = SettingsRepository(db, now)
+
+        assertFalse(CatalogueInstaller.isSetUp(settings))
+        assertTrue(CatalogueInstaller.isSetUp(db, settings))
+
+        // ...but once they start over, the wizard is due again.
+        clock += 1000
+        ResetService.startOver(db, now)
+        assertFalse(CatalogueInstaller.isSetUp(db, settings))
+    }
+
+    @Test
     fun theChosenSelectionIsRememberedForLater() {
         val db = DatabaseFactory.inMemory()
         TestCatalogue.install(db, now, listOf(TestCatalogue.biology))

@@ -235,6 +235,16 @@ object CatalogueInstaller {
         }
 
     fun isSetUp(settings: SettingsRepository): Boolean = settings.get(SetupSettings.COMPLETE) == "1"
+
+    /**
+     * Whether this device has subjects to work with.
+     *
+     * A database filled in by an older version has no setup flag but plenty of subjects, and
+     * must not be sent back to the wizard — so having a live subject counts as set up.
+     * Archived rows do not count, or starting over would never return to the wizard.
+     */
+    fun isSetUp(db: RevisionDatabase, settings: SettingsRepository): Boolean =
+        isSetUp(settings) || db.subjectQueries.selectAll().executeAsList().isNotEmpty()
 }
 
 /** Lower-case, dashes instead of punctuation: "4.1.1" -> "4-1-1". Ids are built from these. */

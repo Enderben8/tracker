@@ -52,7 +52,7 @@ class AppState(val db: RevisionDatabase) {
      * subjects?", so archiving everything does not send you back to the wizard — and because it
      * syncs, a second device that receives your subjects skips setup too.
      */
-    var needsSetup by mutableStateOf(!CatalogueInstaller.isSetUp(settings))
+    var needsSetup by mutableStateOf(!CatalogueInstaller.isSetUp(db, settings))
         private set
     /** The subject chosen on the Topics screen; kept here so it survives switching tabs. */
     var manageSubjectId by mutableStateOf<String?>(null)
@@ -86,7 +86,7 @@ class AppState(val db: RevisionDatabase) {
     private fun changed() {
         tick = now()
         active = sessions.active(tick)
-        needsSetup = !CatalogueInstaller.isSetUp(settings)
+        needsSetup = !CatalogueInstaller.isSetUp(db, settings)
         historyVersion++
     }
 
